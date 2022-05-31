@@ -12,11 +12,19 @@
             </head>
             <body>
                 <div>
-                    <div id="intro">
-                    </div>
+                    <xsl:apply-templates select="tei:teiHeader"/>
                 </div>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="tei:teiHeader"/>
+    <xsl:template match="tei:teiHeader">
+        <xsl:apply-templates select="tei:fileDesc"/>
+    </xsl:template>
+    <xsl:template match="tei:fileDesc">
+        <xsl:apply-templates select="tei:titleStmt"/>
+    </xsl:template>
+    <xsl:template match="tei:titleStmt">
+        <xsl:value-of select="tei:title"/>
+    </xsl:template>
+ 
 </xsl:stylesheet>
