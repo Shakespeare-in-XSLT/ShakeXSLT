@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <xsl:apply-templates/>
-                    <xsl:value-of select="//tei:publicationStm/tei:p"/>
+                    <xsl:value-of select="//tei:publicationStmt/tei:p"/>
                 </div>
             </body>      
         </html>
@@ -44,9 +44,21 @@
     </xsl:template>
     
     <xsl:template match="//tei:castList">
-        <ul>
-            <xsl:apply-templates/>
-        </ul>
+        <table border="1" cell-padding="2">
+           <tr>
+               <th>Actor</th>
+               <th>Role</th>
+           </tr>    
+            <xsl:for-each select="tei:castGroup/tei:castItem">
+                    <tr>
+                    <td>     
+                       <xsl:value-of select="tei:role/tei:name"/> 
+                    </td>
+                    <td><xsl:value-of select="tei:roleDesc"/></td>
+                    </tr>               
+            </xsl:for-each>
+            
+        </table>
     </xsl:template>
     
     <xsl:template match="//tei:speaker">
@@ -75,10 +87,10 @@
        
     <xsl:template match="//tei:hi">
         <xsl:choose>
-            <xsl:when test="@rend='u'">
-                <u>
+            <xsl:when test="@rend='italic'">
+                <i>
                     <xsl:apply-templates/>
-                </u>                
+                </i>                
             </xsl:when>
             <xsl:otherwise>
                 <sup>
@@ -87,7 +99,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+   
 </xsl:stylesheet>
 
    <!-- <xsl:template match="tei:TEI">
