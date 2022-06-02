@@ -41782,7 +41782,6 @@
           <sp xml:id="sp-2238" who="#Alonso_Tmp">
             <speaker xml:id="spk-2238">
               <w xml:id="fs-tmp-0338260">ALONSO</w>
-              <--></-->
             </speaker>
             <l xml:id="ftln-2238" n="5.1.274">
               <w xml:id="fs-tmp-0338270" n="5.1.274" lemma="these" ana="#d">These</w>
@@ -42060,8 +42059,6 @@
           <sp xml:id="sp-2255" who="#Ariel_Tmp">
             <speaker xml:id="spk-2255">
               <w xml:id="fs-tmp-0340640">ARIEL</w>
-            </speaker>
-            <stage xml:id="stg-2255" n="SD 5.1.291" type="delivery">
               <pc xml:id="fs-tmp-0340650" n="SD 5.1.291">,</pc>
               <c> </c>
               <w xml:id="fs-tmp-0340670" n="SD 5.1.291">aside</w>
@@ -42069,7 +42066,7 @@
               <w xml:id="fs-tmp-0340690" n="SD 5.1.291">to</w>
               <c> </c>
               <w xml:id="fs-tmp-0340710" n="SD 5.1.291">Prospero</w>
-            </stage>
+            </speaker>
             <l xml:id="ftln-2255" n="5.1.291" part="F">
               <w xml:id="fs-tmp-0340720" n="5.1.291" lemma="be" ana="#vvd">Was</w>
               <c> </c>
@@ -42084,8 +42081,6 @@
           <sp xml:id="sp-2256" who="#Prospero_Tmp">
             <speaker xml:id="spk-2256">
               <w xml:id="fs-tmp-0340800">PROSPERO</w>
-            </speaker>
-            <stage xml:id="stg-2256.0" n="SD 5.1.292.0" type="delivery">
               <pc xml:id="fs-tmp-0340810" n="SD 5.1.292.0">,</pc>
               <c> </c>
               <w xml:id="fs-tmp-0340830" n="SD 5.1.292.0">aside</w>
@@ -42093,7 +42088,7 @@
               <w xml:id="fs-tmp-0340850" n="SD 5.1.292.0">to</w>
               <c> </c>
               <w xml:id="fs-tmp-0340870" n="SD 5.1.292.0">Ariel</w>
-            </stage>
+            </speaker>
             <l xml:id="ftln-2256" n="5.1.292">
               <w xml:id="fs-tmp-0340880" n="5.1.292" lemma="brave" ana="#av_j">Bravely</w>
               <pc xml:id="fs-tmp-0340890" n="5.1.292">,</pc>
@@ -42300,6 +42295,7 @@
               <w xml:id="fs-tmp-0342600" n="5.1.303" lemma="well" ana="#av">well</w>
               <pc xml:id="fs-tmp-0342610" n="5.1.303">.</pc>
               <stage xml:id="stg-2267" n="SD 5.1.303" type="delivery">
+                <hi rend="italic">
                 <c> </c>
                 <w xml:id="fs-tmp-0342630" n="SD 5.1.303">Aside</w>
                 <c> </c>
@@ -42307,6 +42303,7 @@
                 <c> </c>
                 <w xml:id="fs-tmp-0342670" n="SD 5.1.303">Ariel</w>
                 <pc xml:id="fs-tmp-0342680" n="SD 5.1.303">.</pc>
+                </hi>
               </stage>
               <w xml:id="fs-tmp-0342690" n="5.1.304" lemma="come" ana="#vvb">Come</w>
               <c> </c>
@@ -42339,11 +42336,13 @@
               <pc xml:id="fs-tmp-0342930" n="5.1.306">.</pc>
               <stage xml:id="stg-2270" n="SD 5.1.306" type="exit" rendition="inline"
                 who="#Ariel_Tmp">
+                <hi rend="italic">
                 <c> </c>
                 <w xml:id="fs-tmp-0342950" n="SD 5.1.306">Ariel</w>
                 <c> </c>
                 <w xml:id="fs-tmp-0342970" n="SD 5.1.306">exits</w>
                 <pc xml:id="fs-tmp-0342980" n="SD 5.1.306">.</pc>
+                </hi>
               </stage>
               <c> </c>
               <w xml:id="fs-tmp-0343000" n="5.1.306" lemma="how" ana="#crq-q">How</w>
@@ -42393,6 +42392,7 @@
           </sp>
           <stage xml:id="stg-2273.1" n="SD 5.1.309.1" type="entrance"
             who="#Ariel_Tmp #Caliban_Tmp #Stephano_Tmp #Trinculo_Tmp">
+            <hi rend="italic">
             <w xml:id="fs-tmp-0343380" n="SD 5.1.309.1">Enter</w>
             <c> </c>
             <w xml:id="fs-tmp-0343400" n="SD 5.1.309.1">Ariel</w>
@@ -42420,6 +42420,7 @@
             <c> </c>
             <w xml:id="fs-tmp-0343620" n="SD 5.1.309.1">apparel</w>
             <pc xml:id="fs-tmp-0343630" n="SD 5.1.309.1">.</pc>
+            </hi>
           </stage>
           <sp xml:id="sp-2274" who="#Stephano_Tmp">
             <speaker xml:id="spk-2274">
@@ -42943,11 +42944,13 @@
             </l>
             <l xml:id="ftln-2301" n="5.1.337" ana="#short">
               <stage xml:id="stg-2301" n="SD 5.1.337" type="delivery">
+                <hi rend="italic">
                 <w xml:id="fs-tmp-0347910" n="SD 5.1.337">To</w>
                 <c> </c>
                 <w xml:id="fs-tmp-0347930" n="SD 5.1.337">Trinculo</w>
                 <pc xml:id="fs-tmp-0347940" n="SD 5.1.337">.</pc>
                 <c> </c>
+                </hi>
               </stage>
               <w xml:id="fs-tmp-0347960" n="5.1.337" lemma="how" ana="#crq-q">How</w>
               <c> </c>
@@ -43128,14 +43131,12 @@
           <sp xml:id="sp-2310" who="#Alonso_Tmp">
             <speaker xml:id="spk-2310">
               <w xml:id="fs-tmp-0349320">ALONSO</w>
-            </speaker>
-            <stage xml:id="stg-2310.0" n="SD 5.1.346.0" type="delivery">
               <pc xml:id="fs-tmp-0349330" n="SD 5.1.346.0">,</pc>
               <c> </c>
               <w xml:id="fs-tmp-0349350" n="SD 5.1.346.0">indicating</w>
               <c> </c>
               <w xml:id="fs-tmp-0349370" n="SD 5.1.346.0">Caliban</w>
-            </stage>
+            </speaker>
             <l xml:id="ftln-2310" n="5.1.346">
               <w xml:id="fs-tmp-0349380" n="5.1.346" lemma="this" ana="#d">This</w>
               <c> </c>
@@ -43341,8 +43342,6 @@
           <sp xml:id="sp-2320" who="#Alonso_Tmp">
             <speaker xml:id="spk-2320">
               <w xml:id="fs-tmp-0351030">ALONSO</w>
-            </speaker>
-            <stage xml:id="stg-2320.0" n="SD 5.3.356.0" type="delivery">
               <pc xml:id="fs-tmp-0351040" n="SD 5.3.356.0">,</pc>
               <c> </c>
               <w xml:id="fs-tmp-0351060" n="SD 5.3.356.0">to</w>
@@ -43352,7 +43351,7 @@
               <w xml:id="fs-tmp-0351100" n="SD 5.3.356.0">and</w>
               <c> </c>
               <w xml:id="fs-tmp-0351120" n="SD 5.3.356.0">Trinculo</w>
-            </stage>
+            </speaker>
             <l xml:id="ftln-2320" n="5.1.356">
               <w xml:id="fs-tmp-0351130" n="5.1.356" lemma="hence" ana="#av">Hence</w>
               <pc xml:id="fs-tmp-0351140" n="5.1.356">,</pc>
@@ -43394,6 +43393,7 @@
           </sp>
           <stage xml:id="stg-2321.1" n="SD 5.1.357.1" type="exit"
             who="#Caliban_Tmp #Stephano_Tmp #Trinculo_Tmp">
+            <hi rend="italic">
             <w xml:id="fs-tmp-0351420" n="SD 5.1.357.1">Caliban</w>
             <pc xml:id="fs-tmp-0351430" n="SD 5.1.357.1">,</pc>
             <c> </c>
@@ -43406,6 +43406,7 @@
             <c> </c>
             <w xml:id="fs-tmp-0351520" n="SD 5.1.357.1">exit</w>
             <pc xml:id="fs-tmp-0351530" n="SD 5.1.357.1">.</pc>
+            </hi>
           </stage>
           <sp xml:id="sp-2322" who="#Prospero_Tmp">
             <speaker xml:id="spk-2322">
@@ -43732,6 +43733,7 @@
               <w xml:id="fs-tmp-0354280" n="5.1.376" lemma="off" ana="#acp-av">off</w>
               <pc xml:id="fs-tmp-0354290" n="5.1.376">.</pc>
               <stage xml:id="stg-2340" n="SD 5.1.376" type="delivery">
+                <hi rend="italic">
                 <c> </c>
                 <w xml:id="fs-tmp-0354310" n="SD 5.1.376">Aside</w>
                 <c> </c>
@@ -43739,6 +43741,7 @@
                 <c> </c>
                 <w xml:id="fs-tmp-0354350" n="SD 5.1.376">Ariel</w>
                 <pc xml:id="fs-tmp-0354360" n="SD 5.1.376">.</pc>
+                </hi>
               </stage>
               <c> </c>
               <w xml:id="fs-tmp-0354380" n="5.1.376" lemma="my" ana="#po">My</w>
@@ -43795,26 +43798,26 @@
           </sp>
           <stage xml:id="stg-2343.1" n="SD 5.1.379.1" type="exit"
             who="#Ariel_Tmp #Ferdinand_Tmp #Miranda_Tmp #Alonso_Tmp #Sebastian_Tmp #Antonio_Tmp #Gonzalo_Tmp #Adrian_Tmp #Francisco_Tmp #Shipmaster_Tmp #Boatswain_Tmp">
+            <hi rend="italic">
             <w xml:id="fs-tmp-0354830" n="SD 5.1.379.1">They</w>
             <c> </c>
             <w xml:id="fs-tmp-0354850" n="SD 5.1.379.1">all</w>
             <c> </c>
             <w xml:id="fs-tmp-0354870" n="SD 5.1.379.1">exit</w>
             <pc xml:id="fs-tmp-0354880" n="SD 5.1.379.1">.</pc>
+            </hi>
           </stage>
         </div>
         <div type="epilogue" n="EPI">
           <head>
             <w xml:id="fs-tmp-0354890">EPILOGUE</w>
             <pc xml:id="fs-tmp-0354900">,</pc>
-            <stage xml:id="stg-2343.2" n="SD EPI.0" type="delivery" rendition="inline">
-              <w xml:id="fs-tmp-0354910" n="SD EPI.0">spoken</w>
-              <c> </c>
-              <w xml:id="fs-tmp-0354930" n="SD EPI.0">by</w>
-              <c> </c>
-              <w xml:id="fs-tmp-0354950" n="SD EPI.0">Prospero</w>
-              <pc xml:id="fs-tmp-0354960" n="SD EPI.0">.</pc>
-            </stage>
+            <w xml:id="fs-tmp-0354910" n="SD EPI.0">spoken</w>
+            <c> </c>
+            <w xml:id="fs-tmp-0354930" n="SD EPI.0">by</w>
+            <c> </c>
+            <w xml:id="fs-tmp-0354950" n="SD EPI.0">Prospero</w>
+            <pc xml:id="fs-tmp-0354960" n="SD EPI.0">.</pc>
           </head>
           <sp xml:id="sp-2344" who="#Prospero_Tmp">
             <l xml:id="ftln-2344" n="EPI.1">
