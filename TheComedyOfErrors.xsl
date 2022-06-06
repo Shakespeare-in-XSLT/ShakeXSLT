@@ -14,55 +14,71 @@
         <html>
             <head>
                 <meta charset="UTF_8"/>
-                <title match="/TEI/teiHeader/fileDesc/titleStmt/title"/>
+                <title>
+                    <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                </title>
             </head>
             <body>
                 <div class="container">
-                    <xsl:apply-templates select="//tei:title"/>
-                    <xsl:apply-templates select="//tei:div/tei:p"/>
+                    <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>              
                 </div>
                 <div>
                     <xsl:apply-templates/>
-                    <xsl:value-of select="//tei:publicationStmt/tei:p"/>
+                    <xsl:value-of select="tei:publicationStmt/tei:p"/>
                 </div>
             </body>      
         </html>
     </xsl:template>
      
-    <xsl:template match="//tei:teiHeader"/>
+    <xsl:template match="tei:teiHeader"/>
     
-    <xsl:template match="//tei:title">
+    <xsl:template match="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title">
         <h1>
             <xsl:apply-templates/>
         </h1>
     </xsl:template>
     
-    <xsl:template match="//tei:head">
+    <xsl:template match="tei:head">
         <h2>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
     
-    <xsl:template match="//tei:castList">
+    <xsl:template match="tei:castList">
         <table border="1" cell-padding="2">
            <tr>
                <th>Actor</th>
                <th>Role</th>
            </tr>    
-            <xsl:for-each select="tei:castGroup/tei:castItem">
-                    <tr>
-                    <td>     
-                       <xsl:value-of select="tei:role/tei:name"/> 
-                    </td>
-                    <td><xsl:value-of select="tei:roleDesc"/></td>
-                    </tr>               
-            </xsl:for-each>
+           <tr>
+               <xsl:apply-templates select="tei:castGroup/tei:castItem"/>
+           </tr>
         </table>
     </xsl:template>
-    <xsl:template match="//tei:speaker">
+    <xsl:template match="tei:castGroup/tei:castItem">
+        <tr>
+            <td>
+                <xsl:value-of select="tei:role/tei:name"/> 
+            </td>
+            <td>
+                <xsl:value-of select="tei:roleDesc"/>
+            </td>
+        </tr>               
+    </xsl:template>
+    
+    
+    <xsl:template match="tei:speaker" name="person">
         <h3>
+            <xsl:attribute name="class">person</xsl:attribute>
             <xsl:apply-templates/>
         </h3>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='act']/tei:head" name="acts">
+        <h2>
+            <xsl:attribute name="class">act</xsl:attribute>
+            <xsl:apply-templates/>
+        </h2>
     </xsl:template>
     
     <xsl:template match="tei:l">
@@ -71,19 +87,19 @@
         </p>
     </xsl:template>        
     
-    <xsl:template match="//tei:lb">
+    <xsl:template match="tei:lb">
         <xsl:apply-templates/><br/>
     </xsl:template>
     
-    <xsl:template match="tei:role">
+  <!--  <xsl:template match="tei:role">
         <h3><xsl:apply-templates/></h3>
     </xsl:template>
     
     <xsl:template match="tei:roleDesc">
         <p><xsl:apply-templates/></p>
-    </xsl:template>
+    </xsl:template> -->
        
-    <xsl:template match="//tei:hi">
+    <xsl:template match="tei:hi">
         <xsl:choose>
             <xsl:when test="@rend='italic'">
                 <i>

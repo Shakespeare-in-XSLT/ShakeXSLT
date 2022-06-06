@@ -21,8 +21,7 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="person"><persName>-</persName></person>
-          <person sameAs="person" xml:id="Egeon" sex="MALE">
+          <person xml:id="Egeon" sex="MALE">
             <persName>Egeon</persName>
           </person>
           <person xml:id="Duke" sex="MALE">
