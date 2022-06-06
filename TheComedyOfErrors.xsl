@@ -57,10 +57,8 @@
                     <td><xsl:value-of select="tei:roleDesc"/></td>
                     </tr>               
             </xsl:for-each>
-            
         </table>
     </xsl:template>
-    
     <xsl:template match="//tei:speaker">
         <h3>
             <xsl:apply-templates/>
@@ -101,37 +99,3 @@
     </xsl:template>
    
 </xsl:stylesheet>
-
-   <!-- <xsl:template match="tei:TEI">
-        <html>
-            <head>
-                <meta charset="UTF-8"/>
-            </head>
-            <body>
-                <div>
-                    <xsl:apply-templates select="tei:teiHeader"/>
-                </div>
-            </body>
-        </html>
-    </xsl:template>
-    
-    <xsl:template match="//tei:teiHeader"/>
-    
-    <xsl:template match="//tei:head">
-        <h1>
-            <xsl:apply-templates/>
-        </h1>
-    </xsl:template>
-
-        <xsl:apply-templates select="tei:fileDesc"/>
-
-    </xsl:template>
-    <xsl:template match="tei:fileDesc">
-        <xsl:apply-templates select="tei:titleStmt"/>
-    </xsl:template>
-    <xsl:template match="tei:titleStmt">
-        <xsl:value-of select="tei:title"/>
-    </xsl:template>
-    </xsl:template>
-
-</xsl:stylesheet> -->

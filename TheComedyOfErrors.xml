@@ -80,6 +80,16 @@
           </person>
         </listPerson>
       </particDesc>
+      <settingDesc>
+        <listPlace>
+          <place>
+            <placeName xml:id="Ephesus">Ephesus</placeName>
+          </place>
+          <place>
+            <placeName xml:id="Syracuse">Syracuse</placeName>
+          </place>
+        </listPlace>
+      </settingDesc>
     </profileDesc>
   </teiHeader>
   <text>
@@ -90,7 +100,7 @@
             <role>
               <name>Egeon</name>
             </role>
-            <roleDesc>
+            <roleDesc xml:id="Merchant">
               a merchant from Syracuse
             </roleDesc>
           </castItem>
@@ -98,7 +108,7 @@
             <role> 
               <name>Solinus</name>
             </role>
-            <roleDesc>
+            <roleDesc xml:id="Duke">
               Duke of Ephesus
             </roleDesc>
           </castItem>
@@ -226,7 +236,7 @@
             <role>
               <name>Officer</name>
             </role>
-            <roleDesc>
+            <roleDesc xml:id="Jailer">
               (also called Jailer), an Ephesian law officer
             </roleDesc>
           </castItem>
