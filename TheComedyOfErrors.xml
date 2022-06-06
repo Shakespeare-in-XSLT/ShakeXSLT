@@ -21,51 +21,61 @@
     <profileDesc>
       <particDesc>
         <listPerson>
-          <person xml:id="Egeon_Err" sex="MALE">
+          <person xml:id="person"><persName>-</persName></person>
+          <person sameAs="person" xml:id="Egeon" sex="MALE">
             <persName>Egeon</persName>
           </person>
-          <person xml:id="Duke_Err" sex="MALE">
+          <person xml:id="Duke" sex="MALE">
             <persName>Duke</persName>
           </person>
-          <person xml:id="OFFICERS.Jailer_Err" sex="MALE">
+          <person xml:id="Officer_Jailer" sex="MALE">
             <persName>Officer</persName>
           </person>
-          <person xml:id="Merchant1_Err" sex="MALE">
+          <person xml:id="Merchant1" sex="MALE">
             <persName>First Merchant</persName>
           </person>
-          <person xml:id="AntipholusOfSyracuse_Err" sex="MALE">
+          <person xml:id="AntipholusOfSyracuse" sex="MALE">
             <persName>Antipholus of Syracuse</persName>
           </person>
-          <person xml:id="DromioOfSyracuse_Err" sex="MALE">
+          <person xml:id="DromioOfSyracuse" sex="MALE">
             <persName>Dromio of Syracuse</persName>
           </person>
-          <person xml:id="DromioOfEphesus_Err" sex="MALE">
+          <person xml:id="DromioOfEphesus" sex="MALE">
             <persName>Dromio of Ephesus</persName>
           </person>
-          <person xml:id="Adriana_Err" sex="FEMALE">
+          <person xml:id="Adriana" sex="FEMALE">
             <persName>Adriana</persName>
           </person>
-          <person xml:id="Luciana_Err" sex="FEMALE">
+          <person xml:id="Luciana" sex="FEMALE">
             <persName>Luciana</persName>
           </person>
-          <person xml:id="AntipholusOfEphesus_Err" sex="MALE">
+          <person xml:id="AntipholusOfEphesus" sex="MALE">
             <persName>Antipholus of Ephesus</persName>
           </person>
-          <person xml:id="Balthasar_Err" sex="MALE">
+          <person xml:id="Balthasar" sex="MALE">
             <persName>Balthasar</persName>
           </person>
-          <person xml:id="Luce_Err" sex="FEMALE">
+          <person xml:id="Luce" sex="FEMALE">
             <persName>Luce</persName>
           </person>
-          <person xml:id="Angelo_Err" sex="MALE">
+          <person xml:id="Angelo" sex="MALE">
             <persName>Angelo</persName>
           </person>
-          <person xml:id="Merchant2_Err" sex="MALE">
+          <person xml:id="Merchant2" sex="MALE">
             <persName>Second Merchant</persName>
           </person>
-          <personGrp xml:id="OFFICERS.X_Err" sex="UNKNOWN">
-            <name>Attendants, Servants to Pinch, Headsman, Officers</name>
-          </personGrp>
+          <person xml:id="Attendants" sex="UNKNOWN">
+            <name>Attendants </name>
+          </person>
+          <person xml:id="Servants">
+            <name>Servants to Pinch</name>
+          </person>
+          <person xml:id="Officers">
+            <name>Officers</name>
+          </person>
+          <person xml:id="Headsman">
+            <name>Headsman</name>
+          </person>
           <person xml:id="Courtesan_Err" sex="FEMALE">
             <persName>Courtesan</persName>
           </person>
@@ -96,25 +106,25 @@
     <front>
       <castList>
         <castGroup>
-          <castItem sameAs="#Egeon_Err">
-            <role>
+          <castItem>
+            <role sameAs="#Egeon">
               <name>Egeon</name>
             </role>
             <roleDesc xml:id="Merchant">
               a merchant from Syracuse
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Duke_Err">
+          <castItem sameAs="#Duke">
             <role> 
               <name>Solinus</name>
             </role>
-            <roleDesc xml:id="Duke">
+            <roleDesc>
               Duke of Ephesus
             </roleDesc>
           </castItem>
         </castGroup>
         <castGroup>
-          <castItem sameAs="#AntipholusOfSyracuse_Err">
+          <castItem sameAs="#AntipholusOfSyracuse">
             <role>
               <name>Antipholus of Syracuse</name>
             </role>
@@ -122,7 +132,7 @@
               a traveler in search of his motherand his brother
             </roleDesc>
           </castItem>
-          <castItem sameAs="#DromioOfSyracuse_Err">
+          <castItem sameAs="#DromioOfSyracuse">
             <role>
               <name>Dromio of Syracuse</name>
             </role>
@@ -130,7 +140,7 @@
               Antipholus of Syracuse’s servant
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Merchant1_Err">
+          <castItem sameAs="#Merchant1">
             <role>
               <name>First Merchant</name>
             </role>
@@ -140,7 +150,7 @@
           </castItem>
         </castGroup>
         <castGroup>
-          <castItem sameAs="#AntipholusOfEphesus_Err">
+          <castItem sameAs="#AntipholusOfEphesus">
             <role>
               <name>Antipholus of Ephesus</name>
             </role>
@@ -148,7 +158,7 @@
               a citizen of Ephesus
             </roleDesc>
           </castItem>
-          <castItem sameAs="#DromioOfEphesus_Err">
+          <castItem sameAs="#DromioOfEphesus">
             <role>
               <name>Dromio of Ephesus</name>
             </role>
@@ -156,7 +166,7 @@
               Antipholus of Ephesus’s servant
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Adriana_Err">
+          <castItem sameAs="#Adriana">
             <role>
               <name>Adriana</name>
             </role>
@@ -164,7 +174,7 @@
               Antipholus of Ephesus’s wife
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Luciana_Err">
+          <castItem sameAs="#Luciana">
             <role>
               <name>Luciana</name>
             </role>
@@ -172,7 +182,7 @@
               Adriana’s sister
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Luce_Err">
+          <castItem sameAs="#Luce">
             <role>
               <name>Luce</name>
             </role>
@@ -180,7 +190,7 @@
               (also called Nell), kitchen maid betrothed toDromio of Ephesus
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Messenger_Err">
+          <castItem sameAs="#Messenger">
             <role>
               <name>Messenger</name>
             </role>
@@ -190,7 +200,7 @@
           </castItem>
         </castGroup>
         <castGroup>
-          <castItem sameAs="#Angelo_Err">
+          <castItem sameAs="#Angelo">
             <role>
               <name>Angelo</name>
             </role>
@@ -198,7 +208,7 @@
               an Ephesian goldsmith
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Merchant2_Err">
+          <castItem sameAs="#Merchant2">
             <role>
               <name>Second Merchant</name>
             </role>
@@ -206,7 +216,7 @@
               a citizen of Ephesus to whomAngelo owes money
             </roleDesc>
           </castItem>
-          <castItem sameAs="#Balthasar_Err">
+          <castItem sameAs="#Balthasar">
             <role>
               <name>Balthasar</name>
             </role>
@@ -232,7 +242,7 @@
               a schoolmaster, engaged as an exorcist
             </roleDesc>
           </castItem>
-          <castItem corresp="#OFFICERS_Err" sameAs="#OFFICERS.Jailer_Err">
+          <castItem sameAs="#Officer_Jailer">
             <role>
               <name>Officer</name>
             </role>
@@ -242,7 +252,7 @@
           </castItem>
         </castGroup>
         <castGroup>
-          <castItem sameAs="#Abbess_Err">
+          <castItem sameAs="#Abbess">
             <role>
               <name>Lady Abbess</name>
             </role>
@@ -252,25 +262,25 @@
           </castItem>
         </castGroup>
         <castGroup>
-          <castItem xml:id="ATTENDANTS_Err">
+          <castItem sameAs="#Attendants">
             <role>
               <name>Attendants</name>
             </role>
             <roleDesc> - </roleDesc>
           </castItem>
-          <castItem xml:id="SERVANTS_Err">
+          <castItem sameAs="#Servants">
             <role>
               <name>Servants to Pinch</name>
             </role>
             <roleDesc> - </roleDesc>
           </castItem>
-          <castItem xml:id="Headsman_Err">
+          <castItem sameAs="#Headsman">
             <role>
               <name>Headsman</name>
             </role>
             <roleDesc> - </roleDesc>
           </castItem>
-          <castItem xml:id="OFFICERS_Err">
+          <castItem sameAs="#Officers">
             <role>
               <name>Officers</name>
             </role>
