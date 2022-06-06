@@ -11,16 +11,15 @@
         <html>
             <head>
                 <meta charset="UTF_8"/>
-                <title match="/TEI/teiHeader/fileDesc/titleStmt/title"/>
+                <title match="{TEI/teiHeader/fileDesc/titleStmt/title}"/>
             </head>
             <body>
                 <div class="container">
-                    <xsl:apply-templates select="//tei:title"/>
-                    <xsl:apply-templates select="//tei:div/tei:p"/>
+                    <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
                 </div>
                 <div>
                     <xsl:apply-templates/>
-                    <xsl:value-of select="//tei:publicationStmt/tei:p"/>
+                    <xsl:value-of select="tei:publicationStmt/tei:p"/>
                 </div>
             </body>      
         </html>
