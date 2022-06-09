@@ -69,10 +69,14 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="row clearfix p-4">
+                                <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
+                            </div>
                         </div>
+                       
                         <div class="col-md-6">
                             <div id="text">
-                               <xsl:apply-templates />
+                               <xsl:apply-templates select="tei:text/tei:body"/>
                             </div>
                         </div>
                     </div>
@@ -86,7 +90,7 @@
             <xsl:apply-templates/>
         </h1>
     </xsl:template>
-    <xsl:template match="tei:castList">
+   <xsl:template match="tei:text/tei:front/tei:castList">
         <table border="1" cell-padding="2">
             <tr>
                 <th>Actor</th>
@@ -95,7 +99,16 @@
             </tr>
         </table>
     </xsl:template>
-    <xsl:template match="tei:castGroup/tei:castItem">
+    <xsl:template match="tei:text/tei:body">
+        <div>
+            <xsl:call-template name="person"/>
+        </div>
+        <div>
+            <xsl:apply-templates select="tei:div[@type='act']"/>
+        </div>
+    </xsl:template>
+    
+   <xsl:template match="tei:castGroup/tei:castItem">
         <tr>
             <td class="person">
                 <xsl:value-of select="tei:role/tei:name"/>
