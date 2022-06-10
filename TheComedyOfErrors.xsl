@@ -125,11 +125,17 @@
     </xsl:template>
     <xsl:template match="tei:div[@type = 'scene']/tei:head" name="scenes">
         <h2 class="scene">
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
-    <xsl:template match="tei:div[@type = 'act']/tei:head" name="acts">
+    <xsl:template match="tei:div[@type = 'act']" name="acts">
         <h2 class="act">
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </h2>
     </xsl:template>
