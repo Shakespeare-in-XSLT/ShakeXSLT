@@ -238,14 +238,14 @@
       </castList>
     </front>
     <body>
-      <div type="act" n="1">
+      <div type="act" n="1" xml:id="act_1">
         <head>
           <w>ACT</w>
           <c> </c>
           <w>1</w>
         </head>
         <div type="scene" n="1">
-          <head>
+          <head xml:id="a1_s1">
             <w>Scene</w>
             <c> </c>
             <w>1</w>
@@ -1804,7 +1804,7 @@
           </stage>
         </div>
         <div type="scene" n="2">
-          <head>
+          <head xml:id="a1_s2">
             <w>Scene</w>
             <c> </c>
             <w>2</w>
@@ -12532,14 +12532,14 @@
           </stage>
         </div>
       </div>
-      <div type="act" n="2">
+      <div type="act" n="2" xml:id="act_2">
         <head>
           <w>ACT</w>
           <c> </c>
           <w>2</w>
         </head>
         <div type="scene" n="1">
-          <head>
+          <head xml:id="a2_s1">
             <w>Scene</w>
             <c> </c>
             <w>1</w>
@@ -19359,7 +19359,7 @@
           </stage>
         </div>
         <div type="scene" n="2">
-          <head>
+          <head xml:id="a2_s2">
             <w>Scene</w>
             <c> </c>
             <w>2</w>
@@ -23364,14 +23364,14 @@
           </stage>
         </div>
       </div>
-      <div type="act" n="3">
+      <div type="act" n="3" xml:id="act_3">
         <head>
           <w>ACT</w>
           <c> </c>
           <w>3</w>
         </head>
         <div type="scene" n="1">
-          <head>
+          <head xml:id="a3_s1">
             <w>Scene</w>
             <c> </c>
             <w>1</w>
@@ -25447,7 +25447,7 @@
           </stage>
         </div>
         <div type="scene" n="2">
-          <head>
+          <head xml:id="a3_s2">
             <w>Scene</w>
             <c> </c>
             <w>2</w>
@@ -28664,7 +28664,7 @@
           </stage>
         </div>
         <div type="scene" n="3">
-          <head>
+          <head xml:id="a3_s3">
             <w>Scene</w>
             <c> </c>
             <w>3</w>
@@ -31312,14 +31312,14 @@
           </stage>
         </div>
       </div>
-      <div type="act" n="4">
+      <div type="act" n="4" xml:id="act_4">
         <head>
           <w>ACT</w>
           <c> </c>
           <w>4</w>
         </head>
         <div type="scene" n="1">
-          <head>
+          <head xml:id="a4_s1">
             <w>Scene</w>
             <c> </c>
             <w>1</w>
@@ -36892,14 +36892,14 @@
           </stage>
         </div>
       </div>
-      <div type="act" n="5">
+      <div type="act" n="5" xml:id="act_5">
         <head>
           <w>ACT</w>
           <c> </c>
           <w>5</w>
         </head>
         <div type="scene" n="1">
-          <head>
+          <head xml:id="a5_s1">
             <w>Scene</w>
             <c> </c>
             <w>1</w>
