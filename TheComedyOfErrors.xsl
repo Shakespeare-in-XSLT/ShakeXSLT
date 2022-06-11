@@ -13,25 +13,6 @@
                     rel="stylesheet"
                     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
                     crossorigin="anonymous"/>
-                <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-                <script src="functions.js" type="text/javascript">
-                </script>
-                <style>
-                    .acts {
-                    background-color: #ffddff;
-                    }
-                    .scenes {
-                    background-color: #ddffdd;
-                    }
-                    .people {
-                    background-color: #ffffdd;
-                    }
-                    .stage {
-                    background-color: #cce6ff;
-                    }
-                </style>
                 <title>
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
@@ -44,31 +25,7 @@
                     </div>
                     <div class="row clearfix">
                         <div id="box" class="col-md-6">
-                            <div class="row clearfix p-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="act"
-                                        id="showAct"/>
-                                    <label class="form-check-label" for="showAct"> Acts </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="scene"
-                                        id="showScenes"/>
-                                    <label class="form-check-label" for="showScenes"> Scenes
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="person"
-                                        id="showPeople"/>
-                                    <label class="form-check-label" for="showPeople"> People
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="actions"
-                                        id="showActions"/>
-                                    <label class="form-check-label" for="showActions"> Stage Actions
-                                    </label>
-                                </div>
-                            </div>
+                           
                             <div class="row clearfix p-4">
                                 <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
                             </div>
