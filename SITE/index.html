@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
@@ -24,6 +25,9 @@
   <link rel="stylesheet" href="css/locomotive-scroll.min.css">
   <link rel="stylesheet" href="style.css">
 
+  <!-- BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 
   <script src="js/swup.min.js"></script>
   <script src="js/SwupBodyClassPlugin.min.js"></script>
@@ -35,440 +39,430 @@
 
 
 </head>
+
 <body>
 
+    <!-- Overlay level when fab open -->
+    <div class="overlay">
+      <span data-scroll class="text-reveal fade-out">Choose your style</span>
+    </div>
 
-  <div class="site-container">
+    <div class="site-container">
 
-    <div class="preloader"></div>
+      <div class="preloader"></div>
 
-    <!-- MENU -->
+      <!-- MENU -->
 
-    <header class="fixed">
+      <header class="fixed">
 
-      <div class="header fade-down">
+        <div class="header fade-down">
 
-        <div class="header__logo">
-          <a href="" class="logo">
-            <img src="img/logo.svg" alt="">
-          </a>
-        </div>
-
-        <nav class="header__menu" id="main-menu">
-
-          <ul class="site-nav">
-            <li class="active"><a href="http://127.0.0.1/templateminimal/index.html"> Opera </a></li>
-            <li><a href="http://127.0.0.1/templateminimal/single.html"> About </a></li>
-            <li><a href="http://127.0.0.1/templateminimal/list.html"> Documentation </a></li>
-            <li><a href="http://127.0.0.1/templateminimal/cover.html"> Disclaimer </a></li>
-          </ul>
-
-          <div class="line-menu"></div>
-
-        </nav>
-
-        <div class="header__cta">
-          <a href="" class="button">Github</a>
-        </div>
-
-        <div class="header__icon">
-          <div class="icon-hamburger">
-            <span></span>
+          <div class="header__logo">
+            <a href="" class="logo">
+              <img src="img/logo.svg" alt="">
+            </a>
           </div>
+
+          <nav class="header__menu" id="main-menu">
+
+            <ul class="site-nav">
+              <li><a href="opera.html"> Opera </a></li>
+              <li><a href="http://127.0.0.1/templateminimal/single.html"> About </a></li>
+              <li><a href="http://127.0.0.1/templateminimal/list.html"> Documentation </a></li>
+              <li><a href="http://127.0.0.1/templateminimal/cover.html"> Disclaimer </a></li>
+            </ul>
+
+            <div class="line-menu"></div>
+
+          </nav>
+
+          <div class="header__cta">
+            <a href="" class="button">Github</a>
+          </div>
+
+          <div class="header__icon">
+            <div class="icon-hamburger">
+              <span></span>
+            </div>
+          </div>
+
         </div>
 
-      </div>
+      </header>
 
-    </header>
-
-    <!-- MENU END -->
+      <!-- MENU END -->
 
 
-    <!-- WIDGETS -->
+      <!-- WIDGETS -->
 
-    <!-- <div class="social-icons">
+      <!-- <div class="social-icons">
       <a href="#" class="fade-up delay-6"><img src="img/icons/facebook.svg" alt=""></a>
       <a href="#" class="fade-up delay-8"><img src="img/icons/instagram.svg" alt=""></a>
       <a href="#" class="fade-up delay-10"><img src="img/icons/linkedin.svg" alt=""></a>
-    </div> -->
+      </div> -->
 
-    <div class="bottom-icon-left fade-up delay-15">
-      <img src="img/icons/darkmode.svg" alt="">
+    <!-- FAB BUTTON -->
+
+    <div data-scroll-section class="fab-container">
+      <div class="fab-trigger">
+        <svg xmlns="http://www.w3.org/2000/svg" class="open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+
+      <ul class="fab-options">
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li>
+          <span class="fab-label">style</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="bottom-icon-right fade-up delay-15">
-      <img src="img/icons/search.svg" alt="">
-    </div>
 
-    <!-- WIDGETS END -->
+    <!-- FAB BUTTON END -->
 
 
-    <!-- HERO -->
+    <!-- <div class="bottom-icon-left fade-up delay-15">
+    <img src="img/icons/darkmode.svg" alt="">
+  </div> -->
+  <!-- <div class="bottom-icon-right fade-up delay-15">
+  <img src="img/icons/search.svg" alt="">
+  </div> -->
 
-    <div class="scroll-container" data-scroll-container>
+  <!-- WIDGETS END -->
 
+  <div class="scroll-container" data-scroll-container>
 
-      <main id="swup" class="transition-fade">
+    <main id="swup" class="transition-fade">
 
-        <section id="hero" data-scroll-section class="hero-text">
+      <!-- HERO -->
 
-          <div class="hero-text__content col-66">
+      <section id="hero" data-scroll-section class="hero">
+
+        <div class="hero-text__content col-66">
+          <div class="hero-text">
             <div class="subtitle-container">
-              <p data-scroll class="subtitle fade delay-15">Lorem isposum dot aia memeuyr laborum </p>
-              <p data-scroll class="subtitle fade delay-15">Lorem isposum dot aia memeuyr laborum </p>
+              <p data-scroll class="subtitle fade delay-15">Explore three texts of the world's greatest dramatist.</p>
+              <p data-scroll class="subtitle fade delay-15">The power of the TEI XML, with the beauty of type history.</p>
             </div>
             <h1 class="headline">
-              <span data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-position="top" class="text-reveal"><b class="delay-2"><span class="marker marker--1">Shakespeare</span> in love</b></span>
-              <span data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-position="top" class="text-reveal"><b class="delay-4">with <span class="marker marker--2">XML</span> </b></span>
+              <span data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-position="top" class="text-reveal"><b class="delay-2"><span class="marker marker--1">Shakespeare</span></b></span>
+              <span data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" data-scroll-position="top" class="text-reveal"><b class="delay-4">in love with <span class="marker marker--2">XML</span> </b></span>
               <span data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" data-scroll-position="top" class="text-reveal"><b class="delay-6">and <span class="marker marker--3">XSLT</span> </b></span>
             </h1>
           </div>
 
-          <div class="hero-image col-33">
-            <img data-scroll data-scroll-speed="1.2" src="img/golden-gate.jpg" class="" alt="">
-          </div>
+        </div>
 
-          <div class="scroll-down-icon">
-            <div class="line-center">
-              <span>scroll<span>
-            </div>
-          </div>
+        <div data-scroll class="hero-image col-33 fade delay-3">
+          <img data-scroll data-scroll-speed="1.2" src="img/hero/shakespeare-1500-1800.png" class="" alt=""><!-- Foto di <a href="https://pixabay.com/it/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6393262">Gordon Johnson</a> da <a href="https://pixabay.com/it/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6393262">Pixabay</a> -->
+        </div>
 
-        </section>
+        <!-- SCROLL DOWN ICON ANIMATION
+        <div class="scroll-down-icon">
+        <div class="line-center">
+        <span>scroll<span>
+      </div>
+    </div> -->
 
-        <!-- HERO END -->
+  </section>
 
+  <!-- HERO END -->
 
-        <section id="intro" data-scroll-section class="panel">
-          <div class="grid" data-scroll data-scroll-repeat>
+  <!-- INTRO -->
 
-            <div class="col-40">
-              <div class="margin-right">
-                <div>
-                  <h2 class="subheadline">
-                    <span data-scroll class="text-reveal"><b class="delay-3">Title of the intro section</b></span>
-                  </h2>
-                </div>
-              </div>
-            </div>
+  <section id="intro" data-scroll-section class="intro">
+    <div class="grid" data-scroll data-scroll-repeat>
 
-            <div data-scroll class="col-50">
-              <div class="panel__text">
-                <div>
-                  <h4>
-                    <span data-scroll class="text-reveal"><b class="delay-3">Titolo del nostro lorem</b></span>
-                  </h4>
-                  <p data-scroll class="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                  <a href="#" class="button-frame"> <span>See the Texts</span></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-
-
-
-          <div data-scroll-section class="media-affix" id="affix-container">
-
-            <div class="grid">
-
-              <div class="col-50" data-scroll data-scroll-sticky data-scroll-target="#affix-container">
-                <h3 class="subheadline margin-top">
-                  <span data-scroll class="text-reveal"><b>Lorem media title</b></span>
-                  <span data-scroll class="text-reveal"><b class="delay-2"> media title</b></span>
-                </h3>
-                <p data-scroll class="subtitle fade delay-4 margin-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates explicabo corrupti dolore quam, consequuntur, eveniet quasi earum magnam libero animi.</p>
-              </div>
-
-
-              <div class="col-50">
-                <div class="media-affix__item">
-                  <div data-scroll class="zoom-out media-affix__text">
-                    <h4>Title lorem ispum <span class="text-red">dos sia maet laborum</span></h4>
-                    <p>lorem si test lore si met</p>
-                  </div>
-                  <ul>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                  </ul>
-                  <img data-scroll data-scroll-speed="1.2" src="img/golden-gate.jpg" class="media-affix__image" alt="">
-                  <a data-scroll data-scroll-speed="2.5" href="#" class="button-frame button-frame--small"> Call to action</a>
-                </div>
-              </div>
-
-              <div class="col-50"></div>
-
-              <div class="col-50">
-                <div class="media-affix__item">
-                  <div data-scroll class="zoom-out media-affix__text">
-                    <h4>Title lorem ispum <span class="text-red">dos sia maet laborum</span></h4>
-                    <p>lorem si test lore si met</p>
-                  </div>
-                  <ul>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                  </ul>
-                  <img data-scroll data-scroll-speed="1.2"  src="img/golden-gate.jpg" class="media-affix__image" alt="">
-                  <a data-scroll data-scroll-speed="2.5"  href="#" class="button-frame button-frame--small"> Call to action</a>
-                </div>
-              </div>
-
-              <div class="col-50"></div>
-
-              <div class="col-50">
-                <div class="media-affix__item">
-                  <div data-scroll class="zoom-out media-affix__text">
-                    <h4>Title lorem ispum <span class="text-red">dos sia maet laborum</span></h4>
-                    <p>lorem si test lore si met</p>
-                  </div>
-                  <ul>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                    <li data-scroll class="zoom-fade-right"> Item list</li>
-                  </ul>
-                  <img data-scroll data-scroll-speed="1.2" src="img/golden-gate.jpg" class="media-affix__image" alt="">
-                  <a data-scroll data-scroll-speed="2.5" href="#" class="button-frame button-frame--small"> Call to action</a>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div data-scroll-section class="panel panel--text-left panel--text-white">
-            <div class="grid" data-scroll data-scroll-call="bg-red" data-scroll-repeat>
-
-              <div class="col-40">
-                <div class="panel__text">
-                  <div>
-                    <h3 class="subheadline">
-                      <span data-scroll class="text-reveal"><b class="delay-3">Titolo del nostro lorem</b></span>
-                      <span data-scroll class="text-reveal"><b class="delay-5">blocco animato text</b></span>
-                    </h3>
-                    <p data-scroll class="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <a href="#" class="button-frame"> <span>Call to action</span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-50">
-                <div data-scroll class="panel__img zoom-in">
-                  <img data-scroll data-scroll-speed="-1" src="img/img-1.jpg" alt="">
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-          <div data-scroll-section class="panel panel--text-right">
-            <div class="grid" data-scroll data-scroll-call="bg-yellow" data-scroll-repeat>
-
-              <div class="col-50">
-                <div data-scroll class="panel__img reveal-left">
-                  <img data-scroll data-scroll-speed="-1.8" src="img/golden-gate-big.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="col-40">
-                <div class="panel__text">
-                  <div>
-                    <h3 class="subheadline">
-                      <span data-scroll class="text-reveal"><b class="delay-3">Titolo del nostro lorem</b></span>
-                      <span data-scroll class="text-reveal"><b class="delay-5">blocco animato text</b></span>
-                    </h3>
-                    <p data-scroll class="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <a href="#" class="button-frame"> <span>Call to action</span></a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-          <div data-scroll-section class="panel panel--text-left">
-
-            <div class="grid" data-scroll data-scroll-call="bg-green" data-scroll-repeat>
-              <div class="col-40">
-
-                <div class="panel__text">
-                  <div>
-                    <h3 class="subheadline">
-                      <span data-scroll class="text-reveal"><b class="delay-3">Titolo del nostro lorem</b></span>
-                      <span data-scroll class="text-reveal"><b class="delay-5">blocco animato text</b></span>
-                    </h3>
-                    <p data-scroll class="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <a href="#" class="button-frame"> <span>Call to action</span></a>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-50">
-
-                <div class="panel__img">
-                  <img data-scroll src="img/golden-gate-big.jpg" alt="" class="fade-right">
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-
-          <!-- <div class="panel-info" data-scroll-section>
-
-            <p class="panel-info__intro">inspiration</p>
-            <div class="vertical-separator"></div>
-
-            <div class="grid">
-              <div class="col-33">
-                <img data-scroll src="img/img-1.jpg" alt="" class="panel-info__image fade-up">
-              </div>
-              <div class="col-33">
-                <h3 class="headline headline--left" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">Lorem </h3>
-              </div>
-              <div class="col-33">
-                <h3 class="headline headline--right" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">Ipsum </h3>
-                <a href="#" class="button-frame"> <span> Call to action </span></a>
-              </div>
-            </div>
-          </div> -->
-
-
-          <!-- TEAM -->
-
-
-          <section id="team" data-scroll-section class="grid margin-bottom margin-top">
-
-            <div data-scroll class="col-100 fade-down">
-              <div class="news__intro">
-                <h3 class="subheadline">The team</h3>
-                <p>Meet the projects team</p>
-              </div>
-            </div>
-
-            <div class="col-33">
-
-              <div data-scroll data-scroll-speed="2" class="news__item">
-                <img data-scroll src="img/img-1.jpg" alt="" class="img-res">
-                <p class="date">THE BOSS</p>
-                <h3 class="subtitle">Olga</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-
-            </div>
-            <div class="col-33">
-
-              <div data-scroll data-scroll-speed="-2" class="news__item">
-                <img data-scroll src="img/img-1.jpg" alt="" class="img-res fade-up">
-                <p class="date">THE EXPERT</p>
-                <h3 class="subtitle">Sara</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-
-            </div>
-            <div class="col-33">
-
-              <div data-scroll data-scroll-speed="3" class="news__item">
-                <img data-scroll src="img/img-1.jpg" alt="" class="img-res fade-up">
-                <p class="date">THE DICKHEAD</p>
-                <h3 class="subtitle">Stefano</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-
-            </div>
-          </section>
-
-          <!-- TEAM END -->
-
-
-          <!-- CTA OPERA -->
-
-          <div data-scroll-section class="panel-cta">
-
-            <div data-scroll class="panel-cta__content fade-up">
-              <h3 class="headline"><span class="text-red">lorem ispum</span> dot sia maeto laborum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <a href="#" class="button-frame"><span>Contact Us</span></a>
-            </div>
-
-
-            <div data-scroll class="bubble bubble--1 zoom-out delay-4"></div>
-            <div data-scroll class="bubble bubble--2 zoom-out delay-6"></div>
-            <div data-scroll class="bubble bubble--3 zoom-out delay-8"></div>
-            <div data-scroll class="bubble bubble--4 zoom-out delay-10"></div>
-
-          </div>
-
-          <!-- CTA OPERA END -->
-
-
-          <!-- FOOTER -->
-
-
-          <footer data-scroll-section  class="footer">
-            <div class="grid">
-              <div class="col-100 margin-bottom">
-                <img src="img/logo.svg" alt="" class="footer__logo">
-                <div class="horizontal-separator"></div>
-              </div>
-              <div class="col-25">
-                <h4>Strong title lorem ispum</h4>
-                <p>Lorem isposum dot
-                  aia memeuyr laborum
-                  aia memeuyr laborum
-                </p>
-              </div>
-              <div class="col-25">
-                <h4>Strong title lorem ispum</h4>
-                <p>Lorem isposum dot
-                  aia memeuyr laborum
-                  aia memeuyr laborum
-                </p>
-              </div>
-              <div class="col-25">
-                <h4>Strong title lorem ispum</h4>
-                <p>Lorem isposum dot
-                  aia memeuyr laborum
-                  aia memeuyr laborum
-                </p>
-              </div>
-              <div class="col-25">
-                <h4>Strong title lorem ispum</h4>
-                <p>Lorem isposum dot
-                  aia memeuyr laborum
-                  aia memeuyr laborum
-                </p>
-              </div>
-              <div class="col-100 footer__final-text">
-                <p><strong>Copyright </strong> sit amet - Consectetur adipisicing elit. </p>
-              </div>
-            </div>
-          </footer>
-
-          <!-- FOOTER END -->
-
-
-        </main>
-
+      <div class="col-40 margin-right">
+        <h2 class="subheadline">
+          <span data-scroll class="text-reveal"><b class="delay-3">What is Shakespeare XML?</b></span>
+        </h2>
       </div>
 
+      <div data-scroll class="col-50">
+        <h4>
+          <span data-scroll class="text-reveal"><b class="delay-3">TEI: a standard for the representation of texts in digital form</b></span>
+        </h4>
+        <p data-scroll class="fade-down">Shakespeare XML allows to read articles while travelling in time through four historical typographical and layout styles that span over five hundred years.</p>
+        <a data-scroll href="#" class="button-frame"><span>See the Texts</span></a>
+      </div>
 
     </div>
 
-
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/locomotive-scroll.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <img data-scroll data-scroll-speed="3" class="float-img float-img--1 zoom-fade-right" src="img/hero/shakespeare-1500-1800.png" alt="">
 
 
+  </section>
+
+  <!-- INTRO END -->
+
+  <!-- OPERA -->
+
+  <section id="opera" data-scroll-section class="media-affix">
+
+    <div class="grid">
+
+      <div class="col-50" data-scroll data-scroll-sticky data-scroll-target="#opera">
+        <h3 class="subheadline margin-top">
+          <span data-scroll class="text-reveal"><b>Choose the opera</b></span>
+          <span data-scroll class="text-reveal"><b class="delay-2"> you want to read.</b></span>
+        </h3>
+        <p data-scroll class="subtitle fade delay-4 margin-right">We selected three operas of the english writer. Choose the one you want to read.</p>
+      </div>
+
+
+      <div class="col-50">
+        <div class="media-affix__item">
+          <div data-scroll class="zoom-out media-affix__text">
+            <h4>The commedy <span class="text-red">of errors</span></h4>
+            <p>After both being separated from their twins in a shipwreck, Antipholus and his slave Dromio go to Ephesus to find them. The other set of twins lives in Ephesus, and the new arrivals cause a series of incidents of mistaken identity. At the end, the twins find each other and their parents and resolve all of the problems caused earlier.</p>
+          </div>
+          <img data-scroll data-scroll-speed="1.2" src="img/golden-gate.jpg" class="media-affix__image" alt="">
+          <a data-scroll data-scroll-speed="1.5" href="#" class="button-frame button-frame--small">Read the Opera</a>
+        </div>
+      </div>
+
+      <div class="col-50"></div>
+
+      <div class="col-50">
+        <div class="media-affix__item">
+          <div data-scroll class="zoom-out media-affix__text">
+            <h4>The <span class="text-red">tempest</span></h4>
+            <p>Prospero uses magic to conjure a storm and torment the survivors of a shipwreck, including the King of Naples and Prospero’s treacherous brother, Antonio. Prospero’s slave, Caliban, plots to rid himself of his master, but is thwarted by Prospero’s spirit-servant Ariel. The King’s young son Ferdinand, thought to be dead, falls in love with Prospero’s daughter Miranda. Their celebrations are cut short when Prospero confronts his brother and reveals his identity as the usurped Duke of Milan. The families are reunited and all conflict is resolved. Prospero grants Ariel his freedom and prepares to leave the island.</p>
+          </div>
+          <img data-scroll data-scroll-speed="1.2"  src="img/golden-gate.jpg" class="media-affix__image" alt="">
+          <a data-scroll data-scroll-speed="1.5"  href="#" class="button-frame button-frame--small">Read the Opera</a>
+        </div>
+      </div>
+
+      <div class="col-50"></div>
+
+      <div class="col-50">
+        <div class="media-affix__item">
+          <div data-scroll class="zoom-out media-affix__text">
+            <h4>Two gentelman <span class="text-red">of Verona</span></h4>
+            <p>Two best friends, Proteus and Valentine, travel to Milan where they both fall in love with Silvia. Silvia loves Valentine, but Proteus pursues her despite the fact he has a girlfriend at home. After an apology, Proteus and Valentine reconcile, Proteus loves his girlfriend again, and both couples marry.</p>
+          </div>
+          <img data-scroll data-scroll-speed="1.2" src="img/golden-gate.jpg" class="media-affix__image" alt="">
+          <a data-scroll data-scroll-speed="1.5" href="#" class="button-frame button-frame--small">Read the Opera</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about" data-scroll-section class="grid grid--center margin-bottom-big margin-top">
+
+    <div data-scroll class="col-100 fade-down">
+      <div class="news__intro">
+        <h3 class="subheadline">About the project</h3>
+        <p>We combined different technologies in order to display the enriched text in a new way. Our goal is to have a great mark. In this project we used: </p>
+      </div>
+    </div>
+    <div data-scroll class="col-100 logos-container fade-down">
+      <div class="col-20">
+        <img src="img/logo.svg" alt="TEI-XML" class="about__logo">
+      </div>
+      <div class="col-20">
+        <img src="img/logo.svg" alt="XSLT" class="about__logo">
+      </div>
+      <div class="col-20">
+        <img src="img/logo.svg" alt="HTML" class="about__logo">
+      </div>
+      <div class="col-20">
+        <img src="img/logo.svg" alt="CSS" class="about__logo">
+      </div>
+      <div class="col-20">
+        <img src="img/logo.svg" alt="JAVASCRIPT" class="about__logo">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT END -->
+
+  <!-- TEAM -->
+
+  <section id="team" data-scroll-section class="grid margin-bottom margin-top">
+
+    <div data-scroll class="col-100 fade-down">
+      <div class="news__intro">
+        <h3 class="subheadline">The team</h3>
+        <p>Meet the projects team. We are all student from the master degree DHDK of the <i>University of Bologna "Alma Mater Studiorum".</i></p>
+      </div>
+    </div>
+
+    <div class="col-33">
+
+      <div data-scroll data-scroll-speed="1" class="news__item">
+        <img data-scroll src="img/img-1.jpg" alt="" class="img-res">
+        <p class="date">THE BOSS</p>
+        <h3 class="subtitle">Olga</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    </div>
+    <div class="col-33">
+
+      <div data-scroll data-scroll-speed="-1" class="news__item">
+        <img data-scroll src="img/img-1.jpg" alt="" class="img-res fade-up">
+        <p class="date">THE EXPERT</p>
+        <h3 class="subtitle">Sara</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    </div>
+    <div class="col-33">
+
+      <div data-scroll data-scroll-speed="2" class="news__item">
+        <img data-scroll src="img/img-1.jpg" alt="" class="img-res fade-up">
+        <p class="date">THE DICKHEAD</p>
+        <h3 class="subtitle">Stefano</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM END -->
+
+
+  <!-- CTA OPERA -->
+
+  <div data-scroll-section class="panel-cta">
+
+    <div data-scroll class="panel-cta__content fade-up">
+      <h3 class="headline"><span class="text-red">Explore</span> the text as you never have done before!</h3>
+      <p>Take a look to the main part of our project and read the Shakespeare's opera.</p>
+      <a href="#" class="button-frame"><span>Go to Opera</span></a>
+    </div>
+
+
+    <div data-scroll class="bubble bubble--1 zoom-out delay-4"></div>
+    <div data-scroll class="bubble bubble--2 zoom-out delay-6"></div>
+    <div data-scroll class="bubble bubble--3 zoom-out delay-8"></div>
+    <div data-scroll class="bubble bubble--4 zoom-out delay-10"></div>
+
+  </div>
+
+  <!-- CTA OPERA END -->
+
+
+  <!-- FOOTER -->
+
+
+  <footer data-scroll-section  class="footer">
+    <div class="grid">
+      <div class="col-100 margin-bottom">
+        <img src="img/logo.svg" alt="" class="footer__logo">
+        <div class="horizontal-separator"></div>
+      </div>
+      <div class="col-25">
+        <h4>Strong title lorem ispum</h4>
+        <p>Lorem isposum dot
+          aia memeuyr laborum
+          aia memeuyr laborum
+        </p>
+      </div>
+      <div class="col-25">
+        <h4>Strong title lorem ispum</h4>
+        <p>Lorem isposum dot
+          aia memeuyr laborum
+          aia memeuyr laborum
+        </p>
+      </div>
+      <div class="col-25">
+        <h4>Strong title lorem ispum</h4>
+        <p>Lorem isposum dot
+          aia memeuyr laborum
+          aia memeuyr laborum
+        </p>
+      </div>
+      <div class="col-25">
+        <h4>Strong title lorem ispum</h4>
+        <p>Lorem isposum dot
+          aia memeuyr laborum
+          aia memeuyr laborum
+        </p>
+      </div>
+      <div class="col-100 footer__final-text">
+        <p><strong>Copyright </strong> sit amet - Consectetur adipisicing elit. </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+  </main>
+
+
+  </div>
+
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/locomotive-scroll.min.js"></script>
+  <script src="js/scripts.js"></script>
 
 
 
-  </body>
-  </html>
+
+
+</body>
+</html>
