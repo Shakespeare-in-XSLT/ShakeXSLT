@@ -108,14 +108,14 @@ function displayResultGentlemen() {
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
-        index()
+        new_index()
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
         reset()
-        index()
+        new_index()
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
@@ -142,9 +142,14 @@ var getParams = function (url) {
     return params;
 };
 
-function index(){
+/* function index(){
     for (var i=1; i<=5; i++) {
-        var test = $("<h2>[class='act'][id='id_" + i + "']").val();
+        var test = $("<h2>[class='act'[id='id_" + i + "']]").val();
         $("#att").append("<li>" + test + "</li>")
 }
-}
+} */
+function new_index(){
+    $("h2[class='act']").each(function(){
+        var test = $("h2[id='"+this.id+"']").val();
+        $("#att").append("<li>" + test + "</li>")
+})}

@@ -58,9 +58,6 @@
     </xsl:template>
     <xsl:template match="tei:text/tei:body">
         <div>
-            <xsl:call-template name="person"/>
-        </div>
-        <div>
             <xsl:apply-templates select="tei:div[@type='act']"/>
         </div>
     </xsl:template>
