@@ -6,43 +6,6 @@
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
                 <script src="functions.js" type="text/javascript"></script>
-        <script>
-            function loadXMLDoc(filename)
-            {
-                if (window.ActiveXObject)
-                    {
-                        xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-                    }
-                    else
-                    {
-                        xhttp = new XMLHttpRequest();
-                    }
-                    xhttp.open("GET", filename, false);
-                    try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-                    xhttp.send("");
-                    return xhttp.responseXML;
-            }
-
-                function displayResult()
-                {
-                    xml = loadXMLDoc("TheComedyOfErrors.xml");
-                    xsl = loadXMLDoc("TheComedyOfErrors.xsl");
-                    // code for IE
-                    if (window.ActiveXObject || xhttp.responseType == "msxml-document")
-                    {
-                        ex = xml.transformNode(xsl);
-                        document.getElementById("example").innerHTML = ex;
-                    }
-                // code for Chrome, Firefox, Opera, etc.
-                    else if (document.implementation && document.implementation.createDocument)
-                    {
-                        xsltProcessor = new XSLTProcessor();
-                        xsltProcessor.importStylesheet(xsl);
-                        resultDocument = xsltProcessor.transformToFragment(xml, document);
-                        document.getElementById("example").appendChild(resultDocument);
-                    }
-                }
-        </script>
         <style>
             .acts {
             background-color: #ffddff;
@@ -59,35 +22,44 @@
         </style>
     </head>
     <body>
-        <div>
-            <h1>CaccaPupu</h1>
+        <div class="radiobutton">
+            <input type="radio" onclick="displayResultErrors()" value="The Comedy Of Errors" id="errors" name="work"/>
+            <label for="errors"> The Comedy Of Errors </label>
         </div>
-        <input type="button" onClick= "displayResult()" value="Pupu Me, pls"></input>
-            <div class="row clearfix p-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="act"
-                        id="showAct"/>
-                    <label class="form-check-label" for="showAct"> Acts </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="scene"
-                        id="showScenes"/>
-                    <label class="form-check-label" for="showScenes"> Scenes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="person"
-                        id="showPeople"/>
-                    <label class="form-check-label" for="showPeople"> People
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="actions"
-                        id="showActions"/>
-                    <label class="form-check-label" for="showActions"> Stage Actions
-                    </label>
-                </div>
+        <div class="radiobutton">
+            <input type="radio" onclick="displayResultTempest()" value="The Tempest" id="tempest" name="work"/>
+            <label for="tempest"> The Tempest </label>
+        </div>
+        <div class="radiobutton">
+            <input type="radio" onclick="displayResultGentlemen()" value="Two Gentlemen Of Verona" id="gentlemen" name="work"/>
+            <label for="gentlemen"> Two Gentlemen Of Verona </label>
+
+        </div>
+        <div class="row clearfix p-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="act"
+                    id="showAct"/>
+                <label class="form-check-label" for="showAct"> Acts </label>
             </div>
-            <div id="example"></div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="scene"
+                    id="showScenes"/>
+                <label class="form-check-label" for="showScenes"> Scenes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="person"
+                    id="showPeople"/>
+                <label class="form-check-label" for="showPeople"> People
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="actions"
+                    id="showActions"/>
+                <label class="form-check-label" for="showActions"> Stage Actions
+                </label>
+            </div>
+        </div>
+        <div id="example"></div>
     </body>
 </html>
