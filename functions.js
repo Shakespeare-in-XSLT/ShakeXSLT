@@ -108,12 +108,14 @@ function displayResultGentlemen() {
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
+        index()
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
         reset()
+        index()
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
@@ -139,3 +141,10 @@ var getParams = function (url) {
 
     return params;
 };
+
+function index(){
+    for (var i=1; i<=5; i++) {
+        var test = $("<h2>[class='act'][id='id_" + i + "']").val();
+        $("#att").append("<li>" + test + "</li>")
+}
+}
