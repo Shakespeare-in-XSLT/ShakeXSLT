@@ -94,9 +94,7 @@
         </h2>
     </xsl:template>
     <xsl:template match="tei:l">
-        <p class="play">
-            <xsl:apply-templates/>
-        </p>
+            <xsl:apply-templates/><br/>
     </xsl:template>
     <xsl:template match="tei:lb">
         <xsl:apply-templates/>

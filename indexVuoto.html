@@ -19,23 +19,15 @@
             .stage {
             background-color: #cce6ff;
             }
+            .userclassSelected {
+            background-color: #cce6ff;
+            }
+            
         </style>
     </head>
     <body>
-        <!-- <div class="radiobutton">
-            <input type="radio" onclick="displayResultErrors()" value="The Comedy Of Errors" id="errors" name="work"/>
-            <label for="errors"> The Comedy Of Errors </label>
         </div>
-        <div class="radiobutton">
-            <input type="radio" onclick="displayResultTempest()" value="The Tempest" id="tempest" name="work"/>
-            <label for="tempest"> The Tempest </label>
-        </div>
-        <div class="radiobutton">
-            <input type="radio" onclick="displayResultGentlemen()" value="Two Gentlemen Of Verona" id="gentlemen" name="work"/>
-            <label for="gentlemen"> Two Gentlemen Of Verona </label> -->
-
-        </div>
-        <div class="row clearfix p-4">
+        <div id="formchecks" class="row clearfix p-4">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="act"
                     id="showAct"/>
@@ -61,8 +53,11 @@
             </div>
         </div>
         <div id="index">
-            <p id="atti"> ACTS <ul id="att"></ul></p>
-            <p id="scene">SCENES</p>
+            <p id="att"></p>
+            <p> Add a new class for the metadata browsing
+                <input type="text" id="insert" onfocus="this.value=''" value="type here"></input>
+            <button id="validate" onclick="saveNewClass()">Add Class</button>
+            </p>
         </div>
         <div id="example"></div>
     </body>

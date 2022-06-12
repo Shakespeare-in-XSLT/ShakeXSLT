@@ -1,3 +1,6 @@
+var UserClasses_init = {}
+localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
+
 $(document).ready(main);
 
 function main() {
@@ -108,18 +111,18 @@ function displayResultGentlemen() {
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
-        new_index()
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
+        new_index()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
         reset()
-        new_index()
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
+        new_index()
     }
 }
 
@@ -144,12 +147,88 @@ var getParams = function (url) {
 
 /* function index(){
     for (var i=1; i<=5; i++) {
-        var test = $("<h2>[class='act'[id='id_" + i + "']]").val();
+        var test = $("<h2>[class='act'[id='act_" + i + "']]").val();
         $("#att").append("<li>" + test + "</li>")
 }
 } */
 function new_index(){
-    $("h2[class='act']").each(function(){
-        var test = $("h2[id='"+this.id+"']").val();
-        $("#att").append("<li>" + test + "</li>")
-})}
+    var bau = $("h2[class='act']")
+    for (var i=0; i<bau.length; i++){
+        $("#att").append("<p id='" + String(i+1) + "' onclick=jumpto('act_" + String(i+1) + "')>" + bau[i].innerText + "</p>")
+        $("#att").append("<ul id='scene_" + String(i+1) + "'></ul>")
+        var miao = $("[id*='a"+String(i+1)+"_s']");
+        for (var y=0; y<miao.length; y++){
+            $("#scene_" + String(i+1)).append("<li onclick=jumpto('a"+ String(i+1) + "_s" + String(y+1) + "')>"+ miao[y].innerText + "</li>")
+            
+        }
+        
+    }
+}
+        
+
+function jumpto(thediv){
+    document.getElementById(thediv).scrollIntoView()
+}
+
+function saveNewClass(){
+    NewClass= $("#insert").val().toLowerCase();
+    sel = document.getSelection()
+    // firstP = getSelectedNode()
+    Value = sel.toString();
+    if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
+        // if one is empty string stop execution
+        return
+    }
+    // download exising User classes
+    UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
+    // if new class --> create empty list of values
+    if ((NewClass in UserClasses)==0){
+        UserClasses[NewClass] = []
+    }
+    // append new value
+    UserClasses[NewClass].push(Value)
+    // upload updated User classes
+    localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
+    // update formcheck list
+    updateformcheckList(Object.keys(UserClasses))
+    // insert tag for selection
+    var spn = document.createElement('SPAN');
+    spn.textContent = Value;
+    spn.classList.add(NewClass);
+    range = sel.getRangeAt(0);
+    range.deleteContents();
+    range.insertNode(spn);
+    //firstP.append(spn)
+}
+
+function updateformcheckList(lista){
+    elementipresentiJQ = $("#formchecks").children(".form-check")
+    elementipresenti = []
+    for (var i=0; i<elementipresentiJQ.length; i++){
+        elementipresenti.push(elementipresentiJQ[i].innerText)
+    }
+    for (ele of lista){
+        if (elementipresenti.indexOf(ele)==-1){
+            $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='showAct'/><label class='form-check-label' for='showAct'>" + ele + "</label></div>")
+            $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
+                if (this.checked)
+                    $('.'+ele).addClass('userclassSelected')
+                else
+                    $('.'+ele).removeClass('userclassSelected')
+            })
+        }
+    }
+}
+
+
+// function getSelectedNode()
+// {
+//     if (document.selection)
+//         return document.selection.createRange().parentElement();
+//     else
+//     {
+//         var selection = window.getSelection();
+//         if (selection.rangeCount > 0)
+//             return selection.getRangeAt(0).startContainer.parentNode;
+//     }
+// }
