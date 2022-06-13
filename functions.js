@@ -67,12 +67,13 @@ function loadXMLDoc(filename) {
 
 function displayResultErrors() {
     xml = loadXMLDoc("TheComedyOfErrors.xml");
-    xsl = loadXMLDoc("TheComedyOfErrors.xsl");
+    xsl = loadXMLDoc("template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
+        new_index()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
@@ -81,18 +82,20 @@ function displayResultErrors() {
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
+        new_index()
     }
 }
 
 
 function displayResultTempest() {
     xml = loadXMLDoc("TheTempest.xml");
-    xsl = loadXMLDoc("TheTempest.xsl");
+    xsl = loadXMLDoc("template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
+        new_index()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
@@ -101,13 +104,14 @@ function displayResultTempest() {
         xsltProcessor.importStylesheet(xsl);
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
+        new_index()
     }
 }
 
 
 function displayResultGentlemen() {
     xml = loadXMLDoc("TwoGentlemenOfVerona.xml");
-    xsl = loadXMLDoc("TwoGentlemenOfVerona.xsl");
+    xsl = loadXMLDoc("template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
@@ -158,10 +162,8 @@ function new_index(){
         $("#att").append("<ul id='scene_" + String(i+1) + "'></ul>")
         var miao = $("[id*='a"+String(i+1)+"_s']");
         for (var y=0; y<miao.length; y++){
-            $("#scene_" + String(i+1)).append("<li onclick=jumpto('a"+ String(i+1) + "_s" + String(y+1) + "')>"+ miao[y].innerText + "</li>")
-            
+            $("#scene_" + String(i+1)).append("<li onclick=jumpto('a"+ String(i+1) + "_s" + String(y+1) + "')>"+ miao[y].innerText + "</li>")   
         }
-        
     }
 }
         
@@ -171,35 +173,38 @@ function jumpto(thediv){
 }
 
 function saveNewClass(){
-    NewClass= $("#insert").val().toLowerCase();
+    NewClass= $("#insert").val().toLowerCase().toString();
     sel = document.getSelection()
     // firstP = getSelectedNode()
     Value = sel.toString();
+    Value=Value.replace("\r\n", "<br>");
+    // Value = Value.replace('\s\n', '<br>')
     if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
         // if one is empty string stop execution
-        return
+        alert("Select a valid text to create the new class!")
     }
-    // download exising User classes
-    UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
-    // if new class --> create empty list of values
-    if ((NewClass in UserClasses)==0){
-        UserClasses[NewClass] = []
-    }
-    // append new value
-    UserClasses[NewClass].push(Value)
-    // upload updated User classes
-    localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-    // update formcheck list
-    updateformcheckList(Object.keys(UserClasses))
-    // insert tag for selection
-    var spn = document.createElement('SPAN');
-    spn.textContent = Value;
-    spn.classList.add(NewClass);
-    range = sel.getRangeAt(0);
-    range.deleteContents();
-    range.insertNode(spn);
-    //firstP.append(spn)
-}
+    else {  // download exising User classes
+        UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
+        // if new class --> create empty list of values
+        if ((NewClass in UserClasses)==0){
+            UserClasses[NewClass] = []
+        }
+        // append new value
+        UserClasses[NewClass].push(Value)
+        // upload updated User classes
+        localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
+        // update formcheck list
+        updateformcheckList(Object.keys(UserClasses))
+        // insert tag for selection
+        var spn = document.createElement('SPAN');
+        
+        spn.innerHTML = Value;
+        spn.classList.add(NewClass);
+        range = sel.getRangeAt(0);
+        range.deleteContents();
+        range.insertNode(spn);
+        //firstP.append(spn)
+}}
 
 function updateformcheckList(lista){
     elementipresentiJQ = $("#formchecks").children(".form-check")

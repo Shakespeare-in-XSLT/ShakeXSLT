@@ -24,15 +24,12 @@
                             select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </div>
                     <div class="row clearfix">
-                        <div id="box" class="col-md-6">
-                            
+                        
+                        <div class="col-md-6">
                             <div class="row clearfix p-4">
                                 <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div id="text">
+                            <div class="row clearfix p-4" id="text">
                                 <xsl:apply-templates select="tei:text/tei:body"/>
                             </div>
                         </div>
@@ -94,7 +91,7 @@
         </h2>
     </xsl:template>
     <xsl:template match="tei:l">
-            <xsl:apply-templates/><br/>
+        <xsl:apply-templates/><br/>
     </xsl:template>
     <xsl:template match="tei:lb">
         <xsl:apply-templates/>
@@ -103,11 +100,11 @@
     <xsl:template match="tei:hi">
         <xsl:choose>
             <xsl:when test="@rend = 'italic'">
-                <span class="actions">
+                <p class="actions">
                     <i> 
                         <xsl:apply-templates/>
                     </i>
-                </span>
+                </p>
             </xsl:when>
         </xsl:choose>
     </xsl:template> 

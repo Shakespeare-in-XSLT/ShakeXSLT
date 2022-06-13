@@ -20,7 +20,7 @@
             background-color: #cce6ff;
             }
             .userclassSelected {
-            background-color: #cce6ff;
+            background-color: red;
             }
             
         </style>
@@ -52,12 +52,16 @@
                 </label>
             </div>
         </div>
-        <div id="index">
-            <p id="att"></p>
-            <p> Add a new class for the metadata browsing
-                <input type="text" id="insert" onfocus="this.value=''" value="type here"></input>
-            <button id="validate" onclick="saveNewClass()">Add Class</button>
-            </p>
+        <div class="col-md-6">
+            <div class="row" id="index">
+                    <p id="att"></p>
+            </div>
+            <div class="row" id="index">
+                <p> Add a new class for the metadata browsing
+                    <input type="text" id="insert" onfocus="this.value=''" value="type here"></input>
+                <button id="validate" onclick="saveNewClass()">Add Class</button>
+                </p>
+            </div>
         </div>
         <div id="example"></div>
     </body>

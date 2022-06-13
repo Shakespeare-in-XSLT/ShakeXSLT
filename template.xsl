@@ -24,16 +24,13 @@
                             select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </div>
                     <div class="row clearfix">
-                        <div id="box" class="col-md-6">
-                           
+                        
+                        <div class="col-md-6">
                             <div class="row clearfix p-4">
                                 <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
                             </div>
-                        </div>
-                       
-                        <div class="col-md-6">
-                            <div id="text">
-                               <xsl:apply-templates select="tei:text/tei:body"/>
+                            <div class="row clearfix p-4" id="text">
+                                <xsl:apply-templates select="tei:text/tei:body"/>
                             </div>
                         </div>
                     </div>
@@ -47,7 +44,7 @@
             <xsl:apply-templates/>
         </h1>
     </xsl:template>
-   <xsl:template match="tei:text/tei:front/tei:castList">
+    <xsl:template match="tei:text/tei:front/tei:castList">
         <table border="1" cell-padding="2">
             <tr>
                 <th>Actor</th>
@@ -62,7 +59,7 @@
         </div>
     </xsl:template>
     
-   <xsl:template match="tei:castGroup/tei:castItem">
+    <xsl:template match="tei:castGroup/tei:castItem">
         <tr>
             <td class="person">
                 <xsl:value-of select="tei:role/tei:name"/>
@@ -74,7 +71,7 @@
     </xsl:template>
     <xsl:template match="tei:speaker" name="person">
         <h3 class="person">
-          <xsl:apply-templates/>
+            <xsl:apply-templates/>
         </h3>
     </xsl:template>
     <xsl:template match="tei:div[@type = 'scene']/tei:head" name="scenes">
@@ -94,9 +91,7 @@
         </h2>
     </xsl:template>
     <xsl:template match="tei:l">
-        
-            <xsl:apply-templates/><br/>
-        
+        <xsl:apply-templates/><br/>
     </xsl:template>
     <xsl:template match="tei:lb">
         <xsl:apply-templates/>
@@ -105,11 +100,11 @@
     <xsl:template match="tei:hi">
         <xsl:choose>
             <xsl:when test="@rend = 'italic'">
-                <span class="actions">
-                 <i> 
-                     <xsl:apply-templates/>
-                 </i>
-                </span>
+                <p class="actions">
+                    <i> 
+                        <xsl:apply-templates/>
+                    </i>
+                </p>
             </xsl:when>
         </xsl:choose>
     </xsl:template> 
