@@ -149,12 +149,6 @@ var getParams = function (url) {
     return params;
 };
 
-/* function index(){
-    for (var i=1; i<=5; i++) {
-        var test = $("<h2>[class='act'[id='act_" + i + "']]").val();
-        $("#att").append("<li>" + test + "</li>")
-}
-} */
 function new_index(){
     var bau = $("h2[class='act']")
     for (var i=0; i<bau.length; i++){
@@ -175,36 +169,33 @@ function jumpto(thediv){
 function saveNewClass(){
     NewClass= $("#insert").val().toLowerCase().toString();
     sel = document.getSelection()
-    // firstP = getSelectedNode()
     Value = sel.toString();
-    Value=Value.replace("\r\n", "<br>");
-    // Value = Value.replace('\s\n', '<br>')
+    var ciao = Value.replaceAll("\n", "<br>");
     if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
         // if one is empty string stop execution
         alert("Select a valid text to create the new class!")
     }
-    else {  // download exising User classes
+    else{  // download exising User classes
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
         // if new class --> create empty list of values
         if ((NewClass in UserClasses)==0){
             UserClasses[NewClass] = []
         }
         // append new value
-        UserClasses[NewClass].push(Value)
+        UserClasses[NewClass].push(Value);
         // upload updated User classes
-        localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
+        localStorage.setItem('UserClasses', JSON.stringify(UserClasses));
         // update formcheck list
-        updateformcheckList(Object.keys(UserClasses))
+        updateformcheckList(Object.keys(UserClasses));
         // insert tag for selection
-        var spn = document.createElement('SPAN');
-        
-        spn.innerHTML = Value;
+        var spn = document.createElement('span')
+        spn.innerHTML = ciao;
         spn.classList.add(NewClass);
         range = sel.getRangeAt(0);
         range.deleteContents();
         range.insertNode(spn);
-        //firstP.append(spn)
-}}
+    }
+}
 
 function updateformcheckList(lista){
     elementipresentiJQ = $("#formchecks").children(".form-check")
@@ -224,16 +215,3 @@ function updateformcheckList(lista){
         }
     }
 }
-
-
-// function getSelectedNode()
-// {
-//     if (document.selection)
-//         return document.selection.createRange().parentElement();
-//     else
-//     {
-//         var selection = window.getSelection();
-//         if (selection.rangeCount > 0)
-//             return selection.getRangeAt(0).startContainer.parentNode;
-//     }
-// }
