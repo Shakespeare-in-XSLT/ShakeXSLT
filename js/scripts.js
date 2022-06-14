@@ -1,3 +1,5 @@
+// SWUP page transition
+
 const options = {
   animateHistoryBrowsing: false,
   animationSelector: '[class*="transition-"]',
@@ -18,21 +20,25 @@ const options = {
 
 const swup = new Swup(options);
 
+// SWUP reloading javascript
 
 document.addEventListener('swup:contentReplaced', (event) => {
   $('.header__menu').removeClass('header__menu--open');
   $('.icon-hamburger').removeClass('icon-hamburger--open');
-});
+}); // Allows to close the mobile menu automatically when I change page
 
 document.addEventListener('swup:transitionEnd', (event) => {
+  sidebarDetect();
   scroll.init();
   scrollDetect();
 });
 
-
 document.addEventListener('swup:willReplaceContent', (event) => {
   scroll.destroy();
+  // sidebarDetect();
 });
+
+// SWUP page transition END
 
 // LOCOMOTIVE Scroll
 
@@ -62,8 +68,6 @@ function scrollDetect(){
 
   });
 
-
-
   scroll.on('call', func => {
     if(func == "bg-red"){
       $('body').toggleClass('bg-red');
@@ -75,24 +79,36 @@ function scrollDetect(){
 
   });
 
-
 }
 
 scrollDetect();
 
 // NEW CHUNK - ECMAScript 6
 
-let trigger = document.querySelector('.fab-trigger');
-trigger.addEventListener("click", function() {
+// Fab
+
+let fabTrigger = document.querySelector('.fab-trigger');
+fabTrigger.addEventListener("click", function() {
 
   document.body.classList.toggle('fab-open');
 
 });
 
+// Sidebar
+function sidebarDetect() {
+    if (document.querySelector('#sidebar')) {
+      let sidebarTrigger = document.querySelector('.sidebar-trigger');
+           sidebarTrigger.addEventListener('click', function() {
 
+            document.querySelector('.sidebar').classList.toggle('sidebar-open');
+            document.querySelector('main').classList.toggle('main-sidebar-open');
+            document.querySelector('header').classList.toggle('header-sidebar-open');
 
+    });
+  }
+}
 
-
+sidebarDetect()
 
 
 $( document ).ready(function() {
@@ -111,7 +127,7 @@ $( document ).ready(function() {
 
   $(window).load(function(){
     $('.preloader').fadeOut('fast');
-    $('.social-icons a, .bottom-icon-left, .bottom-icon-right, .header').addClass('is-inview');
+    $('.social-icons a, .bottom-icon-left, .bottom-icon-right, .header, .aside').addClass('is-inview');
     scroll.start();
   });
 
@@ -136,9 +152,9 @@ $( document ).ready(function() {
 
   nav.find("ul li a").click(function() {
 
-    if(!$(this).parent().hasClass("active")){ // se l'elelemtno cliccato non ha classe active
+    if(!$(this).parent().hasClass("active")){ // if element doesn't have active class
 
-      nav.find("ul li").removeClass("active"); // rumovere la classe active
+      nav.find("ul li").removeClass("active"); // remove active class
 
       var _this = $(this);
 
@@ -178,9 +194,5 @@ $( document ).ready(function() {
     }
 
   });
-
-
-
-
 
 });
