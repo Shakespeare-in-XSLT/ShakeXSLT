@@ -6,32 +6,42 @@ $(document).ready(main);
 function main() {
 
     $('#showAct').click(function () {
-        if (this.checked)
+        if (this.checked){
             $('.act').addClass('acts')
+            $('.acts').css({"background-color": "#ffddff"})}
         else
             $('.act').removeClass('acts')
     })
 
     $('#showScenes').click(function () {
-        if (this.checked)
+        if (this.checked){
             $('.scene').addClass('scenes')
+            $('.scenes').css({"background-color": "#ddffdd"})}
         else
             $('.scene').removeClass('scenes')
+    
     })
 
     $('#showPeople').click(function () {
-        if (this.checked)
+        if (this.checked){
             $('.person').addClass('people')
+            $('.people').css({"background-color": "#ffffdd"})
+        }
         else
             $('.person').removeClass('people')
-    })
+    
+    }
+    )
 
     $('#showActions').click(function () {
-        if (this.checked)
+        if (this.checked){
             $('.actions').addClass('stage')
+            $('.stage').css({"background-color": "#cce6ff"})}
         else
             $('.actions').removeClass('stage')
-    })
+    
+    }
+    )
 
     parametri = getParams(document.URL)
     if (parametri['ConttoLoad'] == 'Gentlemen') {
@@ -43,8 +53,8 @@ function main() {
     else if (parametri['ConttoLoad'] == 'Errors'){
         displayResultErrors()
     }
-
 };
+
 
 function reset() {
     $("#example").empty();
@@ -207,11 +217,17 @@ function updateformcheckList(lista){
         if (elementipresenti.indexOf(ele)==-1){
             $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='showAct'/><label class='form-check-label' for='showAct'>" + ele + "</label></div>")
             $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
-                if (this.checked)
+                if (this.checked) {
                     $('.'+ele).addClass('userclassSelected')
-                else
+                    $('.userclassSelected').css({'background-color':'blue'})
+                }
+                else {
                     $('.'+ele).removeClass('userclassSelected')
-            })
+                }
+                }
+            )
+            if($("input."+ ele).is(":checked") && lista.length >= 1){
+                $('.userclassSelected').css({'background-color':'blue'})
+            }
         }
-    }
-}
+    }}
