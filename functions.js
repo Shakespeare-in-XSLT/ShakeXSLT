@@ -10,7 +10,7 @@ function main() {
             $('.act').addClass('acts')
             $('.acts').css({"background-color": "#ffddff"})}
         else
-            $('.act').removeClass('acts')
+            $('.acts').css({"background-color": "transparent"})
     })
 
     $('#showScenes').click(function () {
@@ -18,7 +18,7 @@ function main() {
             $('.scene').addClass('scenes')
             $('.scenes').css({"background-color": "#ddffdd"})}
         else
-            $('.scene').removeClass('scenes')
+            $('.scenes').css({"background-color": "transparent"})
     
     })
 
@@ -28,7 +28,7 @@ function main() {
             $('.people').css({"background-color": "#ffffdd"})
         }
         else
-            $('.person').removeClass('people')
+            $('.people').css({"background-color": "transparent"})
     
     }
     )
@@ -38,7 +38,7 @@ function main() {
             $('.actions').addClass('stage')
             $('.stage').css({"background-color": "#cce6ff"})}
         else
-            $('.actions').removeClass('stage')
+            $('.stage').css({"background-color": "transparent"})
     
     }
     )
@@ -190,7 +190,7 @@ function saveNewClass(){
         // if new class --> create empty list of values
         if ((NewClass in UserClasses)==0){
             UserClasses[NewClass] = []
-        }
+        } 
         // append new value
         UserClasses[NewClass].push(Value);
         // upload updated User classes
@@ -204,6 +204,17 @@ function saveNewClass(){
         range = sel.getRangeAt(0);
         range.deleteContents();
         range.insertNode(spn);
+
+        //to handle multiple selections for the same class
+        for (c in UserClasses){
+            if (NewClass === c){
+                if($('#'+NewClass).is(":checked")){
+                    spn.classList.add('userclassSelected');
+                    $('.userclassSelected').css({'background-color':'blue'})
+                }
+            }
+        }
+
     }
 }
 
@@ -215,19 +226,19 @@ function updateformcheckList(lista){
     }
     for (ele of lista){
         if (elementipresenti.indexOf(ele)==-1){
-            $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='showAct'/><label class='form-check-label' for='showAct'>" + ele + "</label></div>")
+            $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='"+ele+"' /><label class='form-check-label'>" + ele + "</label></div>")
             $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
                 if (this.checked) {
                     $('.'+ele).addClass('userclassSelected')
                     $('.userclassSelected').css({'background-color':'blue'})
                 }
                 else {
-                    $('.'+ele).removeClass('userclassSelected')
+                    $('.userclassSelected').css({'background-color':'transparent'})
                 }
                 }
             )
-            if($("input."+ ele).is(":checked") && lista.length >= 1){
-                $('.userclassSelected').css({'background-color':'blue'})
-            }
         }
     }}
+
+
+
