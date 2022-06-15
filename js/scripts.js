@@ -85,14 +85,29 @@ scrollDetect();
 
 // NEW CHUNK - ECMAScript 6
 
-// Fab
-
+// Fab menu
 let fabTrigger = document.querySelector('.fab-trigger');
 fabTrigger.addEventListener("click", function() {
 
   document.body.classList.toggle('fab-open');
 
 });
+
+let styleTrigger = document.querySelector('.trigger1600');
+styleTrigger.addEventListener("click", function() {
+
+  document.body.classList.toggle('style1600');
+
+});
+
+// Fab style
+// let style1600 = document.querySelector('#1600');
+// style1600.addEventListener("click", function() {
+//
+//   document.body.classList.toggle('1600');
+//
+// });
+
 
 // Sidebar
 function sidebarDetect() {
@@ -103,6 +118,7 @@ function sidebarDetect() {
             document.querySelector('.sidebar').classList.toggle('sidebar-open');
             document.querySelector('main').classList.toggle('main-sidebar-open');
             document.querySelector('header').classList.toggle('header-sidebar-open');
+            document.querySelector('.sidebar-trigger').classList.toggle('sidebar-open');
 
     });
   }

@@ -35,7 +35,11 @@
 
 
   <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -93,10 +97,13 @@
 
     <!-- SIDEBAR -->
 
-      <aside class="sidebar" id="sidebar">
-        <div class="sidebar-trigger">
+      <div class="sidebar-trigger">
+        <div class="sidebar-trigger-container">
           <i class='sidebar-icon bx bx-chevron-right'></i>
         </div>
+      </div>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-container">
         <details class="style3">
           <summary><div class="sidebar-button"><i class='sidebar-icon bx bx-bookmark' ></i></i>INDEX<i class='arrow bx bx-chevron-down'></i></div></summary>
           <div class="details-content">
@@ -130,8 +137,11 @@
             <p>
               Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab assumenda eligendi voluptatum nisi eius cumque, tempore reprehenderit optio placeat praesentium non sint repellendus consequuntur? Nihil, soluta.
             </p>
+            <input type="text" name="XML class" value="" placeholder="Add your XML class">
+            <a data-scroll href="#" class="button-frame"><span>ADD CLASS</span></a>
           </div>
         </details>
+        </div>
       </aside>
 
     <!-- SIDEBAR END -->
