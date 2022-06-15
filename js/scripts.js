@@ -100,13 +100,6 @@ styleTrigger.addEventListener("click", function() {
 
 });
 
-// Fab style
-// let style1600 = document.querySelector('#1600');
-// style1600.addEventListener("click", function() {
-//
-//   document.body.classList.toggle('1600');
-//
-// });
 
 
 // Sidebar
