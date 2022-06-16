@@ -46,12 +46,15 @@ function main() {
     parametri = getParams(document.URL)
     if (parametri['ConttoLoad'] == 'Gentlemen') {
         displayResultGentlemen()
+
     }
     else if (parametri['ConttoLoad'] == 'Tempest'){
         displayResultTempest()
+       
     }
     else if (parametri['ConttoLoad'] == 'Errors'){
         displayResultErrors()
+        
     }
 };
 
@@ -84,6 +87,7 @@ function displayResultErrors() {
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
         new_index()
+        getTitle()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
@@ -93,7 +97,9 @@ function displayResultErrors() {
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
         new_index()
+        getTitle()
     }
+
 }
 
 
@@ -106,6 +112,7 @@ function displayResultTempest() {
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
         new_index()
+        getTitle()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
@@ -115,6 +122,7 @@ function displayResultTempest() {
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
         new_index()
+        getTitle()
     }
 }
 
@@ -128,6 +136,7 @@ function displayResultGentlemen() {
         ex = xml.transformNode(xsl);
         document.getElementById("example").innerHTML = ex;
         new_index()
+        getTitle()
     }
     // code for Chrome, Firefox, Opera, etc.
     else if (document.implementation && document.implementation.createDocument) {
@@ -137,7 +146,9 @@ function displayResultGentlemen() {
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("example").appendChild(resultDocument);
         new_index()
+        getTitle()
     }
+    
 }
 
 /**
@@ -168,6 +179,14 @@ function new_index(){
         for (var y=0; y<miao.length; y++){
             $("#scene_" + String(i+1)).append("<li onclick=jumpto('a"+ String(i+1) + "_s" + String(y+1) + "')>"+ miao[y].innerText + "</li>")   
         }
+    }
+}
+
+function getTitle(){
+    var title = $("h1[id='title']")
+    for (var i=0; i<title.length; i++){
+    $("#titolo").append("<h1 class='headline'>" + title[i].innerText + "</h1>");
+    $("#title").css({"display": "none"});
     }
 }
         
