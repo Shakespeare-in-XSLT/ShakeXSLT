@@ -47,9 +47,14 @@ const scroll = new LocomotiveScroll({
   smooth: true
 });
 
-// LOCOMOTIVE Scroll END
-
 scroll.stop();
+
+scroll.destroy();
+document.addEventListener("DOMContentLoaded", function(event) { 
+    scroll.init();
+});
+
+// LOCOMOTIVE Scroll END
 
 function scrollDetect(){
 
@@ -100,8 +105,6 @@ styleTrigger.addEventListener("click", function() {
 
 });
 
-
-
 // Sidebar
 function sidebarDetect() {
     if (document.querySelector('#sidebar')) {
@@ -118,7 +121,6 @@ function sidebarDetect() {
 }
 
 sidebarDetect()
-
 
 $( document ).ready(function() {
 

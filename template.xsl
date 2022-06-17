@@ -7,32 +7,20 @@
         <html>
             <head>
                 <meta charset="UTF_8"/>
-                <!-- Bootstrap link-->
-                <link
-                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-                    rel="stylesheet"
-                    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-                    crossorigin="anonymous"/>
                 <title>
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
             </head>
             <body>
-                <div class="container-fluid">
-                    <div class="row">
-                        <xsl:apply-templates
-                            select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                <div>
+                    <xsl:apply-templates select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                </div> 
+                <div>
+                    <div id="cast-list">
+                        <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
                     </div>
-                    <div class="row clearfix">
-                        
-                        <div class="col-md-6">
-                            <div class="row clearfix p-4">
-                                <xsl:apply-templates select="tei:text/tei:front/tei:castList"/>
-                            </div>
-                            <div class="row clearfix p-4" id="text">
-                                <xsl:apply-templates select="tei:text/tei:body"/>
-                            </div>
-                        </div>
+                    <div id="text">
+                        <xsl:apply-templates select="tei:text/tei:body"/>
                     </div>
                 </div>
             </body>
@@ -45,7 +33,7 @@
         </h1>
     </xsl:template>
     <xsl:template match="tei:text/tei:front/tei:castList">
-        <table border="1" cell-padding="2">
+        <table>
             <tr>
                 <th>Actor</th>
                 <th>Role</th>
@@ -91,11 +79,12 @@
         </h2>
     </xsl:template>
     <xsl:template match="tei:l">
-        <xsl:apply-templates/><br/>
+        <p class="line">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
     <xsl:template match="tei:lb">
         <xsl:apply-templates/>
-        <br/>
     </xsl:template>
     <xsl:template match="tei:hi">
         <xsl:choose>
