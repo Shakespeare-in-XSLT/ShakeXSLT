@@ -190,9 +190,8 @@ function getTitle(){
     }
 }
         
-
 function jumpto(thediv){
-    document.getElementById(thediv).scrollIntoView()
+    document.getElementById(thediv).scrollIntoView({behavior: 'smooth'});
 }
 
 function saveNewClass(){

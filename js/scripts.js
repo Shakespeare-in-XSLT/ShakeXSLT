@@ -35,58 +35,90 @@ document.addEventListener('swup:transitionEnd', (event) => {
 
 document.addEventListener('swup:willReplaceContent', (event) => {
   scroll.destroy();
-  // sidebarDetect();
 });
 
 // SWUP page transition END
 
 // LOCOMOTIVE Scroll
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('[data-scroll-container]'),
+//   smooth: true
+// });
 
-scroll.stop();
+// non usato
 
-scroll.destroy();
-document.addEventListener("DOMContentLoaded", function(event) { 
-    scroll.init();
-});
+// new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
+
+// scroll.destroy();
+// document.addEventListener("jumpto", function(event) { 
+//     scroll.init();
+// });
+
+// non usato fine
+
+// function scrollDetectOpera() {
+//     if (document.querySelector('#opera-text')) {
+//       scroll.destroy();
+//       document.addEventListener("jumpto", function(event) { 
+//           scroll.init();
+//       });
+//   }
+// }
+
+// scrollDetectOpera();
+
+
+// scroll.stop();
+
 
 // LOCOMOTIVE Scroll END
 
-function scrollDetect(){
+// function scrollDetect(){
 
-  scroll.on('scroll', func => {
+//   scroll.on('scroll', func => {
 
-    var scroll_pos = 0;
-    scroll_pos = scroll.scroll.instance.scroll.y;
+//     var scroll_pos = 0;
+//     scroll_pos = scroll.scroll.instance.scroll.y;
 
-    body_el = document.body;
+//     body_el = document.body;
 
-    if(scroll_pos > 200) {
-      body_el.classList.add( "scroll-down" );
-    } else {
-      body_el.classList.remove( "scroll-down" );
-    }
+//     if(scroll_pos > 200) {
+//       body_el.classList.add( "scroll-down" );
+//     } else {
+//       body_el.classList.remove( "scroll-down" );
+//     }
 
-  });
+//   });
 
-  scroll.on('call', func => {
-    if(func == "bg-red"){
-      $('body').toggleClass('bg-red');
-    } else if(func == "bg-yellow"){
-      $('body').toggleClass('bg-yellow');
-    } else if(func == "bg-green"){
-      $('body').toggleClass('bg-green');
-    }
+//   scroll.on('call', func => {
+//     if(func == "bg-red"){
+//       $('body').toggleClass('bg-red');
+//     } else if(func == "bg-yellow"){
+//       $('body').toggleClass('bg-yellow');
+//     } else if(func == "bg-green"){
+//       $('body').toggleClass('bg-green');
+//     }
 
-  });
+//   });
 
+// }
+
+// scrollDetect();
+
+// MENU SCROLL-DOWN
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.body.classList.add( "scroll-down" );
+  } else {
+    document.body.classList.remove( "scroll-down" );
+  }
 }
 
-scrollDetect();
+
 
 // NEW CHUNK - ECMAScript 6
 
@@ -98,12 +130,301 @@ fabTrigger.addEventListener("click", function() {
 
 });
 
-let styleTrigger = document.querySelector('.trigger1600');
-styleTrigger.addEventListener("click", function() {
+/**
+ * Apply 1600 Theme.
+ */
+let style1600Trigger = document.querySelector('.trigger1600');
+style1600Trigger.addEventListener("click", function() {
+  
+  const style1890 = getItemInLocalStorage('style1890')
+  if (style1890) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1920 = getItemInLocalStorage('style1920')
+  if (style1920) {
+    removeItemInLocalStorage('style1920');
+  }
+  const style1950 = getItemInLocalStorage('style1950')
+  if (style1950) {
+    removeItemInLocalStorage('style1950');
+  }
+  const style1990 = getItemInLocalStorage('style1990')
+  if (style1990) {
+    removeItemInLocalStorage('style1990');
+  }
+  const style2040 = getItemInLocalStorage('style2040')
+  if (style2040) {
+    removeItemInLocalStorage('style2040');
+  }
 
+  setItemInLocalStorage('style1600','style1600');
+  
   document.body.classList.toggle('style1600');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1600.png";
+  document.body.classList.remove('style1890','style1920','style1950','style1990','style2040','fab-open');
 
 });
+
+/**
+ * Apply 1890 Theme.
+ */
+let style1890Trigger = document.querySelector('.trigger1890');
+style1890Trigger.addEventListener("click", function() {
+
+  const style1600 = getItemInLocalStorage('style1600')
+  if (style1600) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1920 = getItemInLocalStorage('style1920')
+  if (style1920) {
+    removeItemInLocalStorage('style1920');
+  }
+  const style1950 = getItemInLocalStorage('style1950')
+  if (style1950) {
+    removeItemInLocalStorage('style1950');
+  }
+  const style1990 = getItemInLocalStorage('style1990')
+  if (style1990) {
+    removeItemInLocalStorage('style1990');
+  }
+  const style2040 = getItemInLocalStorage('style2040')
+  if (style2040) {
+    removeItemInLocalStorage('style2040');
+  }
+
+  setItemInLocalStorage('style1890','style1890');
+
+  document.body.classList.toggle('style1890');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1890.png";
+  document.body.classList.remove('style1600','style1920','style1950','style1990','style2040','fab-open');
+
+});
+
+/**
+ * Apply 1920 Theme.
+ */
+let style1920Trigger = document.querySelector('.trigger1920');
+style1920Trigger.addEventListener("click", function() {
+
+  const style1600 = getItemInLocalStorage('style1600')
+  if (style1600) {
+    removeItemInLocalStorage('style1600');
+  }
+  const style1890 = getItemInLocalStorage('style1890')
+  if (style1890) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1950 = getItemInLocalStorage('style1950')
+  if (style1950) {
+    removeItemInLocalStorage('style1950');
+  }
+  const style1990 = getItemInLocalStorage('style1990')
+  if (style1990) {
+    removeItemInLocalStorage('style1990');
+  }
+  const style2040 = getItemInLocalStorage('style2040')
+  if (style2040) {
+    removeItemInLocalStorage('style2040');
+  }
+
+  setItemInLocalStorage('style1920','style1920');
+
+  document.body.classList.toggle('style1920');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.body.classList.remove('style1600','style1890','style1950','style1990','style2040','fab-open');
+
+});
+
+/**
+ * Apply 1950 Theme.
+ */
+let style1950Trigger = document.querySelector('.trigger1950');
+style1950Trigger.addEventListener("click", function() {
+
+  const style1600 = getItemInLocalStorage('style1600')
+  if (style1600) {
+    removeItemInLocalStorage('style1600');
+  }
+  const style1890 = getItemInLocalStorage('style1890')
+  if (style1890) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1920 = getItemInLocalStorage('style1920')
+  if (style1920) {
+    removeItemInLocalStorage('style1920');
+  }
+  const style1990 = getItemInLocalStorage('style1990')
+  if (style1990) {
+    removeItemInLocalStorage('style1990');
+  }
+  const style2040 = getItemInLocalStorage('style2040')
+  if (style2040) {
+    removeItemInLocalStorage('style2040');
+  }
+
+  setItemInLocalStorage('style1950','style1950');
+
+  document.body.classList.toggle('style1950');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.body.classList.remove('style1600','style1890','style1920','style1990','style2040','fab-open');
+
+});
+
+/**
+ * Apply 1990 Theme.
+ */
+let style1990Trigger = document.querySelector('.trigger1990');
+style1990Trigger.addEventListener("click", function() {
+
+  const style1600 = getItemInLocalStorage('style1600')
+  if (style1600) {
+    removeItemInLocalStorage('style1600');
+  }
+  const style1890 = getItemInLocalStorage('style1890')
+  if (style1890) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1920 = getItemInLocalStorage('style1920')
+  if (style1920) {
+    removeItemInLocalStorage('style1920');
+  }
+  const style1950 = getItemInLocalStorage('style1950')
+  if (style1950) {
+    removeItemInLocalStorage('style1950');
+  }
+  const style2040 = getItemInLocalStorage('style2040')
+  if (style2040) {
+    removeItemInLocalStorage('style2040');
+  }
+
+  setItemInLocalStorage('style1990','style1990');
+
+  document.body.classList.toggle('style1990');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.body.classList.remove('style1600','style1890','style1920','style1950','style2040','fab-open');
+
+});
+
+/**
+ * Apply 2040 Theme.
+ */
+let style2040Trigger = document.querySelector('.trigger2040');
+style2040Trigger.addEventListener("click", function() {
+
+  const style1600 = getItemInLocalStorage('style1600')
+  if (style1600) {
+    removeItemInLocalStorage('style1600');
+  }
+  const style1890 = getItemInLocalStorage('style1890')
+  if (style1890) {
+    removeItemInLocalStorage('style1890');
+  }
+  const style1920 = getItemInLocalStorage('style1920')
+  if (style1920) {
+    removeItemInLocalStorage('style1920');
+  }
+  const style1950 = getItemInLocalStorage('style1950')
+  if (style1950) {
+    removeItemInLocalStorage('style1950');
+  }
+  const style1990 = getItemInLocalStorage('style1990')
+  if (style1990) {
+    removeItemInLocalStorage('style1990');
+  }
+
+  setItemInLocalStorage('style2040','style2040');
+
+  document.body.classList.toggle('style2040');
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.body.classList.remove('style1600','style1890','style1920','style1950','style1990','fab-open');  
+
+});
+
+// let style2040Trigger = document.querySelector('.trigger2040');
+// style2040Trigger.addEventListener("click", function() {
+// changeStyle('style2040',"img/hero/shakespeare_192aaa.png",
+//   ('style1600','style1890','style1920','style1950','style1990')
+// )
+// }
+// )
+
+// function changeStyle(bodyClass,imgPath, classesToRemove) {
+ 
+//  document.body.classList.toggle(bodyClass);
+  
+//  document.querySelector('#hero-image').src=imgPath;
+ 
+//  document.body.classList.remove(classesToRemove);
+
+// document.body.classList.remove('fab-open');
+
+// }
+
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+
+function log(){console.log("ready")};
+
+function setItemInLocalStorage(key,value) {
+  const itemCheck = localStorage.getItem(key)  
+
+  if(!itemCheck){
+    localStorage.setItem(key, value)
+  } else {
+  return
+  }
+}
+
+function applyTheme() {
+  const style1600 = getItemInLocalStorage('style1600')
+  const style1890 = getItemInLocalStorage('style1890')
+  const style1920 = getItemInLocalStorage('style1920')
+  const style1950 = getItemInLocalStorage('style1950')
+  const style1990 = getItemInLocalStorage('style1990')
+  const style2040 = getItemInLocalStorage('style2040')
+
+    if (style1600) {
+      document.body.classList.toggle(style1600);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.png";
+    } else if (style1890) {
+      document.body.classList.toggle(style1890);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1890.png";
+    } else if (style1920) {
+      document.body.classList.toggle(style1920);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+    } else if (style1950) {
+      document.body.classList.toggle(style1950);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1950.png";
+    } else if (style1990) {
+      document.body.classList.toggle(style1990);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1990.png";
+    } else if (style2040) {
+      document.body.classList.toggle(style2040);
+      document.querySelector('#hero-image').src="img/hero/shakespeare_2040.png";
+    }
+} 
+
+function getItemInLocalStorage(key) {
+  return localStorage.getItem(key)  
+}
+
+function removeItemInLocalStorage(key) {
+  const itemTrovato = localStorage.getItem(key)
+
+  if(itemTrovato){
+    localStorage.removeItem(key)
+  } else {
+  return
+  } 
+}
+
 
 // Sidebar
 function sidebarDetect() {
@@ -138,8 +459,16 @@ $( document ).ready(function() {
 
   $(window).load(function(){
     $('.preloader').fadeOut('fast');
-    $('.social-icons a, .bottom-icon-left, .bottom-icon-right, .header, .aside').addClass('is-inview');
-    scroll.start();
+    $('.header, .aside').addClass('is-inview');
+    // scroll.start();
+  });
+
+  $(".fab-trigger").click(function(){
+    $(".overlay").fadeIn(1500);
+  });
+
+  $(".trigger-style").click(function() {
+      $(".overlay").fadeOut(2000);
   });
 
 
