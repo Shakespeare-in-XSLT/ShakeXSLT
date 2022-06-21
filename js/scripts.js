@@ -265,7 +265,7 @@ style1950Trigger.addEventListener("click", function() {
   setItemInLocalStorage('style1950','style1950');
 
   document.body.classList.toggle('style1950');
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1950.png";
   document.body.classList.remove('style1600','style1890','style1920','style1990','style2040','fab-open');
 
 });
@@ -300,7 +300,7 @@ style1990Trigger.addEventListener("click", function() {
   setItemInLocalStorage('style1990','style1990');
 
   document.body.classList.toggle('style1990');
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1990.png";
   document.body.classList.remove('style1600','style1890','style1920','style1950','style2040','fab-open');
 
 });
@@ -335,7 +335,7 @@ style2040Trigger.addEventListener("click", function() {
   setItemInLocalStorage('style2040','style2040');
 
   document.body.classList.toggle('style2040');
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_2040.png";
   document.body.classList.remove('style1600','style1890','style1920','style1950','style1990','fab-open');  
 
 });
