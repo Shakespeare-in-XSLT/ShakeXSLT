@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/locomotive-scroll.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dropdown.css">
 
   <!-- BOXICONS -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -67,15 +68,23 @@
           </div>
 
             <nav class="header__menu" id="main-menu">
-
               <ul class="site-nav">
-                <li><a href="opera.html"> Opera </a></li>
-                <li><a href="documentation.html"> Documentation </a></li>
-                <li><a href="html"> Disclaimer </a></li>
+                <li id="op">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Opera</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
+                        <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
+                        <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                      </div>
+                    </div>
+                </li>
+                <li class="aiuto"><a href="documentation.html"> Documentation </a></li>
+                <li class="aiuto"><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
               </ul>
-
-              <div class="line-menu"></div>
-
+              <!-- <div class="line-menu"></div> 
+                    non mi piaceva la linea, rimettila se vuoi, olga
+              -->
             </nav>
 
           <div class="header__cta">
@@ -131,9 +140,9 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="actions"
+                    <input class="form-check-input" type="checkbox" value="action"
                         id="showActions"/>
-                    <label class="form-check-label" for="showActions"> Stage Actions
+                    <label class="form-check-label" id="ac" for="showActions"> Actions
                     </label>
                 </div>
               </div>
@@ -272,31 +281,9 @@
       <!-- <div class="scroll-container" data-scroll-container> -->
 
         <main id="swup" class="transition-fade">
+          <div class="hero-image hidden"><img id="hero-image" src="img/hero/shakespeare_1600.png" alt=""></div>
             
-                        <div class="hero-image hidden"><img id="hero-image" src="img/hero/shakespeare_1600.png" alt=""></div>
-
-
           <section id="opera-text">
-            <div class="grid">
-               <div class="col-80 opera-text">
-                    <h1>Choose the Opera</h1>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam voluptatum dicta eveniet nostrum corrupti veritatis totam voluptate optio obcaecati sunt, soluta minima qui architecto nisi corporis quo? Expedita, quos?</p>
-
-                </div>       
-<div class="opera_1 col-33">
-                      <h2>The commedy of errors</h2>
-                      <a href="opera.html?ConttoLoad=Errors" class="button-frame"><span>Read it</span></a>
-                      </div>
-                      <div class="opera_2 col-33">
-                      <h2>The commedy of errors</h2>
-                      <a href="opera.html?ConttoLoad=Tempest" class="button-frame"><span>Read it</span></a>
-                      </div>
-                      <div class="opera_3 col-33">
-                      <h2>The commedy of errors</h2>                      
-                      <a href="opera.html?ConttoLoad=Gentlemen" class="button-frame"><span>Read it</span></a>
-                      </div>
-               </div>
-
             <div class="panel panel--grey">         
              <div class="grid">
                   <div id="titolo">

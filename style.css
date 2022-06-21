@@ -82,9 +82,7 @@ p {font-size: 1.125rem; /* 18px */ line-height: 1.75rem; /* 28px */}
 .margin-bottom-big{margin-bottom: 150px!important;}
 .img-res{width: 100%;}
 .padding-all{padding: 20px;}
-
-.hidden{display: none;}
-
+.hidden{display:none;}
 
 .text-red{color:#FA5F55}
 
@@ -177,6 +175,8 @@ body{transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .site-nav{margin: 10px;padding: 0;list-style-type: none;position: relative;}
 .site-nav > li {display: inline-block;}
 .site-nav > li a{display: block;padding: 20px; color:#000; opacity: 0.5; text-decoration: none;}
+.aiuto :hover {background-color: #ddd;}
+
 @media (min-width: 768px) {
   .has-cover .site-nav > li a{color:#fff;}
 }
@@ -269,12 +269,11 @@ details:hover > summary:before {color: #FFF;}
 
 .form-check{display: flex;margin-bottom: 12px;align-items: center;}
 
-.details-content .form-check-input {width: 32px;height: 32px;margin-right: 20px;cursor: pointer;}
+.details-content .form-check-input {width: 30px;height: 30px;margin-right: 19px;cursor: pointer;}
 
 input:checked{background-color:green;}
 
-.form-check-label{font-size: 20px;}
-
+.form-check-label{font-size: 18px;}
 
 /* ! Button */
 
@@ -344,6 +343,17 @@ input:checked{background-color:green;}
 .float-img{z-index: -10; position: absolute; background-repeat: no-repeat;background-attachment: fixed;background-size: contain;background-position: center center;}
 
 .float-img--1{top:55%; left:-2%;width: 254px;height: 254px;background-image: url("img/style1600/filigrana.png");}
+.float-first-folio{top:130%; left:-2%;width: 254px;height: 254px;background-image: url("first-folio.png");}
+.float-rom-jul{top:80%; left:-2%;width: 254px;height: 254px;background-image: url("rom-jul.png");}
+.float-bembo{top:280%; left:-2%;width: 254px;height: 254px;background-image: url("bembo.png");}
+.float-journal{top:90%; left:-2%;width: 200px;height: 200px;background-image: url("journal.jpg");}
+.float-journal2{top:290%; left:-2%;width: 200px;height: 200px;background-image: url("journal2.png");}
+.float-futurism1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("futurism1.png");}
+.float-futurism2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("futurism2.png");}
+.float-international1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("international1.png");}
+.float-international2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("international2.png");}
+.float-1990-1{top:100%; left:-2%;width: 200px;height: 200px;background-image: url("1990-1.png");}
+.float-future{top:30%; left:25%;width: 200px;height: 200px;background-image: url("future.png");}
 
 
 /* ! Bubble  */
@@ -449,13 +459,13 @@ input:checked{background-color:green;}
 
 .hero-image {position: absolute;bottom: 0;right: 0;max-height: 90vh;object-fit: cover;}
 .hero-image img {width: 100%;}
-
 #hero-iframe {display: none;}
 
 /* ! Intro */
 
 .intro{padding: 200px 0 120px 0;position: relative;}
-
+.doc {padding-bottom: 10%;position: relative;}
+#pagelay {font-size: 24px;}
 
 
 /* ! Opera Text */
@@ -523,6 +533,8 @@ p.line {
   }
 
 }
+
+#journey {font-size: 3.75rem}
 
 /* ! team */
 #team{padding: 100px 0 100px 0;}
@@ -594,6 +606,7 @@ p.line {
 .horizontal-separator{height: 2px;width: calc(100% - 180px);position: absolute;top: 10px; right: 0;background: #000;}
 .footer__final-text{text-align: center;margin-top: 80px;}
 
+#footer_doc {margin-top: 0}
 
 
 /* ! Dark Mode */
@@ -779,6 +792,9 @@ body.style2040 {background: rgb(36,219,166);background: linear-gradient(337deg, 
 		transform: translatey(0px);
 	}
 }
+
+
+
 
 
 

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Shakespeare XML</title>
+  <meta name="description" content="Description.">
+  <meta name="author" content="Authors.">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A XML-XSLT project.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dropdown.css">
+
+  <!-- BOXICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- SWUP -->
+  <script src="js/swup.min.js"></script>
+  <script src="js/SwupBodyClassPlugin.min.js"></script>
+  <script src="js/SwupHeadPlugin.min.js"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 1600 -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">  
+    <!-- 1890 -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- 1920 -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Overlay level when fab open -->
+    <div class="overlay">
+      <span data-scroll class="text-reveal">Choose your style</span>
+    </div>
+    <div class="site-container">
+      <div class="preloader"></div>
+
+      <!-- MENU -->
+      <header class="fixed">
+        <div class="header fade-down">
+          <div class="header__logo">
+            <a href="index.html" class="logo">
+              <img id="logo-header" src="img/JSOS_logo_1.svg" alt="">
+            </a>
+          </div>
+            <nav class="header__menu" id="main-menu">
+              <ul class="site-nav">
+                <li id="op">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Opera</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
+                        <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
+                        <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                      </div>
+                    </div>
+                </li>
+                <li class="aiuto"><a href="#"> Documentation </a></li>
+                <li class="aiuto"><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
+              </ul>
+              <!-- <div class="line-menu"></div> 
+                    non mi piaceva la linea, rimettila se vuoi, olga
+              -->
+            </nav>
+          <div class="header__cta">
+            <a href="" class="button">Github</a>
+          </div>
+          <div class="header__icon">
+            <div class="icon-hamburger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- MENU END -->
+
+    <!-- FAB BUTTON -->
+    <div class="fab-container">
+      <div class="fab-trigger">
+        <svg xmlns="http://www.w3.org/2000/svg" class="open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="close" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+      <ul class="fab-options">
+        <li class="trigger-style trigger1600">
+          <span class="fab-label">1600</span>
+          <div class="fab-icon-holder">
+            <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#FFFFFF;}
+              .st1{fill:#CCCCCC;}
+              .st2{fill:#1D1D1B;}
+              .st3{fill:none;stroke:#1D1D1B;stroke-width:0.2328;stroke-miterlimit:10;}
+              .st4{fill:#1A1A1A;}
+            </style>
+            <g>
+              <path d="M9.04,63.61c-0.2,0-0.38-0.06-0.52-0.17s-0.22-0.26-0.22-0.43c0-0.37,0.24-0.63,0.73-0.78c0.92-0.23,1.69-0.45,2.31-0.67
+                c0.62-0.22,1.09-0.51,1.4-0.89s0.48-0.91,0.48-1.6V43.14c0-0.66-0.18-1.16-0.54-1.49c-0.36-0.33-0.81-0.57-1.36-0.71
+                c-0.55-0.14-1.14-0.26-1.77-0.35c-0.26-0.03-0.51-0.11-0.76-0.24c-0.24-0.13-0.37-0.35-0.37-0.67c0-0.29,0.12-0.51,0.37-0.67
+                c0.24-0.16,0.54-0.25,0.89-0.28c1.56-0.17,2.95-0.45,4.19-0.82c1.24-0.37,2.48-0.98,3.71-1.81c0.03-0.03,0.08-0.05,0.15-0.07
+                c0.07-0.01,0.15-0.02,0.24-0.02c0.17,0,0.34,0.04,0.5,0.11c0.16,0.07,0.24,0.18,0.24,0.32c-0.03,0.37-0.07,0.81-0.13,1.3
+                c-0.06,0.49-0.09,1.09-0.09,1.81v19.69c0,0.63,0.17,1.12,0.5,1.47c0.33,0.35,0.81,0.63,1.45,0.84c0.63,0.22,1.42,0.45,2.38,0.71
+                c0.23,0.06,0.42,0.14,0.56,0.26c0.14,0.12,0.22,0.27,0.22,0.48c0,0.38-0.22,0.56-0.65,0.56c-0.69,0-1.45-0.01-2.29-0.04
+                c-0.84-0.03-1.66-0.06-2.46-0.09c-0.81-0.03-1.54-0.04-2.2-0.04c-0.69,0-1.44,0.01-2.25,0.04c-0.81,0.03-1.62,0.06-2.44,0.11
+                C10.49,63.59,9.73,63.61,9.04,63.61z"/>
+              <path d="M37.89,64.13c-1.81,0-3.4-0.36-4.75-1.08s-2.4-1.75-3.15-3.09c-0.75-1.34-1.12-2.94-1.12-4.82c0-1.58,0.18-3.03,0.54-4.34
+                c0.36-1.31,0.81-2.47,1.36-3.48c0.55-1.01,1.1-1.88,1.66-2.61c0.56-0.73,1.03-1.3,1.4-1.71c0.69-0.78,1.59-1.6,2.7-2.48
+                c1.11-0.88,2.38-1.72,3.82-2.53c1.44-0.81,2.98-1.47,4.62-1.99c0.4-0.11,0.77-0.17,1.1-0.15c0.33,0.01,0.5,0.11,0.5,0.28
+                c-0.06,0.29-0.22,0.52-0.48,0.69c-0.26,0.17-0.58,0.35-0.95,0.52c-1.7,0.78-3.13,1.66-4.3,2.66c-1.17,0.99-2.25,2.24-3.26,3.73
+                c-0.4,0.66-0.89,1.58-1.47,2.74c-0.58,1.17-1.07,2.48-1.49,3.95C34.21,51.91,34,53.42,34,54.98c0.03,1.58,0.28,2.92,0.75,4.02
+                c0.48,1.09,1.08,1.92,1.82,2.48c0.73,0.56,1.47,0.84,2.22,0.84c0.98,0.03,1.81-0.4,2.5-1.27c0.69-0.88,1.04-2.18,1.04-3.91
+                c0-0.89-0.16-1.71-0.48-2.44c-0.32-0.73-0.73-1.33-1.23-1.79s-1.06-0.69-1.66-0.69c-0.49,0-0.91,0.04-1.25,0.11
+                c-0.34,0.07-0.69,0.19-1.04,0.37c-0.46,0.2-0.73,0.18-0.82-0.06c-0.09-0.24,0-0.51,0.26-0.8c0.2-0.2,0.38-0.37,0.52-0.52
+                c0.14-0.14,0.32-0.29,0.52-0.43c0.43-0.32,1.08-0.68,1.94-1.1c0.86-0.42,1.69-0.63,2.46-0.63c1.04,0,2.01,0.26,2.91,0.78
+                c0.91,0.52,1.64,1.22,2.2,2.09c0.56,0.88,0.84,1.86,0.84,2.96c0,1.21-0.24,2.36-0.73,3.46c-0.49,1.09-1.17,2.07-2.05,2.94
+                c-0.88,0.86-1.9,1.54-3.07,2.03C40.5,63.89,39.24,64.13,37.89,64.13z"/>
+              <path d="M59.44,64.09c-1.64,0-3.07-0.4-4.28-1.21c-1.21-0.81-2.21-1.88-3-3.22c-0.79-1.34-1.38-2.81-1.77-4.43
+                s-0.58-3.21-0.58-4.79c0-1.64,0.19-3.3,0.58-4.97c0.39-1.67,0.99-3.2,1.79-4.6s1.86-2.52,3.15-3.37s2.82-1.27,4.58-1.27
+                c1.64,0,3.07,0.4,4.28,1.21c1.21,0.81,2.21,1.88,3,3.22c0.79,1.34,1.38,2.81,1.77,4.41c0.39,1.6,0.58,3.17,0.58,4.73
+                c0,1.64-0.19,3.3-0.58,4.97c-0.39,1.67-0.99,3.21-1.79,4.62c-0.81,1.41-1.84,2.55-3.11,3.41C62.79,63.66,61.25,64.09,59.44,64.09z
+                M60.13,62.41c1.01,0,1.81-0.55,2.42-1.66c0.6-1.11,1.04-2.56,1.32-4.36c0.27-1.8,0.41-3.72,0.41-5.77c0-1.56-0.1-3.09-0.3-4.6
+                c-0.2-1.51-0.52-2.88-0.95-4.1s-0.97-2.2-1.6-2.91c-0.63-0.72-1.37-1.08-2.2-1.08c-1.01,0-1.81,0.55-2.4,1.66
+                c-0.59,1.11-1.02,2.56-1.3,4.34c-0.27,1.79-0.41,3.7-0.41,5.74c0,1.56,0.11,3.09,0.32,4.6c0.22,1.51,0.53,2.89,0.95,4.12
+                c0.42,1.24,0.93,2.22,1.56,2.94C58.56,62.05,59.29,62.41,60.13,62.41z"/>
+              <path d="M81.59,64.09c-1.64,0-3.07-0.4-4.28-1.21c-1.21-0.81-2.21-1.88-3-3.22c-0.79-1.34-1.38-2.81-1.77-4.43
+                c-0.39-1.61-0.58-3.21-0.58-4.79c0-1.64,0.19-3.3,0.58-4.97c0.39-1.67,0.99-3.2,1.79-4.6c0.81-1.4,1.86-2.52,3.15-3.37
+                s2.82-1.27,4.58-1.27c1.64,0,3.07,0.4,4.28,1.21c1.21,0.81,2.21,1.88,3,3.22c0.79,1.34,1.38,2.81,1.77,4.41
+                c0.39,1.6,0.58,3.17,0.58,4.73c0,1.64-0.19,3.3-0.58,4.97c-0.39,1.67-0.99,3.21-1.79,4.62c-0.81,1.41-1.84,2.55-3.11,3.41
+                C84.94,63.66,83.4,64.09,81.59,64.09z M82.28,62.41c1.01,0,1.81-0.55,2.42-1.66c0.6-1.11,1.04-2.56,1.32-4.36
+                c0.27-1.8,0.41-3.72,0.41-5.77c0-1.56-0.1-3.09-0.3-4.6c-0.2-1.51-0.52-2.88-0.95-4.1c-0.43-1.22-0.97-2.2-1.6-2.91
+                c-0.63-0.72-1.37-1.08-2.2-1.08c-1.01,0-1.81,0.55-2.4,1.66c-0.59,1.11-1.02,2.56-1.3,4.34c-0.27,1.79-0.41,3.7-0.41,5.74
+                c0,1.56,0.11,3.09,0.32,4.6c0.22,1.51,0.53,2.89,0.95,4.12c0.42,1.24,0.93,2.22,1.56,2.94C80.72,62.05,81.44,62.41,82.28,62.41z"/>
+            </g>
+            </svg>
+          </div>
+        </li>
+        <li class="trigger-style trigger1890">
+          <span class="fab-label">1890</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li class="trigger-style trigger1920">
+          <span class="fab-label">1920</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li class="trigger-style trigger1950">
+          <span class="fab-label">1950</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li class="trigger-style trigger1990">
+          <span class="fab-label">1990</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+        <li class="trigger-style trigger2040">
+          <span class="fab-label">2040</span>
+          <div class="fab-icon-holder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- FAB BUTTON END -->
+
+    <main id="swup" class="transition-fade">
+        <section id="hero" class="hero">
+        <div class="hero-text__content col-66">
+          <div class="hero-text">
+            <h1 class="headline">
+              <span><b><span class="marker marker--1">Docu</span></b></span><span><b><span class="marker marker--2">men</span></b></span><span><b><span class="marker marker--3">tation</span></b></span>
+            </h1>
+          </div>
+        </div>
+        <div class="col-33 delay-3">
+        </div>
+      </section>
+      <section id="intro" class="intro">
+        <div class="grid">
+        <div class="col-20"></div>
+        <div class="col-60">
+            <p id="pagelay">“Page layout is the process of composing text, image and negative space on the page to produce a balanced, and harmonious visual impact that would allow for a collaboration of the author of the text, the artist of the design and the reader to construct collectively a meaning and a message for the text.”</p></div>
+        <div class="col-20"></div>
+    </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>Texts</b></span>
+                    </h2>
+                    <h4>XML-TEI and XSLT</h4>
+                </div>
+                <div class="col-100">
+                    <p>For managing the three texts we have used two main technologies: TEI and XSLT.
+                    TEI is an XML-based markup language that enable scholars to store, analyze, and share humanities textual information.</p>
+                    <p>The <a href="https://www.w3.org/XML/" target="_blank">XML</a> standard (eXtensible Markup Language) is a flexible way to create information formats and electronically share structured data through the web.<br>
+                    The <a href="https://tei-c.org/" target="_blank">Text Encoding Initiative (TEI)</a> is a consortium which collectively develops and maintains a standard for the representation of texts in digital form. The TEI Guidelines have been widely used by libraries, museums, publishers, and individual scholars to present texts for online research, teaching, and preservation. <br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT" target="_blank">XSLT</a>(eXtensible Stylesheet Language Transformations) is a language for transforming XML documents, and thus TEI, into other XML documents or other formats such as HTML. We have used this technology to transform TEI-annotated texts into html, in order to work upon them.</p>
+                    <p>An HTML page is generated automatically for each text, thus we have created a destination page, called opera.html, on which each specific html is loaded as a consequence of an event. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.</p>
+                </div>
+            </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>The Portrait</b></span>
+                    </h2>
+                    <h4>of Shakespeare</h4>
+                    <div id="into-image" class="float-img float-first-folio" style="margin-top: 5%;"></div>
+                </div>
+                <div class="col-30">
+                </div>
+                <div class="col-60">
+                    <p>The image is taken from the William Jaggard's <i>First Folio</i> i.e. <i>Mr. William Shakespeare's Comedies, Histories, & Tragedies</i>, a collection of plays by William Shakespeare (1623). It is printed in folio format and contains 36 plays. A folio (from Latin <i>foliō</i>, abl. of <i>folium</i>, leaf) is a book or pamphlet made up of one or more full sheets of paper, on each of which four pages of text are printed, two on each side; each sheet is then folded one time to produce two leaves. Each leaf of a folio book thus is one half the size of the original sheet.</p>
+                    <p>WHAT DID SHAKESPEARE LOOK LIKE?</p>
+                    <p>
+                        The portrait of Shakespeare on the title page was engraved by Martin Droeshout and is one of only two portraits with any claim to authenticity. As Droeshout would have only been 15 when Shakespeare died it is unlikely that they actually met. Instead his picture was probably drawn from the memory of others, or from an earlier portrait. In his admiring verse ‘To the Reader’ at the start of the First Folio, the writer Ben Jonson declares that the engraver achieved a good likeness – he ‘hit’ or captured Shakespeare’s face well.</p>
+                </div>
+            </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>1600</b></span>
+                    </h2>
+                    <h4>First Style</h4>
+                    <div id="into-image" class="float-img float-rom-jul" style="margin-top: 10%;"></div>
+                    <div id="into-image" class="float-img float-bembo" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                     <p>
+                    For the layout of the first style, we took inspiration from the <i>Incunabula</i>, the first ever printed books. For what concerns they characteristics,
+                    <blockquote>
+                    "The layout designs [...] resembled the medieval compositions using classical ornamentation, initials and bordering. However, with a greater use of white space they were no longer as dark and dense as the medieval illuminated manuscripts. Some of this can be attributable to the advance of paper manufacturing technologies which created whiter and lighter papers. The incunabula layout designers  made a grater use of columns for aesthetical effects." <br>
+                        <a href=" http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html" target="_blank">A History of Graphic Design</a>, Guity Novin
+                    </blockquote>
+                    </p>
+                    <p>
+                    An example of this specific layout style can be seen in <i>The Meditations</i> of Marcus Aurelius Antoninus, which was published in 1792. A great secret is hidden behind these pages: the <i>Golden Ratio</i>. <br><br>The Golden Ratio is a mathematical ratio that can be found in nature, architecture, painting, music and, obviously, in design and page layout, too. In this latter case, when used, it creates an organic, balanced, and aesthetically pleasing composition. In the <i>Meditations</i>, the golden section is used</p>
+                    <blockquote>
+                    "[...] to determine the text area, and the Fibonacci sequence to arrive at relative margin sizes (inner margin 3 units; top and outer margins 5 units; bottom margin 8 units)" <br>
+                    <a href=" http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html" target="_blank">A History of Graphic Design</a>, Guity Novin
+                    </blockquote>
+                    </p>
+                    <p>FONT</p>
+                    <p> Garamond is a group of many serif typefaces, named for sixteenth-century Parisian engraver Claude Garamond. It is often used for book printing and body text. Garamond's types followed the model of an influential typeface cut for Venetian printer Aldus Manutius by his punchcutter Francesco Griffo in 1495, and are in what is now called the old-style of serif letter design, letters with a relatively organic structure resembling handwriting with a pen, but with a slightly more structured, upright design. Some distinctive characteristics in Garamond's letterforms are an 'e' with a small eye and the bowl of the 'a' which has a sharp turn at top left.</p>
+                </div>
+                <div class="col-20"></div>
+            </div>  
+        </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>1890</b></span>
+                    </h2>
+                    <h4>Second Style</h4>
+                    <div id="into-image" class="float-img float-journal" style="margin-top: 10%;"></div>
+                    <div id="into-image" class="float-img float-journal2" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                    <p>The invention of the steam powered press, in 1812, credited to Friedrich Gottlob Koenig and Andreas Friedrich Bauer, made it possible to print over a thousand copies of a page per hour. This began to make newspapers available to a mass audience (which in turn helped spread literacy), and from the 1820s changed the nature of book production, forcing a greater standardization in titles and other metadata. [from <a href=" http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html" target="_blank">A History of Graphic Design</a>, Guity Novin>]</p>
+                    <p>One of the greatest improvement in the book-making processs is the shift from the manual to the mechanical creation of them, thanks to the invention of the <a href="https://en.wikipedia.org/wiki/Linotype_machine" target="_blank">Linotype Machine</a> (Ottmar Mergenthaler, 1886). Some years later the <a href="https://en.wikipedia.org/wiki/Monotype_system" target="_blank">Monotype System</a> was invented, simplyfing the whole process.</p>
+                    <p>ILLUSTRATION</p>
+                    <p>Such was the importance of images, especially wood-engraved illustrations, during the Victorian period that scholar Brian Maidment compares them to the 
+                    <blockquote>"use of the photograph in contemporary society"</blockquote></p>
+                    <p>Before the development of wood engraving and the printing technology that allowed for the mass circulation of illustrated books, Shakespeare’s Works often contained just a single frontispiece or a few illustrations per play that were printed on different pages than the text. The image on the side is an example of the work of John Archibald Austen, a British book illustrator.</p>
+                  <p>FONT</p>
+                    <p>In the European Enlightenment in the late 18th century, broad nib quills were replaced by pointed steel pens as the popular writing tool of the day. Together with developments in printing technology, ink, and paper making, it became to print letterforms of high contrast and delicate hairlines that were increasingly detached from the written letterforms.</p>
+                </div>
+            </div>  
+        </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>1920</b></span>
+                    </h2>
+                    <h4>Third Style</h4>
+                    <div id="into-image" class="float-img float-futurism1" style="margin-top: 10%;"></div>
+                    <div id="into-image" class="float-img float-futurism2" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                    <p>At the beginning of the 20th Century, modern art movements such as Futurism, Dadaism and Constructivism revolutionized the European layout and typography. At the same time Cubism departed from Realism and opened the vista for abstract art. Cubists analysed the representational art in three-dimensional view points and added a fourth dimension, time, which rendered the composition complex and rather unwieldy. But upon a more careful study they revealed a deconstruction of the geometry of space into rectangles, triangles and ellipses in a dynamic trajectory that redefined the aesthetics of perspective. [from <a href=" http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html" target="_blank">A History of Graphic Design</a>, Guity Novin]</p>
+
+                    <p>In the <i>Manifesto del Futurismo</i>, written by the Italian poet Filippo Tommaso Marinetti, it is expressed the artistic philosophy of Futurism, that was a rejection of the past and a celebration of speed, machinery, violence, youth and industry. It also advocated the modernization and cultural rejuvenation of Italy. Furthermore, he proclaimed a "Typographic Revolution" against the "so-called typographic harmony of the page", and was based on the use, on the same, of "three or four different colours". [from "Distruzione della sintassi — Immaginazione senza fili — Parole in libertà, 1913, F. T. Marinetti]</p>
+                    <p>FONT</p>
+                    <p>The font is inspired by newspapers and magazines, where text is the main focus.
+                    The rounded letters (b, c, d, e, o, p, q) are a bit squarish on the inside. Another feature that improves the rendering by allowing more "air" between each letter pair. Geometrical shapes are very important for the fonts, too.
+                    </p>
+                </div>
+            </div>  
+        </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>1950</b></span>
+                    </h2>
+                    <h4>Fourth Style</h4>
+                    <div id="into-image" class="float-img float-international1" style="margin-top: 10%;"></div>
+                    <div id="into-image" class="float-img float-international2" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                    <p>During the 1900s other design based movements were formulating, influencing and influenced by the <i>International Typographic Style</i>. These movements emerged within the relationships between artistic fields including architecture, literature, graphic design, painting, sculpting etc. All of these styles are defined by reductionist purity as a visually compelling strategy of conveying messages through geometric and color based hierarchies.</p>
+                    <p>The <i>International Typographic Style</i>, also known as the <i>Swiss Style</i>, is a graphic design style that emerged in Russia, the Netherlands, and Germany in the 1920s and was further developed by designers in Switzerland during the 1950s. The <i>International Typographic Style</i> has had profound influence on graphic design as a part of the modernist movement, impacting many design-related fields including architecture and art. It emphasizes cleanness, readability, and objectivity.</p>
+                    <p>Hallmarks of the style are asymmetric layouts, use of a grid, sans-serif typefaces, and flush left, ragged right text. The style is also associated with a preference for photography in place of illustrations or drawings. The 1950s saw the distillation of International Typographic Style elements into sans-serif font families, the goal of which was to create a pure typeface that could be applied to longer texts and that was highly readable. Sans serif is a type style believed to express "the spirit of a more progressive age" by early designers in the movement.</p>
+                    <p>Each design done with <i>International Typographic Style</i> in mind begins with a mathematical grid, because a grid is the "most legible and harmonious means for structuring information." Text is then applied.</p>
+                </div>
+            </div>  
+        </section>
+       <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>1990</b></span>
+                    </h2>
+                    <h4>Fifth Style</h4>
+                    <div id="into-image" class="float-img float-1990-1" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                    <p>The style is already characterized by electronics and informatics, such as web design and TV technologies, which aim at forseen the expectations of the reader. The goal of this movement was to influence the public opinion, actively involving the reader. The main characteristics are the useof pop iconography, music and film.</p> 
+                    <p>In 1991, Neville Brody and Jon Wozencroft created the FUSE project. FUSE is an interactive magazine that sets out to challenge our current ideas about typographic and visual language in an age of ever changing communications technology and media. Brody was also partly responsible for instigating the fusion between a magazine, graphics design and typeface design, which are the basis of the whole style.</p>
+                    <p>In 1989 FontShop, the first mail-order distributor for digital fonts, was started by Erik Spiekermann. FontShop International followed and now publishes the FontFont range of typefaces.
+                    </p>
+                    <p>FONTS</p>
+                    <p>A little bit of inked up grunge and a little old school analog flavor work together to give a vintage typewriter typeface for website and designs.</p>
+                </div>
+            </div>  
+        </section>
+        <section class="doc">
+            <div class="grid">
+                <div class="col-100">
+                    <h2 class="subheadline">
+                    <span><b>2040</b></span>
+                    </h2>
+                    <h4>Sixth Style</h4>
+                    <div id="into-image" class="float-img float-future" style="margin-top: 10%;"></div>
+                </div>
+                <div class="col-20">
+                </div>
+                <div class="col-80">
+                    <p>It is our own style: a work in progress.</p>
+                    <br> <br> <br> <br> <br>
+                    <p>We have decided to use strong colors and shapes based on movement. Movement is also given by the changing background color, while scrolling the page.</p>
+                    
+                </div>
+            </div>  
+        </section>
+        <section>
+            <div class="grid margin-bottom"></div>
+        </section>
+    <!-- FOOTER -->
+        <footer class="footer">
+            <div class="grid " id="disclaimer">
+            <div class="col-100">
+                <img src="img/JSOS_logo_2.svg" alt="" class="footer__logo">
+                <div class="horizontal-separator"></div>
+                <div class="footer__final-text" id="footer_doc">
+                    <p ><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
+                    <p >All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©JSOS</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+    <!-- FOOTER END -->
+  </main>
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <!-- <script src="js/locomotive-scroll.min.js"></script> -->
+  <script src="js/scripts.js"></script>
+  <script>(function(){
+    docReady(applyTheme)
+  })();
+  </script>
+  <script src="functions.js"></script>
+
+</body>
+</html>

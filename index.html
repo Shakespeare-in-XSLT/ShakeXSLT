@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,6 +23,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/locomotive-scroll.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dropdown.css">
 
   <!-- BOXICONS -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,6 @@
   <script src="js/swup.min.js"></script>
   <script src="js/SwupBodyClassPlugin.min.js"></script>
   <script src="js/SwupHeadPlugin.min.js"></script>
-
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
-    <!-- 1950 -->
+      <!-- 1950 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <!-- 1990 -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
@@ -57,62 +56,56 @@
     <!-- 2040 -->
   <link rel="stylesheet" href="https://use.typekit.net/twf6nrh.css">
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
     <!-- Overlay level when fab open -->
     <div class="overlay">
       <span data-scroll class="text-reveal">Choose your style</span>
     </div>
-
     <div class="site-container">
-
       <div class="preloader"></div>
 
       <!-- MENU -->
-
       <header class="fixed">
-
         <div class="header fade-down">
-
           <div class="header__logo">
-            <a href="" class="logo">
+            <a href="index.html" class="logo">
               <img id="logo-header" src="img/JSOS_logo_1.svg" alt="">
             </a>
           </div>
-
             <nav class="header__menu" id="main-menu">
-
               <ul class="site-nav">
-                <li><a href="opera.html"> Opera </a></li>
-                <li><a href="documentation.html"> Documentation </a></li>
-                <li><a href="html"> Disclaimer </a></li>
+                <li id="op">
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Opera</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
+                        <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
+                        <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                      </div>
+                    </div>
+                </li>
+                <li class="aiuto"><a href="documentation.html"> Documentation </a></li>
+                <li class="aiuto"><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
               </ul>
-
-              <div class="line-menu"></div>
-
+              <!-- <div class="line-menu"></div> 
+                    non mi piaceva la linea, rimettila se vuoi, olga
+              -->
             </nav>
-
           <div class="header__cta">
             <a href="" class="button">Github</a>
           </div>
-
           <div class="header__icon">
             <div class="icon-hamburger">
               <span></span>
             </div>
           </div>
-
         </div>
-
       </header>
-
       <!-- MENU END -->
 
     <!-- FAB BUTTON -->
-
     <div class="fab-container">
       <div class="fab-trigger">
         <svg xmlns="http://www.w3.org/2000/svg" class="open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -123,7 +116,6 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </div>
-
       <ul class="fab-options">
         <li class="trigger-style trigger1600">
           <span class="fab-label">1600</span>
@@ -225,17 +217,13 @@
         </li>
       </ul>
     </div>
-
     <!-- FAB BUTTON END -->
 
   <!-- <div class="scroll-container" data-scroll-container> -->
 
     <main id="swup" class="transition-fade">
-
       <!-- HERO -->
-
       <section id="hero" class="hero">
-
         <div class="hero-text__content col-66">
           <div class="hero-text">
             <div class="subtitle-container">
@@ -248,51 +236,44 @@
               <span><b>and <span class="marker marker--3">XSLT</span> </b></span>
             </h1>
           </div>
-
         </div>
         <div class="col-33 delay-3">
           <div class="hero-image">
             <img id="hero-image" src="img/hero/shakespeare_1600.png" alt=""><!-- Foto di <a href="https://pixabay.com/it/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6393262">Gordon Johnson</a> da <a href="https://pixabay.com/it/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6393262">Pixabay</a> -->
-           </div>
+          </div>
         </div>
-
-  </section>
-
+      </section>
   <!-- HERO END -->
 
   <!-- INTRO -->
-
   <section id="intro"class="intro">
     <div class="grid">
-
       <div class="col-40 margin-right">
         <h2 class="subheadline">
           <span><b>What is Shakespeare XML?</b></span>
         </h2>
       </div>
-
       <div class="col-40">
         <h4>
           <span data-scroll><b>TEI: a standard for the representation of texts in digital form</b></span>
         </h4>
         <p >Shakespeare XML allows to read articles while travelling in time through four historical typographical and layout styles that span over five hundred years.</p>
-        <a href="#" class="button-frame"><span>See the Texts</span></a>
+        <a href="documentation.html" class="button-frame"><span>Explore the Project Documentation</span></a>
       </div>
-
-    </div>
-    
-    <div id="into-image" class="float-img float-img--1">
-
+    </div>  
+    <div id="into-image" class="float-img float-img--1"></div>
   </section>
-
   <!-- INTRO END -->
 
+    <div class="panel-cta">
+      <div class="panel-cta__content">
+        <h1 id="journey" ><span class="text-red">Take a journey</span> into Shakespeare's world as you have never done before!</h1>
+      </div>
+    </div>
+
   <!-- OPERA -->
-
   <section id="opera" class="media-affix">
-
     <div class="grid">
-
       <div class="col-50 opera-title">
         <h3 class="subheadline margin-top">
           <span><b>Choose the opera</b></span>
@@ -300,50 +281,42 @@
         </h3>
         <p class="subtitle margin-right">We selected three operas of the english writer. Choose the one you want to read.</p>
       </div>
-
       <div class="col-50">
         <div class="media-affix__item">
           <div class="media-affix__text">
-            <h4>The commedy <span class="text-red">of errors</span></h4>
+            <h4>The Commedy <span class="text-red">Of Errors</span></h4>
             <p>After both being separated from their twins in a shipwreck, Antipholus and his slave Dromio go to Ephesus to find them. The other set of twins lives in Ephesus, and the new arrivals cause a series of incidents of mistaken identity. At the end, the twins find each other and their parents and resolve all of the problems caused earlier.</p>
           </div>
           <img src="img/golden-gate.jpg" class="media-affix__image" alt="">
           <a href="opera.html?ConttoLoad=Errors" class="button-frame"><span>See the Text</span></a>
         </div>
       </div>
-
       <div class="col-50"></div>
-
       <div class="col-50">
         <div class="media-affix__item">
           <div class="media-affix__text">
-            <h4>The <span class="text-red">tempest</span></h4>
+            <h4>The <span class="text-red">Tempest</span></h4>
             <p>Prospero uses magic to conjure a storm and torment the survivors of a shipwreck, including the King of Naples and Prospero’s treacherous brother, Antonio. Prospero’s slave, Caliban, plots to rid himself of his master, but is thwarted by Prospero’s spirit-servant Ariel. The King’s young son Ferdinand, thought to be dead, falls in love with Prospero’s daughter Miranda. Their celebrations are cut short when Prospero confronts his brother and reveals his identity as the usurped Duke of Milan. The families are reunited and all conflict is resolved. Prospero grants Ariel his freedom and prepares to leave the island.</p>
             <a href="opera.html?ConttoLoad=Tempest" class="button-frame"><span>See the Text</span></a>
           </div>
           <img src="img/golden-gate.jpg" class="media-affix__image" alt="">
         </div>
       </div>
-
       <div class="col-50"></div>
-
       <div class="col-50">
         <div class="media-affix__item">
           <div class="media-affix__text">
-            <h4>Two gentelman <span class="text-red">of Verona</span></h4>
+            <h4>Two Gentelman <span class="text-red">Of Verona</span></h4>
             <p>Two best friends, Proteus and Valentine, travel to Milan where they both fall in love with Silvia. Silvia loves Valentine, but Proteus pursues her despite the fact he has a girlfriend at home. After an apology, Proteus and Valentine reconcile, Proteus loves his girlfriend again, and both couples marry.</p>
             <a href="opera.html?ConttoLoad=Gentlemen" class="button-frame"><span>See the Text</span></a>
           </div>
           <img src="img/golden-gate.jpg" class="media-affix__image" alt="">
         </div>
       </div>
-
     </div>
-
   </section>
 
   <!-- ABOUT -->
-
   <section id="about">
   <div class="grid grid--center">
     <div class="col-100">
@@ -371,11 +344,9 @@
     </div>
 </div>
   </section>
-
   <!-- ABOUT END -->
 
   <!-- TEAM -->
-
   <section id="team">
   <div class="grid">
     <div class="col-100">
@@ -384,111 +355,77 @@
         <p>Meet the projects team. We are all student from the master degree DHDK of the <i>University of Bologna "Alma Mater Studiorum".</i></p>
       </div>
     </div>
-
     <div class="col-33">
         <div class="team__item">
         <div id="olga" class="member_img">
         </div>
-        <p class="member_role">THE EXPERT</p>
+        <p class="member_role">The South Tyrolean</p>
         <h3 class="subtitle">Olga Pagnotta</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>After the Bachelor's Degree in Humanities at the University of Bologna (2018-2021), is now attending the Master's Dregree in DHDK.</p>
         </div>
     </div>
-
     <div class="col-33">
       <div class="team__item">
         <div id="sara" class="member_img">
         </div>
-        <p class="member_role">THE EXPERT</p>
+        <p class="member_role">The Calabrian</p>
         <h3 class="subtitle">Sara Vellone</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>After the Bachelor's Degree in Humanities at the University of Bologna (2018-2021), is now attending the Master's Dregree in DHDK.</p>
         </div>
       </div>
-
     <div class="col-33">
       <div class="team__item">
         <div id="stefano" class="member_img">
         </div>
-        <p class="member_role">THE EXPERT</p>
+        <p class="member_role">The Native</p>
         <h3 class="subtitle">Stefano Renzetti</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>After the Bachelor's Degree at the Accademia di Belle Arti of Bologna (2010-2014), is now attending the Master's Dregree in DHDK.</p>
         </div>
       </div>
-</div>
+  </div>
   </section>
-
   <!-- TEAM END -->
 
-
-  <!-- CTA OPERA -->
-
-  <div class="panel-cta">
-
-    <div class="panel-cta__content">
-      <h3 class="headline"><span class="text-red">Explore</span> the text as you never have done before!</h3>
-      <p>Take a look to the main part of our project and read the Shakespeare's opera.</p>
-      <a href="opera.html" class="button-frame"><span>Go to Opera</span></a>
-    </div>
-
-
-    <div class="bubble bubble--1 zoom-out delay-4"></div>
-    <div class="bubble bubble--2 zoom-out delay-6"></div>
-    <div class="bubble bubble--3 zoom-out delay-8"></div>
-    <div class="bubble bubble--4 zoom-out delay-10"></div>
-
-  </div>
-
-  <!-- CTA OPERA END -->
-
   <!-- FOOTER -->
-
   <footer class="footer">
-    <div class="grid">
+    <div class="grid" id="disclaimer">
       <div class="col-100 margin-bottom">
         <img src="img/JSOS_logo_2.svg" alt="" class="footer__logo">
         <div class="horizontal-separator"></div>
       </div>
-      <div class="col-25">
-        <h4>Strong title lorem ispum</h4>
-        <p>Lorem isposum dot
-          aia memeuyr laborum
-          aia memeuyr laborum
+      <div class="col-40">
+        <h4>Disclaimer</h4>
+        <p>The purpose of this web site is to explore various types of typographic and
+          layout style for text documents, as an end-of-course project for the "Information
+          Modeling and Web technologies" course of the Master Degree in Digital Humanities
+          and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.
         </p>
       </div>
-      <div class="col-25">
-        <h4>Strong title lorem ispum</h4>
-        <p>Lorem isposum dot
-          aia memeuyr laborum
-          aia memeuyr laborum
-        </p>
-      </div>
-      <div class="col-25">
-        <h4>Strong title lorem ispum</h4>
-        <p>Lorem isposum dot
-          aia memeuyr laborum
-          aia memeuyr laborum
-        </p>
-      </div>
-      <div class="col-25">
-        <h4>Strong title lorem ispum</h4>
-        <p>Lorem isposum dot
-          aia memeuyr laborum
-          aia memeuyr laborum
+      <div class="col-20"></div>
+      <div class="col-40">
+        <h4>Source</h4>
+        <p>The documents contained in this web site have been selected for their length and
+          complexity from: <br>
+          <a href="https://dracor.org/" target="_blank">DraCor</a>.<br> 
+          Their publication here is not intended to be an alternative or replace their original locations:
+          <ul>
+              <li><a href="https://dracor.org/shake/the-comedy-of-errors" target="_blank">The Comedy Of Errors</a></li>
+              <li><a href="https://dracor.org/shake/the-tempest" target="_blank">The Tempest</a></li>
+              <li><a href="https://dracor.org/shake/two-gentlemen-of-verona" target="_blank">Two Gentlemen Of Verona</a></li>
+          </ul>
         </p>
       </div>
       <div class="col-100 footer__final-text">
-        <p><strong>Copyright </strong> sit amet - Consectetur adipisicing elit. </p>
+        <p><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
+        <p>All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©JSOS</p>
       </div>
     </div>
   </footer>
-
   <!-- FOOTER END -->
 
   </main>
 
-
   <!-- </div> -->
-
 
   <script src="js/jquery-1.12.4.min.js"></script>
   <!-- <script src="js/locomotive-scroll.min.js"></script> -->
@@ -497,9 +434,7 @@
     docReady(applyTheme)
   })();
   </script>
-
-
-
+  <script src="functions.js"></script>
 
 </body>
 </html>
