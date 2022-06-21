@@ -343,17 +343,17 @@ input:checked{background-color:green;}
 .float-img{z-index: -10; position: absolute; background-repeat: no-repeat;background-attachment: fixed;background-size: contain;background-position: center center;}
 
 .float-img--1{top:55%; left:-2%;width: 254px;height: 254px;background-image: url("img/style1600/filigrana.png");}
-.float-first-folio{top:130%; left:-2%;width: 254px;height: 254px;background-image: url("first-folio.png");}
-.float-rom-jul{top:80%; left:-2%;width: 254px;height: 254px;background-image: url("rom-jul.png");}
-.float-bembo{top:280%; left:-2%;width: 254px;height: 254px;background-image: url("bembo.png");}
-.float-journal{top:90%; left:-2%;width: 200px;height: 200px;background-image: url("journal.jpg");}
-.float-journal2{top:290%; left:-2%;width: 200px;height: 200px;background-image: url("journal2.png");}
-.float-futurism1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("futurism1.png");}
-.float-futurism2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("futurism2.png");}
-.float-international1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("international1.png");}
-.float-international2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("international2.png");}
-.float-1990-1{top:100%; left:-2%;width: 200px;height: 200px;background-image: url("1990-1.png");}
-.float-future{top:30%; left:25%;width: 200px;height: 200px;background-image: url("future.png");}
+.float-first-folio{top:130%; left:-2%;width: 254px;height: 254px;background-image: url("../img/first-folio.png");}
+.float-rom-jul{top:80%; left:-2%;width: 254px;height: 254px;background-image: url("../img/rom-jul.png");}
+.float-bembo{top:280%; left:-2%;width: 254px;height: 254px;background-image: url("../img/bembo.png");}
+.float-journal{top:90%; left:-2%;width: 200px;height: 200px;background-image: url("../img/journal.jpg");}
+.float-journal2{top:290%; left:-2%;width: 200px;height: 200px;background-image: url("../img/journal2.png");}
+.float-futurism1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("../img/futurism1.png");}
+.float-futurism2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("../img/futurism2.png");}
+.float-international1{top:60%; left:-2%;width: 200px;height: 200px;background-image: url("../img/international1.png");}
+.float-international2{top:220%; left:-2%;width: 200px;height: 200px;background-image: url("../img/international2.png");}
+.float-1990-1{top:100%; left:-2%;width: 200px;height: 200px;background-image: url("../img/1990-1.png");}
+.float-future{top:30%; left:25%;width: 200px;height: 200px;background-image: url("../img/future.png");}
 
 
 /* ! Bubble  */
@@ -550,9 +550,9 @@ p.line {
   background-position: center center;
 }
 
-#olga {  background-image: url('img/style1600/TEAM/TEAM_OLGA.png');}
-#sara {  background-image: url('img/style1600/TEAM/TEAM_SARA.png');}
-#stefano {  background-image: url('img/style1600/TEAM/TEAM_STEFANO.png');}
+#olga {  background-image: url('../img/style1600/TEAM/TEAM_OLGA.png');}
+#sara {  background-image: url('../img/style1600/TEAM/TEAM_SARA.png');}
+#stefano {  background-image: url('../img/style1600/TEAM/TEAM_STEFANO.png');}
 
 
 /* ! About */
@@ -711,9 +711,9 @@ body.style1890,.style1890.scroll-down header {font-family: 'Playfair Display', s
 .style1890 section {border-bottom: 1px solid;}
 .style1890 .about__logo {border: 1px solid;}
 
-.style1890 #olga {background-image: url('img/style1890/TEAM/TEAM_OLGA.png');}
-.style1890 #sara {background-image: url('img/style1890/TEAM/TEAM_SARA.png');}
-.style1890 #stefano {background-image: url('img/style1890/TEAM/TEAM_STEFANO.png');}
+.style1890 #olga {background-image: url('../img/style1890/TEAM/TEAM_OLGA.png');}
+.style1890 #sara {background-image: url('../img/style1890/TEAM/TEAM_SARA.png');}
+.style1890 #stefano {background-image: url('../img/style1890/TEAM/TEAM_STEFANO.png');}
 
 .style1890 .bubble--1,.style1890 .bubble--2,.style1890 .bubble--3,.style1890 .bubble--4 {background: #dad9d3;}
 

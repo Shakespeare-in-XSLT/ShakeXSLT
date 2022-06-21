@@ -79,8 +79,8 @@ function loadXMLDoc(filename) {
 
 
 function displayResultErrors() {
-    xml = loadXMLDoc("TheComedyOfErrors.xml");
-    xsl = loadXMLDoc("template.xsl");
+    xml = loadXMLDoc("./xml/TheComedyOfErrors.xml");
+    xsl = loadXMLDoc("./xml/template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
@@ -104,8 +104,8 @@ function displayResultErrors() {
 
 
 function displayResultTempest() {
-    xml = loadXMLDoc("TheTempest.xml");
-    xsl = loadXMLDoc("template.xsl");
+    xml = loadXMLDoc("./xml/TheTempest.xml");
+    xsl = loadXMLDoc("./xml/template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
@@ -128,8 +128,8 @@ function displayResultTempest() {
 
 
 function displayResultGentlemen() {
-    xml = loadXMLDoc("TwoGentlemenOfVerona.xml");
-    xsl = loadXMLDoc("template.xsl");
+    xml = loadXMLDoc("./xml/TwoGentlemenOfVerona.xml");
+    xsl = loadXMLDoc("./xml/template.xsl");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         reset()
