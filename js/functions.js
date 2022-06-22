@@ -216,9 +216,10 @@ function saveNewClass(){
         // update formcheck list
         updateformcheckList(Object.keys(UserClasses));
         // insert tag for selection
-        var spn = document.createElement('p')
+        var spn = document.createElement('span')
         spn.innerHTML = ciao;
         spn.classList.add(NewClass);
+        spn.classList.add("myspan");
         range = sel.getRangeAt(0);
         range.deleteContents();
         range.insertNode(spn);
