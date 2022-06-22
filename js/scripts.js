@@ -461,15 +461,13 @@ $( document ).ready(function() {
     $('.preloader').fadeOut('fast');
     $('.header, .aside').addClass('is-inview');
     // scroll.start();
+  // $(".fab-trigger").click(function(){
+  //   $(".overlay").fadeIn(1000);
+  // });
+
   });
 
-  $(".fab-trigger").click(function(){
-    $(".overlay").fadeIn(1500);
-  });
 
-  $(".trigger-style").click(function() {
-      $(".overlay").fadeOut(2000);
-  });
 
 
   /* Line Menu Animation */

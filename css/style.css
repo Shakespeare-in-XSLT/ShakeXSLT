@@ -302,9 +302,9 @@ input:checked{background-color:green;}
 
 /* ! Fab button  */
 
-.fab-container{position:fixed; bottom:50px; right:50px; z-index:1000; cursor:pointer;}
+.fab-container{position:fixed; bottom:50px; right:50px; z-index:1000;}
 
-.fab-trigger{z-index: 10000;position: fixed;bottom: 40px;right:40px;width:50px; height:50px; border-radius:100%; background:#fff;-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
+.fab-trigger{cursor: pointer; z-index: 10000;position: fixed;bottom: 40px;right:40px;width:50px; height:50px; border-radius:100%; background:#fff;-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
 .fab-trigger:hover{width:60px; height:60px;background:#f1f1f1;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
 .fab-open .fab-trigger{width:50px; height:50px;-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
 
@@ -312,10 +312,12 @@ input:checked{background-color:green;}
 
 .fab-icon-holder {opacity: 0;width: 5px;height: 5px;border-radius:100%; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .fab-icon-holder:hover{-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4); box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4);}
-.fab-open .fab-icon-holder {opacity: 1;background:#fff;width: 50px;height: 50px;-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
+.fab-open .fab-icon-holder {position: relative; opacity: 1;background:#fff;width: 50px;height: 50px;-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
 .fab-open li:hover .fab-icon-holder {background:#f1f1f1;width: 60px;height: 60px;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);transition: all 0.3s cubic-bezier(0.28, 0.44, 0.49, 1);}
 
-.fab-icon-holder svg, .fab-trigger svg {display: flex; align-items: center; justify-content: center; height:100%; color:#000;padding: 10px;}
+.fab-icon-holder svg, .fab-trigger svg {height: 100%;width: 100%;position: absolute;}
+
+.fab-trigger svg{padding: 6px;}
 
 .fab-trigger .close {display: none;}
 .fab-open .fab-trigger .close {display: flex;}
@@ -326,7 +328,7 @@ input:checked{background-color:green;}
 .fab-options {display: none;opacity: 0;list-style-type: none;position: absolute;bottom: 0px;right:0px;transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .fab-open .fab-options {display: block; opacity: 1; list-style-type: none;position: absolute; bottom: 54px; right:20px;transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 
-.fab-options li {display: flex;justify-content: flex-end;padding: 10px 5px;}
+.fab-options li { cursor:pointer; display: flex;justify-content: flex-end;padding: 10px 5px;}
 
 .fab-open .fab-options li span{color:#fff;opacity:0;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(50px);}
 .fab-open .fab-options li:hover span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
@@ -685,9 +687,9 @@ body.style1600 {background-color: #f5f4f0;}
 
 .style1600 .bubble--1,.style1600 .bubble--2,.style1600 .bubble--3,.style1600 .bubble--4 {background: #ededed;}
 
-.style1600.fab-open .trigger1600>.fab-icon-holder {width:60px; height:60px;background:#f1f1f1;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style1600.fab-open .trigger1600>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
 .style1600.fab-open .trigger1600 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
-
+.style1600.fab-open .trigger1600 {cursor: default;pointer-events: none;}
 
 
 /* ! 1890 */
@@ -719,6 +721,10 @@ body.style1890,.style1890.scroll-down header {font-family: 'Playfair Display', s
 
 .style1890 .footer .col-25{border: 1px solid;padding-left: 1rem;padding-right: 1rem;}
 
+.style1890.fab-open .trigger1890>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style1890.fab-open .trigger1890 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
+.style1890.fab-open .trigger1890 {cursor: default;pointer-events: none;}
+
 /* ! 1920 */
 body.style1920 {font-family: 'Domine', serif;}
 .style1920 .headline, .style1920 .subheadline,.style1920 .button-frame {font-weight: 600;font-family: 'Jost', sans-serif;text-transform: uppercase;}
@@ -739,16 +745,33 @@ body.style1920 {font-family: 'Domine', serif;}
 .style1920 .site-nav > li a {opacity: 1;font-weight: 700;}
 .style1920.scroll-down .fixed {border-bottom:0px;}
 
+.style1920.fab-open .trigger1920>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style1920.fab-open .trigger1920 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
+.style1920.fab-open .trigger1920 {cursor: default;pointer-events: none;}
+
+.style1920 #olga {background-image: url('img/style1920/TEAM/TEAM_OLGA.png');}
+.style1920 #sara {background-image: url('img/style1920/TEAM/TEAM_SARA.png');}
+.style1920 #stefano {background-image: url('img/style1920/TEAM/TEAM_STEFANO.png');}
+
 /* ! 1950 */
 body.style1950 {font-family: 'Inter', sans-serif;}
 .style1950 .headline, .style1950 .subheadline,.style1950 .button-frame {font-weight: 800;font-family: 'Inter', sans-serif;text-transform: lowercase;}
 .style1950 h4 {font-weight: 600;font-family: 'Inter', sans-serif;text-transform: lowercase;}
 
+.style1950.fab-open .trigger1950>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style1950.fab-open .trigger1950 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
+.style1950.fab-open .trigger1950 {cursor: default;pointer-events: none;}
+
+.style1950 #olga {background-image: url('img/style1950/TEAM/TEAM_OLGA.png');}
+.style1950 #sara {background-image: url('img/style1950/TEAM/TEAM_SARA.png');}
+.style1950 #stefano {background-image: url('img/style1950/TEAM/TEAM_STEFANO.png');}
+
 /* ! 1990 */
 body.style1990 {font-weight: 400;font-family: 'Fira Sans', sans-serif;}
 .style1990 .headline, .style1990 .subheadline{font-weight: 600;font-family: 'Fira Sans', sans-serif;}
 .style1990 .subtitle, .style1990 h4{font-family: 'Special Elite', cursive;}
-.style1990 .button-frame  {font-family: 'VT323', monospace;text-transform: uppercase;}
+.style1990 .button-frame,.style1990 .text-red  {font-family: 'VT323', monospace;text-transform: uppercase;}
+.style1990 .text-red h4 {font-size: 42px;}
 .style1990 .hero {background-color: #5edede;}
 .style1990 .hero h1, .style1990 .subheadline,.style1990 .text-red {color: #d92d6f;}
 .style1990 .hero .subtitle{color: #383d91;}
@@ -761,6 +784,13 @@ body.style1990 {font-weight: 400;font-family: 'Fira Sans', sans-serif;}
 .style1990 .button-frame:hover:before{border-radius: 40px;background: #c5175a; transition: all 0.6s cubic-bezier(.215, .61, .355, 1);}
 .style1990 .button-frame:after{display: none;}
 
+.style1990.fab-open .trigger1990>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style1990.fab-open .trigger1990 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
+.style1990.fab-open .trigger1990 {cursor: default;pointer-events: none;}
+
+.style1990 #olga {background-image: url('img/style1990/TEAM/TEAM_OLGA.png');}
+.style1990 #sara {background-image: url('img/style1990/TEAM/TEAM_SARA.png');}
+.style1990 #stefano {background-image: url('img/style1990/TEAM/TEAM_STEFANO.png');}
 
 /* ! 2040 */
 
@@ -780,6 +810,19 @@ body.style2040 {background: rgb(36,219,166);background: linear-gradient(337deg, 
 .style2040 .button-frame:after{display: none;}
 
 .style2040 #hero-image {transform: translatey(0px);animation: float 6s ease-in-out infinite;}
+
+.style2040.fab-open .trigger2040>.fab-icon-holder {width:60px; height:60px;background:#dbd9d9;-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.25);}
+.style2040.fab-open .trigger2040 span{opacity:1;transition: all 0.6s cubic-bezier(.215, .61, .355, 1);transform: translateX(0px);}
+.style2040.fab-open .trigger2040 {cursor: default;pointer-events: none;}
+
+.style2040 #olga {background-image: url('img/style2040/TEAM/TEAM_OLGA.png');}
+.style2040 #sara {background-image: url('img/style2040/TEAM/TEAM_SARA.png');}
+.style2040 #stefano {background-image: url('img/style2040/TEAM/TEAM_STEFANO.png');}
+
+
+
+
+/* animation hero-image style 2040 */
 
 @keyframes float {
 	0% {
