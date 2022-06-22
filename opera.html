@@ -100,6 +100,63 @@
     </header>
     <!-- MENU END -->
 
+    <!-- SIDEBAR -->
+
+    <div class="sidebar-trigger">
+      <div class="sidebar-trigger-container">
+        <i class='sidebar-icon bx bx-chevron-right'></i>
+      </div>
+    </div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-container">
+        <details class="style3">
+          <summary><div class="sidebar-button"><i class='sidebar-icon bx bx-bookmark' ></i></i>INDEX<i class='arrow bx bx-chevron-down'></i></div></summary>
+          <div class="details-content" id="index">
+            <p id="att"></p>
+          </div>
+        </details>
+        <details class="style3">
+          <summary><div class="sidebar-button"><i class='sidebar-icon bx bx-code-block' ></i>METADATA<i class='arrow bx bx-chevron-down'></i></div></summary>
+          <div class="details-content">
+            <div id="formchecks">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="act"
+                      id="showAct"/>
+                  <label class="form-check-label" for="showAct"> Acts </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="scene"
+                      id="showScenes"/>
+                  <label class="form-check-label" for="showScenes"> Scenes
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="person"
+                      id="showPeople"/>
+                  <label class="form-check-label" for="showPeople"> People
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="actions"
+                      id="showActions"/>
+                  <label class="form-check-label" for="showActions"> Stage Actions
+                  </label>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="style3">
+          <summary><div class="sidebar-button"><i class='sidebar-icon bx bx-pencil' ></i>ADD METADATA<i class='arrow bx bx-chevron-down'></i></div></summary>
+          <div class="details-content">
+            <input class="add-class-input" type="text" id="insert" onfocus="this.value=''" placeholder="type here" value=""></input>
+            <button class="button-frame--small" id="validate" onclick="saveNewClass()">Add Class</button>
+          </div>
+        </details>
+      </div>
+    </aside>
+
+    <!-- SIDEBAR END -->
+
     <!-- FAB BUTTON -->
     <div class="fab-container">
       <div class="fab-trigger">
