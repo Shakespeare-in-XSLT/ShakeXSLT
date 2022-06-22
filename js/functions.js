@@ -198,7 +198,7 @@ function saveNewClass(){
     NewClass= $("#insert").val().toLowerCase().toString();
     sel = document.getSelection()
     Value = sel.toString();
-    var ciao = Value.replaceAll("\n", "<br>");
+    var ciao = Value.replaceAll("\n", "</br>");
     if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
         // if one is empty string stop execution
         alert("Select a valid text to create the new class!")
@@ -216,7 +216,7 @@ function saveNewClass(){
         // update formcheck list
         updateformcheckList(Object.keys(UserClasses));
         // insert tag for selection
-        var spn = document.createElement('span')
+        var spn = document.createElement('p')
         spn.innerHTML = ciao;
         spn.classList.add(NewClass);
         range = sel.getRangeAt(0);
@@ -228,7 +228,7 @@ function saveNewClass(){
             if (NewClass === c){
                 if($('#'+NewClass).is(":checked")){
                     spn.classList.add('userclassSelected');
-                    $('.userclassSelected').css({'background-color':'blue'})
+                    $('.userclassSelected').css({'background-color':'navajowhite'})
                 }
             }
         }
@@ -248,7 +248,7 @@ function updateformcheckList(lista){
             $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
                 if (this.checked) {
                     $('.'+ele).addClass('userclassSelected')
-                    $('.userclassSelected').css({'background-color':'blue'})
+                    $('.userclassSelected').css({'background-color':'navajowhite'})
                 }
                 else {
                     $('.userclassSelected').css({'background-color':'transparent'})

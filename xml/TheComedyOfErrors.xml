@@ -10437,7 +10437,6 @@
               </l>
             </p>
           </sp>
-          <l>
           <stage   type="entrance" who="#Adriana #Luciana">
             <hi rend="italic">
             <w>Enter</w>
@@ -10455,8 +10454,7 @@
             <w>Luciana</w>
             <pc>.</pc>
             </hi>
-          </stage>
-          </l>
+          </stage>          
           <sp who="#Adriana">
             <speaker>
               <w >ADRIANA</w>
@@ -12540,16 +12538,16 @@
               <w lemma="prank" ana="#n2">pranks</w>
               <pc>.</pc>
             </l>
-            <l>
-              <stage   type="delivery">
-                <hi rend="italic">
+            <stage   type="delivery">
+              <hi rend="italic">
                 <w>To</w>
                 <c> </c>
                 <w>Dromio</w>
                 <pc>.</pc>
                 <c> </c>
-               </hi>
-              </stage>
+              </hi>
+            </stage>
+            <l>
               <w lemma="sirrah" ana="#n1">Sirrah</w>
               <pc>,</pc>
               <c> </c>
@@ -30267,7 +30265,6 @@
               <w lemma="i" ana="#pno">me</w>
               <pc>.</pc>
             </l>
-            <l>
               <stage   type="delivery">
                 <hi rend="italic">
                 <w>To</w>
@@ -30277,6 +30274,7 @@
                 <c> </c>
                 </hi>
               </stage>
+              <l>
               <w lemma="say" ana="#vvb">Say</w>
               <c> </c>
               <w lemma="now" ana="#av">now</w>
@@ -36728,7 +36726,6 @@
               <w lemma="cold" ana="#av_j">coldly</w>
               <pc>.</pc>
             </l>
-            <l part="I">
               <stage   type="delivery">
                 <hi rend="italic">
                 <w>To</w>
@@ -36737,8 +36734,7 @@
                 <pc>.</pc>
                 <c> </c>
                 </hi>
-              </stage>
-            </l>
+              </stage>           
               <l>
               <w lemma="you" ana="#pn">You</w>
               <c> </c>
@@ -36767,7 +36763,6 @@
               <w lemma="say" ana="#vvg">saying</w>
               <pc>.</pc>
             </l>
-            <l>
               <stage   type="delivery">
                 <hi rend="italic">
                 <c> </c>
@@ -36781,8 +36776,6 @@
                 <pc>.</pc>
                 </hi>
               </stage>
-              <c> </c>
-            </l>
               <l>
               <w lemma="sirrah" ana="#n1">Sirrah</w>
               <pc>,</pc>
