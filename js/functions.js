@@ -229,7 +229,6 @@ function saveNewClass(){
             if (NewClass === c){
                 if($('#'+NewClass).is(":checked")){
                     spn.classList.add('userclassSelected');
-                    $('.userclassSelected').css({'background-color':'navajowhite'})
                 }
             }
         }
@@ -241,18 +240,17 @@ function updateformcheckList(lista){
     elementipresentiJQ = $("#formchecks").children(".form-check")
     elementipresenti = []
     for (var i=0; i<elementipresentiJQ.length; i++){
-        elementipresenti.push(elementipresentiJQ[i].innerText)
+        elementipresenti.push($(elementipresentiJQ[i].firstChild).val())
     }
-    for (ele of lista){
+    for (let ele of lista){
         if (elementipresenti.indexOf(ele)==-1){
             $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='"+ele+"' /><label class='form-check-label'>" + ele + "</label></div>")
             $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
                 if (this.checked) {
                     $('.'+ele).addClass('userclassSelected')
-                    $('.userclassSelected').css({'background-color':'navajowhite'})
                 }
                 else {
-                    $('.userclassSelected').css({'background-color':'transparent'})
+                    $('.'+ele).removeClass('userclassSelected')
                 }
                 }
             )
