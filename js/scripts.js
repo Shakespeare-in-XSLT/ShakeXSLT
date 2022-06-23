@@ -39,73 +39,6 @@ document.addEventListener('swup:willReplaceContent', (event) => {
 
 // SWUP page transition END
 
-// LOCOMOTIVE Scroll
-
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector('[data-scroll-container]'),
-//   smooth: true
-// });
-
-// non usato
-
-// new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
-
-// scroll.destroy();
-// document.addEventListener("jumpto", function(event) { 
-//     scroll.init();
-// });
-
-// non usato fine
-
-// function scrollDetectOpera() {
-//     if (document.querySelector('#opera-text')) {
-//       scroll.destroy();
-//       document.addEventListener("jumpto", function(event) { 
-//           scroll.init();
-//       });
-//   }
-// }
-
-// scrollDetectOpera();
-
-
-// scroll.stop();
-
-
-// LOCOMOTIVE Scroll END
-
-// function scrollDetect(){
-
-//   scroll.on('scroll', func => {
-
-//     var scroll_pos = 0;
-//     scroll_pos = scroll.scroll.instance.scroll.y;
-
-//     body_el = document.body;
-
-//     if(scroll_pos > 200) {
-//       body_el.classList.add( "scroll-down" );
-//     } else {
-//       body_el.classList.remove( "scroll-down" );
-//     }
-
-//   });
-
-//   scroll.on('call', func => {
-//     if(func == "bg-red"){
-//       $('body').toggleClass('bg-red');
-//     } else if(func == "bg-yellow"){
-//       $('body').toggleClass('bg-yellow');
-//     } else if(func == "bg-green"){
-//       $('body').toggleClass('bg-green');
-//     }
-
-//   });
-
-// }
-
-// scrollDetect();
-
 // MENU SCROLL-DOWN
 
 window.onscroll = function() {scrollFunction()};
@@ -118,9 +51,7 @@ function scrollFunction() {
   }
 }
 
-
-
-// NEW CHUNK - ECMAScript 6
+// NEW CHUNK
 
 // Fab menu
 let fabTrigger = document.querySelector('.fab-trigger');
@@ -339,26 +270,6 @@ style2040Trigger.addEventListener("click", function() {
   document.body.classList.remove('style1600','style1890','style1920','style1950','style1990','fab-open');  
 
 });
-
-// let style2040Trigger = document.querySelector('.trigger2040');
-// style2040Trigger.addEventListener("click", function() {
-// changeStyle('style2040',"img/hero/shakespeare_192aaa.png",
-//   ('style1600','style1890','style1920','style1950','style1990')
-// )
-// }
-// )
-
-// function changeStyle(bodyClass,imgPath, classesToRemove) {
- 
-//  document.body.classList.toggle(bodyClass);
-  
-//  document.querySelector('#hero-image').src=imgPath;
- 
-//  document.body.classList.remove(classesToRemove);
-
-// document.body.classList.remove('fab-open');
-
-// }
 
 function docReady(fn) {
     // see if DOM is already available
