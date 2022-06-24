@@ -104,7 +104,7 @@ style1890Trigger.addEventListener("click", function() {
 
   const style1600 = getItemInLocalStorage('style1600')
   if (style1600) {
-    removeItemInLocalStorage('style1890');
+    removeItemInLocalStorage('style1600');
   }
   const style1920 = getItemInLocalStorage('style1920')
   if (style1920) {
