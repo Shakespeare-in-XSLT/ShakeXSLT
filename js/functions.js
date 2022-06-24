@@ -8,37 +8,34 @@ function main() {
     $('#showAct').click(function () {
         if (this.checked){
             $('.act').addClass('acts')
-            $('.acts').css({"background-color": "#ffddff"})}
+            }
         else
-            $('.acts').css({"background-color": "transparent"})
+            $('.act').removeClass('acts')
     })
 
     $('#showScenes').click(function () {
         if (this.checked){
             $('.scene').addClass('scenes')
-            $('.scenes').css({"background-color": "#ddffdd"})}
+            }
         else
-            $('.scenes').css({"background-color": "transparent"})
-    
+            $('.scene').removeClass('scenes')
     })
 
     $('#showPeople').click(function () {
         if (this.checked){
             $('.person').addClass('people')
-            $('.people').css({"background-color": "#ffffdd"})
         }
         else
-            $('.people').css({"background-color": "transparent"})
+            $('.person').removeClass('people')
     
     }
     )
 
     $('#showActions').click(function () {
         if (this.checked){
-            $('.actions').addClass('stage')
-            $('.stage').css({"background-color": "#cce6ff"})}
+            $('.actions').addClass('stage')}
         else
-            $('.stage').css({"background-color": "transparent"})
+            $('.actions').removeClass('stage')
     
     }
     )
