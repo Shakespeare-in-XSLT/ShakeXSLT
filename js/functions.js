@@ -96,6 +96,9 @@ function displayResultErrors() {
         new_index()
         getTitle()
     }
+    if (window.matchMedia("(max-width: 600px)").matches) {
+    alert("Hey you! Flip your device to browse the metadata!")
+        } 
 
 }
 
@@ -121,6 +124,9 @@ function displayResultTempest() {
         new_index()
         getTitle()
     }
+    if (window.matchMedia("(max-width: 600px)").matches) {
+    alert("Hey you! Flip your device to browse the metadata!")
+} 
 }
 
 
@@ -145,7 +151,9 @@ function displayResultGentlemen() {
         new_index()
         getTitle()
     }
-    
+    if (window.matchMedia("(max-width: 600px)").matches) {
+    alert("Hey you! Flip your device to browse the metadata!")
+} 
 }
 
 /**
@@ -259,6 +267,7 @@ function updateformcheckList(lista){
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
+  
 }
 
 // Close the dropdown menu if the user clicks outside of it
