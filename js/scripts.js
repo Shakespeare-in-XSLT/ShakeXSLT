@@ -27,17 +27,6 @@ document.addEventListener('swup:contentReplaced', (event) => {
   $('.icon-hamburger').removeClass('icon-hamburger--open');
 }); // Allows to close the mobile menu automatically when I change page
 
-document.addEventListener('swup:transitionEnd', (event) => {
-  sidebarDetect();
-  scroll.init();
-  scrollDetect();
-});
-
-document.addEventListener('swup:willReplaceContent', (event) => {
-  scroll.destroy();
-});
-
-// SWUP page transition END
 
 // MENU SCROLL-DOWN
 
@@ -50,8 +39,6 @@ function scrollFunction() {
     document.body.classList.remove( "scroll-down" );
   }
 }
-
-// NEW CHUNK
 
 // Fab menu
 let fabTrigger = document.querySelector('.fab-trigger');
@@ -66,7 +53,6 @@ fabTrigger.addEventListener("click", function() {
 /***********************************************/
 
 // Create the theme object
-
 const theme = {
   STYLE_1: 'style1600',
   STYLE_2: 'style1890',
@@ -417,7 +403,10 @@ function removeItemInSessionStorage(key) {
 }
 
 
-// Sidebar
+/***********************************************/
+/****************** SIDEBAR ********************/
+/***********************************************/
+
 function sidebarDetect() {
     if (document.querySelector('#sidebar')) {
       let sidebarTrigger = document.querySelector('.sidebar-trigger');
@@ -445,82 +434,11 @@ $( document ).ready(function() {
     $('.icon-hamburger').toggleClass('icon-hamburger--open');
   });
 
-  /* Open Panel */
-  $( ".bottom-icon-left" ).on('click', function() {
-    $(".site-container").toggleClass("dark");
-  });
-
-
   $(window).load(function(){
     $('.preloader').fadeOut('fast');
     $('.header, .aside').addClass('is-inview');
 
   });
 
-
-
-
-  /* Line Menu Animation */
-
-  var nav = $( "#main-menu" );
-  var line = $( ".line-menu" );
-
-  var active = nav.find( ".active" );
-  var pos = 0;
-  var wid = 0;
-
-  if(active.length){ // se active esiste
-    pos = active.position().left; // prendo la position
-    wid = active.width(); // prenda la larghezza dell'elemento con classe active
-    line.css({
-      left: pos,
-      width: wid
-    });
-  }
-
-  nav.find("ul li a").click(function() {
-
-    if(!$(this).parent().hasClass("active")){ // if element doesn't have active class
-
-      nav.find("ul li").removeClass("active"); // remove active class
-
-      var _this = $(this);
-
-      var position = _this.parent().position(); // recuperioamo posizione dell'elemento cliccato
-      var width = _this.parent().width(); // recuperioamo la larghezza dell'elemento cliccato
-
-      if(position.left >= pos) {
-
-        line.animate({
-          width: (width + (position.left - pos)) // allunghiamo la linea
-        }, 300, function(){
-          line.animate({
-            width: width, // accorciamo la linea
-            left: position.left // spostiam la linea
-          }, 150);
-          _this.parent().addClass("active"); // aggiungiam la classe active
-        });
-
-      } else {
-
-        line.animate({
-          left: position.left, // sposto la linea
-          width: (wid + ( pos - position.left )) // allunghiamo la linea
-        }, 300, function(){
-          line.animate({
-            width: width // accorcire la linea
-          }, 150);
-          _this.parent().addClass("active"); // aggiungiam la classe active
-        });
-
-      }
-
-      pos = position.left; // resettimao i valori
-      wid = width; // resettimao i valori
-
-
-    }
-
-  });
 
 });
