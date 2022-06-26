@@ -96,9 +96,16 @@ function displayResultErrors() {
         new_index()
         getTitle()
     }
-    if (window.matchMedia("(max-width: 600px)").matches) {
-    alert("Hey you! Flip your device to browse the metadata!")
-        } 
+    var isMobile = false;
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        isMobile = true; // mobile!
+        alert('Hey you! Flip your device to surf the metadata!')}
+
+    else {
+        if(window.matchMedia("(max-width: 600px)").matches){
+        alert ('Hey you! Maximize a little your browser window to surf the metadata!')
+        }
+    }
 
 }
 
@@ -124,9 +131,16 @@ function displayResultTempest() {
         new_index()
         getTitle()
     }
-    if (window.matchMedia("(max-width: 600px)").matches) {
-    alert("Hey you! Flip your device to browse the metadata!")
-} 
+     var isMobile = false;
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        isMobile = true; // mobile!
+        alert('Hey you! Flip your device to surf the metadata!')}
+
+    else {
+        if(window.matchMedia("(max-width: 600px)").matches){
+        alert ('Hey you! Maximize a little your browser window to surf the metadata!')
+        }
+    }
 }
 
 
@@ -151,9 +165,16 @@ function displayResultGentlemen() {
         new_index()
         getTitle()
     }
-    if (window.matchMedia("(max-width: 600px)").matches) {
-    alert("Hey you! Flip your device to browse the metadata!")
-} 
+     var isMobile = false;
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        isMobile = true; // mobile!
+        alert('Hey you! Flip your device to surf the metadata!')}
+
+    else {
+        if(window.matchMedia("(max-width: 600px)").matches){
+        alert ('Hey you! Maximize a little your browser window to surf the metadata!')
+        }
+    }
 }
 
 /**
