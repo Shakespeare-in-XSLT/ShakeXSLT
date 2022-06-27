@@ -449,6 +449,7 @@ input:checked{background-color:green;}
 @media (max-width: 768px) {
 
   .team__item {padding: 10px;margin-top: 10px;}
+  .member_img {background-attachment: scroll;}
 
 }
 
@@ -483,7 +484,7 @@ input:checked{background-color:green;}
 @media (max-width: 768px) {
 
   .panel-cta {padding: 40px 0 30px 0;}
-  .cta_img {height: 150px;}
+  .cta_img {height: 150px;background-attachment: scroll;}
 
 }
 

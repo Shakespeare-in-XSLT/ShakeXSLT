@@ -94,7 +94,7 @@ style1600Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_1,theme.STYLE_1);
   
   document.body.classList.toggle(theme.STYLE_1);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1600.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
   document.body.classList.remove(
     theme.STYLE_2,
     theme.STYLE_3,
@@ -136,7 +136,7 @@ style1890Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_2,theme.STYLE_2);
 
   document.body.classList.toggle(theme.STYLE_2);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1890.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1890.webp";
   document.body.classList.remove(
     theme.STYLE_1,
     theme.STYLE_3,
@@ -178,7 +178,7 @@ style1920Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_3,theme.STYLE_3);
 
   document.body.classList.toggle(theme.STYLE_3);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1920.webp";
   document.body.classList.remove(
     theme.STYLE_1,
     theme.STYLE_2,
@@ -220,7 +220,7 @@ style1950Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_4,theme.STYLE_4);
 
   document.body.classList.toggle(theme.STYLE_4);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1950.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1950.webp";
   document.body.classList.remove(
     theme.STYLE_1,
     theme.STYLE_2,
@@ -262,7 +262,7 @@ style1990Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_5,theme.STYLE_5);
 
   document.body.classList.toggle(theme.STYLE_5);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_1990.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_1990.webp";
   document.body.classList.remove(
     theme.STYLE_1,
     theme.STYLE_2,
@@ -304,7 +304,7 @@ style2040Trigger.addEventListener("click", function() {
   setItemInSessionStorage(theme.STYLE_6,theme.STYLE_6);
 
   document.body.classList.toggle(theme.STYLE_6);
-  document.querySelector('#hero-image').src="img/hero/shakespeare_2040.png";
+  document.querySelector('#hero-image').src="img/hero/shakespeare_2040.webp";
   document.body.classList.remove(
     theme.STYLE_1,
     theme.STYLE_2,
@@ -342,37 +342,37 @@ function applyTheme() {
   switch (true) {
     case (theme.STYLE_1 === style1):
       document.body.classList.toggle(theme.STYLE_1);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
     break;
 
     case (theme.STYLE_2 === style2):
       document.body.classList.toggle(theme.STYLE_2);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1890.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1890.webp";
     break;
 
     case (theme.STYLE_3 === style3):
       document.body.classList.toggle(theme.STYLE_3);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1920.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1920.webp";
     break;
 
     case (theme.STYLE_4 === style4):
       document.body.classList.toggle(theme.STYLE_4);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1950.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1950.webp";
     break;
 
     case (theme.STYLE_5 === style5):
       document.body.classList.toggle(theme.STYLE_5);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1990.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1990.webp";
     break;
 
     case (theme.STYLE_6 === style6):
       document.body.classList.toggle(theme.STYLE_6);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_2040.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_2040.webp";
     break;
 
     default:
       document.body.classList.toggle(theme.STYLE_1);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.png";
+      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
       setItemInSessionStorage(theme.STYLE_1,theme.STYLE_1);
   }
 
@@ -426,8 +426,6 @@ sidebarDetect()
 
 
 $( document ).ready(function() {
-
-  console.log( "ready!" );
 
   $( ".header__icon" ).on('click', function() {
     $('.header__menu').toggleClass('header__menu--open');
