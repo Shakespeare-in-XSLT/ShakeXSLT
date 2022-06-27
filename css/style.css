@@ -379,6 +379,7 @@ input:checked{background-color:green;}
 .myspan br:nth-child(odd) {display: none;}
 
 #text p.line {font-size: 20px; line-height: 24px; margin-block-start: 0; margin-block-end: 0; margin-inline-start: 40px; margin-left:0px;}
+#cast-list {font-size: 20px; line-height: 24px;}
 
 .userclassSelected {background-color: #FEC9A3;}
 
@@ -654,6 +655,8 @@ body.style1890, .style1890.scroll-down header {font-family: 'Playfair Display', 
 
 .style1890 [id*='doc_'] p {text-align: justify; hyphens: auto;}
 
+.style1890 #text p.line, .style1890 #cast-list {line-height: 26px;}
+
 @media (max-width: 768px) {
   .style1890 .team__intro {margin-left: 0%; width:100%}
   .style1890 .col-40.margin-left {margin-left: 0px!important;}
@@ -715,6 +718,8 @@ body.style1920 {font-family: 'Domine', serif;}
 .style1920 .people {background-color: #fff131;}
 .style1920 .stage {background-color: #6fc175;}
 
+.style1920 #text p.line, .style1920 #cast-list {font-size: 18px;line-height: 26px;}
+
 @media (max-width: 768px) {
   .style1920 .col-40.margin-left {margin-left: 0px!important;}
   .style1920 .marker:after {height: 4px;}
@@ -771,6 +776,8 @@ body.style1950 {font-family: 'Inter', sans-serif;}
 .style1950 .people {background-color: #fbb03b;}
 .style1950 .stage {background-color: #6fc175;}
 
+.style1950 #text p.line, .style1950 #cast-list {line-height: 28px;}
+
 @media (max-width: 768px) {
   .style1950 .col-40.margin-left {margin-left: 0px!important;}
   .style1950 .marker:after {height: 6px; bottom: 3px;}
@@ -825,6 +832,8 @@ body.style1990 {font-weight: 400; font-family: 'Fira Sans', sans-serif;}
 .style1990 .scenes {background-color: #2B00FF;}
 .style1990 .people {background-color: #FFFF00;}
 .style1990 .stage {background-color: #39FF14;}
+
+.style1990 #text p.line, .style1990 #cast-list {line-height: 26px;}
 
 @media (max-width: 768px) {
   .style1990 .col-40.margin-left {margin-left: 0px!important;}
@@ -891,7 +900,7 @@ body.style2040 {background: rgb(36,219,166); background: linear-gradient(337deg,
 .style2040 .people {background-color: #BFFFB3;}
 .style2040 .stage {background-color: #FFB3F2;}
 
-
+.style2040 #text p.line, .style2040 #cast-list {line-height: 26px;}
 
 @media (max-width: 768px) {
   .style2040 .col-40.margin-left {margin-left: 0px!important;}
