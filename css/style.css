@@ -479,7 +479,7 @@ input:checked{background-color:green;}
 
 .panel-cta {padding: 100px 0 50px 0;position: relative;}
 .panel-cta__content {max-width: 900px; margin: auto; text-align: center; position: relative; z-index: 10; padding: 0 20px;}
-.cta_img {background-image: url(../img/style1600/ornament_1.png); background-repeat: no-repeat; background-attachment: fixed;background-size: contain;height: 250px;background-position: center center;}
+.cta_img {background-image: url("../img/style1600/ornament_1.png"); background-repeat: no-repeat; background-attachment: fixed;background-size: contain;height: 250px;background-position: center center;}
 
 @media (max-width: 768px) {
 
