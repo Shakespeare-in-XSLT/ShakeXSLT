@@ -604,6 +604,7 @@ body.style1890, .style1890.scroll-down header {font-family: 'Playfair Display', 
 .style1890 .headline, .style1890 .subheadline, .style1890 h2 {font-weight: 500; font-family: 'Oswald', sans-serif; text-transform: uppercase;}
 .style1890 h4 {font-family: 'Bitter', serif;font-size: 1.25rem; /* 20px */ line-height: 1.75rem; /* 28px */font-weight:600 ;}
 .style1890 h3 {font-family: 'Bitter', serif;font-size: 1.125rem; /* 18px */ line-height: 1.75rem; /* 28px */font-weight:600 ;}
+.style1890 p {line-height: 1.5rem;}
 
 .style1890 .text-red {color: #971a0f;font-style: italic;}
 
@@ -848,6 +849,7 @@ body.style1990 {font-weight: 400; font-family: 'Fira Sans', sans-serif;}
 body.style2040,.style2040 .subtitle, .style2040 h4, .style2040 h3,.style2040 h2{font-family: 'Titillium Web', sans-serif;}
 .style2040 .subtitle, .style2040 h4 {font-weight: 400;font-style: italic;}
 body.style2040 {background: rgb(36,219,166); background: linear-gradient(337deg, rgba(255,47,148,1) 0%, rgba(36,219,166,1) 35%, rgba(255,232,148,1) 100%);}
+.style2040 p {line-height: 1.5rem;}
 
 .style2040 .fixed {width: 94%; right: 50%; transform: translate(50%); top: 20px;}
 .style2040.scroll-down .fixed {background: rgba(255, 255, 255, 0.15); border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.2s cubic-bezier(.215, .61, .355, 1);}
