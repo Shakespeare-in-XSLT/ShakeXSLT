@@ -1,46 +1,46 @@
 // create dictionary with userclasses
-var UserClasses_init = {}
+// var UserClasses_init = {}
 // transform it in JSON object and save it into localStorage
-localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
+// localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
 $(document).ready(main);
 
 function main() {
 
-    $('#showAct').click(function () {
-        if (this.checked){
-            $('.act').addClass('acts')
-            }
-        else
-            $('.act').removeClass('acts')
-    })
+    // $('#showAct').click(function () {
+    //     if (this.checked){
+    //         $('.act').addClass('acts')
+    //         }
+    //     else
+    //         $('.act').removeClass('acts')
+    // })
 
-    $('#showScenes').click(function () {
-        if (this.checked){
-            $('.scene').addClass('scenes')
-            }
-        else
-            $('.scene').removeClass('scenes')
-    })
+    // $('#showScenes').click(function () {
+    //     if (this.checked){
+    //         $('.scene').addClass('scenes')
+    //         }
+    //     else
+    //         $('.scene').removeClass('scenes')
+    // })
 
-    $('#showPeople').click(function () {
-        if (this.checked){
-            $('.person').addClass('people')
-        }
-        else
-            $('.person').removeClass('people')
+    // $('#showPeople').click(function () {
+    //     if (this.checked){
+    //         $('.person').addClass('people')
+    //     }
+    //     else
+    //         $('.person').removeClass('people')
     
-    }
-    )
+    // }
+    // )
 
-    $('#showActions').click(function () {
-        if (this.checked){
-            $('.actions').addClass('stage')}
-        else
-            $('.actions').removeClass('stage')
+    // $('#showActions').click(function () {
+    //     if (this.checked){
+    //         $('.actions').addClass('stage')}
+    //     else
+    //         $('.actions').removeClass('stage')
     
-    }
-    )
+    // }
+    // )
     
     // reads params from query in url and calls function to upload text   
     parametri = getParams(document.URL)
@@ -115,11 +115,11 @@ function displayResult(xmlName, xslName) {
     var isMobile = false;
     if (/Mobi|Android/i.test(navigator.userAgent)) {
         isMobile = true; // mobile!
-        alert('Hey you! Flip your device to surf the metadata!')}
+        alert('Hey you! Flip your device to surf the index!')}
     // check if user from desktop with smaller window
     else {
         if(window.matchMedia("(max-width: 600px)").matches){
-        alert ('Hey you! Maximize a little your browser window to surf the metadata!')
+        alert ('Hey you! Maximize a little your browser window to surf the index!')
         }
     }
 }
@@ -171,79 +171,79 @@ function jumpto(thediv){
     document.getElementById(thediv).scrollIntoView({behavior: 'smooth'});
 }
 
-function saveNewClass(){
-    // instantiate a new variable corresponding to the input of the user
-    NewClass= $("#insert").val().toLowerCase().toString();
-    // save the selection of the document and transform it to string
-    sel = document.getSelection()
-    Value = sel.toString();
-    // preserving whitespacing
-    var ciao = Value.replaceAll("\n", "</br>");
-    // if NewClass or Value is empty string stop execution
-    if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
-        alert("Select a valid text to create the new class!")
-    }
-    else{  // download exising User classes
-        UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
-        // if NewClass is not in Userclasses --> create empty list of values
-        if ((NewClass in UserClasses)==0){
-            UserClasses[NewClass] = []
-        } 
-        // append new value to UserClasses
-        UserClasses[NewClass].push(Value);
-        // save updated UserClasses
-        localStorage.setItem('UserClasses', JSON.stringify(UserClasses));
-        // update formcheck list
-        updateformcheckList(Object.keys(UserClasses));
-        // create tag for selected text
-        var spn = document.createElement('span')
-        spn.innerHTML = ciao;
-        //add class NewClass and "myspan" to element
-        spn.classList.add(NewClass);
-        spn.classList.add("myspan");
-        // var range containing the starting range of the selection
-        range = sel.getRangeAt(0);
-        // clear the document content at that range
-        range.deleteContents();
-        // insert the new span node
-        range.insertNode(spn);
+// function saveNewClass(){
+//     // instantiate a new variable corresponding to the input of the user
+//     NewClass= $("#insert").val().toLowerCase().toString();
+//     // save the selection of the document and transform it to string
+//     sel = document.getSelection()
+//     Value = sel.toString();
+//     // preserving whitespacing
+//     var ciao = Value.replaceAll("\n", "</br>");
+//     // if NewClass or Value is empty string stop execution
+//     if ((NewClass == '') | (NewClass == null) | (Value == '') | (Value == null)) {
+//         alert("Select a valid text to create the new class!")
+//     }
+//     else{  // download exising User classes
+//         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
+//         // if NewClass is not in Userclasses --> create empty list of values
+//         if ((NewClass in UserClasses)==0){
+//             UserClasses[NewClass] = []
+//         } 
+//         // append new value to UserClasses
+//         UserClasses[NewClass].push(Value);
+//         // save updated UserClasses
+//         localStorage.setItem('UserClasses', JSON.stringify(UserClasses));
+//         // update formcheck list
+//         updateformcheckList(Object.keys(UserClasses));
+//         // create tag for selected text
+//         var spn = document.createElement('span')
+//         spn.innerHTML = ciao;
+//         //add class NewClass and "myspan" to element
+//         spn.classList.add(NewClass);
+//         spn.classList.add("myspan");
+//         // var range containing the starting range of the selection
+//         range = sel.getRangeAt(0);
+//         // clear the document content at that range
+//         range.deleteContents();
+//         // insert the new span node
+//         range.insertNode(spn);
 
-        //to handle multiple selections for the same class
-        for (c in UserClasses){
-            if (NewClass === c){
-                if($('#'+NewClass).is(":checked")){
-                    spn.classList.add('userclassSelected');
-                }
-            }
-        }
+//         //to handle multiple selections for the same class
+//         for (c in UserClasses){
+//             if (NewClass === c){
+//                 if($('#'+NewClass).is(":checked")){
+//                     spn.classList.add('userclassSelected');
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
-function updateformcheckList(lista){
-    // save a list of checkbox present in the html and instantiate an empty list
-    elementipresentiJQ = $("#formchecks").children(".form-check")
-    elementipresenti = []
-    // append the value of the label of every checkbox to empty list
-    for (var i=0; i<elementipresentiJQ.length; i++){
-        elementipresenti.push($(elementipresentiJQ[i].firstChild).val())
-    }
-    // for every element not present in the list, create a new checkbox
-    for (let ele of lista){
-        if (elementipresenti.indexOf(ele)==-1){
-            $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='"+ele+"' /><label class='form-check-label'>" + ele + "</label></div>")
-            // on click --> function which checks if checbox is checked or not (adding a class and styling backgroud if yes, removing class otherwise)
-            $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
-                if (this.checked) {
-                    $('.'+ele).addClass('userclassSelected')
-                }
-                else {
-                    $('.'+ele).removeClass('userclassSelected')
-                }
-                }
-            )
-        }
-    }}
+// function updateformcheckList(lista){
+//     // save a list of checkbox present in the html and instantiate an empty list
+//     elementipresentiJQ = $("#formchecks").children(".form-check")
+//     elementipresenti = []
+//     // append the value of the label of every checkbox to empty list
+//     for (var i=0; i<elementipresentiJQ.length; i++){
+//         elementipresenti.push($(elementipresentiJQ[i].firstChild).val())
+//     }
+//     // for every element not present in the list, create a new checkbox
+//     for (let ele of lista){
+//         if (elementipresenti.indexOf(ele)==-1){
+//             $("#formchecks").append("<div class='form-check'><input class='form-check-input' type='checkbox' value='" + ele + "' id='"+ele+"' /><label class='form-check-label'>" + ele + "</label></div>")
+//             // on click --> function which checks if checbox is checked or not (adding a class and styling backgroud if yes, removing class otherwise)
+//             $("#formchecks").find(".form-check-input[value='" + ele + "']").click(function () {
+//                 if (this.checked) {
+//                     $('.'+ele).addClass('userclassSelected')
+//                 }
+//                 else {
+//                     $('.'+ele).removeClass('userclassSelected')
+//                 }
+//                 }
+//             )
+//         }
+//     }}
 
 
 //When the user clicks on the button, toggle between hiding and showing the dropdown content
