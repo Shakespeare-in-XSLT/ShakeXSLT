@@ -329,7 +329,7 @@ function docReady(fn) {
     }
 }
 
-function applyTheme() {
+// function applyTheme() {
 // I retrieve the items from the session storage and go to test them, if it matches I apply it
   // const style1 = getItemInSessionStorage(theme.STYLE_1)
   // const style2 = getItemInSessionStorage(theme.STYLE_2)
@@ -339,11 +339,11 @@ function applyTheme() {
   // const style6 = getItemInSessionStorage(theme.STYLE_6)
   
 
-  switch (true) {
-    case (theme.STYLE_1 === style1):
-      document.body.classList.toggle(theme.STYLE_1);
-      document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
-    break;
+  // switch (true) {
+  //   case (theme.STYLE_1 === style1):
+  //     document.body.classList.toggle(theme.STYLE_1);
+  //     document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
+  //   break;
 
     // case (theme.STYLE_2 === style2):
     //   document.body.classList.toggle(theme.STYLE_2);
@@ -374,9 +374,9 @@ function applyTheme() {
     //   document.body.classList.toggle(theme.STYLE_1);
     //   document.querySelector('#hero-image').src="img/hero/shakespeare_1600.webp";
       // setItemInSessionStorage(theme.STYLE_1,theme.STYLE_1);
-  }
+//   }
 
-} 
+// } 
 
 // function setItemInSessionStorage(key,value) {
 //   const itemCheck = sessionStorage.getItem(key)  

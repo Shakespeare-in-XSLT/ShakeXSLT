@@ -23,10 +23,30 @@
                         <xsl:apply-templates select="tei:text/tei:body"/>
                     </div>
                 </div>
+                <div id="openseadragon">
+                 <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
+                 <script type="text/javascript">
+                     var viewer = OpenSeadragon({
+                     id: "openseadragon",
+                     prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
+                     tileSources:   [{
+                     "@context": "http://iiif.io/api/image/2/context.json",
+                     "@id": "<xsl:value-of select="//tei:facsimile/tei:graphic/@url"/>",
+                     "height": 5000,
+                     "width": 4000,
+                     "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+                     "protocol": "http://iiif.io/api/image",
+                     "tiles": [{
+                     "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+                     "width": 1024
+                     }]
+                     }]
+                     });
+                 </script>
+               </div>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="tei:teiHeader"/>
     <xsl:template match="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title">
         <h1 id="title">
             <xsl:apply-templates/>

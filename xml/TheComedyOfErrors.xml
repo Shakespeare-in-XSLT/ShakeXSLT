@@ -91,6 +91,9 @@
       </particDesc>
     </profileDesc>
   </teiHeader>
+  <facsimile>
+    <graphic xml:id="p21r" url="https://iiif.bodleian.ox.ac.uk/iiif/image/e9c8d515-cf9e-42df-84b7-c08d62f36cc0"/>
+  </facsimile>
   <text>
     <front>
       <castList>
