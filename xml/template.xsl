@@ -23,7 +23,7 @@
                         <xsl:apply-templates select="tei:text/tei:body"/>
                     </div>
                 </div>
-                <div id="openseadragon"></div>
+                <div id="openseadragon" style="min-width: 800px; min-height: 600px;"></div>
                 <div>
                  <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
                  <script type="text/javascript">
