@@ -100,11 +100,104 @@
               </h1>
             </div>
           <div class="col-60">
-              <p class="subtitle">The power of XSLT, TEI and IIIF</p>
+              
           </div>
         </div>
       </section>
-
+      <section id="edition" class="panel">
+            <div class="grid">
+                <div class="col-80">
+                      <h2 class="subheadline">
+                        <span>Our Digital Edition</span>
+                      </h2>
+                  </div>
+                <div class="col-80">
+                  <p>In ShakeXSLT Digital Edition we present three different plays of Shakespeare:
+                    <ul>
+                      <li><a href="https://dracor.org/shake/the-comedy-of-errors" target="_blank">The Comedy Of Errors</a></li>
+                      <li><a href="https://dracor.org/shake/the-tempest" target="_blank">The Tempest</a></li>
+                      <li><a href="https://dracor.org/shake/two-gentlemen-of-verona" target="_blank">The Two Gentelman Of Verona</a></li>
+                    </ul></p>
+                  <p>The texts have been taken from the <a href="https://dracor.org/" target="_blank">draCor</a> website, but have been annotated in TEI by the project authors.
+                  </p>
+                  <p>There is not a unique and standard definition of Digital Edition, but a general one could be the following: </p>
+                    <blockquote>The term edition is generally used
+                        to describe the result of an interpretative study of a text [from Digital editions and cataloguing, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 162]
+                    </blockquote></p>
+                  <p>In this edition, thus, we aim at presenting some of the most important works of Shakespeare, presented in a standard way, through XML-TEI and XSLT. In fact, an edition should aim at providing a permanent record of the text analysed, following some basic requirements. It should be:</p>
+                  <p>
+                    <blockquote>conform to XML standards for searchability,
+                      worldwide integration, interchange and repurposing of data. ‘A
+                      well-made electronic scholarly edition will be built on encoding of
+                      great complexity and richness’. The digital edition should include
+                      searchable text and images made possible with the use of appropriate
+                      and meaningful metadata [...] The web platform or content management system (CMS) on which the edition runs should conform to W3C (World Wide Web Consortium) standards; provide project documentation to allow the user to appreciate the edition’s limitations or customisations and thus better utilise the resource [...], text-image linking, as well as hyperlinking.[from A good digital edition? Some recommendations, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, pp. 180-181]
+                  </blockquote></p>
+                  <p>These requirements should be the basis of every resource which will be presented in a digital space, a well-structured material space. To rule this space, we need to apply the so-called "<i>Editorialization</i>": </p>
+                  <blockquote>Editorialization is the set of dynamics that produce and structure digital space.
+                    These dynamics can be understood as the interactions of individual and collective actions
+                    within a particular digital environment. [from On Editorialization, Marcello Vitali-Rosati, p. 7]</blockquote>
+                </div>
+              </div>
+        </section>
+      <section id="digital_ed" class="panel">
+        <div class="grid">
+          <div class="col-80">
+                <h2 class="subheadline">
+                  <span>SDE criteria</span>
+                </h2>
+            </div>
+          <div class="col-80">
+        <p>Starting from the article of Patrick Sahle <a href="https://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/" target="_blank">Criteria for Reviewing Scholarly Digital Editions</a>, we have tried to accomplish each criterion in the creation of our digital edition.</p>
+        <p>To start with the first criterion, enough information for the Bibliographic identification of the SDE has been provided, clarifying the title, the responsible editors and the subject of the edition.</p>
+        <p>To go on with the second criterion, the texts are presented in a clear and complete version, allowing the reader to have a full understanding of them. Images are present, in order to allow a cleare identification of the texts (the original pages are presented).</p>
+        <p>For what concerns the 3rd criterion, a documentation has been provided in order to allow also non-expert readers to get a context of the edition. The target audience has been thought to be a general public, which has no previous knowledge of the content, neither of how to use a digital edition.</p>
+        <p><blockquote>
+            When we create editions, we are thinking about readers in two disciplines: readers who are editors, and readers who are not editors. […] Making editions that work for both editors and for the popular audience will always be tricky, and moving into the digital world does not really make it much easier. […] [from Results from the catalogue, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 173]
+        </blockquote></p>
+        <p>
+        Thus, talkin about the 4 criterion, we have decided to aim at a simple presentation, allowing a browsing through the index of the text, presented in a sidebar. We have also decided to present three different texts, with different plots, to offer a clearer view of the author's work, since </p>
+        <p>
+        <blockquote>
+        The telling proximity of one work to another, significant gatherings of materials, illustrations entered
+        into the manuscript alongside the text and so forth all shape the way
+        we understand the manuscript, but are often ignored when preparing
+        scholarly editions. [from Building A Social Edition of the Devonshire Manuscript, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 140]
+        </blockquote></p>
+        </div>
+        </div>
+      </section>
+      <section id="characters" class="panel">
+        <div class="grid">
+          <div class="col-80">
+                <h2 class="subheadline">
+                  <span>Authority through DbPedia</span>
+                </h2>
+            </div>
+          <div class="col-80">
+          <p>For one of the three texts, <a href="https://dbpedia.org/page/The_Tempest" target="_blank">The Tempest</a>, we have added some authorities for what concerns the characters. We have thus used the tag <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-xenoData.html" target="_blank">xenoData</a>, which provides a container element into which metadata in non-TEI formats may be placed. We have decided to take the information from a LOD environment, dbPedia, since
+          <blockquote> As Tim Berners-Lee (the inventor of the World Wide Web as we know it) remarks, the internet was originally developed for workers to collaborate and access source documents; with wiki and Web 2.0 technology, it is now returning to its roots. [from Building a social edition, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 147]</blockquote>
+          </p>
+          <p>Here we present the list of main characters which have been enriched with the corresponding dbPedia links:
+          <ul>
+              <li>Miranda: <a href="https://dbpedia.org/page/Miranda_(The_Tempest)" target="_blank">dbPedia</a></li>
+              <li>Caliban: <a href="https://dbpedia.org/page/Caliban" target="_blank">dbPedia</a></li>
+              <li>Ferdinand: <a href="https://dbpedia.org/page/Ferdinand_(The_Tempest)" target="_blank">dbPedia</a></li>
+              <li>Stephano: <a href="https://dbpedia.org/page/Stephano_(The_Tempest)" target="_blank">dbPedia</a></li>
+              <li>Prospero: <a href="https://dbpedia.org/page/Prospero" target="_blank">dbPedia</a></li>
+              <li>Ariel: <a href="https://dbpedia.org/page/Ariel_(The_Tempest)" target="_blank">dbPedia</a></li>
+          </ul>
+          </p>
+          <p>Using the LOD environment allows us to take another point of view on the content of the edition. From this perspective, the content is not the only thing that matters, but also
+              <blockquote>collection of dynamic relationships that
+              this content maintains with other content. And these relationships, which are part of an open
+              process, determine the existence of a piece of content. It is the ensemble of relationships and
+              links that make the content accessible and visible, and thus bring it into existence. Completely
+              independent content would be inaccessible, invisible, actually non-existing. [from Processual Authorities,  in On Editorialization Marcello Vitali-Rosati, p. 78]</blockquote>
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="doc_texts" class="panel">
         <div class="grid">
             <div class="col-80">
@@ -114,15 +207,37 @@
             </div>
             <div class="col-80">
                 <p>For managing the three texts we have used two main technologies: TEI and XSLT.
-                TEI is an XML-based markup language that enable scholars to store, analyze, and share humanities textual information.</p>
+                TEI is an XML-based markup language that enable scholars to store, analyze, and share humanities textual information.
+                <blockquote>Without guidelines such as the TEI, exchange and repurposing of data
+                  will not be possible and electronic editions will be used as standalone
+                  objects with their own set of characteristics, objectives and requirements. [from Results from the catalogue, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 176]</blockquote>
+                </p>
+                <h2>XML</h2>
                 <p>The <a href="https://www.w3.org/XML/" target="_blank">XML</a> standard (eXtensible Markup Language) is a flexible way to create information formats and electronically share structured data through the web.<br>
-                The <a href="https://tei-c.org/" target="_blank">Text Encoding Initiative (TEI)</a> is a consortium which collectively develops and maintains a standard for the representation of texts in digital form. The TEI Guidelines have been widely used by libraries, museums, publishers, and individual scholars to present texts for online research, teaching, and preservation. <br>
+                <h2>TEI</h2>
+                <p>The <a href="https://tei-c.org/" target="_blank">Text Encoding Initiative (TEI)</a> is a consortium which collectively develops and maintains a standard for the representation of texts in digital form. The TEI Guidelines have been widely used by libraries, museums, publishers, and individual scholars to present texts for online research, teaching, and preservation.</p> <br>
+                <h2>OUR CHOICES</h2>
+                <p>We have chosen TEI because it allows a specific description of the dramatic plays through a series of technical tags. <br>
+                We have first of all used the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html" target="_blank">filedesc</a> tag for describing the metadata related to the bibliographic entity, such as the author tag, with the author name, within the <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-titleStmt.html" target="_blank">titleStmt</a> tag. Then we have proceeded with the description of the participants of the play, which have been inserted into the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html" target="_blank">profileDesc</a> tag, which provides a detailed description of non-bibliographic information about the text, within the particDesc tag, in the listPerson tag. Each participant is identified by the tag person, with a persName tag, and an <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html" target="_blank">xml:id</a>, meaningful for the specific character.</p>
+                <p>The characters have then been inserted also in the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html" target="_blank">front</a>, within a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-castList.html" target="_blank">castList</a> tag, with a series of castItem tags. For every castItem a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-role.html" target="_blank">role</a> and a <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-roleDesc.html" target="_blank">roleDesc</a> have been provided. For each scene we have highlighted the head, with the number of the scene, and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-stage.html" target="_blank">stage</a>, which contains any kind of stage-direction (specified thorugh a type attribute) within the dramatic text. We have then chosen to specify a tag <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sp.html" target="_blank">sp</a>, for identifying the various speeches within the text, with the specification of the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-speaker.html" target="_blank">speaker</a> of the speech.
+                </p>
+                <p>The text has been then annotated within the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-line.html" target="_blank">l</a> tag, which contains the transcription of a topographic line in the source document.
+                </p>
+              <p>
+                For what concerns the text, we have created some specific divs, either for the acts or the scenes (through the specification of the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html" target="_blank">type</a>)
+              </p>
+              <h2>XSLT</h2>
+                <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT" target="_blank">XSLT</a> (eXtensible Stylesheet Language Transformations) is a language for transforming XML documents, and thus TEI, into other XML documents or other formats such as HTML. We have used this technology to transform TEI-annotated texts into html, in order to work upon them.</p>
                 <p>An HTML page is generated automatically for each text, thus we have created a destination page, called opera.html, on which each specific html is loaded as a consequence of an event. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.</p>
+                <p>
+                XSLT is a powerful tool which can be used for building, as in this case, a digital edition. Even if 
+                <blockquote>Robinson’s remark about the lack of easy-to-use production tools is unfortunately still valid: there is no software tool nor suite of tools that allows a scholar to produce a full digital edition, be it image-based with a diplomatic text or a critical edition, in a way comparable to how printed editions are prepared.29 Most of all, there is no ‘standard way’ to do it[from Production, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 227]</blockquote></p>
+                <p>XSLT is a valid tool for this purpose.
+                </p>
             </div>
         </div>
       </section>
-
       <section id="doc_portrait" class="panel">
         <div class="grid">
           <div class="col-100">
@@ -131,7 +246,7 @@
                 <span>of Shakespeare</span>
               </h2>
           </div>
-          <div class="col-60">
+          <div class="col-80">
               <p>The image is taken from the William Jaggard's <i>First Folio</i> i.e. <i>Mr. William Shakespeare's Comedies, Histories, & Tragedies</i>, a collection of plays by William Shakespeare (1623). It is printed in folio format and contains 36 plays. A folio (from Latin <i>foliō</i>, abl. of <i>folium</i>, leaf) is a book or pamphlet made up of one or more full sheets of paper, on each of which four pages of text are printed, two on each side; each sheet is then folded one time to produce two leaves. Each leaf of a folio book thus is one half the size of the original sheet.</p>
               <h3>WHAT DID SHAKESPEARE LOOK LIKE?</h3>
               <p>
@@ -139,7 +254,6 @@
           </div>
         </div>
       </section>
-
       <section id="doc_1600" class="panel">
         <div class="grid">
           <div class="col-100">
@@ -147,6 +261,12 @@
               <span><b>Images</b></span>
               </h2>
               <h3>The power of IIIF</h3>
+          </div>
+          <div class="col-80">
+            <p>We have decided to present the images of the operas through <a href="https://iiif.io/" target="_blank">IIIF</a>. <br>
+              IIIF, International Image Interoperability Framework, is a model for presenting and annotating digital representation of objects. It offers a set of application programming interfaces (APIs) based on open web standards, defined in specifications derived from shared real world use cases.
+            </p>
+            <p>IIIF is a useful and helpful resource, through which some of the most common problems while dealing with the images, such as different images formats, sizes and storage issues, can  be easily solved.</p>
           </div>
           <div class="col-33">
               <img src="img/First-page-first-folio-comedy-of-errors.png">

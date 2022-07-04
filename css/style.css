@@ -3,7 +3,7 @@
 html, body {min-height: 100vh;}
 body {color:#000;font-family: 'EB Garamond', serif;background-color: #f5f4f0;}
 
-main a {color: #000;text-decoration: none;font-weight: bolder;}
+main a {color: #000;font-weight: bolder;}
 main a:hover {cursor: pointer;}
 
 

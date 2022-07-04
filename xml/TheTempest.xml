@@ -3,7 +3,12 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="template.xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:tei="http://www.tei-c.org/ns/1.0"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:dbo="http://dbpedia.org/ontology/">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -92,6 +97,34 @@
         </listPerson>
       </particDesc>
     </profileDesc>
+    <xenoData>
+      <rdf:RDF>
+        <rdf:Description tei:ref="#Miranda" rdf:about="https://dbpedia.org/page/Miranda_(The_Tempest)">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Miranda</rdfs:label>
+        </rdf:Description>
+        <rdf:Description tei:ref="#Caliban" rdf:about="https://dbpedia.org/page/Caliban">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Caliban</rdfs:label>
+        </rdf:Description>
+        <rdf:Description tei:ref="#Ferdinand" rdf:about="https://dbpedia.org/page/Ferdinand_(The_Tempest)">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Ferdinand</rdfs:label>
+        </rdf:Description>
+        <rdf:Description tei:ref="#Stephano" rdf:about="https://dbpedia.org/page/Stephano_(The_Tempest)">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Stephano</rdfs:label>
+        </rdf:Description>
+        <rdf:Description tei:ref="#Prospero" rdf:about="https://dbpedia.org/page/Prospero">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Prospero</rdfs:label>
+        </rdf:Description>
+        <rdf:Description tei:ref="#Ariel" rdf:about="https://dbpedia.org/page/Ariel_(The_Tempest)">
+          <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+          <rdfs:label xml:lang="en">Ariel</rdfs:label>
+        </rdf:Description>
+      </rdf:RDF>
+    </xenoData>
   </teiHeader>
   <facsimile>
     <graphic xml:id="p21r"
