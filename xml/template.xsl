@@ -23,7 +23,6 @@
                         <xsl:apply-templates select="tei:text/tei:body"/>
                     </div>
                 </div>
-<<<<<<< HEAD
                 
                 
                
@@ -47,29 +46,6 @@
                                 }]
                                 });
                             </script>
-=======
-                <div id="openseadragon" style="min-width: 800px; min-height: 600px;">
-                    <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
-                    <script type="text/javascript">
-                         var viewer = OpenSeadragon({
-                         id: "openseadragon",
-                         prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
-                         tileSources:   [{
-                         "@context": "http://iiif.io/api/image/2/context.json",
-                         "@id": "https://iiif.bodleian.ox.ac.uk/iiif/image/4e984e4e-d968-4b2a-8fc8-99524986eaab",
-                         "height": 5000,
-                         "width": 4000,
-                         "profile": [ "http://iiif.io/api/image/2/level2.json" ],
-                         "protocol": "http://iiif.io/api/image",
-                         "tiles": [{
-                         "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
-                         "width": 1024
-                         }]
-                         }]
-                         });
-                    </script>
-                </div>
->>>>>>> 67ec11939a2cc472ace5a4802f41dc129d6b0828
             </body>
         </html>
     </xsl:template>
