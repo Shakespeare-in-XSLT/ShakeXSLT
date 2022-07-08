@@ -1,0 +1,33 @@
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF_8">
+      <title>The Comedy of Errors</title>
+   </head>
+   <body>
+      <div>
+         <h1 id="title">The Comedy of Errors</h1>
+      </div>
+      <div>
+         <div id="cast-list"></div>
+         <div id="text"></div>
+      </div>
+      <div id="openseadragon" style="width: 500px; height: 600px;"></div><script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script><script type="text/javascript">
+                                var viewer = OpenSeadragon({
+                                id: "openseadragon",
+                                prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
+                                tileSources:   [{
+                                "@context": "http://iiif.io/api/image/2/context.json",
+                                "@id": "https://iiif.bodleian.ox.ac.uk/iiif/image/e9c8d515-cf9e-42df-84b7-c08d62f36cc0",
+                                "height": 8176,
+                                "width": 6128,
+                                "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+                                "protocol": "http://iiif.io/api/image",
+                                "tiles": [{
+                                "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+                                "width": 1024
+                                }]
+                                }]
+                                });
+                            </script></body>
+</html>

@@ -7,13 +7,13 @@ function main() {
     // reads params from query in url and calls function to upload text   
     parametri = getParams(document.URL)
     if (parametri['ConttoLoad'] == 'Errors') {
-        displayResult("./xml/TheComedyOfErrors.xml", "./xml/template.xsl");
+        displayResult("xml/TheComedyOfErrors.xml", "xml/template.xsl");
     }
     else if (parametri['ConttoLoad'] == 'Tempest'){
-        displayResult("./xml/TheTempest.xml", "./xml/template.xsl");
+        displayResult("xml/TheTempest.xml", "xml/template.xsl");
     }
     else if (parametri['ConttoLoad'] == 'Gentlemen'){
-        displayResult("./xml/TwoGentlemenOfVerona.xml", "./xml/template.xsl");   
+        displayResult("xml/TwoGentlemenOfVerona.xml", "xml/template.xsl");   
     }
 };
 
@@ -137,6 +137,10 @@ function jumpto(thediv){
 //When the user clicks on the button, toggle between hiding and showing the dropdown content
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it

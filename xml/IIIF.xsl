@@ -26,7 +26,7 @@
                 
                 
                
-                            <div id="openseadragon" style="width: 80x; height: 300px;"></div>
+                            <div id="openseadragon" style="width: 500px; height: 600px;"></div>
                             <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script>
                             <script type="text/javascript">
                                 var viewer = OpenSeadragon({
