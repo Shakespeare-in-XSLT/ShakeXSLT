@@ -1,0 +1,109 @@
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF_8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Shakespeare in XSLT</title>
+  <meta name="description" content="Shakespeare XML allows to read articles while travelling in time through four historical typographical and layout styles that span over five hundred years.">
+  <meta name="author" content="Stefano Renzetti, Sara Vellone, Olga Pagnotta">
+
+  <meta property="og:title" content="Shakespeare XML texts and graphic design history">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jsoshakespeare.github.io/JSOShakespeare/index.html">
+  <meta property="og:description" content="A XML-XSLT project.">
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="js/swup.min.js"></script>
+  <script src="js/SwupBodyClassPlugin.min.js"></script>
+  <script src="js/SwupHeadPlugin.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">  
+   </head>
+   <body>
+      <div class="site-container">
+    
+    <header class="fixed">
+      <div class="header fade-down">
+        <div class="header__logo">
+          <a href="index.html" class="logo" id="logo2040">
+            <img id="logo-header" src="img/JSOS_logo_1.svg" alt="">
+          </a>
+        </div>
+          <nav class="header__menu" id="main-menu">
+            <ul class="site-nav">
+              <li id="op">
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Opera</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
+                      <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
+                      <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                    </div>
+                  </div>
+              </li>
+              <li><a href="documentation.html"> Documentation </a></li>
+              <li><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
+              <li>
+                <div class="dropdown">
+                    <button onclick="myFunction2()" class="dropbtn">IIIF</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                      <a href="IIIFcomedy.html"><span>IIIF - The Comedy Of Errors</span></a>
+                      <a href="IIIFtempest.html"><span>IIIF - The Tempest</span></a>
+                      <a href="IIIFgentlemen.html"><span>IIIF - Two Gentlemen Of Verona</span></a>
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </nav>
+        <div class="header__cta">
+          <a href="https://github.com/Shakespeare-in-XSLT/ShakeXSLT.git" target="_blank" class="button">Github</a>
+        </div>
+        <div class="header__icon">
+          <div class="icon-hamburger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+      <div>
+         <h1 id="titleiiif">The Tempest</h1>
+      </div>
+      <div id="openseadragon" style="width: 500px; height: 600px;"></div><script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script><script type="text/javascript">
+                                var viewer = OpenSeadragon({
+                                id: "openseadragon",
+                                prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
+                                tileSources:   [{
+                                "@context": "http://iiif.io/api/image/2/context.json",
+                                "@id": "https://iiif.bodleian.ox.ac.uk/iiif/image/4e984e4e-d968-4b2a-8fc8-99524986eaab",
+                                "height": 8176,
+                                "width": 6128,
+                                "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+                                "protocol": "http://iiif.io/api/image",
+                                "tiles": [{
+                                "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+                                "width": 1024
+                                }]
+                                }]
+                                });
+                            </script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+  
+  <script src="js/functions.js"></script>
+</div>
+</body>
+</html>
