@@ -7,13 +7,13 @@ function main() {
     // reads params from query in url and calls function to upload text   
     parametri = getParams(document.URL)
     if (parametri['ConttoLoad'] == 'Errors') {
-        displayResult("xml/TheComedyOfErrors.xml", "xml/template.xsl");
+        displayResult("./xml/TheComedyOfErrors.xml", "xml/template.xsl");
     }
     else if (parametri['ConttoLoad'] == 'Tempest'){
-        displayResult("xml/TheTempest.xml", "xml/template.xsl");
+        displayResult("./xml/TheTempest.xml", "xml/template.xsl");
     }
     else if (parametri['ConttoLoad'] == 'Gentlemen'){
-        displayResult("xml/TwoGentlemenOfVerona.xml", "xml/template.xsl");   
+        displayResult("./xml/TwoGentlemenOfVerona.xml", "xml/template.xsl");   
     }
 };
 
