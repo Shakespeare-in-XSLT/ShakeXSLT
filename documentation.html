@@ -237,12 +237,37 @@
               </p>
               <h2>XSLT</h2>
                 <p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT" target="_blank">XSLT</a> (eXtensible Stylesheet Language Transformations) is a language for transforming XML documents, and thus TEI, into other XML documents or other formats such as HTML. We have used this technology to transform TEI-annotated texts into html, in order to work upon them.</p>
-                <p>An HTML page is generated automatically for each text, thus we have created a destination page, called opera.html, on which each specific html is loaded as a consequence of an event. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT" target="_blank">XSLT</a>
+                (eXtensible Stylesheet Language Transformations) is a high-level declarative language for transforming XML documents, and thus TEI, into other XML documents or other formats such as HTML. We have used this technology to transform TEI-annotated texts into html, in order to work upon them.
+                </p>
+                <p>
+                The dominant features of XSLT as a declarative language are that it is a rule-based language, where the rules are not arranged in any particular order, and it is side-effect free which enables XSLT rules to be called any number of times and in any order.
+                </p>
+                <p>
+                XSLT uses XML syntax. The root element is <code>xsl:stylesheet</code>, which must include a namespace declaration for XSLT. The optional <code>xsl:output</code> element tells the type of the target document. The root element is then filled with template rules, which describe how to transform elements in the source document, in this case, XML document. Each template rule consists of two parts: a pattern and a template. The pattern describes which XML element nodes should be processed by the rule. In some cases, patterns are specified using XPath expressions. On the other hand, the template describes the HTML structure that should be generated when nodes that match the pattern are found. In an XSLT stylesheet, a template rule is represented by an <code>xsl:template</code> element. The pattern is the value of its match attribute, and the template is the element’s content.
+                The template may contain a sequence of text nodes and literal result elements to be copied to the output, and instructions to be executed according to the rules of the particular instruction.</p>
+                <p>Two XSLT instructions that will be used very often in the XSLT stylesheet we generated are <code>xsl:value-of</code> and <code>xsl:apply-templates</code>. The <code>xsl:value-of</code> instruction extracts the data content of an XML element and inserts it into the output. It has a select attribute which consists of a pattern. The <code>xsl:apply-templates</code> instruction finds all nodes that match the select attribute pattern, and processes each node in turn by applying the template rule that matches the node.
+                </p>
+                <p>
+                As described earlier, XSLT is a language specifically designed for transforming the structure of XML documents. The transformation process works as follows. A list of nodes from the source document is processed to create a result tree fragment. The result tree is constructed by processing a list containing just the root node. Within a list of source nodes, each list member is processed in order and the result tree structures are appended. A node is processed by finding all the template rules with patterns that match the node, and choosing the best amongst them; the template of the chosen rule is then instantiated with the node as the current node and with the list of source nodes as the current node list. A template typically contains instructions that select an additional list of source nodes for processing. This process is continued recursively until the list of source nodes is empty.
+                </p>
+                <p>
+                An HTML page is generated automatically for each text, thus we have created a destination page, called <code>opera.html</code>, on which each specific html is loaded as a consequence of an event. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.
+                </p>
+                <p>
+                We perform the transformation in a dinamic way with an XSLTProcessor javascript object that applies one XSLT stylesheet transformation to the three XML documents to produce a new HTML document as output for each.
+                </p>
+                <p>
+                Our digital edition loads using synchronous XMLHTTPRequest both the .xsl (xslStylesheet) and the .xml (xmlDoc) files into memory. The .xsl file is then imported (xsltProcessor.importStylesheet(xslStylesheet)) and the transformation run (xsltProcessor.transformToFragment(xmlDoc, document)). This allows fetching of data after the page has been loaded, without initiating a fresh page load.
+                </p>
                 <p>
                 XSLT is a powerful tool which can be used for building, as in this case, a digital edition. Even if 
                 <blockquote>Robinson’s remark about the lack of easy-to-use production tools is unfortunately still valid: there is no software tool nor suite of tools that allows a scholar to produce a full digital edition, be it image-based with a diplomatic text or a critical edition, in a way comparable to how printed editions are prepared.29 Most of all, there is no ‘standard way’ to do it[from Production, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 227]</blockquote></p>
-                <p>XSLT is a valid tool for this purpose.
+                <p>XSLT is a valid tool for this purpose.</p>
+
+<p>
+XSLT is far more powerful than CSS and can manipulate XML documents in ways that CSS cannot. XSLT can radically transform documents and can combine multiple XML data sources into a single output file or multiple output files.
+
                 </p>
             </div>
         </div>
