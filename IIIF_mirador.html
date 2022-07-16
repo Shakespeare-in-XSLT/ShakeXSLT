@@ -37,7 +37,7 @@
   
 </head>
 
-<body>
+<body class="style1600">
  
 
   <div class="site-container">
@@ -45,7 +45,7 @@
     <header class="fixed">
       <div class="header fade-down">
         <div class="header__logo">
-          
+          <h3>ShakeXSLT</h3>
         </div>
           <nav class="header__menu" id="main-menu">
             <ul class="site-nav">
@@ -60,18 +60,9 @@
                     </div>
                   </div>
               </li>
+              <li><a href="IIIF_mirador.html"> First Folio IIIF </a></li>
               <li><a href="documentation.html"> Documentation </a></li>
               <li><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
-              <li>
-                <div class="dropdown">
-                    <button onclick="myFunction2()" class="dropbtn">IIIF</button>
-                    <div id="myDropdown2" class="dropdown-content">
-                      <a href="IIIFcomedy.html"><span>IIIF - The Comedy Of Errors</span></a>
-                      <a href="IIIFtempest.html"><span>IIIF - The Tempest</span></a>
-                      <a href="IIIFgentlemen.html"><span>IIIF - Two Gentlemen Of Verona</span></a>
-                    </div>
-                  </div>
-              </li>
             </ul>
           </nav>
         <div class="header__cta">
@@ -105,12 +96,37 @@
 
         <div class="grid">
             <div class="col-100">
-              <h1 class="headline">
-                IIIF
-              </h1>
+              <h2 class="subheadline">First Folio IIIF</h2>
             </div>
         </div>
     </section>
+      <section id="why_iiif" class="panel">
+        <div class="grid">
+          <div class="col-80">
+                <h2 class="title">
+                  <span>SDE criteria</span>
+                </h2>
+            </div>
+          <div class="col-80">
+        <p>Starting from the article of Patrick Sahle <a href="https://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/" target="_blank">Criteria for Reviewing Scholarly Digital Editions</a>, we have tried to accomplish each criterion in the creation of our digital edition.</p>
+        <p>To start with the first criterion, enough information for the Bibliographic identification of the SDE has been provided, clarifying the title, the responsible editors and the subject of the edition.</p>
+        <p>To go on with the second criterion, the texts are presented in a clear and complete version, allowing the reader to have a full understanding of them. Images are present, in order to allow a cleare identification of the texts (the original pages are presented).</p>
+        <p>For what concerns the 3rd criterion, a documentation has been provided in order to allow also non-expert readers to get a context of the edition. The target audience has been thought to be a general public, which has no previous knowledge of the content, neither of how to use a digital edition.</p>
+        <p><blockquote>
+            When we create editions, we are thinking about readers in two disciplines: readers who are editors, and readers who are not editors. […] Making editions that work for both editors and for the popular audience will always be tricky, and moving into the digital world does not really make it much easier. […] [from Results from the catalogue, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 173]
+        </blockquote></p>
+        <p>
+        Thus, talkin about the 4 criterion, we have decided to aim at a simple presentation, allowing a browsing through the index of the text, presented in a sidebar. We have also decided to present three different texts, with different plots, to offer a clearer view of the author's work, since </p>
+        <p>
+        <blockquote>
+        The telling proximity of one work to another, significant gatherings of materials, illustrations entered
+        into the manuscript alongside the text and so forth all shape the way
+        we understand the manuscript, but are often ignored when preparing
+        scholarly editions. [from Building A Social Edition of the Devonshire Manuscript, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 140]
+        </blockquote></p>
+        </div>
+        </div>
+      </section>
 
     <section id="iiif" class="iiif_section margin-top">
 
@@ -143,6 +159,26 @@
             </div>
         </div>
     </section>
+
+  <footer class="footer">
+    <div class="grid grid--center" id="disclaimer">
+      <div class="col-100 margin-bottom">
+        
+        <div class="horizontal-separator"></div>
+      </div>
+      <div class="col-50 disclaimer">
+        <h4>Disclaimer</h4>
+        <p>The purpose of this web site is to simulate a Digital Scholarly Edition as an end-of-course project for the "Digital Text in the Humanities"
+          course of the Master Degree in Digital Humanities
+          and Digital Knowledge of the University of Bologna, under prof. Tiziana Mancinelli.
+        </p>
+      </div>
+      <div class="col-100 footer__final-text">
+        <p><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
+        <p>All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©ShakeXSLT</p>
+      </div>
+    </div>
+  </footer>
 
 </main>
 

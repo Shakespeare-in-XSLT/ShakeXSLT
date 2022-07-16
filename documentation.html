@@ -38,14 +38,14 @@
  
 </head>
 
-<body>
+<body class="style1600">
  
   <div class="site-container">
  
     <header class="fixed">
       <div class="header fade-down">
         <div class="header__logo">
-          
+          <h3>ShakeXSLT</h3>
         </div>
           <nav class="header__menu" id="main-menu">
             <ul class="site-nav">
@@ -60,22 +60,13 @@
                     </div>
                   </div>
               </li>
-              <li class="aiuto"><a href="documentation.html"> Documentation </a></li>
-              <li class="aiuto"><a href="index.html#disclaimer"> Disclaimer </a></li>
-              <li>
-                <div class="dropdown">
-                    <button onclick="myFunction2()" class="dropbtn">IIIF</button>
-                    <div id="myDropdown2" class="dropdown-content">
-                      <a href="IIIFcomedy.html"><span>IIIF - The Comedy Of Errors</span></a>
-                      <a href="IIIFtempest.html"><span>IIIF - The Tempest</span></a>
-                      <a href="IIIFgentlemen.html"><span>IIIF - Two Gentlemen Of Verona</span></a>
-                    </div>
-                  </div>
-              </li>
+              <li><a href="IIIF_mirador.html"> First Folio IIIF </a></li>
+              <li><a href="documentation.html"> Documentation </a></li>
+              <li><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
             </ul>
           </nav>
         <div class="header__cta">
-          <a href="https://github.com/JSOShakespeare/JSOShakespeare.git" target="_blank" class="button">Github</a>
+          <a href="https://github.com/Shakespeare-in-XSLT/ShakeXSLT.git" target="_blank" class="button">Github</a>
         </div>
         <div class="header__icon">
           <div class="icon-hamburger">
@@ -320,18 +311,25 @@ XSLT is far more powerful than CSS and can manipulate XML documents in ways that
       <div class="hero-image hidden"><img id="hero-image" src="img/hero/shakespeare_1600.webp" alt=""></div>
 
     <!-- FOOTER -->
-        <footer class="footer">
-            <div class="grid " id="disclaimer">
-            <div class="col-100">
-                
-                
-                <div class="footer__final-text" id="footer_doc">
-                    <p ><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
-                    <p >All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©ShakeXSLT</p>
-                </div>
-            </div>
-            </div>
-        </footer>
+      <footer class="footer">
+        <div class="grid grid--center" id="disclaimer">
+          <div class="col-100 margin-bottom">
+            
+            <div class="horizontal-separator"></div>
+          </div>
+          <div class="col-50 disclaimer">
+            <h4>Disclaimer</h4>
+            <p>The purpose of this web site is to simulate a Digital Scholarly Edition as an end-of-course project for the "Digital Text in the Humanities"
+              course of the Master Degree in Digital Humanities
+              and Digital Knowledge of the University of Bologna, under prof. Tiziana Mancinelli.
+            </p>
+          </div>
+          <div class="col-100 footer__final-text">
+            <p><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
+            <p>All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©ShakeXSLT</p>
+          </div>
+        </div>
+      </footer>
     <!-- FOOTER END -->
   </main>
 
