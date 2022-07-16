@@ -453,6 +453,12 @@ padding-left: 15%;
 .doc_image {width: 80%; height: auto; object-fit: cover; margin-bottom: 10px;}
 #fut {margin-top: 40%;}
 
+/* IIIF Mirador viewer */
+
+.mirador_viewer {height: 90vh;width: 100%;}
+
+
+
 /* ! Footer */
 
 .footer {position: relative; margin-top: 100px;}
