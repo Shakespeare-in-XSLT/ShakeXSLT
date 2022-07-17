@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF_8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Shakespeare in XSLT</title>
@@ -22,27 +21,20 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-  
   <script src="js/swup.min.js"></script>
   <script src="js/SwupBodyClassPlugin.min.js"></script>
   <script src="js/SwupHeadPlugin.min.js"></script>
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">  
+   </head>
+   <body>
+      <div class="site-container">
     
-</head>
-
-<body class="style1600">
-  
-  <div class="site-container">
-  
     <header class="fixed">
       <div class="header fade-down">
         <div class="header__logo">
@@ -62,7 +54,7 @@
                   </div>
               </li>
               <li><a href="documentation.html"> Documentation </a></li>
-              <li><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
+              <li><a href="index.html#disclaimer"> Disclaimer </a></li>
               <li>
                 <div class="dropdown">
                     <button onclick="myFunction2()" class="dropbtn">IIIF OpenSeaDragon</button>
@@ -86,64 +78,33 @@
         </div>
       </div>
     </header>
-
-    <div class="sidebar-trigger">
-      <div class="sidebar-trigger-container">
-        <i class='sidebar-icon bx bx-chevron-right'></i>
+      <div>
+        <p id="introiiif">Here is presented the first page of the texts presented in our edition taken from the First Folio. The complete manuscript can be found in the <a href="IIIF_mirador.html">First Folio IIIF Mirador</a> section.</p>
+         <h1 id="titleiiif">Two Gentlemen of Verona</h1>
       </div>
-    </div>
-    <aside class="sidebar" id="sidebar">
-            <h3>INDEX</h3>
-            <p id="att"></p>
-          
-    </aside>
-
-    <div class="fab-container">
-      <div class="fab-trigger">
-      
-      </div>
-      <div class="fab-options">
-        <div class="trigger-style trigger1600">
-          
-        </div>
- 
-      </div> 
-    </div>
- 
-
-        <main id="swup" class="transition-fade">
-            
-          <section id="opera-text">
-            <div class="panel">
-              <div class="grid">
-                <div id="titolo" class="col-80">
-                </div>
-              </div>
-            </div>
-            <div class="panel panel--grey">         
-              <div class="grid grid--center">
-                  <div id="titolo">
-                  </div> 
-                  <div id="example" class="col-80">             
-                  </div>
-              </div>            
-            </div>
-          </section>
-        
-          <div class="hero-image hidden"><img id="hero-image" src="img/hero/shakespeare_1600.webp" alt=""></div>
-
-        </main>
-    
-
-
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>  
-        <script src="js/jquery-1.12.4.min.js"></script> 
-        <script src="js/functions.js" type="text/javascript"></script>
-
-
-        <script src="js/scripts.js"></script>
-
-
+      <div id="openseadragon" style="width: 500px; height: 600px;"></div><script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js"></script><script type="text/javascript">
+                                var viewer = OpenSeadragon({
+                                id: "openseadragon",
+                                prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/images/",
+                                tileSources:   [{
+                                "@context": "http://iiif.io/api/image/2/context.json",
+                                "@id": "https://iiif.bodleian.ox.ac.uk/iiif/image/59a807d0-cc63-4731-94b0-ae5d2b6a8185",
+                                "height": 8176,
+                                "width": 6128,
+                                "profile": [ "http://iiif.io/api/image/2/level2.json" ],
+                                "protocol": "http://iiif.io/api/image",
+                                "tiles": [{
+                                "scaleFactors": [ 1, 2, 4, 8, 16, 32 ],
+                                "width": 1024
+                                }]
+                                }]
+                                });
+                            </script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+  
+  <script src="js/functions.js"></script>
+</div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="IIIF.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Tempest</title>
+        <author>
+          <persName>
+            <forename>William</forename>
+            <surname>Shakespeare</surname>
+          </persName>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher/>
+        <date>1611</date>
+      </publicationStmt>
+      <sourceDesc>
+        <ab/>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+    </profileDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="p21r"
+      url="https://iiif.bodleian.ox.ac.uk/iiif/image/4e984e4e-d968-4b2a-8fc8-99524986eaab"/>
+  </facsimile>
+</TEI>
