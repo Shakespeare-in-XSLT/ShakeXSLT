@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Shakespeare in XSLT</title>
+  <meta name="description" content="Shakespeare XML allows to read articles while travelling in time through four historical typographical and layout styles that span over five hundred years.">
+  <meta name="author" content="Stefano Renzetti, Sara Vellone, Olga Pagnotta">
+
+  <meta property="og:title" content="Shakespeare XML texts and graphic design history">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jsoshakespeare.github.io/JSOShakespeare/index.html">
+  <meta property="og:description" content="A XML-XSLT project.">
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="js/swup.min.js"></script>
+  <script src="js/SwupBodyClassPlugin.min.js"></script>
+  <script src="js/SwupHeadPlugin.min.js"></script>
+
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">  
+  
+</head>
+
+<body>
+    <div id="my-mirador"/> 
+
+                    <script type="text/javascript">
+                    var mirador = Mirador.viewer({
+                    "id": "my-mirador",
+                    "manifests": {
+                        "json/miami_manifest.json": {
+                        "provider": "IIIF Tutorial University of Bologna"
+                        }
+                    },
+                    "windows": [
+                        {
+                        "loadedManifest": "json/miami_manifest.json",
+                        "canvasIndex": 2,
+                        "thumbnailNavigationPosition": 'far-bottom'
+                        }
+                    ]
+                    });
+                    </script>
+    </div>
+
+
+
+
+</body>

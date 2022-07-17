@@ -125,7 +125,7 @@ body {transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .site-nav > li {display: inline-block;}
 .site-nav > li a {display: block; padding: 24px; color:#000; text-decoration: none;}
 .site-nav > li a:hover {background-color: #e7e7e7;}
-.site-nav > li:hover:first-child {background-color: #e7e7e7;}
+.site-nav > li:hover:nth-child(2) {background-color: #e7e7e7;}
 
 .logo {opacity:1; display: block; padding: 10px; text-align: center;}
 
@@ -167,6 +167,12 @@ body {transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .sidebar-button {display: flex; align-items: center;}
 .sidebar-icon {font-size: 26px; margin: 10px;}
 
+aside h3 {padding: 20px 46px 0px 46px;}
+#att {padding: 10px 60px 20px 40px;}
+#att ul {list-style: none;padding-inline-start: 10px;}
+#att p {margin-block-start: 0.5em; margin-block-end: 0.2em;}
+#att p, aside li {cursor: pointer;padding: 10px;}
+#att p:hover, #att li:hover {background-color: #e0dede;}
 
 
 @media (max-width: 1200px) {
@@ -306,7 +312,7 @@ padding-left: 15%;
 
 /* ! Panel */
 
-.panel {padding: 100px 0; position: relative;}
+.panel {padding: 80px 0; position: relative;}
 .panel__img img {height: 80vh; width: 100%;max-width: 550px; display: block; margin: 0 auto; object-fit: cover}
 .panel__text {max-width: 550px; display: flex; width: 100%; height: 100%; align-items: center; padding: 20px;}
 
@@ -453,13 +459,19 @@ padding-left: 15%;
 .doc_image {width: 80%; height: auto; object-fit: cover; margin-bottom: 10px;}
 #fut {margin-top: 40%;}
 
+/* IIIF Mirador viewer */
+
+.mirador_viewer {height: 90vh;width: 100%;}
+
+
+
 /* ! Footer */
 
 .footer {position: relative; margin-top: 100px;}
-.footer .col-50 {padding-right: 5%;}
 .footer__logo {width: 150px; height: auto;}
-.horizontal-separator {height: 2px; width: calc(100% - 180px); position: absolute; top: 20px; right: 0; background: #000;}
-.footer__final-text {text-align: center; margin-top: 80px;}
+.horizontal-separator {height: 2px; width:100%; position: absolute; top: 20px; right: 0; background: #000;}
+.footer__final-text {text-align: center; margin-top: 40px;}
+.footer .disclaimer {text-align: center;}
 
 @media (max-width: 768px) {
   
@@ -472,6 +484,8 @@ padding-left: 15%;
 .footer li {border-bottom: 1px solid #ddd; padding: 10px; text-align: left;}
 .footer a {text-decoration: none; font-size: 20px; color: #333;}
 .footer a:hover {color: #000;}
+
+
 
 /* ! 1600 */
 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Shakespeare in XSLT</title>
+  <meta name="description" content="Shakespeare XML allows to read articles while travelling in time through four historical typographical and layout styles that span over five hundred years.">
+  <meta name="author" content="Stefano Renzetti, Sara Vellone, Olga Pagnotta">
+
+  <meta property="og:title" content="Shakespeare XML texts and graphic design history">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jsoshakespeare.github.io/JSOShakespeare/index.html">
+  <meta property="og:description" content="A XML-XSLT project.">
+
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="js/swup.min.js"></script>
+  <script src="js/SwupBodyClassPlugin.min.js"></script>
+  <script src="js/SwupHeadPlugin.min.js"></script>
+
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">  
+  
+</head>
+
+<body class="style1600">
+ 
+
+  <div class="site-container">
+    
+    <header class="fixed">
+      <div class="header fade-down">
+        <div class="header__logo">
+          <h3>ShakeXSLT</h3>
+        </div>
+          <nav class="header__menu" id="main-menu">
+            <ul class="site-nav">
+              <li><a href="index.html">Home</a></li>
+              <li id="op">
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Opera</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
+                      <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
+                      <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                    </div>
+                  </div>
+              </li>
+              <li><a href="IIIF_mirador.html"> First Folio IIIF </a></li>
+              <li><a href="documentation.html"> Documentation </a></li>
+              <li><a href="#disclaimer" onclick="window.location.href = '#disclaimer';"> Disclaimer </a></li>
+            </ul>
+          </nav>
+        <div class="header__cta">
+          <a href="https://github.com/Shakespeare-in-XSLT/ShakeXSLT.git" target="_blank" class="button">Github</a>
+        </div>
+        <div class="header__icon">
+          <div class="icon-hamburger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="fab-container">
+      <div class="fab-trigger">
+      
+      </div>
+      <div class="fab-options">
+        <div class="trigger-style trigger1600">
+         
+        </div>
+  
+      </div>
+    </div>
+
+<body>
+    
+<main id="swup" class="transition-fade">
+      
+    <section id="intro-documentation" class="opera-text">
+
+        <div class="grid">
+            <div class="col-100">
+              <h2 class="subheadline">First Folio IIIF</h2>
+            </div>
+        </div>
+    </section>
+      <section id="why_iiif" class="panel">
+        <div class="grid">
+            <div class="col-80">
+                <h2 class="title">
+                  <span>The copies</span>
+                </h2>
+            </div>
+            <div class="col-80">
+            <p>
+            We present here two copies of Shakespeare's First Folio.
+            The First Folio is the first collected edition of William Shakespeare's plays, collated and published in 1623, seven years after his death.
+            Folio editions were large and expensive books that were seen as prestige items.
+            </p>
+            <p>
+            The first, the <a href="https://firstfolio.bodleian.ox.ac.uk/" target="_blank">Bodleian’s First Folio</a>,
+            has an unusual history: it was acquired by the Bodleian when it was printed in 1623, then
+            sold off a few decades later, then rediscovered and repurchased for the Bodleian through a crowdfunding campaign in the early 1900s.
+            Thanks to the generosity of our supporters, another public campaign in 2012 raised funds for the Bodleian to stabilize and digitize the First Folio.
+            </p>         
+            <p>
+            The second copy we present was donated to <a href="https://digital.lib.miamioh.edu/digital/collection/wshakespeareMiami" target="_blank">Miami University</a> in 1949 by Dr. O. O. Fisher.
+            Fisher was a Miami alumnus (class of '09) who went on to become an industrial surgeon and an avid book collector.
+            The First Folio is from the matched set once owned by Lord Leigh.
+            </p>
+            </div>
+        </div>
+      </section>
+
+    <section id="iiif" class="iiif_section margin-top">
+
+        <div class="grid">
+            <div class="col-100">
+                <h2 class="subheadline">
+                    Bodleian Library
+                </h2>
+                    <iframe src="mirador_viewer.html" frameborder="0" class="mirador_viewer">
+
+
+                
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="iiif" class="iiif_section margin-top">
+
+        <div class="grid">
+            <div class="col-100">
+                <h2 class="subheadline">
+                    Miami University
+                </h2>
+                    <iframe src="mirador_viewer_2.html" frameborder="0" class="mirador_viewer">
+
+
+                
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+  <footer class="footer">
+    <div class="grid grid--center" id="disclaimer">
+      <div class="col-100 margin-bottom">
+        
+        <div class="horizontal-separator"></div>
+      </div>
+      <div class="col-50 disclaimer">
+        <h4>Disclaimer</h4>
+        <p>The purpose of this web site is to simulate a Digital Scholarly Edition as an end-of-course project for the "Digital Text in the Humanities"
+          course of the Master Degree in Digital Humanities
+          and Digital Knowledge of the University of Bologna, under prof. Tiziana Mancinelli.
+        </p>
+      </div>
+      <div class="col-100 footer__final-text">
+        <p><strong>Copyright</strong> and related rights on the content remain with their original owners.</p>
+        <p>All <strong>Copyrights</strong> on the typographic and layout choices are 2022 ©ShakeXSLT</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+  
+  <script src="js/functions.js"></script>
+
+</body>
+</html>
