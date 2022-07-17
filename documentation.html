@@ -160,7 +160,7 @@
           <div class="col-80">
         <p>Starting from the article of Patrick Sahle <a href="https://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/" target="_blank">Criteria for Reviewing Scholarly Digital Editions</a>, we have tried to accomplish each criterion in the creation of our digital edition.</p>
         <p>To start with the first criterion, enough information for the Bibliographic identification of the SDE has been provided, clarifying the title, the responsible editors and the subject of the edition.</p>
-        <p>To go on with the second criterion, the texts are presented in a clear and complete version, allowing the reader to have a full understanding of them. Images are present, in order to allow a cleare identification of the texts (the original pages are presented).</p>
+        <p>To go on with the second criterion, the texts are presented in a clear and complete version, allowing the reader to have a full understanding of them. Images are present, in order to allow a clearer identification of the texts (the original pages are presented).</p>
         <p>For what concerns the 3rd criterion, a documentation has been provided in order to allow also non-expert readers to get a context of the edition. The target audience has been thought to be a general public, which has no previous knowledge of the content, neither of how to use a digital edition.</p>
         <p><blockquote>
             When we create editions, we are thinking about readers in two disciplines: readers who are editors, and readers who are not editors. […] Making editions that work for both editors and for the popular audience will always be tricky, and moving into the digital world does not really make it much easier. […] [from Results from the catalogue, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 173]
@@ -263,12 +263,12 @@
                 </p>
                 <p>
                 XSLT is a powerful tool which can be used for building, as in this case, a digital edition. Even if 
-                <blockquote>Robinson’s remark about the lack of easy-to-use production tools is unfortunately still valid: there is no software tool nor suite of tools that allows a scholar to produce a full digital edition, be it image-based with a diplomatic text or a critical edition, in a way comparable to how printed editions are prepared.29 Most of all, there is no ‘standard way’ to do it[from Production, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 227]</blockquote></p>
-                <p>XSLT is a valid tool for this purpose.</p>
-
-<p>
-XSLT is far more powerful than CSS and can manipulate XML documents in ways that CSS cannot. XSLT can radically transform documents and can combine multiple XML data sources into a single output file or multiple output files.
-
+                <blockquote>Robinson’s remark about the lack of easy-to-use production tools is unfortunately still valid: there is no software tool nor suite of tools that allows a scholar to produce a full digital edition, be it image-based with a diplomatic text or a critical edition, in a way comparable to how printed editions are prepared. Most of all, there is no ‘standard way’ to do it[from Production, in Digital Scholarly Editing: Theories and Practices, Matthew James Driscoll and Elena Pierazzo, p. 227]</blockquote></p>
+                <p>
+                XSLT is a valid tool for this purpose.
+                </p>
+                <p>
+                XSLT is far more powerful than CSS and can manipulate XML documents in ways that CSS cannot. XSLT can radically transform documents and can combine multiple XML data sources into a single output file or multiple output files.
                 </p>
             </div>
         </div>
@@ -299,25 +299,92 @@ XSLT is far more powerful than CSS and can manipulate XML documents in ways that
           </div>
           <div class="col-80">
             <p>We have decided to present the images of the operas through <a href="https://iiif.io/" target="_blank">IIIF</a>. <br>
-              IIIF, International Image Interoperability Framework, is a model for presenting and annotating digital representation of objects. It offers a set of application programming interfaces (APIs) based on open web standards, defined in specifications derived from shared real world use cases.
+              The International Image Interoperability Framework (IIIF, spoken as 'triple-I-eff'), is a model for presenting and annotating digital representation of objects. It offers a set of application programming interfaces (APIs) based on open web standards, defined in specifications derived from shared real world use cases.
             </p>
-            <p>IIIF is a useful and helpful resource, through which some of the most common problems while dealing with the images, such as different images formats, sizes and storage issues, can  be easily solved.</p>
+            <p>
+            It is a set of technical specifications built around shared challenges in cultural heritage access. More than the technical specifications, IIIF is a community of software, tools, content, people, and institutions solving image Interoperability challenges.
+            </p>
+            <p>
+            Is a way to standardize the delivery of images and audio/visual files from servers to different environments on the Web where they can then be viewed and interacted with in many ways.
+            </p>
+            <p>
+            Modern Web browsers understand how to display formats like .jpg and .mp4 at defined sizes, but cannot do much else. The IIIF specifications align with general Web standards that define how all browsers work to enable richer functionality beyond viewing an image or audio/visual files. For images, that means enabling deep zoom, comparison, structure (i.e., for an object such as a book, structure = page order) and annotation. For audio/visual materials, that means being able to deliver complex structures (such as several reels of film that make up a single movie) along with things like captions, transcriptions/translations, annotations, and more.
+            </p>
+            <p>
+            IIIF makes these objects work in a consistent way. That enables portability across viewers, the ability to connect and unite materials across institutional boundaries, and more.
+            </p>
+            <p>
+            So IIIF is a useful and helpful resource, through which some of the most common problems while dealing with the images, such as different images formats, sizes and storage issues, can be easily solved.
+            </p>
+            <p>
+            IIIF provides two core APIs:</br>
+            <strong>Image API</strong> (I want to get image pixels)</br>
+            <strong>Presentation API</strong> (I want to display the images)</br>
+            </p>
+            <p>
+            There are several more APIs that IIIF supports including Search and Authentication. In this DSE we focused on the Image and Presentation APIs. We implemented both in our Digital Scholarly Edition to present the complete range of options.
+            </p>
+
+            <h2>Image API</h2>
+            <p>
+            The Image API provides a standardized way to request and deliver images. This can be as simple as, give me the original image to give me an upside-down tiled version of the image in gif format. The IIIF Image API is restful and allows for images to be served dynamically or from a static cache.
+            </p>
+            <p>
+            Images are requested using URI templates that have the following syntax:
+            </p>
+            <p><code>{scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}</code></p>
+            <p>
+            You can see and try how this works in practice in the <a href="https://www.learniiif.org/image-api/playground" target="_blank">IIIF API playground.</a>
+            </p>
+            <p>
+            To show Image API in our DSE we used OpenSeadragon, an open-source, web-based viewer for high-resolution zoomable images.
+            It is a deep-zooming javascript client whose primary advantage is a very smooth loading and navigation experience.
+            </br>
+            It supports the IIIF Image API natively, and is very simple to get up and running by supplying an info.json reference as its "tileSource". This is described in a <a href="https://openseadragon.github.io/examples/tilesource-iiif/">dedicated page</a> in its documentation.
+            </p>
+
+            <h3>Presentation API</h3>
+            <p>
+            The Presentation API attaches basic metadata and structure to digital objects, defining how they appear in viewers. It does this via the Manifest, a JSON file which bundles up all the different elements of an IIIF object (such as a single image, or a series of images) with basic metadata (like title, description, and rights information) and structural information (such as page order). 
+            </p>
+            <p>
+            The IIIF Presentation API specifies a web service that returns JSON-LD structured documents that together describe the structure and layout of a digitized object or other collection of images and related content.
+            It enables you to provide metadata about the structure and layout of image objects. Image type objects represent things like:
+            </br>
+            <ul>
+            <li> images </li>
+            <li> groups of ordered images </li>
+            <li> groups of images that represent pages (book, manuscript) </li>
+            </ul>
+            </p>
+            <p>
+            The Presentation API provides metadata about how these image objects can be displayed. Many institutions expose all or a large part of their collections through the IIIF Image and Presentation APIs. In particular, we used the Digital Bodleian and the Miami University Library that provide easy IIIF access to their resources in their search interface.
+            </p>
+            <h3>Manifest</h3>
+            <p>
+            The manifest response contains sufficient information for the client to initialize itself and begin to display something quickly to the user. The manifest resource represents a single object and any intellectual work or works embodied within that object. In particular, it includes the descriptive, rights and linking information for the object. It then embeds the sequence(s) of canvases that should be rendered to the user.
+            </p>
+            <p>
+            The Bodleian Library gives access to a useful tool, the <a href="https://digital.bodleian.ox.ac.uk/manifest-editor/">IIIF Manifest Editor.</a>
+            The IIIF Manifest Editor aims to reduce the guesswork and pure JSON editing when creating and/or manipulating manifests. It features a simple and easy-to-use interface with forms to edit the JSON value-pairs and drag-and-drop of images/canvases to facilitate the ordering and editing of the manifest without JSON knowledge. It's possible to validate and download the created/modified IIIF manifest.
+            </p>
+            <h3>Mirador</h3>
+            <p>
+            Mirador is a configurable, extensible, and easy-to-integrate image viewer, which enables image annotation and comparison of images from repositories dispersed around the world. Mirador has been optimized to display resources from repositories that support the IIIF API's.
+            </p>
           </div>
-          <div class="col-33">
-              <img src="img/First-page-first-folio-comedy-of-errors.png">
-          </div>
-          <div class="col-33">
-              <img src="img/First-page-first-folio-tempest.png">
-             
-          </div>
-          <div class="col-33">
-              <img src="img/First-page-first-folio-two-gentlemen.png">
-          </div>
-          
-        </div>  
+            <div class="col-33">
+                <img src="img/First-page-first-folio-comedy-of-errors.png" style="max-width: 200px;">
+            </div>
+            <div class="col-33">
+                <img src="img/First-page-first-folio-tempest.png" style="max-width: 200px;">
+              
+            </div>
+            <div class="col-33">
+                <img src="img/First-page-first-folio-two-gentlemen.png" style="max-width: 200px;">
+            </div>
+          </div>          
       </section>
-
-
       <div class="hero-image hidden"><img id="hero-image" src="img/hero/shakespeare_1600.webp" alt=""></div>
 
     <!-- FOOTER -->
