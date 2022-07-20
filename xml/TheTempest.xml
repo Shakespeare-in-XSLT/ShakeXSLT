@@ -3,11 +3,9 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="template.xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-  xmlns:tei="http://www.tei-c.org/ns/1.0"
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:dbo="http://dbpedia.org/ontology/">
   <teiHeader>
     <fileDesc>
@@ -21,14 +19,43 @@
         </author>
       </titleStmt>
       <publicationStmt>
-        <publisher/>
-        <date>1611</date>
+        <publisher>DraCor</publisher>
+        <address>
+          <addrLine>https://dracor.org/shake</addrLine>
+        </address>
       </publicationStmt>
       <sourceDesc>
-        <ab/>
+        <biblFull>
+          <titleStmt>
+            <title>The Tempest</title>
+            <author>William Shakespeare</author>
+            <editor>Olga Pagnotta</editor>
+            <editor>Sara Vellone</editor>
+            <editor>Stefano Renzetti</editor>
+            <respStmt>
+              <resp>Edited for ShakeXSLT Project and encoded by</resp>
+              <name>Olga Pagnotta</name>
+              <name>Sara Vellone</name>
+              <name>Stefano Renzetti</name>
+            </respStmt>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>DraCor</publisher>
+            <address>
+              <addrLine>https://dracor.org/</addrLine>
+              <addrLine>buero.praesident@uni-potsdam.de</addrLine>
+            </address>
+            <availability>
+              <licence target="https://creativecommons.org/publicdomain/zero/1.0/">Distributed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</licence>
+            </availability>
+          </publicationStmt>
+        </biblFull>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
       <particDesc>
         <listPerson>
           <person xml:id="Shipmaster">
@@ -99,7 +126,8 @@
     </profileDesc>
     <xenoData>
       <rdf:RDF>
-        <rdf:Description tei:ref="#Miranda" rdf:about="https://dbpedia.org/page/Miranda_(The_Tempest)">
+        <rdf:Description tei:ref="#Miranda"
+          rdf:about="https://dbpedia.org/page/Miranda_(The_Tempest)">
           <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
           <rdfs:label xml:lang="en">Miranda</rdfs:label>
         </rdf:Description>
@@ -107,11 +135,13 @@
           <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
           <rdfs:label xml:lang="en">Caliban</rdfs:label>
         </rdf:Description>
-        <rdf:Description tei:ref="#Ferdinand" rdf:about="https://dbpedia.org/page/Ferdinand_(The_Tempest)">
+        <rdf:Description tei:ref="#Ferdinand"
+          rdf:about="https://dbpedia.org/page/Ferdinand_(The_Tempest)">
           <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
           <rdfs:label xml:lang="en">Ferdinand</rdfs:label>
         </rdf:Description>
-        <rdf:Description tei:ref="#Stephano" rdf:about="https://dbpedia.org/page/Stephano_(The_Tempest)">
+        <rdf:Description tei:ref="#Stephano"
+          rdf:about="https://dbpedia.org/page/Stephano_(The_Tempest)">
           <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
           <rdfs:label xml:lang="en">Stephano</rdfs:label>
         </rdf:Description>
@@ -126,6 +156,24 @@
       </rdf:RDF>
     </xenoData>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="written" when="1611">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/shake000001" passive="http://www.wikidata.org/entity/Q86440"/>
+    </listRelation>
+  </standOff>
+  <facsimile>
+    <graphic xml:id="p21r"
+      url="https://iiif.bodleian.ox.ac.uk/iiif/image/4e984e4e-d968-4b2a-8fc8-99524986eaab">
+      <desc>This is the image of the first page of the comedy contained in the First Folio, also known as Mr. William Shakespeare's Comedies, Histories, and Tragedies, written by William Jaggard.
+        It is a collection of plays by William Shakespeare (1623), printed in folio format and contains 36 plays. The image is taken from the Bodleian Library's website and
+        it is provided in IIIF format. It can be found at page 21 of 920 fol. 2A1r.</desc>
+    </graphic>
+  </facsimile>
   <text>
     <front>
       <castList>
@@ -283,22 +331,20 @@
           </stage>
           <sp who="#Shipmaster">
             <speaker> MASTER </speaker>
-            <p>
-              <l> Boatswain ! </l>
-            </p>
+            <l> Boatswain ! </l>
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Here , master . What cheer ? </l>
-            </p>
+
+            <l> Here , master . What cheer ? </l>
+
           </sp>
           <sp who="#Shipmaster">
             <speaker> MASTER </speaker>
-            <p>
-              <l> Good , speak to th’ mariners . Fall to ’t yarely , </l>
-              <l> or we run ourselves aground . Bestir , bestir ! </l>
-            </p>
+
+            <l> Good , speak to th’ mariners . Fall to ’t yarely , </l>
+            <l> or we run ourselves aground . Bestir , bestir ! </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits . </hi>
@@ -308,12 +354,12 @@
           </stage>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Heigh , my hearts ! Cheerly , cheerly , my </l>
-              <l> hearts ! Yare , yare ! Take in the topsail . Tend to th’ </l>
-              <l> Master’s whistle . — Blow till thou burst thy wind , if </l>
-              <l> room enough ! </l>
-            </p>
+
+            <l> Heigh , my hearts ! Cheerly , cheerly , my </l>
+            <l> hearts ! Yare , yare ! Take in the topsail . Tend to th’ </l>
+            <l> Master’s whistle . — Blow till thou burst thy wind , if </l>
+            <l> room enough ! </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Alonso , Sebastian , Antonio , Ferdinand , Gonzalo , and others
@@ -321,77 +367,77 @@
           </stage>
           <sp who="#Alonso">
             <speaker> ALONSO </speaker>
-            <p>
-              <l> Good boatswain , have care . Where’s the Master ? </l>
-              <l> Play the men . </l>
-            </p>
+
+            <l> Good boatswain , have care . Where’s the Master ? </l>
+            <l> Play the men . </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> I pray now , keep below . </l>
-            </p>
+
+            <l> I pray now , keep below . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Where is the Master , boatswain ? </l>
-            </p>
+
+            <l> Where is the Master , boatswain ? </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Do you not hear him ? You mar our labor . </l>
-              <l> Keep your cabins . You do assist the storm . </l>
-            </p>
+
+            <l> Do you not hear him ? You mar our labor . </l>
+            <l> Keep your cabins . You do assist the storm . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Nay , good , be patient . </l>
-            </p>
+
+            <l> Nay , good , be patient . </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> When the sea is . Hence ! What cares these </l>
-              <l> roarers for the name of king ? To cabin ! Silence ! </l>
-              <l> Trouble us not . </l>
-            </p>
+
+            <l> When the sea is . Hence ! What cares these </l>
+            <l> roarers for the name of king ? To cabin ! Silence ! </l>
+            <l> Trouble us not . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Good , yet remember whom thou hast </l>
-              <l> aboard . </l>
-            </p>
+
+            <l> Good , yet remember whom thou hast </l>
+            <l> aboard . </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> None that I more love than myself . You are </l>
-              <l> a councillor ; if you can command these elements </l>
-              <l> to silence , and work the peace of the present , we </l>
-              <l> will not hand a rope more . Use your authority . </l>
-              <l> If you cannot , give thanks you have lived so long , and </l>
-              <l> make yourself ready in your cabin for the mischance </l>
-              <l> of the hour , if it so hap . — Cheerly , good </l>
-              <l> hearts ! — Out of our way , I say ! </l>
-            </p>
+
+            <l> None that I more love than myself . You are </l>
+            <l> a councillor ; if you can command these elements </l>
+            <l> to silence , and work the peace of the present , we </l>
+            <l> will not hand a rope more . Use your authority . </l>
+            <l> If you cannot , give thanks you have lived so long , and </l>
+            <l> make yourself ready in your cabin for the mischance </l>
+            <l> of the hour , if it so hap . — Cheerly , good </l>
+            <l> hearts ! — Out of our way , I say ! </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits . </hi>
           </stage>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> I have great comfort from this fellow . Methinks </l>
-              <l> he hath no drowning mark upon him . His </l>
-              <l> complexion is perfect gallows . Stand fast , good </l>
-              <l> Fate , to his hanging . Make the rope of his destiny </l>
-              <l> our cable , for our own doth little advantage . If he be </l>
-              <l> not born to be hanged , our case is miserable . </l>
-            </p>
+
+            <l> I have great comfort from this fellow . Methinks </l>
+            <l> he hath no drowning mark upon him . His </l>
+            <l> complexion is perfect gallows . Stand fast , good </l>
+            <l> Fate , to his hanging . Make the rope of his destiny </l>
+            <l> our cable , for our own doth little advantage . If he be </l>
+            <l> not born to be hanged , our case is miserable . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits with Alonso , Sebastian , and the other courtiers . </hi>
@@ -401,144 +447,144 @@
           </stage>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Down with the topmast ! Yare ! Lower , lower ! </l>
-              <l> Bring her to try wi’ th’ main course . </l>
-            </p>
+
+            <l> Down with the topmast ! Yare ! Lower , lower ! </l>
+            <l> Bring her to try wi’ th’ main course . </l>
+
             <stage>
               <hi rend="italic"> ( A cry within . ) </hi>
             </stage>
-            <p>
-              <l> A plague upon this howling ! They are </l>
-              <l> louder than the weather or our office . </l>
-            </p>
+
+            <l> A plague upon this howling ! They are </l>
+            <l> louder than the weather or our office . </l>
+
             <stage type="entrance">
               <hi rend="italic"> Enter Sebastian , Antonio , and Gonzalo . </hi>
             </stage>
-            <p>
-              <l> Yet again ? What do you here ? Shall we give o’er and </l>
-              <l> drown ? Have you a mind to sink ? </l>
-            </p>
+
+            <l> Yet again ? What do you here ? Shall we give o’er and </l>
+            <l> drown ? Have you a mind to sink ? </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> A pox o’ your throat , you bawling , blasphemous , </l>
-              <l> incharitable dog ! </l>
-            </p>
+
+            <l> A pox o’ your throat , you bawling , blasphemous , </l>
+            <l> incharitable dog ! </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Work you , then . </l>
-            </p>
+
+            <l> Work you , then . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Hang , cur , hang , you whoreson , insolent </l>
-              <l> noisemaker ! We are less afraid to be drowned than </l>
-              <l> thou art . </l>
-            </p>
+
+            <l> Hang , cur , hang , you whoreson , insolent </l>
+            <l> noisemaker ! We are less afraid to be drowned than </l>
+            <l> thou art . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> I’ll warrant him for drowning , though the </l>
-              <l> ship were no stronger than a nutshell and as leaky </l>
-              <l> as an unstanched wench . </l>
-            </p>
+
+            <l> I’ll warrant him for drowning , though the </l>
+            <l> ship were no stronger than a nutshell and as leaky </l>
+            <l> as an unstanched wench . </l>
+
           </sp>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> Lay her ahold , ahold ! Set her two courses . </l>
-              <l> Off to sea again ! Lay her off ! </l>
-            </p>
+
+            <l> Lay her ahold , ahold ! Set her two courses . </l>
+            <l> Off to sea again ! Lay her off ! </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter more Mariners , wet . </hi>
           </stage>
           <sp who="#SAILORS">
             <speaker> MARINERS </speaker>
-            <p>
-              <l> All lost ! To prayers , to prayers ! All lost ! </l>
-            </p>
+
+            <l> All lost ! To prayers , to prayers ! All lost ! </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> Mariners exit . </hi>
           </stage>
           <sp who="#Boatswain">
             <speaker> BOATSWAIN </speaker>
-            <p>
-              <l> What , must our mouths be cold ? </l>
-            </p>
+
+            <l> What , must our mouths be cold ? </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> The King and Prince at prayers . Let’s assist </l>
-              <l> them , for our case is as theirs . </l>
-            </p>
+
+            <l> The King and Prince at prayers . Let’s assist </l>
+            <l> them , for our case is as theirs . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> I am out of patience . </l>
-            </p>
+
+            <l> I am out of patience . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> We are merely cheated of our lives by drunkards . </l>
-              <l> This wide-chopped rascal — would thou </l>
-              <l> mightst lie drowning the washing of ten tides ! </l>
-            </p>
+
+            <l> We are merely cheated of our lives by drunkards . </l>
+            <l> This wide-chopped rascal — would thou </l>
+            <l> mightst lie drowning the washing of ten tides ! </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> Boatswain exits . </hi>
           </stage>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> He’ll be hanged yet , though every drop of </l>
-              <l> water swear against it and gape at wid’st to glut him . </l>
-            </p>
+
+            <l> He’ll be hanged yet , though every drop of </l>
+            <l> water swear against it and gape at wid’st to glut him . </l>
+
           </sp>
           <sp>
             <stage>
               <hi rend="italic"> A confused noise within : </hi>
             </stage>
-            <p>
-              <l> “ Mercy on us ! ” — “ We split , we </l>
-              <l> split ! ” — “ Farewell , my wife and children ! ” — </l>
-              <l> “ Farewell , brother ! ” — “ We split , we split , we </l>
-              <l> split ! ” </l>
-            </p>
+
+            <l> “ Mercy on us ! ” — “ We split , we </l>
+            <l> split ! ” — “ Farewell , my wife and children ! ” — </l>
+            <l> “ Farewell , brother ! ” — “ We split , we split , we </l>
+            <l> split ! ” </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Let’s all sink wi’ th’ King . </l>
-            </p>
+
+            <l> Let’s all sink wi’ th’ King . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Let’s take leave of him . </l>
-            </p>
+
+            <l> Let’s take leave of him . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits with Antonio . </hi>
           </stage>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Now would I give a thousand furlongs of sea </l>
-              <l> for an acre of barren ground : long heath , brown </l>
-              <l> furze , anything . The wills above be done , but I </l>
-              <l> would fain die a dry death . </l>
-            </p>
+
+            <l> Now would I give a thousand furlongs of sea </l>
+            <l> for an acre of barren ground : long heath , brown </l>
+            <l> furze , anything . The wills above be done , but I </l>
+            <l> would fain die a dry death . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits . </hi>
@@ -1073,9 +1119,9 @@
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL </speaker>
-            <p>
-              <l> No , sir . </l>
-            </p>
+
+            <l> No , sir . </l>
+
           </sp>
           <sp who="#Prospero">
             <speaker> PROSPERO </speaker>
@@ -1097,9 +1143,9 @@
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL </speaker>
-            <p>
-              <l> Ay , sir . </l>
-            </p>
+
+            <l> Ay , sir . </l>
+
           </sp>
           <sp who="#Prospero">
             <speaker> PROSPERO </speaker>
@@ -1679,454 +1725,454 @@
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN , aside to Antonio </speaker>
-            <p>
-              <l> He receives comfort like </l>
-              <l> cold porridge . </l>
-            </p>
+
+            <l> He receives comfort like </l>
+            <l> cold porridge . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> The visitor will not give him o’er so . </l>
-            </p>
+
+            <l> The visitor will not give him o’er so . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Look , he’s winding up the watch of his wit . </l>
-              <l> By and by it will strike . </l>
-            </p>
+
+            <l> Look , he’s winding up the watch of his wit . </l>
+            <l> By and by it will strike . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , to Alonso </speaker>
-            <p>
-              <l> Sir — </l>
-            </p>
+
+            <l> Sir — </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> One . Tell . </l>
-            </p>
+
+            <l> One . Tell . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> When every grief is entertained that’s offered , </l>
-              <l> comes to th’ entertainer — </l>
-            </p>
+
+            <l> When every grief is entertained that’s offered , </l>
+            <l> comes to th’ entertainer — </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> A dollar . </l>
-            </p>
+
+            <l> A dollar . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Dolor comes to him indeed . You have spoken </l>
-              <l> truer than you purposed . </l>
-            </p>
+
+            <l> Dolor comes to him indeed . You have spoken </l>
+            <l> truer than you purposed . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> You have taken it wiselier than I meant you </l>
-              <l> should . </l>
-            </p>
+
+            <l> You have taken it wiselier than I meant you </l>
+            <l> should . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , to Alonso </speaker>
-            <p>
-              <l> Therefore , my lord — </l>
-            </p>
+
+            <l> Therefore , my lord — </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Fie , what a spendthrift is he of his tongue . </l>
-            </p>
+
+            <l> Fie , what a spendthrift is he of his tongue . </l>
+
           </sp>
           <sp who="#Alonso">
             <speaker> ALONSO , to Gonzalo </speaker>
-            <p>
-              <l> I prithee , spare . </l>
-            </p>
+
+            <l> I prithee , spare . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Well , I have done . But yet — </l>
-            </p>
+
+            <l> Well , I have done . But yet — </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN , aside to Antonio </speaker>
-            <p>
-              <l> He will be talking . </l>
-            </p>
+
+            <l> He will be talking . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO , aside to Sebastian </speaker>
-            <p>
-              <l> Which , of he or Adrian , </l>
-              <l> for a good wager , first begins to crow ? </l>
-            </p>
+
+            <l> Which , of he or Adrian , </l>
+            <l> for a good wager , first begins to crow ? </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> The old cock . </l>
-            </p>
+
+            <l> The old cock . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> The cockerel . </l>
-            </p>
+
+            <l> The cockerel . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Done . The wager ? </l>
-            </p>
+
+            <l> Done . The wager ? </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> A laughter . </l>
-            </p>
+
+            <l> A laughter . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> A match ! </l>
-            </p>
+
+            <l> A match ! </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> Though this island seem to be desert — </l>
-            </p>
+
+            <l> Though this island seem to be desert — </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Ha , ha , ha . </l>
-            </p>
+
+            <l> Ha , ha , ha . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> So . You’re paid . </l>
-            </p>
+
+            <l> So . You’re paid . </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> Uninhabitable and almost inaccessible — </l>
-            </p>
+
+            <l> Uninhabitable and almost inaccessible — </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Yet — </l>
-            </p>
+
+            <l> Yet — </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> Yet — </l>
-            </p>
+
+            <l> Yet — </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> He could not miss ’t . </l>
-            </p>
+
+            <l> He could not miss ’t . </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> It must needs be of subtle , tender , and delicate </l>
-              <l> temperance . </l>
-            </p>
+
+            <l> It must needs be of subtle , tender , and delicate </l>
+            <l> temperance . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Temperance was a delicate wench . </l>
-            </p>
+
+            <l> Temperance was a delicate wench . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Ay , and a subtle , as he most learnedly </l>
-              <l> delivered . </l>
-            </p>
+
+            <l> Ay , and a subtle , as he most learnedly </l>
+            <l> delivered . </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> The air breathes upon us here most sweetly . </l>
-            </p>
+
+            <l> The air breathes upon us here most sweetly . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> As if it had lungs , and rotten ones . </l>
-            </p>
+
+            <l> As if it had lungs , and rotten ones . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Or as ’twere perfumed by a fen . </l>
-            </p>
+
+            <l> Or as ’twere perfumed by a fen . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Here is everything advantageous to life . </l>
-            </p>
+
+            <l> Here is everything advantageous to life . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> True , save means to live . </l>
-            </p>
+
+            <l> True , save means to live . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Of that there’s none , or little . </l>
-            </p>
+
+            <l> Of that there’s none , or little . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> How lush and lusty the grass looks ! How </l>
-              <l> green ! </l>
-            </p>
+
+            <l> How lush and lusty the grass looks ! How </l>
+            <l> green ! </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> The ground indeed is tawny . </l>
-            </p>
+
+            <l> The ground indeed is tawny . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> With an eye of green in ’t . </l>
-            </p>
+
+            <l> With an eye of green in ’t . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> He misses not much . </l>
-            </p>
+
+            <l> He misses not much . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> No , he doth but mistake the truth totally . </l>
-            </p>
+
+            <l> No , he doth but mistake the truth totally . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> But the rarity of it is , which is indeed almost </l>
-              <l> beyond credit — </l>
-            </p>
+
+            <l> But the rarity of it is , which is indeed almost </l>
+            <l> beyond credit — </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> As many vouched rarities are . </l>
-            </p>
+
+            <l> As many vouched rarities are . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> That our garments , being , as they were , </l>
-              <l> drenched in the sea , hold notwithstanding their </l>
-              <l> freshness and gloss , being rather new-dyed than </l>
-              <l> stained with salt water . </l>
-            </p>
+
+            <l> That our garments , being , as they were , </l>
+            <l> drenched in the sea , hold notwithstanding their </l>
+            <l> freshness and gloss , being rather new-dyed than </l>
+            <l> stained with salt water . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> If but one of his pockets could speak , would </l>
-              <l> it not say he lies ? </l>
-            </p>
+
+            <l> If but one of his pockets could speak , would </l>
+            <l> it not say he lies ? </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Ay , or very falsely pocket up his report . </l>
-            </p>
+
+            <l> Ay , or very falsely pocket up his report . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Methinks our garments are now as fresh as </l>
-              <l> when we put them on first in Afric , at the marriage </l>
-              <l> of the King’s fair daughter Claribel to the King of </l>
-              <l> Tunis . </l>
-            </p>
+
+            <l> Methinks our garments are now as fresh as </l>
+            <l> when we put them on first in Afric , at the marriage </l>
+            <l> of the King’s fair daughter Claribel to the King of </l>
+            <l> Tunis . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> ’Twas a sweet marriage , and we prosper </l>
-              <l> well in our return . </l>
-            </p>
+
+            <l> ’Twas a sweet marriage , and we prosper </l>
+            <l> well in our return . </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> Tunis was never graced before with such a </l>
-              <l> paragon to their queen . </l>
-            </p>
+
+            <l> Tunis was never graced before with such a </l>
+            <l> paragon to their queen . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Not since widow Dido’s time . </l>
-            </p>
+
+            <l> Not since widow Dido’s time . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Widow ? A pox o’ that ! How came that “ widow ” </l>
-              <l> in ? Widow Dido ! </l>
-            </p>
+
+            <l> Widow ? A pox o’ that ! How came that “ widow ” </l>
+            <l> in ? Widow Dido ! </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> What if he had said “ widower Aeneas ” too ? </l>
-              <l> Good Lord , how you take it ! </l>
-            </p>
+
+            <l> What if he had said “ widower Aeneas ” too ? </l>
+            <l> Good Lord , how you take it ! </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN , to Gonzalo </speaker>
-            <p>
-              <l> “ Widow Dido , ” said you ? You </l>
-              <l> make me study of that . She was of Carthage , not of </l>
-              <l> Tunis . </l>
-            </p>
+
+            <l> “ Widow Dido , ” said you ? You </l>
+            <l> make me study of that . She was of Carthage , not of </l>
+            <l> Tunis . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> This Tunis , sir , was Carthage . </l>
-            </p>
+
+            <l> This Tunis , sir , was Carthage . </l>
+
           </sp>
           <sp who="#Adrian">
             <speaker> ADRIAN </speaker>
-            <p>
-              <l> Carthage ? </l>
-            </p>
+
+            <l> Carthage ? </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> I assure you , Carthage . </l>
-            </p>
+
+            <l> I assure you , Carthage . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> His word is more than the miraculous harp . </l>
-            </p>
+
+            <l> His word is more than the miraculous harp . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> He hath raised the wall , and houses too . </l>
-            </p>
+
+            <l> He hath raised the wall , and houses too . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> What impossible matter will he make easy </l>
-              <l> next ? </l>
-            </p>
+
+            <l> What impossible matter will he make easy </l>
+            <l> next ? </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> I think he will carry this island home in his </l>
-              <l> pocket and give it his son for an apple . </l>
-            </p>
+
+            <l> I think he will carry this island home in his </l>
+            <l> pocket and give it his son for an apple . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> And sowing the kernels of it in the sea , bring </l>
-              <l> forth more islands . </l>
-            </p>
+
+            <l> And sowing the kernels of it in the sea , bring </l>
+            <l> forth more islands . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Ay . </l>
-            </p>
+
+            <l> Ay . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Why , in good time . </l>
-            </p>
+
+            <l> Why , in good time . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , to Alonso </speaker>
-            <p>
-              <l> Sir , we were talking that our </l>
-              <l> garments seem now as fresh as when we were at </l>
-              <l> Tunis at the marriage of your daughter , who is now </l>
-              <l> queen . </l>
-            </p>
+
+            <l> Sir , we were talking that our </l>
+            <l> garments seem now as fresh as when we were at </l>
+            <l> Tunis at the marriage of your daughter , who is now </l>
+            <l> queen . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> And the rarest that e’er came there . </l>
-            </p>
+
+            <l> And the rarest that e’er came there . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Bate , I beseech you , widow Dido . </l>
-            </p>
+
+            <l> Bate , I beseech you , widow Dido . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> O , widow Dido ? Ay , widow Dido . </l>
-            </p>
+
+            <l> O , widow Dido ? Ay , widow Dido . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , to Alonso </speaker>
-            <p>
-              <l> Is not , sir , my doublet as fresh as </l>
-              <l> the first day I wore it ? I mean , in a sort . </l>
-            </p>
+
+            <l> Is not , sir , my doublet as fresh as </l>
+            <l> the first day I wore it ? I mean , in a sort . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> That “ sort ” was well fished for . </l>
-            </p>
+
+            <l> That “ sort ” was well fished for . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , to Alonso </speaker>
-            <p>
-              <l> When I wore it at your daughter’s </l>
-              <l> marriage . </l>
-            </p>
+
+            <l> When I wore it at your daughter’s </l>
+            <l> marriage . </l>
+
           </sp>
           <sp who="#Alonso">
             <speaker> ALONSO </speaker>
@@ -2250,10 +2296,10 @@
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> The latter end of his commonwealth forgets </l>
-              <l> the beginning . </l>
-            </p>
+
+            <l> The latter end of his commonwealth forgets </l>
+            <l> the beginning . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
@@ -2295,75 +2341,75 @@
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> I do well believe your Highness , and did it to </l>
-              <l> minister occasion to these gentlemen , who are of </l>
-              <l> such sensible and nimble lungs that they always use </l>
-              <l> to laugh at nothing . </l>
-            </p>
+
+            <l> I do well believe your Highness , and did it to </l>
+            <l> minister occasion to these gentlemen , who are of </l>
+            <l> such sensible and nimble lungs that they always use </l>
+            <l> to laugh at nothing . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> ’Twas you we laughed at . </l>
-            </p>
+
+            <l> ’Twas you we laughed at . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Who in this kind of merry fooling am </l>
-              <l> nothing to you . So you may continue , and laugh at </l>
-              <l> nothing still . </l>
-            </p>
+
+            <l> Who in this kind of merry fooling am </l>
+            <l> nothing to you . So you may continue , and laugh at </l>
+            <l> nothing still . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> What a blow was there given ! </l>
-            </p>
+
+            <l> What a blow was there given ! </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> An it had not fallen flatlong . </l>
-            </p>
+
+            <l> An it had not fallen flatlong . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> You are gentlemen of brave mettle . You </l>
-              <l> would lift the moon out of her sphere if she would </l>
-              <l> continue in it five weeks without changing . </l>
-            </p>
+
+            <l> You are gentlemen of brave mettle . You </l>
+            <l> would lift the moon out of her sphere if she would </l>
+            <l> continue in it five weeks without changing . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Ariel invisible , <stage> playing solemn music </stage> . </hi>
           </stage>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> We would so , and then go a-batfowling . </l>
-            </p>
+
+            <l> We would so , and then go a-batfowling . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO , to Gonzalo </speaker>
-            <p>
-              <l> Nay , good my lord , be not angry . </l>
-            </p>
+
+            <l> Nay , good my lord , be not angry . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> No , I warrant you , I will not adventure my </l>
-              <l> discretion so weakly . Will you laugh me asleep ? </l>
-              <l> For I am very heavy . </l>
-            </p>
+
+            <l> No , I warrant you , I will not adventure my </l>
+            <l> discretion so weakly . Will you laugh me asleep ? </l>
+            <l> For I am very heavy . </l>
+
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO </speaker>
-            <p>
-              <l> Go sleep , and hear us . </l>
-            </p>
+
+            <l> Go sleep , and hear us . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> All sink down asleep except Alonso , Antonio , and Sebastian . </hi>
@@ -2647,16 +2693,16 @@
           </sp>
           <sp who="#Antonio">
             <speaker> ANTONIO , to Sebastian </speaker>
-            <p>
-              <l> Then let us both be sudden . </l>
-            </p>
+
+            <l> Then let us both be sudden . </l>
+
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO , waking </speaker>
-            <p>
-              <l> Now , good angels preserve the </l>
-              <l> King ! </l>
-            </p>
+
+            <l> Now , good angels preserve the </l>
+            <l> King ! </l>
+
           </sp>
           <stage>
             <hi rend="italic"> He wakes Alonso . </hi>
@@ -2759,41 +2805,41 @@
           </stage>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Here’s neither bush nor shrub to bear off </l>
-              <l> any weather at all . And another storm brewing ; I </l>
-              <l> hear it sing i’ th’ wind . Yond same black cloud , yond </l>
-              <l> huge one , looks like a foul bombard that would shed </l>
-              <l> his liquor . If it should thunder as it did before , I </l>
-              <l> know not where to hide my head . Yond same cloud </l>
-              <l> cannot choose but fall by pailfuls . </l>
-            </p>
+
+            <l> Here’s neither bush nor shrub to bear off </l>
+            <l> any weather at all . And another storm brewing ; I </l>
+            <l> hear it sing i’ th’ wind . Yond same black cloud , yond </l>
+            <l> huge one , looks like a foul bombard that would shed </l>
+            <l> his liquor . If it should thunder as it did before , I </l>
+            <l> know not where to hide my head . Yond same cloud </l>
+            <l> cannot choose but fall by pailfuls . </l>
+
             <stage>
               <hi rend="italic"> Noticing Caliban . </hi>
             </stage>
-            <p>
-              <l> What have we here , a man or a fish ? Dead or </l>
-              <l> alive ? A fish , he smells like a fish — a very ancient </l>
-              <l> and fishlike smell , a kind of not-of-the-newest poor-John . </l>
-              <l> A strange fish . Were I in England now , as once </l>
-              <l> I was , and had but this fish painted , not a holiday </l>
-              <l> fool there but would give a piece of silver . There </l>
-              <l> would this monster make a man . Any strange beast </l>
-              <l> there makes a man . When they will not give a doit to </l>
-              <l> relieve a lame beggar , they will lay out ten to see a </l>
-              <l> dead Indian . Legged like a man , and his fins like </l>
-              <l> arms ! Warm , o’ my troth ! I do now let loose my </l>
-              <l> opinion , hold it no longer : this is no fish , but an </l>
-              <l> islander that hath lately suffered by a thunderbolt . </l>
-              <l>
-                <stage>
-                  <hi rend="italic"> Thunder . </hi>
-                </stage> Alas , the storm is come again . My best </l>
-              <l> way is to creep under his gaberdine . There is no </l>
-              <l> other shelter hereabout . Misery acquaints a man </l>
-              <l> with strange bedfellows . I will here shroud till the </l>
-              <l> dregs of the storm be past . </l>
-            </p>
+
+            <l> What have we here , a man or a fish ? Dead or </l>
+            <l> alive ? A fish , he smells like a fish — a very ancient </l>
+            <l> and fishlike smell , a kind of not-of-the-newest poor-John . </l>
+            <l> A strange fish . Were I in England now , as once </l>
+            <l> I was , and had but this fish painted , not a holiday </l>
+            <l> fool there but would give a piece of silver . There </l>
+            <l> would this monster make a man . Any strange beast </l>
+            <l> there makes a man . When they will not give a doit to </l>
+            <l> relieve a lame beggar , they will lay out ten to see a </l>
+            <l> dead Indian . Legged like a man , and his fins like </l>
+            <l> arms ! Warm , o’ my troth ! I do now let loose my </l>
+            <l> opinion , hold it no longer : this is no fish , but an </l>
+            <l> islander that hath lately suffered by a thunderbolt . </l>
+            <l>
+              <stage>
+                <hi rend="italic"> Thunder . </hi>
+              </stage> Alas , the storm is come again . My best </l>
+            <l> way is to creep under his gaberdine . There is no </l>
+            <l> other shelter hereabout . Misery acquaints a man </l>
+            <l> with strange bedfellows . I will here shroud till the </l>
+            <l> dregs of the storm be past . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> He crawls under Caliban’s cloak . </hi>
@@ -2803,14 +2849,14 @@
           </stage>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> I shall no more to sea , to sea . </l>
-              <l> Here shall I die ashore — </l>
-            </p>
-            <p>
-              <l> This is a very scurvy tune to sing at a man’s funeral . </l>
-              <l> Well , here’s my comfort . </l>
-            </p>
+
+            <l> I shall no more to sea , to sea . </l>
+            <l> Here shall I die ashore — </l>
+
+
+            <l> This is a very scurvy tune to sing at a man’s funeral . </l>
+            <l> Well , here’s my comfort . </l>
+
             <stage>
               <hi rend="italic"> Drinks . </hi>
             </stage>
@@ -2832,324 +2878,324 @@
                 <l> Then to sea , boys , and let her go hang ! </l>
               </lg>
             </q>
-            <p>
-              <l> This is a scurvy tune too . But here’s my comfort . </l>
-            </p>
+
+            <l> This is a scurvy tune too . But here’s my comfort . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> Drinks . </hi>
           </stage>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Do not torment me ! O ! </l>
-            </p>
-          </sp>
-          <sp who="#Stephano">
-            <speaker> STEPHANO </speaker>
-            <p>
-              <l> What’s the matter ? Have we devils here ? Do </l>
-              <l> you put tricks upon ’s with savages and men of Ind ? </l>
-              <l> Ha ? I have not scaped drowning to be afeard now </l>
-              <l> of your four legs , for it hath been said “ As proper a </l>
-              <l> man as ever went on four legs cannot make him </l>
-              <l> give ground , ” and it shall be said so again while </l>
-              <l> Stephano breathes at’ nostrils . </l>
-            </p>
-          </sp>
-          <sp who="#Caliban">
-            <speaker> CALIBAN </speaker>
-            <p>
-              <l> The spirit torments me . O ! </l>
-            </p>
-          </sp>
-          <sp who="#Stephano">
-            <speaker> STEPHANO </speaker>
-            <p>
-              <l> This is some monster of the isle with four </l>
-              <l> legs , who hath got , as I take it , an ague . Where the </l>
-              <l> devil should he learn our language ? I will give him </l>
-              <l> some relief , if it be but for that . If I can recover him </l>
-              <l> and keep him tame and get to Naples with him , </l>
-              <l> he’s a present for any emperor that ever trod on </l>
-              <l> neat’s leather . </l>
-            </p>
-          </sp>
-          <sp who="#Caliban">
-            <speaker> CALIBAN </speaker>
-            <p>
-              <l> Do not torment me , prithee . I’ll bring my </l>
-              <l> wood home faster . </l>
-            </p>
-          </sp>
-          <sp who="#Stephano">
-            <speaker> STEPHANO </speaker>
-            <p>
-              <l> He’s in his fit now , and does not talk after </l>
-              <l> the wisest . He shall taste of my bottle . If he have </l>
-              <l> never drunk wine afore , it will go near to remove </l>
-              <l> his fit . If I can recover him and keep him tame , I will </l>
-              <l> not take too much for him . He shall pay for him that </l>
-              <l> hath him , and that soundly . </l>
-            </p>
-          </sp>
-          <sp who="#Caliban">
-            <speaker> CALIBAN </speaker>
-            <p>
-              <l> Thou dost me yet but little hurt . Thou wilt </l>
-              <l> anon ; I know it by thy trembling . Now Prosper </l>
-              <l> works upon thee . </l>
-            </p>
-          </sp>
-          <sp who="#Stephano">
-            <speaker> STEPHANO </speaker>
-            <p>
-              <l> Come on your ways . Open your mouth . </l>
-              <l> Here is that which will give language to you , cat . </l>
-              <l> Open your mouth . This will shake your shaking , I </l>
-              <l> can tell you , and that soundly . <stage>
-                  <hi rend="italic"> Caliban drinks . </hi>
-                </stage> You </l>
-              <l> cannot tell who’s your friend . Open your chaps </l>
-              <l> again . </l>
-            </p>
-          </sp>
-          <sp who="#Trinculo">
-            <speaker> TRINCULO </speaker>
-            <p>
-              <l> I should know that voice . It should be — but </l>
-              <l> he is drowned , and these are devils . O , defend me ! </l>
-            </p>
+
+            <l> Do not torment me ! O ! </l>
 
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Four legs and two voices — a most delicate </l>
-              <l> monster ! His forward voice now is to speak well of </l>
-              <l> his friend . His backward voice is to utter foul </l>
-              <l> speeches and to detract . If all the wine in my bottle </l>
-              <l> will recover him , I will help his ague . Come . <stage>
-                  <hi rend="italic"> Caliban drinks . </hi>
-                </stage> Amen ! I will pour some in thy </l>
-              <l> other mouth . </l>
-            </p>
+
+            <l> What’s the matter ? Have we devils here ? Do </l>
+            <l> you put tricks upon ’s with savages and men of Ind ? </l>
+            <l> Ha ? I have not scaped drowning to be afeard now </l>
+            <l> of your four legs , for it hath been said “ As proper a </l>
+            <l> man as ever went on four legs cannot make him </l>
+            <l> give ground , ” and it shall be said so again while </l>
+            <l> Stephano breathes at’ nostrils . </l>
+
           </sp>
-          <sp who="#Trinculo">
-            <speaker> TRINCULO </speaker>
-            <p>
-              <l> Stephano ! </l>
-            </p>
-          </sp>
-          <sp who="#Stephano">
-            <speaker> STEPHANO </speaker>
-            <p>
-              <l> Doth thy other mouth call me ? Mercy , mercy , </l>
-              <l> this is a devil , and no monster ! I will leave him ; I </l>
-              <l> have no long spoon . </l>
-            </p>
-          </sp>
-          <sp who="#Trinculo">
-            <speaker> TRINCULO </speaker>
-            <p>
-              <l> Stephano ! If thou be’st Stephano , touch me </l>
-              <l> and speak to me , for I am Trinculo — be not </l>
-              <l> afeard — thy good friend Trinculo . </l>
-            </p>
+          <sp who="#Caliban">
+            <speaker> CALIBAN </speaker>
+
+            <l> The spirit torments me . O ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> If thou be’st Trinculo , come forth . I’ll pull </l>
-              <l> thee by the lesser legs . If any be Trinculo’s legs , </l>
-              <l> these are they . </l>
-            </p>
+
+            <l> This is some monster of the isle with four </l>
+            <l> legs , who hath got , as I take it , an ague . Where the </l>
+            <l> devil should he learn our language ? I will give him </l>
+            <l> some relief , if it be but for that . If I can recover him </l>
+            <l> and keep him tame and get to Naples with him , </l>
+            <l> he’s a present for any emperor that ever trod on </l>
+            <l> neat’s leather . </l>
+
+          </sp>
+          <sp who="#Caliban">
+            <speaker> CALIBAN </speaker>
+
+            <l> Do not torment me , prithee . I’ll bring my </l>
+            <l> wood home faster . </l>
+
+          </sp>
+          <sp who="#Stephano">
+            <speaker> STEPHANO </speaker>
+
+            <l> He’s in his fit now , and does not talk after </l>
+            <l> the wisest . He shall taste of my bottle . If he have </l>
+            <l> never drunk wine afore , it will go near to remove </l>
+            <l> his fit . If I can recover him and keep him tame , I will </l>
+            <l> not take too much for him . He shall pay for him that </l>
+            <l> hath him , and that soundly . </l>
+
+          </sp>
+          <sp who="#Caliban">
+            <speaker> CALIBAN </speaker>
+
+            <l> Thou dost me yet but little hurt . Thou wilt </l>
+            <l> anon ; I know it by thy trembling . Now Prosper </l>
+            <l> works upon thee . </l>
+
+          </sp>
+          <sp who="#Stephano">
+            <speaker> STEPHANO </speaker>
+
+            <l> Come on your ways . Open your mouth . </l>
+            <l> Here is that which will give language to you , cat . </l>
+            <l> Open your mouth . This will shake your shaking , I </l>
+            <l> can tell you , and that soundly . <stage>
+                <hi rend="italic"> Caliban drinks . </hi>
+              </stage> You </l>
+            <l> cannot tell who’s your friend . Open your chaps </l>
+            <l> again . </l>
+
+          </sp>
+          <sp who="#Trinculo">
+            <speaker> TRINCULO </speaker>
+
+            <l> I should know that voice . It should be — but </l>
+            <l> he is drowned , and these are devils . O , defend me ! </l>
+
+
+          </sp>
+          <sp who="#Stephano">
+            <speaker> STEPHANO </speaker>
+
+            <l> Four legs and two voices — a most delicate </l>
+            <l> monster ! His forward voice now is to speak well of </l>
+            <l> his friend . His backward voice is to utter foul </l>
+            <l> speeches and to detract . If all the wine in my bottle </l>
+            <l> will recover him , I will help his ague . Come . <stage>
+                <hi rend="italic"> Caliban drinks . </hi>
+              </stage> Amen ! I will pour some in thy </l>
+            <l> other mouth . </l>
+
+          </sp>
+          <sp who="#Trinculo">
+            <speaker> TRINCULO </speaker>
+
+            <l> Stephano ! </l>
+
+          </sp>
+          <sp who="#Stephano">
+            <speaker> STEPHANO </speaker>
+
+            <l> Doth thy other mouth call me ? Mercy , mercy , </l>
+            <l> this is a devil , and no monster ! I will leave him ; I </l>
+            <l> have no long spoon . </l>
+
+          </sp>
+          <sp who="#Trinculo">
+            <speaker> TRINCULO </speaker>
+
+            <l> Stephano ! If thou be’st Stephano , touch me </l>
+            <l> and speak to me , for I am Trinculo — be not </l>
+            <l> afeard — thy good friend Trinculo . </l>
+
+          </sp>
+          <sp who="#Stephano">
+            <speaker> STEPHANO </speaker>
+
+            <l> If thou be’st Trinculo , come forth . I’ll pull </l>
+            <l> thee by the lesser legs . If any be Trinculo’s legs , </l>
+            <l> these are they . </l>
+
             <stage>
               <hi rend="italic"> He pulls him out from under Caliban’s cloak . </hi>
             </stage>
-            <p>
-              <l> Thou art very Trinculo indeed . How </l>
-              <l> cam’st thou to be the siege of this mooncalf ? Can </l>
-              <l> he vent Trinculos ? </l>
-            </p>
+
+            <l> Thou art very Trinculo indeed . How </l>
+            <l> cam’st thou to be the siege of this mooncalf ? Can </l>
+            <l> he vent Trinculos ? </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> I took him to be killed with a thunderstroke . </l>
-              <l> But art thou not drowned , Stephano ? I </l>
-              <l> hope now thou art not drowned . Is the storm </l>
-              <l> overblown ? I hid me under the dead mooncalf’s </l>
-              <l> gaberdine for fear of the storm . And art thou living , </l>
-              <l> Stephano ? O Stephano , two Neapolitans scaped ! </l>
-            </p>
+
+            <l> I took him to be killed with a thunderstroke . </l>
+            <l> But art thou not drowned , Stephano ? I </l>
+            <l> hope now thou art not drowned . Is the storm </l>
+            <l> overblown ? I hid me under the dead mooncalf’s </l>
+            <l> gaberdine for fear of the storm . And art thou living , </l>
+            <l> Stephano ? O Stephano , two Neapolitans scaped ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Prithee , do not turn me about . My stomach </l>
-              <l> is not constant . </l>
-            </p>
+
+            <l> Prithee , do not turn me about . My stomach </l>
+            <l> is not constant . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN , aside </speaker>
-            <p>
-              <l> These be fine things , an if they be not </l>
-              <l> sprites . That’s a brave god and bears celestial liquor . </l>
-              <l> I will kneel to him . </l>
-            </p>
+
+            <l> These be fine things , an if they be not </l>
+            <l> sprites . That’s a brave god and bears celestial liquor . </l>
+            <l> I will kneel to him . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> He crawls out from under the cloak . </hi>
           </stage>
           <sp who="#Stephano">
             <speaker> STEPHANO , to Trinculo </speaker>
-            <p>
-              <l> How didst thou scape ? How </l>
-              <l> cam’st thou hither ? Swear by this bottle how thou </l>
-              <l> cam’st hither — I escaped upon a butt of sack , which </l>
-              <l> the sailors heaved o’erboard — by this bottle , which </l>
-              <l> I made of the bark of a tree with mine own hands , </l>
-              <l> since I was cast ashore . </l>
-            </p>
+
+            <l> How didst thou scape ? How </l>
+            <l> cam’st thou hither ? Swear by this bottle how thou </l>
+            <l> cam’st hither — I escaped upon a butt of sack , which </l>
+            <l> the sailors heaved o’erboard — by this bottle , which </l>
+            <l> I made of the bark of a tree with mine own hands , </l>
+            <l> since I was cast ashore . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> I’ll swear upon that bottle to be thy true </l>
-              <l> subject , for the liquor is not earthly . </l>
-            </p>
+
+            <l> I’ll swear upon that bottle to be thy true </l>
+            <l> subject , for the liquor is not earthly . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO , to Trinculo </speaker>
-            <p>
-              <l> Here . Swear then how thou </l>
-              <l> escapedst . </l>
-            </p>
+
+            <l> Here . Swear then how thou </l>
+            <l> escapedst . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Swum ashore , man , like a duck . I can swim </l>
-              <l> like a duck , I’ll be sworn . </l>
-            </p>
+
+            <l> Swum ashore , man , like a duck . I can swim </l>
+            <l> like a duck , I’ll be sworn . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Here , kiss the book . </l>
-            </p>
+
+            <l> Here , kiss the book . </l>
+
             <stage>
               <hi rend="italic"> Trinculo drinks . </hi>
             </stage>
-            <p>
-              <l> Though thou canst swim like a duck , thou art made </l>
-              <l> like a goose . </l>
-            </p>
+
+            <l> Though thou canst swim like a duck , thou art made </l>
+            <l> like a goose . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> O Stephano , hast any more of this ? </l>
-            </p>
+
+            <l> O Stephano , hast any more of this ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> The whole butt , man . My cellar is in a rock </l>
-              <l> by th’ seaside , where my wine is hid . — How now , </l>
-              <l> mooncalf , how does thine ague ? </l>
-            </p>
+
+            <l> The whole butt , man . My cellar is in a rock </l>
+            <l> by th’ seaside , where my wine is hid . — How now , </l>
+            <l> mooncalf , how does thine ague ? </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Hast thou not dropped from heaven ? </l>
-            </p>
+
+            <l> Hast thou not dropped from heaven ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Out o’ th’ moon , I do assure thee . I was the </l>
-              <l> man i’ th’ moon when time was . </l>
-            </p>
+
+            <l> Out o’ th’ moon , I do assure thee . I was the </l>
+            <l> man i’ th’ moon when time was . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> I have seen thee in her , and I do adore thee . </l>
-              <l> My mistress showed me thee , and thy dog , and thy </l>
-              <l> bush . </l>
-            </p>
+
+            <l> I have seen thee in her , and I do adore thee . </l>
+            <l> My mistress showed me thee , and thy dog , and thy </l>
+            <l> bush . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Come , swear to that . Kiss the book . I will </l>
-              <l> furnish it anon with new contents . Swear . </l>
-            </p>
+
+            <l> Come , swear to that . Kiss the book . I will </l>
+            <l> furnish it anon with new contents . Swear . </l>
+
             <stage>
               <hi rend="italic"> Caliban drinks . </hi>
             </stage>
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> By this good light , this is a very shallow </l>
-              <l> monster . I afeard of him ? A very weak monster . The </l>
-              <l> man i’ th’ moon ? A most poor , credulous monster ! </l>
-              <l> — Well drawn , monster , in good sooth ! </l>
-            </p>
+
+            <l> By this good light , this is a very shallow </l>
+            <l> monster . I afeard of him ? A very weak monster . The </l>
+            <l> man i’ th’ moon ? A most poor , credulous monster ! </l>
+            <l> — Well drawn , monster , in good sooth ! </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> I’ll show thee every fertile inch o’ th’ island , </l>
-              <l> and I will kiss thy foot . I prithee , be my god . </l>
-            </p>
+
+            <l> I’ll show thee every fertile inch o’ th’ island , </l>
+            <l> and I will kiss thy foot . I prithee , be my god . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> By this light , a most perfidious and drunken </l>
-              <l> monster . When ’s god’s asleep , he’ll rob his bottle . </l>
-            </p>
+
+            <l> By this light , a most perfidious and drunken </l>
+            <l> monster . When ’s god’s asleep , he’ll rob his bottle . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> I’ll kiss thy foot . I’ll swear myself thy subject . </l>
-            </p>
+
+            <l> I’ll kiss thy foot . I’ll swear myself thy subject . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Come on , then . Down , and swear . </l>
-            </p>
+
+            <l> Come on , then . Down , and swear . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> Caliban kneels . </hi>
           </stage>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> I shall laugh myself to death at this puppy-headed </l>
-              <l> monster . A most scurvy monster . I could </l>
-              <l> find in my heart to beat him — </l>
-            </p>
+
+            <l> I shall laugh myself to death at this puppy-headed </l>
+            <l> monster . A most scurvy monster . I could </l>
+            <l> find in my heart to beat him — </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Come , kiss . </l>
-            </p>
+
+            <l> Come , kiss . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> — but that the poor monster’s in drink . An </l>
-              <l> abominable monster . </l>
-            </p>
+
+            <l> — but that the poor monster’s in drink . An </l>
+            <l> abominable monster . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3161,10 +3207,10 @@
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> A most ridiculous monster , to make a wonder </l>
-              <l> of a poor drunkard . </l>
-            </p>
+
+            <l> A most ridiculous monster , to make a wonder </l>
+            <l> of a poor drunkard . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN , standing </speaker>
@@ -3177,13 +3223,13 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> I prithee now , lead the way without any </l>
-              <l> more talking . — Trinculo , the King and all our </l>
-              <l> company else being drowned , we will inherit here . </l>
-              <l> — Here , bear my bottle . — Fellow Trinculo , we’ll </l>
-              <l> fill him by and by again . </l>
-            </p>
+
+            <l> I prithee now , lead the way without any </l>
+            <l> more talking . — Trinculo , the King and all our </l>
+            <l> company else being drowned , we will inherit here . </l>
+            <l> — Here , bear my bottle . — Fellow Trinculo , we’ll </l>
+            <l> fill him by and by again . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN sings drunkenly </speaker>
@@ -3191,32 +3237,32 @@
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> A howling monster , a drunken monster . </l>
-            </p>
+
+            <l> A howling monster , a drunken monster . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN sings </speaker>
-            <p>
-              <lg type="aBBaCC">
-                <l> No more dams I’ll make for fish , </l>
-                <l> Nor fetch in firing </l>
-                <l> At requiring , </l>
-                <l> Nor scrape trenchering , nor wash dish . </l>
-                <l> ’Ban , ’ban , Ca-caliban </l>
-                <l> Has a new master . Get a new man . </l>
-              </lg>
-            </p>
-            <p>
-              <l> Freedom , high-day ! High-day , freedom ! Freedom , </l>
-              <l> high-day , freedom ! </l>
-            </p>
+
+            <lg type="aBBaCC">
+              <l> No more dams I’ll make for fish , </l>
+              <l> Nor fetch in firing </l>
+              <l> At requiring , </l>
+              <l> Nor scrape trenchering , nor wash dish . </l>
+              <l> ’Ban , ’ban , Ca-caliban </l>
+              <l> Has a new master . Get a new man . </l>
+            </lg>
+
+
+            <l> Freedom , high-day ! High-day , freedom ! Freedom , </l>
+            <l> high-day , freedom ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> O brave monster ! Lead the way . </l>
-            </p>
+
+            <l> O brave monster ! Lead the way . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> They exit . </hi>
@@ -3435,187 +3481,187 @@
           </stage>
           <sp who="#Stephano">
             <speaker> STEPHANO , to Trinculo </speaker>
-            <p>
-              <l> Tell not me . When the butt is </l>
-              <l> out , we will drink water ; not a drop before . Therefore </l>
-              <l> bear up and board ’em . — Servant monster , </l>
-              <l> drink to me . </l>
-            </p>
+
+            <l> Tell not me . When the butt is </l>
+            <l> out , we will drink water ; not a drop before . Therefore </l>
+            <l> bear up and board ’em . — Servant monster , </l>
+            <l> drink to me . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Servant monster ? The folly of this island ! </l>
-              <l> They say there’s but five upon this isle ; we are three </l>
-              <l> of them . If th’ other two be brained like us , the state </l>
-              <l> totters . </l>
-            </p>
+
+            <l> Servant monster ? The folly of this island ! </l>
+            <l> They say there’s but five upon this isle ; we are three </l>
+            <l> of them . If th’ other two be brained like us , the state </l>
+            <l> totters . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Drink , servant monster , when I bid thee . </l>
-              <l> Thy eyes are almost set in thy head . </l>
-            </p>
+
+            <l> Drink , servant monster , when I bid thee . </l>
+            <l> Thy eyes are almost set in thy head . </l>
+
           </sp>
           <stage type="business">
             <hi rend="italic"> Caliban drinks . </hi>
           </stage>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Where should they be set else ? He were a </l>
-              <l> brave monster indeed if they were set in his tail . </l>
-            </p>
+
+            <l> Where should they be set else ? He were a </l>
+            <l> brave monster indeed if they were set in his tail . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> My man-monster hath drowned his tongue </l>
-              <l> in sack . For my part , the sea cannot drown me . I </l>
-              <l> swam , ere I could recover the shore , five-and-thirty </l>
-              <l> leagues off and on , by this light . — Thou shalt be my </l>
-              <l> lieutenant , monster , or my standard . </l>
-            </p>
+
+            <l> My man-monster hath drowned his tongue </l>
+            <l> in sack . For my part , the sea cannot drown me . I </l>
+            <l> swam , ere I could recover the shore , five-and-thirty </l>
+            <l> leagues off and on , by this light . — Thou shalt be my </l>
+            <l> lieutenant , monster , or my standard . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Your lieutenant , if you list . He’s no </l>
-              <l> standard . </l>
-            </p>
+
+            <l> Your lieutenant , if you list . He’s no </l>
+            <l> standard . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> We’ll not run , Monsieur Monster . </l>
-            </p>
+
+            <l> We’ll not run , Monsieur Monster . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Nor go neither . But you’ll lie like dogs , and </l>
-              <l> yet say nothing neither . </l>
-            </p>
+
+            <l> Nor go neither . But you’ll lie like dogs , and </l>
+            <l> yet say nothing neither . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Mooncalf , speak once in thy life , if thou </l>
-              <l> be’st a good mooncalf . </l>
-            </p>
+
+            <l> Mooncalf , speak once in thy life , if thou </l>
+            <l> be’st a good mooncalf . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> How does thy Honor ? Let me lick thy shoe . I’ll </l>
-              <l> not serve him ; he is not valiant . </l>
-            </p>
+
+            <l> How does thy Honor ? Let me lick thy shoe . I’ll </l>
+            <l> not serve him ; he is not valiant . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Thou liest , most ignorant monster . I am in </l>
-              <l> case to justle a constable . Why , thou debauched </l>
-              <l> fish , thou ! Was there ever man a coward that hath </l>
-              <l> drunk so much sack as I today ? Wilt thou tell a </l>
-              <l> monstrous lie , being but half a fish and half a </l>
-              <l> monster ? </l>
-            </p>
+
+            <l> Thou liest , most ignorant monster . I am in </l>
+            <l> case to justle a constable . Why , thou debauched </l>
+            <l> fish , thou ! Was there ever man a coward that hath </l>
+            <l> drunk so much sack as I today ? Wilt thou tell a </l>
+            <l> monstrous lie , being but half a fish and half a </l>
+            <l> monster ? </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Lo , how he mocks me ! Wilt thou let him , my </l>
-              <l> lord ? </l>
-            </p>
+
+            <l> Lo , how he mocks me ! Wilt thou let him , my </l>
+            <l> lord ? </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> “ Lord , ” quoth he ? That a monster should be </l>
-              <l> such a natural ! </l>
-            </p>
+
+            <l> “ Lord , ” quoth he ? That a monster should be </l>
+            <l> such a natural ! </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Lo , lo again ! Bite him to death , I prithee . </l>
-            </p>
+
+            <l> Lo , lo again ! Bite him to death , I prithee . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Trinculo , keep a good tongue in your head . </l>
-              <l> If you prove a mutineer , the next tree . The poor </l>
-              <l> monster’s my subject , and he shall not suffer </l>
-              <l> indignity . </l>
-            </p>
+
+            <l> Trinculo , keep a good tongue in your head . </l>
+            <l> If you prove a mutineer , the next tree . The poor </l>
+            <l> monster’s my subject , and he shall not suffer </l>
+            <l> indignity . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> I thank my noble lord . Wilt thou be pleased </l>
-              <l> to harken once again to the suit I made to thee ? </l>
-            </p>
+
+            <l> I thank my noble lord . Wilt thou be pleased </l>
+            <l> to harken once again to the suit I made to thee ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Marry , will I . Kneel and repeat it . I will </l>
-              <l> stand , and so shall Trinculo . </l>
-            </p>
+
+            <l> Marry , will I . Kneel and repeat it . I will </l>
+            <l> stand , and so shall Trinculo . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Ariel , invisible . </hi>
           </stage>
           <sp who="#Caliban">
             <speaker> CALIBAN , kneeling </speaker>
-            <p>
-              <l> As I told thee before , I am subject </l>
-              <l> to a tyrant , a sorcerer , that by his cunning hath </l>
-              <l> cheated me of the island . </l>
-            </p>
+
+            <l> As I told thee before , I am subject </l>
+            <l> to a tyrant , a sorcerer , that by his cunning hath </l>
+            <l> cheated me of the island . </l>
+
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL , in Trinculo’s voice </speaker>
-            <p>
-              <l> Thou liest . </l>
-            </p>
+
+            <l> Thou liest . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN , to Trinculo </speaker>
-            <p>
-              <l> Thou liest , thou jesting monkey , </l>
-              <l> thou . <stage> He stands . </stage> I would my valiant master would </l>
-              <l> destroy thee . I do not lie . </l>
-            </p>
+
+            <l> Thou liest , thou jesting monkey , </l>
+            <l> thou . <stage> He stands . </stage> I would my valiant master would </l>
+            <l> destroy thee . I do not lie . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Trinculo , if you trouble him any more in ’s </l>
-              <l> tale , by this hand , I will supplant some of your </l>
-              <l> teeth . </l>
-            </p>
+
+            <l> Trinculo , if you trouble him any more in ’s </l>
+            <l> tale , by this hand , I will supplant some of your </l>
+            <l> teeth . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Why , I said nothing . </l>
-            </p>
+
+            <l> Why , I said nothing . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Mum then , and no more . </l>
-            </p>
+
+            <l> Mum then , and no more . </l>
+
             <stage>
               <hi rend="italic"> Trinculo stands aside . </hi>
             </stage>
-            <p>
-              <l> Proceed . </l>
-            </p>
+
+            <l> Proceed . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3626,9 +3672,9 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> That’s most certain . </l>
-            </p>
+
+            <l> That’s most certain . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3636,10 +3682,10 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> How now shall this be compassed ? Canst </l>
-              <l> thou bring me to the party ? </l>
-            </p>
+
+            <l> How now shall this be compassed ? Canst </l>
+            <l> thou bring me to the party ? </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3648,9 +3694,9 @@
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL , in Trinculo’s voice </speaker>
-            <p>
-              <l> Thou liest . Thou canst not . </l>
-            </p>
+
+            <l> Thou liest . Thou canst not . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3662,70 +3708,70 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Trinculo , run into no further danger . Interrupt </l>
-              <l> the monster one word further , and by this </l>
-              <l> hand , I’ll turn my mercy out o’ doors and make a </l>
-              <l> stockfish of thee . </l>
-            </p>
+
+            <l> Trinculo , run into no further danger . Interrupt </l>
+            <l> the monster one word further , and by this </l>
+            <l> hand , I’ll turn my mercy out o’ doors and make a </l>
+            <l> stockfish of thee . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Why , what did I ? I did nothing . I’ll go </l>
-              <l> farther off . </l>
-            </p>
+
+            <l> Why , what did I ? I did nothing . I’ll go </l>
+            <l> farther off . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Didst thou not say he lied ? </l>
-            </p>
+
+            <l> Didst thou not say he lied ? </l>
+
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL , in Trinculo’s voice </speaker>
-            <p>
-              <l> Thou liest . </l>
-            </p>
+
+            <l> Thou liest . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Do I so ? Take thou that . </l>
-            </p>
+
+            <l> Do I so ? Take thou that . </l>
+
             <stage>
               <hi rend="italic"> He beats Trinculo . </hi>
             </stage>
-            <p>
-              <l> As you like this , give me the lie another time . </l>
-            </p>
+
+            <l> As you like this , give me the lie another time . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> I did not give the lie ! Out o’ your wits and </l>
-              <l> hearing too ? A pox o’ your bottle ! This can sack and </l>
-              <l> drinking do . A murrain on your monster , and the </l>
-              <l> devil take your fingers ! </l>
-            </p>
+
+            <l> I did not give the lie ! Out o’ your wits and </l>
+            <l> hearing too ? A pox o’ your bottle ! This can sack and </l>
+            <l> drinking do . A murrain on your monster , and the </l>
+            <l> devil take your fingers ! </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Ha , ha , ha ! </l>
-            </p>
+
+            <l> Ha , ha , ha ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Now forward with your tale . </l>
-            </p>
+
+            <l> Now forward with your tale . </l>
+
             <stage>
               <hi rend="italic"> To Trinculo . </hi>
             </stage>
-            <p>
-              <l> Prithee , stand further off . </l>
-            </p>
+
+            <l> Prithee , stand further off . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3734,15 +3780,15 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Stand farther . </l>
-            </p>
+
+            <l> Stand farther . </l>
+
             <stage>
               <hi rend="italic"> Trinculo moves farther away . </hi>
             </stage>
-            <p>
-              <l> Come , proceed . </l>
-            </p>
+
+            <l> Come , proceed . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3775,26 +3821,26 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Monster , I will kill this man . His daughter </l>
-              <l> and I will be king and queen — save our Graces ! — </l>
-              <l> and Trinculo and thyself shall be viceroys . — Dost </l>
-              <l> thou like the plot , Trinculo ? </l>
-            </p>
+
+            <l> Monster , I will kill this man . His daughter </l>
+            <l> and I will be king and queen — save our Graces ! — </l>
+            <l> and Trinculo and thyself shall be viceroys . — Dost </l>
+            <l> thou like the plot , Trinculo ? </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Excellent . </l>
-            </p>
+
+            <l> Excellent . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Give me thy hand . I am sorry I beat thee . </l>
-              <l> But while thou liv’st , keep a good tongue in thy </l>
-              <l> head . </l>
-            </p>
+
+            <l> Give me thy hand . I am sorry I beat thee . </l>
+            <l> But while thou liv’st , keep a good tongue in thy </l>
+            <l> head . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3817,10 +3863,10 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> At thy request , monster , I will do reason , </l>
-              <l> any reason . — Come on , Trinculo , let us sing . </l>
-            </p>
+
+            <l> At thy request , monster , I will do reason , </l>
+            <l> any reason . — Come on , Trinculo , let us sing . </l>
+
             <stage>
               <hi rend="italic"> Sings . </hi>
             </stage>
@@ -3830,9 +3876,9 @@
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> That’s not the tune . </l>
-            </p>
+
+            <l> That’s not the tune . </l>
+
           </sp>
           <stage>
             <stage>
@@ -3841,49 +3887,49 @@
           </stage>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> What is this same ? </l>
-            </p>
+
+            <l> What is this same ? </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> This is the tune of our catch played by the </l>
-              <l> picture of Nobody . </l>
-            </p>
+
+            <l> This is the tune of our catch played by the </l>
+            <l> picture of Nobody . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO , to the invisible musician </speaker>
-            <p>
-              <l> If thou be’st a </l>
-              <l> man , show thyself in thy likeness . If thou be’st a </l>
-              <l> devil , take ’t as thou list . </l>
-            </p>
+
+            <l> If thou be’st a </l>
+            <l> man , show thyself in thy likeness . If thou be’st a </l>
+            <l> devil , take ’t as thou list . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> O , forgive me my sins ! </l>
-            </p>
+
+            <l> O , forgive me my sins ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> He that dies pays all debts . — I defy thee ! — </l>
-              <l> Mercy upon us ! </l>
-            </p>
+
+            <l> He that dies pays all debts . — I defy thee ! — </l>
+            <l> Mercy upon us ! </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Art thou afeard ? </l>
-            </p>
+
+            <l> Art thou afeard ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> No , monster , not I . </l>
-            </p>
+
+            <l> No , monster , not I . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -3899,43 +3945,43 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> This will prove a brave kingdom to me , </l>
-              <l> where I shall have my music for nothing . </l>
-            </p>
+
+            <l> This will prove a brave kingdom to me , </l>
+            <l> where I shall have my music for nothing . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> When Prospero is destroyed . </l>
-            </p>
+
+            <l> When Prospero is destroyed . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> That shall be by and by . I remember the </l>
-              <l> story . </l>
-            </p>
+
+            <l> That shall be by and by . I remember the </l>
+            <l> story . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> The sound is going away . Let’s follow it , and </l>
-              <l> after do our work . </l>
-            </p>
+
+            <l> The sound is going away . Let’s follow it , and </l>
+            <l> after do our work . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Lead , monster . We’ll follow . — I would I </l>
-              <l> could see this taborer . He lays it on . Wilt come ? </l>
-            </p>
+
+            <l> Lead , monster . We’ll follow . — I would I </l>
+            <l> could see this taborer . He lays it on . Wilt come ? </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> I’ll follow , Stephano . </l>
-            </p>
+
+            <l> I’ll follow , Stephano . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> They exit . </hi>
@@ -3998,9 +4044,9 @@
           </sp>
           <sp who="#Gonzalo">
             <speaker> GONZALO </speaker>
-            <p>
-              <l> Marvelous sweet music ! </l>
-            </p>
+
+            <l> Marvelous sweet music ! </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter several strange shapes , bringing in a banquet , and dance
@@ -4635,38 +4681,38 @@
           </stage>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> Pray you , tread softly , that the blind mole </l>
-              <l> may not hear a footfall . We now are near his cell . </l>
-            </p>
+
+            <l> Pray you , tread softly , that the blind mole </l>
+            <l> may not hear a footfall . We now are near his cell . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Monster , your fairy , which you say is a </l>
-              <l> harmless fairy , has done little better than played the </l>
-              <l> jack with us . </l>
-            </p>
+
+            <l> Monster , your fairy , which you say is a </l>
+            <l> harmless fairy , has done little better than played the </l>
+            <l> jack with us . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Monster , I do smell all horse piss , at which </l>
-              <l> my nose is in great indignation . </l>
-            </p>
+
+            <l> Monster , I do smell all horse piss , at which </l>
+            <l> my nose is in great indignation . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> So is mine . — Do you hear , monster . If I </l>
-              <l> should take a displeasure against you , look you — </l>
-            </p>
+
+            <l> So is mine . — Do you hear , monster . If I </l>
+            <l> should take a displeasure against you , look you — </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Thou wert but a lost monster . </l>
-            </p>
+
+            <l> Thou wert but a lost monster . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -4677,30 +4723,30 @@
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Ay , but to lose our bottles in the pool ! </l>
-            </p>
+
+            <l> Ay , but to lose our bottles in the pool ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> There is not only disgrace and dishonor in </l>
-              <l> that , monster , but an infinite loss . </l>
-            </p>
+
+            <l> There is not only disgrace and dishonor in </l>
+            <l> that , monster , but an infinite loss . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> That’s more to me than my wetting . Yet this </l>
-              <l> is your harmless fairy , monster ! </l>
-            </p>
+
+            <l> That’s more to me than my wetting . Yet this </l>
+            <l> is your harmless fairy , monster ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> I will fetch off my bottle , though I be o’er </l>
-              <l> ears for my labor . </l>
-            </p>
+
+            <l> I will fetch off my bottle , though I be o’er </l>
+            <l> ears for my labor . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -4712,18 +4758,18 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Give me thy hand . I do begin to have bloody </l>
-              <l> thoughts . </l>
-            </p>
+
+            <l> Give me thy hand . I do begin to have bloody </l>
+            <l> thoughts . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO , seeing the apparel </speaker>
-            <p>
-              <l> O King Stephano , O </l>
-              <l> peer , O worthy Stephano , look what a wardrobe </l>
-              <l> here is for thee ! </l>
-            </p>
+
+            <l> O King Stephano , O </l>
+            <l> peer , O worthy Stephano , look what a wardrobe </l>
+            <l> here is for thee ! </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -4731,24 +4777,24 @@
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Oho , monster , we know what belongs to a </l>
-              <l> frippery . <stage> He puts on one of the gowns . </stage> O King </l>
-              <l> Stephano ! </l>
-            </p>
+
+            <l> Oho , monster , we know what belongs to a </l>
+            <l> frippery . <stage> He puts on one of the gowns . </stage> O King </l>
+            <l> Stephano ! </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Put off that gown , Trinculo . By this hand , </l>
-              <l> I’ll have that gown . </l>
-            </p>
+
+            <l> Put off that gown , Trinculo . By this hand , </l>
+            <l> I’ll have that gown . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Thy Grace shall have it . </l>
-            </p>
+
+            <l> Thy Grace shall have it . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -4760,40 +4806,40 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Be you quiet , monster . — Mistress Line , is </l>
-              <l> not this my jerkin ? </l>
-            </p>
+
+            <l> Be you quiet , monster . — Mistress Line , is </l>
+            <l> not this my jerkin ? </l>
+
             <stage>
               <hi rend="italic"> He takes a jacket from the tree . </hi>
             </stage>
-            <p>
-              <l> Now is the jerkin under the line . — Now , jerkin , you </l>
-              <l> are like to lose your hair and prove a bald jerkin . </l>
-            </p>
+
+            <l> Now is the jerkin under the line . — Now , jerkin , you </l>
+            <l> are like to lose your hair and prove a bald jerkin . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Do , do . We steal by line and level , an ’t like </l>
-              <l> your Grace . </l>
-            </p>
+
+            <l> Do , do . We steal by line and level , an ’t like </l>
+            <l> your Grace . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> I thank thee for that jest . Here’s a garment </l>
-              <l> for ’t . Wit shall not go unrewarded while I am king </l>
-              <l> of this country . “ Steal by line and level ” is an excellent </l>
-              <l> pass of pate . There’s another garment for ’t . </l>
-            </p>
+
+            <l> I thank thee for that jest . Here’s a garment </l>
+            <l> for ’t . Wit shall not go unrewarded while I am king </l>
+            <l> of this country . “ Steal by line and level ” is an excellent </l>
+            <l> pass of pate . There’s another garment for ’t . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> Monster , come , put some lime upon your </l>
-              <l> fingers , and away with the rest . </l>
-            </p>
+
+            <l> Monster , come , put some lime upon your </l>
+            <l> fingers , and away with the rest . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
@@ -4803,23 +4849,23 @@
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Monster , lay to your fingers . Help to bear </l>
-              <l> this away where my hogshead of wine is , or I’ll turn </l>
-              <l> you out of my kingdom . Go to , carry this . </l>
-            </p>
+
+            <l> Monster , lay to your fingers . Help to bear </l>
+            <l> this away where my hogshead of wine is , or I’ll turn </l>
+            <l> you out of my kingdom . Go to , carry this . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> And this . </l>
-            </p>
+
+            <l> And this . </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Ay , and this . </l>
-            </p>
+
+            <l> Ay , and this . </l>
+
           </sp>
           <stage>
             <stage>
@@ -4837,15 +4883,15 @@
           </stage>
           <sp who="#Prospero">
             <speaker> PROSPERO </speaker>
-            <p>
-              <l> Hey , Mountain , hey ! </l>
-            </p>
+
+            <l> Hey , Mountain , hey ! </l>
+
           </sp>
           <sp who="#Ariel">
             <speaker> ARIEL </speaker>
-            <p>
-              <l> Silver ! There it goes , Silver ! </l>
-            </p>
+
+            <l> Silver ! There it goes , Silver ! </l>
+
           </sp>
           <sp who="#Prospero">
             <speaker> PROSPERO </speaker>
@@ -4998,35 +5044,35 @@
                 <hi rend="italic"> which Prospero observing , speaks . </hi>
               </stage>
             </stage>
-            <p>
-              <l> A solemn air , and the best comforter </l>
-              <l> To an unsettled fancy , cure thy brains , </l>
-              <l> Now useless , boiled within thy skull . There stand , </l>
-              <l> For you are spell-stopped . — </l>
-              <l> Holy Gonzalo , honorable man , </l>
-              <l> Mine eyes , e’en sociable to the show of thine , </l>
-              <l> Fall fellowly drops . — The charm dissolves apace , </l>
-              <l> And as the morning steals upon the night , </l>
-              <l> Melting the darkness , so their rising senses </l>
-              <l> Begin to chase the ignorant fumes that mantle </l>
-              <l> Their clearer reason . — O good Gonzalo , </l>
-              <l> My true preserver and a loyal sir </l>
-              <l> To him thou follow’st , I will pay thy graces </l>
-              <l> Home , both in word and deed . — Most cruelly </l>
-              <l> Didst thou , Alonso , use me and my daughter . </l>
-              <l> Thy brother was a furtherer in the act . — </l>
-              <l> Thou art pinched for ’t now , Sebastian . — Flesh and blood , </l>
-              <l> You , brother mine , that entertained ambition , </l>
-              <l> Expelled remorse and nature , whom , with Sebastian , </l>
-              <l> Whose inward pinches therefore are most strong , </l>
-              <l> Would here have killed your king , I do forgive thee , </l>
-              <l> Unnatural though thou art . — Their understanding </l>
-              <l> Begins to swell , and the approaching tide </l>
-              <l> Will shortly fill the reasonable shore </l>
-              <l> That now lies foul and muddy . Not one of them </l>
-              <l> That yet looks on me or would know me . — Ariel , </l>
-              <l> Fetch me the hat and rapier in my cell . </l>
-            </p>
+
+            <l> A solemn air , and the best comforter </l>
+            <l> To an unsettled fancy , cure thy brains , </l>
+            <l> Now useless , boiled within thy skull . There stand , </l>
+            <l> For you are spell-stopped . — </l>
+            <l> Holy Gonzalo , honorable man , </l>
+            <l> Mine eyes , e’en sociable to the show of thine , </l>
+            <l> Fall fellowly drops . — The charm dissolves apace , </l>
+            <l> And as the morning steals upon the night , </l>
+            <l> Melting the darkness , so their rising senses </l>
+            <l> Begin to chase the ignorant fumes that mantle </l>
+            <l> Their clearer reason . — O good Gonzalo , </l>
+            <l> My true preserver and a loyal sir </l>
+            <l> To him thou follow’st , I will pay thy graces </l>
+            <l> Home , both in word and deed . — Most cruelly </l>
+            <l> Didst thou , Alonso , use me and my daughter . </l>
+            <l> Thy brother was a furtherer in the act . — </l>
+            <l> Thou art pinched for ’t now , Sebastian . — Flesh and blood , </l>
+            <l> You , brother mine , that entertained ambition , </l>
+            <l> Expelled remorse and nature , whom , with Sebastian , </l>
+            <l> Whose inward pinches therefore are most strong , </l>
+            <l> Would here have killed your king , I do forgive thee , </l>
+            <l> Unnatural though thou art . — Their understanding </l>
+            <l> Begins to swell , and the approaching tide </l>
+            <l> Will shortly fill the reasonable shore </l>
+            <l> That now lies foul and muddy . Not one of them </l>
+            <l> That yet looks on me or would know me . — Ariel , </l>
+            <l> Fetch me the hat and rapier in my cell . </l>
+
             <stage>
               <hi rend="italic"> Ariel exits and at once returns with Prospero’s ducal robes . </hi>
             </stage>
@@ -5411,25 +5457,25 @@
           </stage>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> Every man shift for all the rest , and let no </l>
-              <l> man take care for himself , for all is but fortune . </l>
-              <l> Coraggio , bully monster , coraggio . </l>
-            </p>
+
+            <l> Every man shift for all the rest , and let no </l>
+            <l> man take care for himself , for all is but fortune . </l>
+            <l> Coraggio , bully monster , coraggio . </l>
+
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> If these be true spies which I wear in my </l>
-              <l> head , here’s a goodly sight . </l>
-            </p>
+
+            <l> If these be true spies which I wear in my </l>
+            <l> head , here’s a goodly sight . </l>
+
           </sp>
           <sp who="#Caliban">
             <speaker> CALIBAN </speaker>
-            <p>
-              <l> O Setebos , these be brave spirits indeed ! How </l>
-              <l> fine my master is ! I am afraid he will chastise me . </l>
-            </p>
+
+            <l> O Setebos , these be brave spirits indeed ! How </l>
+            <l> fine my master is ! I am afraid he will chastise me . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
@@ -5465,9 +5511,9 @@
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> He is drunk now . Where had he wine ? </l>
-            </p>
+
+            <l> He is drunk now . Where had he wine ? </l>
+
           </sp>
           <sp who="#Alonso">
             <speaker> ALONSO </speaker>
@@ -5480,36 +5526,36 @@
           </sp>
           <sp who="#Trinculo">
             <speaker> TRINCULO </speaker>
-            <p>
-              <l> I have been in such a pickle since I saw you </l>
-              <l> last that I fear me will never out of my bones . I </l>
-              <l> shall not fear flyblowing . </l>
-            </p>
+
+            <l> I have been in such a pickle since I saw you </l>
+            <l> last that I fear me will never out of my bones . I </l>
+            <l> shall not fear flyblowing . </l>
+
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Why , how now , Stephano ? </l>
-            </p>
+
+            <l> Why , how now , Stephano ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> O , touch me not ! I am not Stephano , but a </l>
-              <l> cramp . </l>
-            </p>
+
+            <l> O , touch me not ! I am not Stephano , but a </l>
+            <l> cramp . </l>
+
           </sp>
           <sp who="#Prospero">
             <speaker> PROSPERO </speaker>
-            <p>
-              <l> You’d be king o’ the isle , sirrah ? </l>
-            </p>
+
+            <l> You’d be king o’ the isle , sirrah ? </l>
+
           </sp>
           <sp who="#Stephano">
             <speaker> STEPHANO </speaker>
-            <p>
-              <l> I should have been a sore one , then . </l>
-            </p>
+
+            <l> I should have been a sore one , then . </l>
+
           </sp>
           <sp who="#Alonso">
             <speaker> ALONSO , indicating Caliban </speaker>
@@ -5539,9 +5585,7 @@
           </sp>
           <sp who="#Sebastian">
             <speaker> SEBASTIAN </speaker>
-            <p>
-              <l> Or stole it , rather . </l>
-            </p>
+            <l> Or stole it , rather . </l>
           </sp>
           <stage type="exit">
             <hi rend="italic"> Caliban , Stephano , and Trinculo exit . </hi>

@@ -16,14 +16,43 @@
         </author>
       </titleStmt>
       <publicationStmt>
-        <publisher/>
-        <date>1594</date>
+        <publisher>DraCor</publisher>
+        <address>
+          <addrLine>https://dracor.org/shake</addrLine>
+        </address>
       </publicationStmt>
       <sourceDesc>
-        <ab/>
+        <biblFull>
+          <titleStmt>
+            <title>The Comedy of Errors</title>
+            <author>William Shakespeare</author>
+            <editor>Olga Pagnotta</editor>
+            <editor>Sara Vellone</editor>
+            <editor>Stefano Renzetti</editor>
+            <respStmt>
+              <resp>Edited for ShakeXSLT Project and encoded by</resp>
+              <name>Olga Pagnotta</name>
+              <name>Sara Vellone</name>
+              <name>Stefano Renzetti</name>
+            </respStmt>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>DraCor</publisher>
+            <address>
+              <addrLine>https://dracor.org/</addrLine>
+              <addrLine>buero.praesident@uni-potsdam.de</addrLine>
+            </address>
+            <availability>
+              <licence target="https://creativecommons.org/publicdomain/zero/1.0/">Distributed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</licence>
+            </availability>
+          </publicationStmt>
+        </biblFull>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
       <particDesc>
         <listPerson>
           <person xml:id="Egeon">
@@ -96,6 +125,24 @@
       </particDesc>
     </profileDesc>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="written" when="1594">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/shake000005" passive="http://www.wikidata.org/entity/Q506505"/>
+    </listRelation>
+  </standOff>
+  <facsimile>
+    <graphic xml:id="p21r"
+      url="https://iiif.bodleian.ox.ac.uk/iiif/image/e9c8d515-cf9e-42df-84b7-c08d62f36cc0">
+      <desc>This is the image of the first page of the comedy contained in the First Folio, also known as Mr. William Shakespeare's Comedies, Histories, and Tragedies, written by William Jaggard.
+        It is a collection of plays by William Shakespeare (1623), printed in folio format and contains 36 plays. The image is taken from the Bodleian Library's website and
+        it is provided in IIIF format. It can be found at page 105 of 920 fol. H1r.</desc>
+    </graphic>
+  </facsimile>
   <text>
     <front>
       <castList>
@@ -330,7 +377,7 @@
             <l> My wife , not meanly proud of two such boys , </l>
             <l> Made daily motions for our home return . </l>
             <l> Unwilling , I agreed . Alas , too soon </l>
-            <l  > We came aboard . </l>
+            <l> We came aboard . </l>
             <l> A league from Epidamium had we sailed </l>
             <l> Before the always-wind-obeying deep </l>
             <l> Gave any tragic instance of our harm ; </l>
@@ -443,7 +490,7 @@
           </sp>
           <sp who="#Officer_Jailer">
             <speaker> JAILER </speaker>
-            <l  > I will , my lord . </l>
+            <l> I will , my lord . </l>
           </sp>
           <sp who="#Egeon">
             <speaker> EGEON </speaker>
@@ -483,7 +530,7 @@
             <l> Peruse the traders , gaze upon the buildings , </l>
             <l> And then return and sleep within mine inn , </l>
             <l> For with long travel I am stiff and weary . </l>
-            <l  > Get thee away . </l>
+            <l> Get thee away . </l>
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
@@ -765,10 +812,10 @@
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Nay , he’s at two hands with me , </l>
-              <l> and that my two ears can witness . </l>
-            </p>
+
+            <l> Nay , he’s at two hands with me , </l>
+            <l> and that my two ears can witness . </l>
+
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
@@ -781,18 +828,18 @@
           </sp>
           <sp who="#Luciana">
             <speaker> LUCIANA </speaker>
-            <p>
-              <l> Spake he so doubtfully thou couldst not feel </l>
-              <l> his meaning ? </l>
-            </p>
+
+            <l> Spake he so doubtfully thou couldst not feel </l>
+            <l> his meaning ? </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Nay , he struck so plainly I could </l>
-              <l> too well feel his blows , and withal so doubtfully </l>
-              <l> that I could scarce understand them . </l>
-            </p>
+
+            <l> Nay , he struck so plainly I could </l>
+            <l> too well feel his blows , and withal so doubtfully </l>
+            <l> that I could scarce understand them . </l>
+
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
@@ -810,7 +857,7 @@
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
             <l part="F"> I mean not cuckold mad , </l>
-            <l  > But sure he is stark mad . </l>
+            <l> But sure he is stark mad . </l>
             <l> When I desired him to come home to dinner , </l>
             <l> He asked me for a thousand marks in gold . </l>
             <l> “ ’Tis dinnertime , ” quoth I . “ My gold , ” quoth he . </l>
@@ -823,11 +870,11 @@
           </sp>
           <sp who="#Luciana">
             <speaker> LUCIANA </speaker>
-            <l  > Quoth who ? </l>
+            <l> Quoth who ? </l>
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <l  > Quoth my master . </l>
+            <l> Quoth my master . </l>
             <l> “ I know , ” quoth he , “ no house , no wife , no mistress . ” </l>
             <l> So that my errand , due unto my tongue , </l>
             <l> I thank him , I bare home upon my shoulders , </l>
@@ -989,305 +1036,305 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> “ Sconce ” call you it ? So you </l>
-              <l> would leave battering , I had rather have it a </l>
-              <l> “ head . ” An you use these blows long , I must get a </l>
-              <l> sconce for my head and ensconce it too , or else I </l>
-              <l> shall seek my wit in my shoulders . But I pray , sir , </l>
-              <l> why am I beaten ? </l>
-            </p>
+
+            <l> “ Sconce ” call you it ? So you </l>
+            <l> would leave battering , I had rather have it a </l>
+            <l> “ head . ” An you use these blows long , I must get a </l>
+            <l> sconce for my head and ensconce it too , or else I </l>
+            <l> shall seek my wit in my shoulders . But I pray , sir , </l>
+            <l> why am I beaten ? </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Dost thou not know ? </l>
-            </p>
+
+            <l> Dost thou not know ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Nothing , sir , but that I am </l>
-              <l> beaten . </l>
-            </p>
+
+            <l> Nothing , sir , but that I am </l>
+            <l> beaten . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Shall I tell you why ? </l>
-            </p>
+
+            <l> Shall I tell you why ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Ay , sir , and wherefore , for they </l>
-              <l> say every why hath a wherefore . </l>
-            </p>
+
+            <l> Ay , sir , and wherefore , for they </l>
+            <l> say every why hath a wherefore . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> “ Why ” first : for flouting </l>
-              <l> me ; and then “ wherefore ” : for urging it the second </l>
-              <l> time to me . </l>
-            </p>
+
+            <l> “ Why ” first : for flouting </l>
+            <l> me ; and then “ wherefore ” : for urging it the second </l>
+            <l> time to me . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
             <l> Was there ever any man thus beaten out of season , </l>
             <l> When in the “ why ” and the “ wherefore ” is neither rhyme nor reason ? </l>
-            <l  > Well , sir , I thank you . </l>
+            <l> Well , sir , I thank you . </l>
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Thank me , sir , for what ? </l>
-            </p>
+
+            <l> Thank me , sir , for what ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , for this something </l>
-              <l> that you gave me for nothing . </l>
-            </p>
+
+            <l> Marry , sir , for this something </l>
+            <l> that you gave me for nothing . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> I’ll make you amends next , </l>
-              <l> to give you nothing for something . But say , sir , is it </l>
-              <l> dinnertime ? </l>
-            </p>
+
+            <l> I’ll make you amends next , </l>
+            <l> to give you nothing for something . But say , sir , is it </l>
+            <l> dinnertime ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> No , sir , I think the meat wants </l>
-              <l> that I have . </l>
-            </p>
+
+            <l> No , sir , I think the meat wants </l>
+            <l> that I have . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> In good time , sir , what’s </l>
-              <l> that ? </l>
-            </p>
+
+            <l> In good time , sir , what’s </l>
+            <l> that ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Basting . </l>
-            </p>
+
+            <l> Basting . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Well , sir , then ’twill be dry . </l>
-            </p>
+
+            <l> Well , sir , then ’twill be dry . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> If it be , sir , I pray you eat none of </l>
-              <l> it . </l>
-            </p>
+
+            <l> If it be , sir , I pray you eat none of </l>
+            <l> it . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Your reason ? </l>
-            </p>
+
+            <l> Your reason ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Lest it make you choleric and </l>
-              <l> purchase me another dry basting . </l>
-            </p>
+
+            <l> Lest it make you choleric and </l>
+            <l> purchase me another dry basting . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Well , sir , learn to jest in </l>
-              <l> good time . There’s a time for all things . </l>
-            </p>
+
+            <l> Well , sir , learn to jest in </l>
+            <l> good time . There’s a time for all things . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> I durst have denied that before </l>
-              <l> you were so choleric . </l>
-            </p>
+
+            <l> I durst have denied that before </l>
+            <l> you were so choleric . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> By what rule , sir ? </l>
-            </p>
+
+            <l> By what rule , sir ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , by a rule as plain as </l>
-              <l> the plain bald pate of Father Time himself . </l>
-            </p>
+
+            <l> Marry , sir , by a rule as plain as </l>
+            <l> the plain bald pate of Father Time himself . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Let’s hear it . </l>
-            </p>
+
+            <l> Let’s hear it . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> There’s no time for a man to </l>
-              <l> recover his hair that grows bald by nature . </l>
-            </p>
+
+            <l> There’s no time for a man to </l>
+            <l> recover his hair that grows bald by nature . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> May he not do it by fine and </l>
-              <l> recovery ? </l>
-            </p>
+
+            <l> May he not do it by fine and </l>
+            <l> recovery ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Yes , to pay a fine for a periwig , </l>
-              <l> and recover the lost hair of another man . </l>
-            </p>
+
+            <l> Yes , to pay a fine for a periwig , </l>
+            <l> and recover the lost hair of another man . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Why is Time such a niggard </l>
-              <l> of hair , being , as it is , so plentiful an excrement ? </l>
-            </p>
+
+            <l> Why is Time such a niggard </l>
+            <l> of hair , being , as it is , so plentiful an excrement ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Because it is a blessing that he </l>
-              <l> bestows on beasts , and what he hath scanted men </l>
-              <l> in hair , he hath given them in wit . </l>
-            </p>
+
+            <l> Because it is a blessing that he </l>
+            <l> bestows on beasts , and what he hath scanted men </l>
+            <l> in hair , he hath given them in wit . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Why , but there’s many a </l>
-              <l> man hath more hair than wit . </l>
-            </p>
+
+            <l> Why , but there’s many a </l>
+            <l> man hath more hair than wit . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Not a man of those but he hath </l>
-              <l> the wit to lose his hair . </l>
-            </p>
+
+            <l> Not a man of those but he hath </l>
+            <l> the wit to lose his hair . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Why , thou didst conclude </l>
-              <l> hairy men plain dealers without wit . </l>
-            </p>
+
+            <l> Why , thou didst conclude </l>
+            <l> hairy men plain dealers without wit . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> The plainer dealer , the sooner </l>
-              <l> lost . Yet he loseth it in a kind of jollity . </l>
-            </p>
+
+            <l> The plainer dealer , the sooner </l>
+            <l> lost . Yet he loseth it in a kind of jollity . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> For what reason ? </l>
-            </p>
+
+            <l> For what reason ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> For two , and sound ones too . </l>
-            </p>
+
+            <l> For two , and sound ones too . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Nay , not sound , I pray you . </l>
-            </p>
+
+            <l> Nay , not sound , I pray you . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Sure ones , then . </l>
-            </p>
+
+            <l> Sure ones , then . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Nay , not sure , in a thing </l>
-              <l> falsing . </l>
-            </p>
+
+            <l> Nay , not sure , in a thing </l>
+            <l> falsing . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Certain ones , then . </l>
-            </p>
+
+            <l> Certain ones , then . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Name them . </l>
-            </p>
+
+            <l> Name them . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> The one , to save the money that </l>
-              <l> he spends in tiring ; the other , that at dinner they </l>
-              <l> should not drop in his porridge . </l>
-            </p>
+
+            <l> The one , to save the money that </l>
+            <l> he spends in tiring ; the other , that at dinner they </l>
+            <l> should not drop in his porridge . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> You would all this time </l>
-              <l> have proved there is no time for all things . </l>
-            </p>
+
+            <l> You would all this time </l>
+            <l> have proved there is no time for all things . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , and did , sir : namely , e’en </l>
-              <l> no time to recover hair lost by nature . </l>
-            </p>
+
+            <l> Marry , and did , sir : namely , e’en </l>
+            <l> no time to recover hair lost by nature . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> But your reason was not </l>
-              <l> substantial why there is no time to recover . </l>
-            </p>
+
+            <l> But your reason was not </l>
+            <l> substantial why there is no time to recover . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Thus I mend it : Time himself is </l>
-              <l> bald and therefore , to the world’s end , will have </l>
-              <l> bald followers . </l>
-            </p>
+
+            <l> Thus I mend it : Time himself is </l>
+            <l> bald and therefore , to the world’s end , will have </l>
+            <l> bald followers . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> I knew ’twould be a bald </l>
-              <l> conclusion . But soft , who wafts us yonder ? </l>
-            </p>
+
+            <l> I knew ’twould be a bald </l>
+            <l> conclusion . But soft , who wafts us yonder ? </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Adriana , beckoning them , and Luciana . </hi>
@@ -1348,11 +1395,11 @@
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <l  > By Dromio ? </l>
+            <l> By Dromio ? </l>
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <l  > By me ? </l>
+            <l> By me ? </l>
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
@@ -2003,256 +2050,256 @@
           </stage>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Why , how now , Dromio . </l>
-              <l> Where runn’st thou so fast ? </l>
-            </p>
+
+            <l> Why , how now , Dromio . </l>
+            <l> Where runn’st thou so fast ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Do you know me , sir ? Am I </l>
-              <l> Dromio ? Am I your man ? Am I myself ? </l>
-            </p>
+
+            <l> Do you know me , sir ? Am I </l>
+            <l> Dromio ? Am I your man ? Am I myself ? </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Thou art Dromio , thou art </l>
-              <l> my man , thou art thyself . </l>
-            </p>
+
+            <l> Thou art Dromio , thou art </l>
+            <l> my man , thou art thyself . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> I am an ass , I am a woman’s </l>
-              <l> man , and besides myself . </l>
-            </p>
+
+            <l> I am an ass , I am a woman’s </l>
+            <l> man , and besides myself . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What woman’s man ? And </l>
-              <l> how besides thyself ? </l>
-            </p>
+
+            <l> What woman’s man ? And </l>
+            <l> how besides thyself ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , besides myself I am </l>
-              <l> due to a woman , one that claims me , one that </l>
-              <l> haunts me , one that will have me . </l>
-            </p>
+
+            <l> Marry , sir , besides myself I am </l>
+            <l> due to a woman , one that claims me , one that </l>
+            <l> haunts me , one that will have me . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What claim lays she to thee ? </l>
-            </p>
+
+            <l> What claim lays she to thee ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , such claim as you </l>
-              <l> would lay to your horse , and she would have me as </l>
-              <l> a beast ; not that I being a beast she would have me , </l>
-              <l> but that she , being a very beastly creature , lays </l>
-              <l> claim to me . </l>
-            </p>
+
+            <l> Marry , sir , such claim as you </l>
+            <l> would lay to your horse , and she would have me as </l>
+            <l> a beast ; not that I being a beast she would have me , </l>
+            <l> but that she , being a very beastly creature , lays </l>
+            <l> claim to me . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What is she ? </l>
-            </p>
+
+            <l> What is she ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> A very reverend body , ay , such a </l>
-              <l> one as a man may not speak of without he say </l>
-              <l> “ sir-reverence . ” I have but lean luck in the match , </l>
-              <l> and yet is she a wondrous fat marriage . </l>
-            </p>
+
+            <l> A very reverend body , ay , such a </l>
+            <l> one as a man may not speak of without he say </l>
+            <l> “ sir-reverence . ” I have but lean luck in the match , </l>
+            <l> and yet is she a wondrous fat marriage . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> How dost thou mean a “ fat </l>
-              <l> marriage ” ? </l>
-            </p>
+
+            <l> How dost thou mean a “ fat </l>
+            <l> marriage ” ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , she’s the kitchen </l>
-              <l> wench , and all grease , and I know not what use to </l>
-              <l> put her to but to make a lamp of her and run from </l>
-              <l> her by her own light . I warrant her rags and the </l>
-              <l> tallow in them will burn a Poland winter . If she lives </l>
-              <l> till doomsday , she’ll burn a week longer than the </l>
-              <l> whole world . </l>
-            </p>
+
+            <l> Marry , sir , she’s the kitchen </l>
+            <l> wench , and all grease , and I know not what use to </l>
+            <l> put her to but to make a lamp of her and run from </l>
+            <l> her by her own light . I warrant her rags and the </l>
+            <l> tallow in them will burn a Poland winter . If she lives </l>
+            <l> till doomsday , she’ll burn a week longer than the </l>
+            <l> whole world . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What complexion is she of ? </l>
-            </p>
+
+            <l> What complexion is she of ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Swart like my shoe , but her face </l>
-              <l> nothing like so clean kept . For why ? She sweats . A </l>
-              <l> man may go overshoes in the grime of it . </l>
-            </p>
+
+            <l> Swart like my shoe , but her face </l>
+            <l> nothing like so clean kept . For why ? She sweats . A </l>
+            <l> man may go overshoes in the grime of it . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> That’s a fault that water will </l>
-              <l> mend . </l>
-            </p>
+
+            <l> That’s a fault that water will </l>
+            <l> mend . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> No , sir , ’tis in grain ; Noah’s flood </l>
-              <l> could not do it . </l>
-            </p>
+
+            <l> No , sir , ’tis in grain ; Noah’s flood </l>
+            <l> could not do it . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What’s her name ? </l>
-            </p>
+
+            <l> What’s her name ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Nell , sir , but her name and </l>
-              <l> three quarters — that’s an ell and three quarters — </l>
-              <l> will not measure her from hip to hip . </l>
-            </p>
+
+            <l> Nell , sir , but her name and </l>
+            <l> three quarters — that’s an ell and three quarters — </l>
+            <l> will not measure her from hip to hip . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Then she bears some </l>
-              <l> breadth ? </l>
-            </p>
+
+            <l> Then she bears some </l>
+            <l> breadth ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> No longer from head to foot than </l>
-              <l> from hip to hip . She is spherical , like a globe . I </l>
-              <l> could find out countries in her . </l>
-            </p>
+
+            <l> No longer from head to foot than </l>
+            <l> from hip to hip . She is spherical , like a globe . I </l>
+            <l> could find out countries in her . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> In what part of her body </l>
-              <l> stands Ireland ? </l>
-            </p>
+
+            <l> In what part of her body </l>
+            <l> stands Ireland ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , sir , in her buttocks . I </l>
-              <l> found it out by the bogs . </l>
-            </p>
+
+            <l> Marry , sir , in her buttocks . I </l>
+            <l> found it out by the bogs . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where Scotland ? </l>
-            </p>
+
+            <l> Where Scotland ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> I found it by the barrenness , </l>
-              <l> hard in the palm of the hand . </l>
-            </p>
+
+            <l> I found it by the barrenness , </l>
+            <l> hard in the palm of the hand . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where France ? </l>
-            </p>
+
+            <l> Where France ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> In her forehead , armed and </l>
-              <l> reverted , making war against her heir . </l>
-            </p>
+
+            <l> In her forehead , armed and </l>
+            <l> reverted , making war against her heir . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where England ? </l>
-            </p>
+
+            <l> Where England ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> I looked for the chalky cliffs , but </l>
-              <l> I could find no whiteness in them . But I guess it </l>
-              <l> stood in her chin , by the salt rheum that ran </l>
-              <l> between France and it . </l>
-            </p>
+
+            <l> I looked for the chalky cliffs , but </l>
+            <l> I could find no whiteness in them . But I guess it </l>
+            <l> stood in her chin , by the salt rheum that ran </l>
+            <l> between France and it . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where Spain ? </l>
-            </p>
+
+            <l> Where Spain ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Faith , I saw it not , but I felt it hot </l>
-              <l> in her breath . </l>
-            </p>
+
+            <l> Faith , I saw it not , but I felt it hot </l>
+            <l> in her breath . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where America , the Indies ? </l>
-            </p>
+
+            <l> Where America , the Indies ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> O , sir , upon her nose , all o’erembellished </l>
-              <l> with rubies , carbuncles , sapphires , </l>
-              <l> declining their rich aspect to the hot breath of </l>
-              <l> Spain , who sent whole armadas of carracks to be </l>
-              <l> ballast at her nose . </l>
-            </p>
+
+            <l> O , sir , upon her nose , all o’erembellished </l>
+            <l> with rubies , carbuncles , sapphires , </l>
+            <l> declining their rich aspect to the hot breath of </l>
+            <l> Spain , who sent whole armadas of carracks to be </l>
+            <l> ballast at her nose . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Where stood Belgia , the </l>
-              <l> Netherlands ? </l>
-            </p>
+
+            <l> Where stood Belgia , the </l>
+            <l> Netherlands ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> O , sir , I did not look so low . To </l>
-              <l> conclude : this drudge or diviner laid claim to me , </l>
-              <l> called me Dromio , swore I was assured to her , told </l>
-              <l> me what privy marks I had about me , as the mark </l>
-              <l> of my shoulder , the mole in my neck , the great wart </l>
-              <l> on my left arm , that I , amazed , ran from her as a </l>
-              <l> witch . </l>
-            </p>
+
+            <l> O , sir , I did not look so low . To </l>
+            <l> conclude : this drudge or diviner laid claim to me , </l>
+            <l> called me Dromio , swore I was assured to her , told </l>
+            <l> me what privy marks I had about me , as the mark </l>
+            <l> of my shoulder , the mole in my neck , the great wart </l>
+            <l> on my left arm , that I , amazed , ran from her as a </l>
+            <l> witch . </l>
+
             <l> And , I think , if my breast had not been made of faith , and my heart of steel , </l>
             <l> She had transformed me to a curtal dog and made me turn i’ th’ wheel . </l>
           </sp>
@@ -2738,7 +2785,7 @@
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
-            <l  > Why , man , what is the matter ? </l>
+            <l> Why , man , what is the matter ? </l>
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
@@ -2769,7 +2816,7 @@
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
-            <l  > What , the chain ? </l>
+            <l> What , the chain ? </l>
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
@@ -2837,11 +2884,11 @@
           </stage>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Master , here’s the gold you sent </l>
-              <l> me for . What , have you got the picture of old Adam </l>
-              <l> new-appareled ? </l>
-            </p>
+
+            <l> Master , here’s the gold you sent </l>
+            <l> me for . What , have you got the picture of old Adam </l>
+            <l> new-appareled ? </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
@@ -2849,65 +2896,65 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Not that Adam that kept the </l>
-              <l> Paradise , but that Adam that keeps the prison ; he </l>
-              <l> that goes in the calf’s skin that was killed for the </l>
-              <l> Prodigal ; he that came behind you , sir , like an evil </l>
-              <l> angel , and bid you forsake your liberty . </l>
-            </p>
+
+            <l> Not that Adam that kept the </l>
+            <l> Paradise , but that Adam that keeps the prison ; he </l>
+            <l> that goes in the calf’s skin that was killed for the </l>
+            <l> Prodigal ; he that came behind you , sir , like an evil </l>
+            <l> angel , and bid you forsake your liberty . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> I understand thee not . </l>
-            </p>
+
+            <l> I understand thee not . </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> No ? Why , ’tis a plain case : he </l>
-              <l> that went like a bass viol in a case of leather ; the </l>
-              <l> man , sir , that , when gentlemen are tired , gives </l>
-              <l> them a sob and ’rests them ; he , sir , that takes pity </l>
-              <l> on decayed men and gives them suits of durance ; he </l>
-              <l> that sets up his rest to do more exploits with his </l>
-              <l> mace than a morris-pike . </l>
-            </p>
+
+            <l> No ? Why , ’tis a plain case : he </l>
+            <l> that went like a bass viol in a case of leather ; the </l>
+            <l> man , sir , that , when gentlemen are tired , gives </l>
+            <l> them a sob and ’rests them ; he , sir , that takes pity </l>
+            <l> on decayed men and gives them suits of durance ; he </l>
+            <l> that sets up his rest to do more exploits with his </l>
+            <l> mace than a morris-pike . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> What , thou mean’st an </l>
-              <l> officer ? </l>
-            </p>
+
+            <l> What , thou mean’st an </l>
+            <l> officer ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Ay , sir , the sergeant of the band ; </l>
-              <l> he that brings any man to answer it that breaks his </l>
-              <l> band ; one that thinks a man always going to bed </l>
-              <l> and says “ God give you good rest . ” </l>
-            </p>
+
+            <l> Ay , sir , the sergeant of the band ; </l>
+            <l> he that brings any man to answer it that breaks his </l>
+            <l> band ; one that thinks a man always going to bed </l>
+            <l> and says “ God give you good rest . ” </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Well , sir , there rest in your </l>
-              <l> foolery . Is there any ships puts forth tonight ? May </l>
-              <l> we be gone ? </l>
-            </p>
+
+            <l> Well , sir , there rest in your </l>
+            <l> foolery . Is there any ships puts forth tonight ? May </l>
+            <l> we be gone ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Why , sir , I brought you word an </l>
-              <l> hour since that the bark “ Expedition ” put forth tonight , </l>
-              <l> and then were you hindered by the sergeant </l>
-              <l> to tarry for the hoy “ Delay ” . Here are the angels that </l>
-              <l> you sent for to deliver you . </l>
-            </p>
+
+            <l> Why , sir , I brought you word an </l>
+            <l> hour since that the bark “ Expedition ” put forth tonight , </l>
+            <l> and then were you hindered by the sergeant </l>
+            <l> to tarry for the hoy “ Delay ” . Here are the angels that </l>
+            <l> you sent for to deliver you . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> He gives the purse . </hi>
@@ -2941,16 +2988,16 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Nay , she is worse ; she is the </l>
-              <l> devil’s dam , and here she comes in the habit of a </l>
-              <l> light wench . And thereof comes that the wenches </l>
-              <l> say “ God damn me ” ; that’s as much to say “ God </l>
-              <l> make me a light wench . ” It is written they appear </l>
-              <l> to men like angels of light . Light is an effect of fire , </l>
-              <l> and fire will burn : ergo , light wenches will burn . </l>
-              <l> Come not near her . </l>
-            </p>
+
+            <l> Nay , she is worse ; she is the </l>
+            <l> devil’s dam , and here she comes in the habit of a </l>
+            <l> light wench . And thereof comes that the wenches </l>
+            <l> say “ God damn me ” ; that’s as much to say “ God </l>
+            <l> make me a light wench . ” It is written they appear </l>
+            <l> to men like angels of light . Light is an effect of fire , </l>
+            <l> and fire will burn : ergo , light wenches will burn . </l>
+            <l> Come not near her . </l>
+
           </sp>
           <sp who="#Courtesan">
             <speaker> COURTESAN </speaker>
@@ -2959,23 +3006,23 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Master , if you do , expect spoon </l>
-              <l> meat , or bespeak a long spoon . </l>
-            </p>
+
+            <l> Master , if you do , expect spoon </l>
+            <l> meat , or bespeak a long spoon . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
-            <p>
-              <l> Why , Dromio ? </l>
-            </p>
+
+            <l> Why , Dromio ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Marry , he must have a long </l>
-              <l> spoon that must eat with the devil . </l>
-            </p>
+
+            <l> Marry , he must have a long </l>
+            <l> spoon that must eat with the devil . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE , to the Courtesan </speaker>
@@ -2991,13 +3038,13 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Some devils ask but the parings </l>
-              <l> of one’s nail , a rush , a hair , a drop of blood , a pin , a </l>
-              <l> nut , a cherrystone ; but she , more covetous , would </l>
-              <l> have a chain . Master , be wise . An if you give it her , </l>
-              <l> the devil will shake her chain and fright us with it . </l>
-            </p>
+
+            <l> Some devils ask but the parings </l>
+            <l> of one’s nail , a rush , a hair , a drop of blood , a pin , a </l>
+            <l> nut , a cherrystone ; but she , more covetous , would </l>
+            <l> have a chain . Master , be wise . An if you give it her , </l>
+            <l> the devil will shake her chain and fright us with it . </l>
+
           </sp>
           <sp who="#Courtesan">
             <speaker> COURTESAN </speaker>
@@ -3010,8 +3057,8 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <l  > “ Fly pride , ” says the peacock . </l>
-            <l  > Mistress , that you know . </l>
+            <l> “ Fly pride , ” says the peacock . </l>
+            <l> Mistress , that you know . </l>
           </sp>
           <stage type="exit">
             <hi rend="italic"> Antipholus and Dromio exit . </hi>
@@ -3065,7 +3112,7 @@
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <l  > But where’s the money ? </l>
+            <l> But where’s the money ? </l>
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
@@ -3085,10 +3132,10 @@
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> To a rope’s end , sir , and to that </l>
-              <l> end am I returned . </l>
-            </p>
+
+            <l> To a rope’s end , sir , and to that </l>
+            <l> end am I returned . </l>
+
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS , beating Dromio </speaker>
@@ -3096,65 +3143,65 @@
           </sp>
           <sp who="#Officers">
             <speaker> OFFICER </speaker>
-            <l  > Good sir , be patient . </l>
+            <l> Good sir , be patient . </l>
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Nay , ’tis for me to be patient . I am </l>
-              <l> in adversity . </l>
-            </p>
+
+            <l> Nay , ’tis for me to be patient . I am </l>
+            <l> in adversity . </l>
+
           </sp>
           <sp who="#Officers">
             <speaker> OFFICER </speaker>
-            <p>
-              <l> Good now , hold thy tongue . </l>
-            </p>
+
+            <l> Good now , hold thy tongue . </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Nay , rather persuade him to hold </l>
-              <l> his hands . </l>
-            </p>
+
+            <l> Nay , rather persuade him to hold </l>
+            <l> his hands . </l>
+
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <p>
-              <l> Thou whoreson , senseless </l>
-              <l> villain . </l>
-            </p>
+
+            <l> Thou whoreson , senseless </l>
+            <l> villain . </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> I would I were senseless , sir , that </l>
-              <l> I might not feel your blows . </l>
-            </p>
+
+            <l> I would I were senseless , sir , that </l>
+            <l> I might not feel your blows . </l>
+
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <p>
-              <l> Thou art sensible in nothing </l>
-              <l> but blows , and so is an ass . </l>
-            </p>
+
+            <l> Thou art sensible in nothing </l>
+            <l> but blows , and so is an ass . </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> I am an ass , indeed ; you may </l>
-              <l> prove it by my long ears . — I have served him from </l>
-              <l> the hour of my nativity to this instant , and have </l>
-              <l> nothing at his hands for my service but blows . </l>
-              <l> When I am cold , he heats me with beating ; when I </l>
-              <l> am warm , he cools me with beating . I am waked </l>
-              <l> with it when I sleep , raised with it when I sit , </l>
-              <l> driven out of doors with it when I go from home , </l>
-              <l> welcomed home with it when I return . Nay , I bear it </l>
-              <l> on my shoulders as a beggar wont her brat , and I </l>
-              <l> think when he hath lamed me , I shall beg with it </l>
-              <l> from door to door . </l>
-            </p>
+
+            <l> I am an ass , indeed ; you may </l>
+            <l> prove it by my long ears . — I have served him from </l>
+            <l> the hour of my nativity to this instant , and have </l>
+            <l> nothing at his hands for my service but blows . </l>
+            <l> When I am cold , he heats me with beating ; when I </l>
+            <l> am warm , he cools me with beating . I am waked </l>
+            <l> with it when I sleep , raised with it when I sit , </l>
+            <l> driven out of doors with it when I go from home , </l>
+            <l> welcomed home with it when I return . Nay , I bear it </l>
+            <l> on my shoulders as a beggar wont her brat , and I </l>
+            <l> think when he hath lamed me , I shall beg with it </l>
+            <l> from door to door . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Adriana , Luciana , Courtesan , and a Schoolmaster called Pinch
@@ -3166,15 +3213,15 @@
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Mistress , respice finem , respect </l>
-              <l> your end , or rather , the prophecy like the parrot , </l>
-              <l> “ Beware the rope’s end . ” </l>
-            </p>
+
+            <l> Mistress , respice finem , respect </l>
+            <l> your end , or rather , the prophecy like the parrot , </l>
+            <l> “ Beware the rope’s end . ” </l>
+
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <l  > Wilt thou still talk ? </l>
+            <l> Wilt thou still talk ? </l>
           </sp>
           <stage>
             <hi rend="italic"> Beats Dromio . </hi>
@@ -3408,7 +3455,7 @@
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <l  > O most unhappy strumpet ! </l>
+            <l> O most unhappy strumpet ! </l>
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
@@ -3421,7 +3468,7 @@
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
             <l> Will you be bound for nothing ? Be mad , good master . </l>
-            <l  > Cry “ The devil ! ” </l>
+            <l> Cry “ The devil ! ” </l>
           </sp>
           <sp who="#Luciana">
             <speaker> LUCIANA </speaker>
@@ -3513,14 +3560,14 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Faith , stay here this night . They </l>
-              <l> will surely do us no harm . You saw they speak us </l>
-              <l> fair , give us gold . Methinks they are such a gentle </l>
-              <l> nation that , but for the mountain of mad flesh that </l>
-              <l> claims marriage of me , I could find in my heart to </l>
-              <l> stay here still , and turn witch . </l>
-            </p>
+
+            <l> Faith , stay here this night . They </l>
+            <l> will surely do us no harm . You saw they speak us </l>
+            <l> fair , give us gold . Methinks they are such a gentle </l>
+            <l> nation that , but for the mountain of mad flesh that </l>
+            <l> claims marriage of me , I could find in my heart to </l>
+            <l> stay here still , and turn witch . </l>
+
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
@@ -3700,7 +3747,7 @@
           </sp>
           <sp who="#Abbess">
             <speaker> ABBESS </speaker>
-            <l  > Ay , but not enough . </l>
+            <l> Ay , but not enough . </l>
           </sp>
           <sp who="#Adriana">
             <speaker> ADRIANA </speaker>
@@ -3810,7 +3857,7 @@
           </sp>
           <sp who="#Angelo">
             <speaker> ANGELO </speaker>
-            <l  > Upon what cause ? </l>
+            <l> Upon what cause ? </l>
           </sp>
           <sp who="#Merchant2">
             <speaker> SECOND MERCHANT </speaker>
@@ -4010,7 +4057,7 @@
             <l> For certain ducats . He with none returned . </l>
             <l> Then fairly I bespoke the officer </l>
             <l> To go in person with me to my house . </l>
-            <l  > By th’ way we met </l>
+            <l> By th’ way we met </l>
             <l> My wife , her sister , and a rabble more </l>
             <l> Of vile confederates . Along with them </l>
             <l> They brought one Pinch , a hungry , lean-faced villain , </l>
@@ -4153,35 +4200,35 @@
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <p>
-              <l> Neither . </l>
-            </p>
+
+            <l> Neither . </l>
+
           </sp>
           <sp who="#Egeon">
             <speaker> EGEON </speaker>
-            <p>
-              <l> Dromio , nor thou ? </l>
-            </p>
+
+            <l> Dromio , nor thou ? </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> No , trust me , sir , nor I . </l>
-            </p>
+
+            <l> No , trust me , sir , nor I . </l>
+
           </sp>
           <sp who="#Egeon">
             <speaker> EGEON </speaker>
-            <p>
-              <l> I am sure thou dost . </l>
-            </p>
+
+            <l> I am sure thou dost . </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> Ay , sir , but I am sure I do not , and </l>
-              <l> whatsoever a man denies , you are now bound to </l>
-              <l> believe him . </l>
-            </p>
+
+            <l> Ay , sir , but I am sure I do not , and </l>
+            <l> whatsoever a man denies , you are now bound to </l>
+            <l> believe him . </l>
+
           </sp>
           <sp who="#Egeon">
             <speaker> EGEON </speaker>
@@ -4311,7 +4358,7 @@
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <l  > And I with him . </l>
+            <l> And I with him . </l>
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
@@ -4332,7 +4379,7 @@
           </sp>
           <sp who="#AntipholusOfEphesus">
             <speaker> ANTIPHOLUS OF EPHESUS </speaker>
-            <l  > No , I say nay to that . </l>
+            <l> No , I say nay to that . </l>
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE </speaker>
@@ -4367,7 +4414,7 @@
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <l  > No , none by me . </l>
+            <l> No , none by me . </l>
           </sp>
           <sp who="#AntipholusOfSyracuse">
             <speaker> ANTIPHOLUS OF SYRACUSE , to Adriana </speaker>
@@ -4453,27 +4500,25 @@
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> Not I , sir . You are my elder . </l>
-            </p>
+
+            <l> Not I , sir . You are my elder . </l>
+
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <p>
-              <l> That’s a question . How shall we </l>
-              <l> try it ? </l>
-            </p>
+
+            <l> That’s a question . How shall we </l>
+            <l> try it ? </l>
+
           </sp>
           <sp who="#DromioOfSyracuse">
             <speaker> DROMIO OF SYRACUSE </speaker>
-            <p>
-              <l> We’ll draw cuts for the signior . </l>
-              <l> Till then , lead thou first . </l>
-            </p>
+            <l> We’ll draw cuts for the signior . </l>
+            <l> Till then , lead thou first . </l>
           </sp>
           <sp who="#DromioOfEphesus">
             <speaker> DROMIO OF EPHESUS </speaker>
-            <l  > Nay , then , thus : </l>
+            <l> Nay , then , thus : </l>
             <l> We came into the world like brother and brother , </l>
             <l> And now let’s go hand in hand , not one before another . </l>
           </sp>

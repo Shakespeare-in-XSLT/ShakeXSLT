@@ -54,24 +54,14 @@
                   <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Opera</button>
                     <div id="myDropdown" class="dropdown-content">
-                      <a href="opera.html?ConttoLoad=Errors"><span>The Comedy Of Errors</span></a>
-                      <a href="opera.html?ConttoLoad=Tempest"><span>The Tempest</span></a>
-                      <a href="opera.html?ConttoLoad=Gentlemen"><span>Two Gentlemen Of Verona</span></a>
+                      <a href="TheComedyOfErrors.html"><span>The Comedy Of Errors</span></a>
+                      <a href="TheTempest.html"><span>The Tempest</span></a>
+                      <a href="TwoGentlemenOfVerona.html"><span>Two Gentlemen Of Verona</span></a>
                     </div>
                   </div>
               </li>
               <li><a href="documentation.html"> Documentation </a></li>
               <li><a href="index.html#disclaimer"> Disclaimer </a></li>
-              <li>
-                <div class="dropdown">
-                    <button onclick="myFunction2()" class="dropbtn">IIIF OpenSeaDragon</button>
-                    <div id="myDropdown2" class="dropdown-content">
-                      <a href="IIIFcomedy.html"><span>IIIF - The Comedy Of Errors</span></a>
-                      <a href="IIIFtempest.html"><span>IIIF - The Tempest</span></a>
-                      <a href="IIIFgentlemen.html"><span>IIIF - Two Gentlemen Of Verona</span></a>
-                    </div>
-                  </div>
-              </li>
               <li><a href="IIIF_mirador.html"> First Folio IIIF Mirador</a></li>
             </ul>
           </nav>
@@ -228,8 +218,14 @@
                 <p>The <a href="https://tei-c.org/" target="_blank">Text Encoding Initiative (TEI)</a> is a consortium which collectively develops and maintains a standard for the representation of texts in digital form. The TEI Guidelines have been widely used by libraries, museums, publishers, and individual scholars to present texts for online research, teaching, and preservation.</p> <br>
                 <h2>OUR CHOICES</h2>
                 <p>We have chosen TEI because it allows a specific description of the dramatic plays through a series of technical tags. <br>
-                We have first of all used the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html" target="_blank">filedesc</a> tag for describing the metadata related to the bibliographic entity, such as the author tag, with the author name, within the <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-titleStmt.html" target="_blank">titleStmt</a> tag. Then we have proceeded with the description of the participants of the play, which have been inserted into the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html" target="_blank">profileDesc</a> tag, which provides a detailed description of non-bibliographic information about the text, within the particDesc tag, in the listPerson tag. Each participant is identified by the tag person, with a persName tag, and an <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html" target="_blank">xml:id</a>, meaningful for the specific character.</p>
-                <p>The characters have then been inserted also in the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html" target="_blank">front</a>, within a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-castList.html" target="_blank">castList</a> tag, with a series of castItem tags. For every castItem a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-role.html" target="_blank">role</a> and a <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-roleDesc.html" target="_blank">roleDesc</a> have been provided. For each scene we have highlighted the head, with the number of the scene, and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-stage.html" target="_blank">stage</a>, which contains any kind of stage-direction (specified thorugh a type attribute) within the dramatic text. We have then chosen to specify a tag <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sp.html" target="_blank">sp</a>, for identifying the various speeches within the text, with the specification of the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-speaker.html" target="_blank">speaker</a> of the speech.
+                We have first of all used the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html" target="_blank">filedesc</a> tag for describing the metadata related to the bibliographic entity, such as the author tag, with the author name, within the <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-titleStmt.html" target="_blank">titleStmt</a> tag. We have described the publication through <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html" target="_blank">publicationStmt</a> by addressing the source from which we have taken the texts (<a href="https://dracor.org/" target="_blank">DraCor</a>) and then the original text through the tag <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-sourceDesc.html" target="_blank">sourceDesc</a> by inserting information about the title, the author and a <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-respStmt.html" target="_blank">respStmt</a> with the editors' names and the license used.
+               Then we have proceeded with the description of the of the play, through the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-profileDesc.html" target="_blank">profileDesc</a> tag, which provides information about the language used and a detailed description of non-bibliographic information about the text, within the particDesc tag, in the listPerson tag. Each participant is identified by the tag person, with a persName tag, and an <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.html" target="_blank">xml:id</a>, meaningful for the specific character.</p>
+                <p>
+                We have added information about the date of publication of the original text  and a link between the text in DraCor and the related Wikidata entity in the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-standOff.html" target="_blank">standOff</a> tag, which functions as a container element for linked data, contextual information, and stand-off annotations embedded in a TEI document. In the <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-facsimile.html" target="_blank">facsimile</a> tag we have added a IIIF Image of the first page of each of the three comedy contained in the First Folio with its description.
+                </p>
+                <p>The characters have then been inserted also in the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-front.html" target="_blank">front</a>, within a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-castList.html" target="_blank">castList</a> tag, with a series of castItem tags. For every castItem a <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-role.html" target="_blank">role</a> and a <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/ref-roleDesc.html" target="_blank">roleDesc</a> have been provided. </p>
+                <p>
+                For each scene we have highlighted the head, with the number of the scene, and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-stage.html" target="_blank">stage</a>, which contains any kind of stage-direction (specified thorugh a type attribute) within the dramatic text. We have then chosen to specify a tag <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sp.html" target="_blank">sp</a>, for identifying the various speeches within the text, with the specification of the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-speaker.html" target="_blank">speaker</a> of the speech.
                 </p>
                 <p>The text has been then annotated within the <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-line.html" target="_blank">l</a> tag, which contains the transcription of a topographic line in the source document.
                 </p>
@@ -253,13 +249,7 @@
                 As described earlier, XSLT is a language specifically designed for transforming the structure of XML documents. The transformation process works as follows. A list of nodes from the source document is processed to create a result tree fragment. The result tree is constructed by processing a list containing just the root node. Within a list of source nodes, each list member is processed in order and the result tree structures are appended. A node is processed by finding all the template rules with patterns that match the node, and choosing the best amongst them; the template of the chosen rule is then instantiated with the node as the current node and with the list of source nodes as the current node list. A template typically contains instructions that select an additional list of source nodes for processing. This process is continued recursively until the list of source nodes is empty.
                 </p>
                 <p>
-                An HTML page is generated automatically for each text, thus we have created a destination page, called <code>opera.html</code>, on which each specific html is loaded as a consequence of an event. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.
-                </p>
-                <p>
-                We perform the transformation in a dinamic way with an XSLTProcessor javascript object that applies one XSLT stylesheet transformation to the three XML documents to produce a new HTML document as output for each.
-                </p>
-                <p>
-                Our digital edition loads using synchronous XMLHTTPRequest both the .xsl (xslStylesheet) and the .xml (xmlDoc) files into memory. The .xsl file is then imported (xsltProcessor.importStylesheet(xslStylesheet)) and the transformation run (xsltProcessor.transformToFragment(xmlDoc, document)). This allows fetching of data after the page has been loaded, without initiating a fresh page load.
+                An HTML page is generated automatically for each text. We have designed one template matching with the three of our texts. We have used the free trial of the <a href="https://www.oxygenxml.com/" target="_blank">Oxygen</a> editor.
                 </p>
                 <p>
                 XSLT is a powerful tool which can be used for building, as in this case, a digital edition. Even if 

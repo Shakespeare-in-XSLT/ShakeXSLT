@@ -16,14 +16,43 @@
         </author>
       </titleStmt>
       <publicationStmt>
-        <publisher/>
-        <date>1591</date>
+        <publisher>DraCor</publisher>
+        <address>
+          <addrLine>https://dracor.org/shake</addrLine>
+        </address>
       </publicationStmt>
       <sourceDesc>
-        <ab/>
+        <biblFull>
+          <titleStmt>
+            <title>Two Gentlemen Of Verona</title>
+            <author>William Shakespeare</author>
+            <editor>Olga Pagnotta</editor>
+            <editor>Sara Vellone</editor>
+            <editor>Stefano Renzetti</editor>
+            <respStmt>
+              <resp>Edited for ShakeXSLT Project and encoded by</resp>
+              <name>Olga Pagnotta</name>
+              <name>Sara Vellone</name>
+              <name>Stefano Renzetti</name>
+            </respStmt>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>DraCor</publisher>
+            <address>
+              <addrLine>https://dracor.org/</addrLine>
+              <addrLine>buero.praesident@uni-potsdam.de</addrLine>
+            </address>
+            <availability>
+              <licence target="https://creativecommons.org/publicdomain/zero/1.0/">Distributed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</licence>
+            </availability>
+          </publicationStmt>
+        </biblFull>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+      </langUsage>
       <particDesc>
         <listPerson>
           <person xml:id="Valentine">
@@ -84,6 +113,24 @@
       </particDesc>
     </profileDesc>
   </teiHeader>
+  <standOff>
+    <listEvent>
+      <event type="written" when="1591">
+        <desc/>
+      </event>
+    </listEvent>
+    <listRelation>
+      <relation name="wikidata" active="https://dracor.org/entity/shake000002" passive="http://www.wikidata.org/entity/Q232042"/>
+    </listRelation>
+  </standOff>
+  <facsimile>
+    <graphic xml:id="p21r"
+      url="https://iiif.bodleian.ox.ac.uk/iiif/image/59a807d0-cc63-4731-94b0-ae5d2b6a8185">
+      <desc>This is the image of the first page of the comedy contained in the First Folio, also known as Mr. William Shakespeare's Comedies, Histories, and Tragedies, written by William Jaggard.
+        It is a collection of plays by William Shakespeare (1623), printed in folio format and contains 36 plays. The image is taken from the Bodleian Library's website and
+        it is provided in IIIF format. It can be found at page 40 of 920 fol. B4v.</desc>
+    </graphic>
+  </facsimile>
   <text>
     <front>
       <castList>
@@ -382,125 +429,125 @@
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> You conclude that my master is a shepherd , </l>
-              <l> then , and I a sheep ? </l>
-            </p>
+
+            <l> You conclude that my master is a shepherd , </l>
+            <l> then , and I a sheep ? </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> I do . </l>
-            </p>
+
+            <l> I do . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why , then my horns are his horns , whether I </l>
-              <l> wake or sleep . </l>
-            </p>
+
+            <l> Why , then my horns are his horns , whether I </l>
+            <l> wake or sleep . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> A silly answer , and fitting well a sheep . </l>
-            </p>
+
+            <l> A silly answer , and fitting well a sheep . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> This proves me still a sheep . </l>
-            </p>
+
+            <l> This proves me still a sheep . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> True , and thy master a shepherd . </l>
-            </p>
+
+            <l> True , and thy master a shepherd . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Nay , that I can deny by a circumstance . </l>
-            </p>
+
+            <l> Nay , that I can deny by a circumstance . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> It shall go hard but I’ll prove it by another . </l>
-            </p>
+
+            <l> It shall go hard but I’ll prove it by another . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> The shepherd seeks the sheep , and not the </l>
-              <l> sheep the shepherd ; but I seek my master , and my </l>
-              <l> master seeks not me . Therefore I am no sheep . </l>
-            </p>
+
+            <l> The shepherd seeks the sheep , and not the </l>
+            <l> sheep the shepherd ; but I seek my master , and my </l>
+            <l> master seeks not me . Therefore I am no sheep . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> The sheep for fodder follow the shepherd ; the </l>
-              <l> shepherd for food follows not the sheep . Thou for </l>
-              <l> wages followest thy master ; thy master for wages </l>
-              <l> follows not thee . Therefore thou art a sheep . </l>
-            </p>
+
+            <l> The sheep for fodder follow the shepherd ; the </l>
+            <l> shepherd for food follows not the sheep . Thou for </l>
+            <l> wages followest thy master ; thy master for wages </l>
+            <l> follows not thee . Therefore thou art a sheep . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Such another proof will make me cry “ baa . ” </l>
-            </p>
+
+            <l> Such another proof will make me cry “ baa . ” </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> But dost thou hear ? Gav’st thou my letter to </l>
-              <l> Julia ? </l>
-            </p>
+
+            <l> But dost thou hear ? Gav’st thou my letter to </l>
+            <l> Julia ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Ay , sir . I , a lost mutton , gave your letter to her , a </l>
-              <l> laced mutton , and she , a laced mutton , gave me , a </l>
-              <l> lost mutton , nothing for my labor . </l>
-            </p>
+
+            <l> Ay , sir . I , a lost mutton , gave your letter to her , a </l>
+            <l> laced mutton , and she , a laced mutton , gave me , a </l>
+            <l> lost mutton , nothing for my labor . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Here’s too small a pasture for such store of </l>
-              <l> muttons . </l>
-            </p>
+
+            <l> Here’s too small a pasture for such store of </l>
+            <l> muttons . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> If the ground be overcharged , you were best </l>
-              <l> stick her . </l>
-            </p>
+
+            <l> If the ground be overcharged , you were best </l>
+            <l> stick her . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Nay , in that you are astray ; ’twere best pound </l>
-              <l> you . </l>
-            </p>
+
+            <l> Nay , in that you are astray ; ’twere best pound </l>
+            <l> you . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Nay , sir , less than a pound shall serve me for </l>
-              <l> carrying your letter . </l>
-            </p>
+
+            <l> Nay , sir , less than a pound shall serve me for </l>
+            <l> carrying your letter . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> You mistake ; I mean the pound , a pinfold . </l>
-            </p>
+
+            <l> You mistake ; I mean the pound , a pinfold . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -509,140 +556,140 @@
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> But what said she ? </l>
-            </p>
+
+            <l> But what said she ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , nodding </speaker>
-            <p>
-              <l> Ay . </l>
-            </p>
+
+            <l> Ay . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Nod — “ Ay . ” Why , that’s “ noddy . ” </l>
-            </p>
+
+            <l> Nod — “ Ay . ” Why , that’s “ noddy . ” </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> You mistook , sir . I say she did nod , and you ask </l>
-              <l> me if she did nod , and I say “ ay . ” </l>
-            </p>
+
+            <l> You mistook , sir . I say she did nod , and you ask </l>
+            <l> me if she did nod , and I say “ ay . ” </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> And that set together is “ noddy . ” </l>
-            </p>
+
+            <l> And that set together is “ noddy . ” </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Now you have taken the pains to set it together , </l>
-              <l> take it for your pains . </l>
-            </p>
+
+            <l> Now you have taken the pains to set it together , </l>
+            <l> take it for your pains . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> No , no , you shall have it for bearing the letter . </l>
-            </p>
+
+            <l> No , no , you shall have it for bearing the letter . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Well , I perceive I must be fain to bear with you . </l>
-            </p>
+
+            <l> Well , I perceive I must be fain to bear with you . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Why , sir , how do you bear with me ? </l>
-            </p>
+
+            <l> Why , sir , how do you bear with me ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Marry , sir , the letter , very orderly , having nothing </l>
-              <l> but the word “ noddy ” for my pains . </l>
-            </p>
+
+            <l> Marry , sir , the letter , very orderly , having nothing </l>
+            <l> but the word “ noddy ” for my pains . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Beshrew me , but you have a quick wit . </l>
-            </p>
+
+            <l> Beshrew me , but you have a quick wit . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> And yet it cannot overtake your slow purse . </l>
-            </p>
+
+            <l> And yet it cannot overtake your slow purse . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Come , come , open the matter in brief . What </l>
-              <l> said she ? </l>
-            </p>
+
+            <l> Come , come , open the matter in brief . What </l>
+            <l> said she ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Open your purse , that the money and the matter </l>
-              <l> may be both at once delivered . </l>
-            </p>
+
+            <l> Open your purse , that the money and the matter </l>
+            <l> may be both at once delivered . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS , giving money </speaker>
-            <p>
-              <l> Well , sir , here is for your </l>
-              <l> pains . What said she ? </l>
-            </p>
+
+            <l> Well , sir , here is for your </l>
+            <l> pains . What said she ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , looking at the money </speaker>
-            <p>
-              <l> Truly , sir , I think you’ll </l>
-              <l> hardly win her . </l>
-            </p>
+
+            <l> Truly , sir , I think you’ll </l>
+            <l> hardly win her . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Why ? Couldst thou perceive so much from </l>
-              <l> her ? </l>
-            </p>
+
+            <l> Why ? Couldst thou perceive so much from </l>
+            <l> her ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Sir , I could perceive nothing at all from her , no , </l>
-              <l> not so much as a ducat for delivering your letter . </l>
-              <l> And being so hard to me that brought your mind , I </l>
-              <l> fear she’ll prove as hard to you in telling your mind . </l>
-              <l> Give her no token but stones , for she’s as hard as </l>
-              <l> steel . </l>
-            </p>
+
+            <l> Sir , I could perceive nothing at all from her , no , </l>
+            <l> not so much as a ducat for delivering your letter . </l>
+            <l> And being so hard to me that brought your mind , I </l>
+            <l> fear she’ll prove as hard to you in telling your mind . </l>
+            <l> Give her no token but stones , for she’s as hard as </l>
+            <l> steel . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> What said she ? Nothing ? </l>
-            </p>
+
+            <l> What said she ? Nothing ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> No , not so much as “ Take this for thy pains . ” </l>
-              <l> To testify your bounty , I thank you , you have </l>
-              <l> testerned me . In requital whereof , henceforth </l>
-              <l> carry your letters yourself . And so , sir , I’ll commend </l>
-              <l> you to my master . </l>
-            </p>
+
+            <l> No , not so much as “ Take this for thy pains . ” </l>
+            <l> To testify your bounty , I thank you , you have </l>
+            <l> testerned me . In requital whereof , henceforth </l>
+            <l> carry your letters yourself . And so , sir , I’ll commend </l>
+            <l> you to my master . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
@@ -1270,368 +1317,368 @@
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , calling </speaker>
-            <p>
-              <l> Madam Sylvia ! Madam Sylvia ! </l>
-            </p>
+
+            <l> Madam Sylvia ! Madam Sylvia ! </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> How now , sirrah ? </l>
-            </p>
+
+            <l> How now , sirrah ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> She is not within hearing , sir . </l>
-            </p>
+
+            <l> She is not within hearing , sir . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Why , sir , who bade you call her ? </l>
-            </p>
+
+            <l> Why , sir , who bade you call her ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Your Worship , sir , or else I mistook . </l>
-            </p>
+
+            <l> Your Worship , sir , or else I mistook . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Well , you’ll still be too forward . </l>
-            </p>
+
+            <l> Well , you’ll still be too forward . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> And yet I was last chidden for being too slow . </l>
-            </p>
+
+            <l> And yet I was last chidden for being too slow . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Go to , sir . Tell me , do you know Madam </l>
-              <l> Sylvia ? </l>
-            </p>
+
+            <l> Go to , sir . Tell me , do you know Madam </l>
+            <l> Sylvia ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> She that your Worship loves ? </l>
-            </p>
+
+            <l> She that your Worship loves ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Why , how know you that I am in love ? </l>
-            </p>
+
+            <l> Why , how know you that I am in love ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Marry , by these special marks : first , you have </l>
-              <l> learned , like Sir Proteus , to wreathe your arms like </l>
-              <l> a malcontent ; to relish a love song like a robin </l>
-              <l> redbreast ; to walk alone like one that had the </l>
-              <l> pestilence ; to sigh like a schoolboy that had lost his </l>
-              <l> ABC ; to weep like a young wench that had buried </l>
-              <l> her grandam ; to fast like one that takes diet ; to </l>
-              <l> watch like one that fears robbing ; to speak puling </l>
-              <l> like a beggar at Hallowmas . You were wont , when </l>
-              <l> you laughed , to crow like a cock ; when you walked , </l>
-              <l> to walk like one of the lions . When you fasted , it was </l>
-              <l> presently after dinner ; when you looked sadly , it </l>
-              <l> was for want of money . And now you are metamorphosed </l>
-              <l> with a mistress , that when I look on you , I </l>
-              <l> can hardly think you my master . </l>
-            </p>
+
+            <l> Marry , by these special marks : first , you have </l>
+            <l> learned , like Sir Proteus , to wreathe your arms like </l>
+            <l> a malcontent ; to relish a love song like a robin </l>
+            <l> redbreast ; to walk alone like one that had the </l>
+            <l> pestilence ; to sigh like a schoolboy that had lost his </l>
+            <l> ABC ; to weep like a young wench that had buried </l>
+            <l> her grandam ; to fast like one that takes diet ; to </l>
+            <l> watch like one that fears robbing ; to speak puling </l>
+            <l> like a beggar at Hallowmas . You were wont , when </l>
+            <l> you laughed , to crow like a cock ; when you walked , </l>
+            <l> to walk like one of the lions . When you fasted , it was </l>
+            <l> presently after dinner ; when you looked sadly , it </l>
+            <l> was for want of money . And now you are metamorphosed </l>
+            <l> with a mistress , that when I look on you , I </l>
+            <l> can hardly think you my master . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Are all these things perceived in me ? </l>
-            </p>
+
+            <l> Are all these things perceived in me ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> They are all perceived without you . </l>
-            </p>
+
+            <l> They are all perceived without you . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Without me ? They cannot . </l>
-            </p>
+
+            <l> Without me ? They cannot . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Without you ? Nay , that’s certain , for without </l>
-              <l> you were so simple , none else would . But you are so </l>
-              <l> without these follies , that these follies are within </l>
-              <l> you and shine through you like the water in an </l>
-              <l> urinal , that not an eye that sees you but is a </l>
-              <l> physician to comment on your malady . </l>
-            </p>
+
+            <l> Without you ? Nay , that’s certain , for without </l>
+            <l> you were so simple , none else would . But you are so </l>
+            <l> without these follies , that these follies are within </l>
+            <l> you and shine through you like the water in an </l>
+            <l> urinal , that not an eye that sees you but is a </l>
+            <l> physician to comment on your malady . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> But tell me , dost thou know my Lady </l>
-              <l> Sylvia ? </l>
-            </p>
+
+            <l> But tell me , dost thou know my Lady </l>
+            <l> Sylvia ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> She that you gaze on so as she sits at supper ? </l>
-            </p>
+
+            <l> She that you gaze on so as she sits at supper ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Hast thou observed that ? Even she I mean . </l>
-            </p>
+
+            <l> Hast thou observed that ? Even she I mean . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why , sir , I know her not . </l>
-            </p>
+
+            <l> Why , sir , I know her not . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Dost thou know her by my gazing on her </l>
-              <l> and yet know’st her not ? </l>
-            </p>
+
+            <l> Dost thou know her by my gazing on her </l>
+            <l> and yet know’st her not ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Is she not hard-favored , sir ? </l>
-            </p>
+
+            <l> Is she not hard-favored , sir ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Not so fair , boy , as well-favored . </l>
-            </p>
+
+            <l> Not so fair , boy , as well-favored . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Sir , I know that well enough . </l>
-            </p>
+
+            <l> Sir , I know that well enough . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> What dost thou know ? </l>
-            </p>
+
+            <l> What dost thou know ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> That she is not so fair as , of you , well-favored . </l>
-            </p>
+
+            <l> That she is not so fair as , of you , well-favored . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I mean that her beauty is exquisite but her </l>
-              <l> favor infinite . </l>
-            </p>
+
+            <l> I mean that her beauty is exquisite but her </l>
+            <l> favor infinite . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> That’s because the one is painted , and the other </l>
-              <l> out of all count . </l>
-            </p>
+
+            <l> That’s because the one is painted , and the other </l>
+            <l> out of all count . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> How painted ? And how out of count ? </l>
-            </p>
+
+            <l> How painted ? And how out of count ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Marry , sir , so painted to make her fair , that no </l>
-              <l> man counts of her beauty . </l>
-            </p>
+
+            <l> Marry , sir , so painted to make her fair , that no </l>
+            <l> man counts of her beauty . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> How esteem’st thou me ? I account of her </l>
-              <l> beauty . </l>
-            </p>
+
+            <l> How esteem’st thou me ? I account of her </l>
+            <l> beauty . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> You never saw her since she was deformed . </l>
-            </p>
+
+            <l> You never saw her since she was deformed . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> How long hath she been deformed ? </l>
-            </p>
+
+            <l> How long hath she been deformed ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Ever since you loved her . </l>
-            </p>
+
+            <l> Ever since you loved her . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I have loved her ever since I saw her , and </l>
-              <l> still I see her beautiful . </l>
-            </p>
+
+            <l> I have loved her ever since I saw her , and </l>
+            <l> still I see her beautiful . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> If you love her , you cannot see her . </l>
-            </p>
+
+            <l> If you love her , you cannot see her . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Why ? </l>
-            </p>
+
+            <l> Why ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Because love is blind . O , that you had mine eyes , </l>
-              <l> or your own eyes had the lights they were wont to </l>
-              <l> have when you chid at Sir Proteus for going </l>
-              <l> ungartered ! </l>
-            </p>
+
+            <l> Because love is blind . O , that you had mine eyes , </l>
+            <l> or your own eyes had the lights they were wont to </l>
+            <l> have when you chid at Sir Proteus for going </l>
+            <l> ungartered ! </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> What should I see then ? </l>
-            </p>
+
+            <l> What should I see then ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Your own present folly and her passing deformity ; </l>
-              <l> for he , being in love , could not see to garter his </l>
-              <l> hose , and you , being in love , cannot see to put on </l>
-              <l> your hose . </l>
-            </p>
+
+            <l> Your own present folly and her passing deformity ; </l>
+            <l> for he , being in love , could not see to garter his </l>
+            <l> hose , and you , being in love , cannot see to put on </l>
+            <l> your hose . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Belike , boy , then you are in love , for last </l>
-              <l> morning you could not see to wipe my shoes . </l>
-            </p>
+
+            <l> Belike , boy , then you are in love , for last </l>
+            <l> morning you could not see to wipe my shoes . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> True , sir , I was in love with my bed . I thank you , </l>
-              <l> you swinged me for my love , which makes me the </l>
-              <l> bolder to chide you for yours . </l>
-            </p>
+
+            <l> True , sir , I was in love with my bed . I thank you , </l>
+            <l> you swinged me for my love , which makes me the </l>
+            <l> bolder to chide you for yours . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> In conclusion , I stand affected to her . </l>
-            </p>
+
+            <l> In conclusion , I stand affected to her . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> I would you were set , so your affection would </l>
-              <l> cease . </l>
-            </p>
+
+            <l> I would you were set , so your affection would </l>
+            <l> cease . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Last night she enjoined me to write some </l>
-              <l> lines to one she loves . </l>
-            </p>
+
+            <l> Last night she enjoined me to write some </l>
+            <l> lines to one she loves . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> And have you ? </l>
-            </p>
+
+            <l> And have you ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I have . </l>
-            </p>
+
+            <l> I have . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Are they not lamely writ ? </l>
-            </p>
+
+            <l> Are they not lamely writ ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> No , boy , but as well as I can do them . </l>
-              <l> Peace , here she comes . </l>
-            </p>
+
+            <l> No , boy , but as well as I can do them . </l>
+            <l> Peace , here she comes . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Sylvia . </hi>
           </stage>
           <sp who="#Speed">
             <speaker> SPEED , aside </speaker>
-            <p>
-              <l> O excellent motion ! O exceeding puppet ! </l>
-              <l> Now will he interpret to her . </l>
-            </p>
+
+            <l> O excellent motion ! O exceeding puppet ! </l>
+            <l> Now will he interpret to her . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Madam and mistress , a thousand </l>
-              <l> good-morrows . </l>
-            </p>
+
+            <l> Madam and mistress , a thousand </l>
+            <l> good-morrows . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , aside </speaker>
-            <p>
-              <l> O , give ye good ev’n ! Here’s a million of </l>
-              <l> manners . </l>
-            </p>
+
+            <l> O , give ye good ev’n ! Here’s a million of </l>
+            <l> manners . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> Sir Valentine , and servant , to you two </l>
-              <l> thousand . </l>
-            </p>
+
+            <l> Sir Valentine , and servant , to you two </l>
+            <l> thousand . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , aside </speaker>
-            <p>
-              <l> He should give her interest , and she </l>
-              <l> gives it him . </l>
-            </p>
+
+            <l> He should give her interest , and she </l>
+            <l> gives it him . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
@@ -1733,116 +1780,116 @@
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> How now , sir ? What , are you reasoning </l>
-              <l> with yourself ? </l>
-            </p>
+
+            <l> How now , sir ? What , are you reasoning </l>
+            <l> with yourself ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Nay , I was rhyming . ’Tis you that have the </l>
-              <l> reason . </l>
-            </p>
+
+            <l> Nay , I was rhyming . ’Tis you that have the </l>
+            <l> reason . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> To do what ? </l>
-            </p>
+
+            <l> To do what ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> To be a spokesman from Madam Sylvia . </l>
-            </p>
+
+            <l> To be a spokesman from Madam Sylvia . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> To whom ? </l>
-            </p>
+
+            <l> To whom ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> To yourself . Why , she woos you by a figure . </l>
-            </p>
+
+            <l> To yourself . Why , she woos you by a figure . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> What figure ? </l>
-            </p>
+
+            <l> What figure ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> By a letter , I should say . </l>
-            </p>
+
+            <l> By a letter , I should say . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Why , she hath not writ to me ! </l>
-            </p>
+
+            <l> Why , she hath not writ to me ! </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> What need she when she hath made you write </l>
-              <l> to yourself ? Why , do you not perceive the jest ? </l>
-            </p>
+
+            <l> What need she when she hath made you write </l>
+            <l> to yourself ? Why , do you not perceive the jest ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> No , believe me . </l>
-            </p>
+
+            <l> No , believe me . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> No believing you indeed , sir . But did you perceive </l>
-              <l> her earnest ? </l>
-            </p>
+
+            <l> No believing you indeed , sir . But did you perceive </l>
+            <l> her earnest ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> She gave me none , except an angry word . </l>
-            </p>
+
+            <l> She gave me none , except an angry word . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why , she hath given you a letter . </l>
-            </p>
+
+            <l> Why , she hath given you a letter . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> That’s the letter I writ to her friend . </l>
-            </p>
+
+            <l> That’s the letter I writ to her friend . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> And that letter hath she delivered , and there an </l>
-              <l> end . </l>
-            </p>
+
+            <l> And that letter hath she delivered , and there an </l>
+            <l> end . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I would it were no worse . </l>
-            </p>
+
+            <l> I would it were no worse . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> I’ll warrant you , ’tis as well . </l>
-            </p>
+
+            <l> I’ll warrant you , ’tis as well . </l>
+
             <lg type="couplet">
               <l> For often have you writ to her , and she , in modesty </l>
               <l> Or else for want of idle time , could not again reply , </l>
@@ -1851,25 +1898,25 @@
               <l> Or fearing else some messenger that might her mind discover , </l>
               <l> Herself hath taught her love himself to write unto her lover . </l>
             </lg>
-            <p>
-              <l> All this I speak in print , for in print I found it . Why </l>
-              <l> muse you , sir ? ’Tis dinnertime . </l>
-            </p>
+
+            <l> All this I speak in print , for in print I found it . Why </l>
+            <l> muse you , sir ? ’Tis dinnertime . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I have dined . </l>
-            </p>
+
+            <l> I have dined . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Ay , but hearken , sir , though the chameleon love </l>
-              <l> can feed on the air , I am one that am nourished by </l>
-              <l> my victuals and would fain have meat . O , be not like </l>
-              <l> your mistress ! Be moved , be moved . </l>
-            </p>
+
+            <l> Ay , but hearken , sir , though the chameleon love </l>
+            <l> can feed on the air , I am one that am nourished by </l>
+            <l> my victuals and would fain have meat . O , be not like </l>
+            <l> your mistress ! Be moved , be moved . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> They exit . </hi>
@@ -1952,160 +1999,160 @@
           </stage>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Nay , ’twill be this hour ere I have done weeping . </l>
-              <l> All the kind of the Lances have this very fault . I have </l>
-              <l> received my proportion like the Prodigious Son and </l>
-              <l> am going with Sir Proteus to the Imperial’s court . I </l>
-              <l> think Crab my dog be the sourest-natured dog that </l>
-              <l> lives : my mother weeping , my father wailing , my </l>
-              <l> sister crying , our maid howling , our cat wringing </l>
-              <l> her hands , and all our house in a great perplexity , </l>
-              <l> yet did not this cruel-hearted cur shed one tear . He </l>
-              <l> is a stone , a very pibble stone , and has no more pity </l>
-              <l> in him than a dog . A Jew would have wept to have </l>
-              <l> seen our parting . Why , my grandam , having no </l>
-              <l> eyes , look you , wept herself blind at my parting . </l>
-              <l> Nay , I’ll show you the manner of it . </l>
-            </p>
+
+            <l> Nay , ’twill be this hour ere I have done weeping . </l>
+            <l> All the kind of the Lances have this very fault . I have </l>
+            <l> received my proportion like the Prodigious Son and </l>
+            <l> am going with Sir Proteus to the Imperial’s court . I </l>
+            <l> think Crab my dog be the sourest-natured dog that </l>
+            <l> lives : my mother weeping , my father wailing , my </l>
+            <l> sister crying , our maid howling , our cat wringing </l>
+            <l> her hands , and all our house in a great perplexity , </l>
+            <l> yet did not this cruel-hearted cur shed one tear . He </l>
+            <l> is a stone , a very pibble stone , and has no more pity </l>
+            <l> in him than a dog . A Jew would have wept to have </l>
+            <l> seen our parting . Why , my grandam , having no </l>
+            <l> eyes , look you , wept herself blind at my parting . </l>
+            <l> Nay , I’ll show you the manner of it . </l>
+
             <stage who="#Lance">
               <hi rend="italic"> He takes off his shoes . </hi>
             </stage>
-            <p>
-              <l> This shoe is my father . No , this left shoe is </l>
-              <l> my father ; no , no , this left shoe is my mother . Nay , </l>
-              <l> that cannot be so neither . Yes , it is so , it is so ; it hath </l>
-              <l> the worser sole . This shoe with the hole in it is my </l>
-              <l> mother ; and this my father . A vengeance on ’t , there </l>
-              <l> ’tis ! Now sir , this staff is my sister , for , look you , she </l>
-              <l> is as white as a lily and as small as a wand . This hat </l>
-              <l> is Nan , our maid . I am the dog . No , the dog is </l>
-              <l> himself , and I am the dog . O , the dog is me , and I </l>
-              <l> am myself . Ay , so , so . Now come I to my father : </l>
-              <l> “ Father , your blessing . ” Now should not the shoe </l>
-              <l> speak a word for weeping . Now should I kiss my </l>
-              <l> father . <stage who="#Lance">
-                  <hi rend="italic"> He kisses one shoe . </hi>
-                </stage> Well , he weeps on . Now </l>
-              <l> come I to my mother . O , that she could speak now </l>
-              <l> like a wold woman ! Well , I kiss her . </l>
-            </p>
+
+            <l> This shoe is my father . No , this left shoe is </l>
+            <l> my father ; no , no , this left shoe is my mother . Nay , </l>
+            <l> that cannot be so neither . Yes , it is so , it is so ; it hath </l>
+            <l> the worser sole . This shoe with the hole in it is my </l>
+            <l> mother ; and this my father . A vengeance on ’t , there </l>
+            <l> ’tis ! Now sir , this staff is my sister , for , look you , she </l>
+            <l> is as white as a lily and as small as a wand . This hat </l>
+            <l> is Nan , our maid . I am the dog . No , the dog is </l>
+            <l> himself , and I am the dog . O , the dog is me , and I </l>
+            <l> am myself . Ay , so , so . Now come I to my father : </l>
+            <l> “ Father , your blessing . ” Now should not the shoe </l>
+            <l> speak a word for weeping . Now should I kiss my </l>
+            <l> father . <stage who="#Lance">
+                <hi rend="italic"> He kisses one shoe . </hi>
+              </stage> Well , he weeps on . Now </l>
+            <l> come I to my mother . O , that she could speak now </l>
+            <l> like a wold woman ! Well , I kiss her . </l>
+
             <stage who="#Lance">
               <hi rend="italic"> He kisses the other shoe . </hi>
             </stage>
-            <p>
-              <l> Why , there ’tis ; here’s my mother’s </l>
-              <l> breath up and down . Now come I to my sister . Mark </l>
-              <l> the moan she makes ! Now the dog all this while </l>
-              <l> sheds not a tear nor speaks a word . But see how I </l>
-              <l> lay the dust with my tears . </l>
-            </p>
+
+            <l> Why , there ’tis ; here’s my mother’s </l>
+            <l> breath up and down . Now come I to my sister . Mark </l>
+            <l> the moan she makes ! Now the dog all this while </l>
+            <l> sheds not a tear nor speaks a word . But see how I </l>
+            <l> lay the dust with my tears . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Pantino . </hi>
           </stage>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> Lance , away , away ! Aboard . Thy master is </l>
-              <l> shipped , and thou art to post after with oars . What’s </l>
-              <l> the matter ? Why weep’st thou , man ? Away , ass . </l>
-              <l> You’ll lose the tide if you tarry any longer . </l>
-            </p>
+
+            <l> Lance , away , away ! Aboard . Thy master is </l>
+            <l> shipped , and thou art to post after with oars . What’s </l>
+            <l> the matter ? Why weep’st thou , man ? Away , ass . </l>
+            <l> You’ll lose the tide if you tarry any longer . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> It is no matter if the tied were lost , for it is the </l>
-              <l> unkindest tied that ever any man tied . </l>
-            </p>
+
+            <l> It is no matter if the tied were lost , for it is the </l>
+            <l> unkindest tied that ever any man tied . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> What’s the unkindest tide ? </l>
-            </p>
+
+            <l> What’s the unkindest tide ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , he that’s tied here , Crab my dog . </l>
-            </p>
+
+            <l> Why , he that’s tied here , Crab my dog . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> Tut , man . I mean thou ’lt lose the flood and , in </l>
-              <l> losing the flood , lose thy voyage and , in losing thy </l>
-              <l> voyage , lose thy master and , in losing thy master , </l>
-              <l> lose thy service and , in losing thy service — </l>
-            </p>
+
+            <l> Tut , man . I mean thou ’lt lose the flood and , in </l>
+            <l> losing the flood , lose thy voyage and , in losing thy </l>
+            <l> voyage , lose thy master and , in losing thy master , </l>
+            <l> lose thy service and , in losing thy service — </l>
+
             <stage who="#Lance #Pantino">
               <hi rend="italic"> Lance covers Pantino’s mouth . </hi>
             </stage>
-            <p>
-              <l> Why dost thou stop my </l>
-              <l> mouth ? </l>
-            </p>
+
+            <l> Why dost thou stop my </l>
+            <l> mouth ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> For fear thou shouldst lose thy tongue . </l>
-            </p>
+
+            <l> For fear thou shouldst lose thy tongue . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> Where should I lose my tongue ? </l>
-            </p>
+
+            <l> Where should I lose my tongue ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> In thy tale . </l>
-            </p>
+
+            <l> In thy tale . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> In thy tail ! </l>
-            </p>
+
+            <l> In thy tail ! </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Lose the tide , and the voyage , and the master , </l>
-              <l> and the service , and the tied . Why , man , if the river </l>
-              <l> were dry , I am able to fill it with my tears ; if the </l>
-              <l> wind were down , I could drive the boat with my </l>
-              <l> sighs . </l>
-            </p>
+
+            <l> Lose the tide , and the voyage , and the master , </l>
+            <l> and the service , and the tied . Why , man , if the river </l>
+            <l> were dry , I am able to fill it with my tears ; if the </l>
+            <l> wind were down , I could drive the boat with my </l>
+            <l> sighs . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> Come . Come away , man . I was sent to call </l>
-              <l> thee . </l>
-            </p>
+
+            <l> Come . Come away , man . I was sent to call </l>
+            <l> thee . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Sir , call me what thou dar’st . </l>
-            </p>
+
+            <l> Sir , call me what thou dar’st . </l>
+
           </sp>
           <sp who="#Pantino">
             <speaker> PANTINO </speaker>
-            <p>
-              <l> Wilt thou go ? </l>
-            </p>
+
+            <l> Wilt thou go ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Well , I will go . </l>
-            </p>
+
+            <l> Well , I will go . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> They exit . </hi>
@@ -2118,218 +2165,218 @@
           </stage>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> Servant ! </l>
-            </p>
+
+            <l> Servant ! </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Mistress ? </l>
-            </p>
+
+            <l> Mistress ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Master , Sir Thurio frowns on you . </l>
-            </p>
+
+            <l> Master , Sir Thurio frowns on you . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Ay , boy , it’s for love . </l>
-            </p>
+
+            <l> Ay , boy , it’s for love . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Not of you . </l>
-            </p>
+
+            <l> Not of you . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Of my mistress , then . </l>
-            </p>
+
+            <l> Of my mistress , then . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> ’Twere good you knocked him . </l>
-            </p>
+
+            <l> ’Twere good you knocked him . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA , to Valentine </speaker>
-            <p>
-              <l> Servant , you are sad . </l>
-            </p>
+
+            <l> Servant , you are sad . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Indeed , madam , I seem so . </l>
-            </p>
+
+            <l> Indeed , madam , I seem so . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> Seem you that you are not ? </l>
-            </p>
+
+            <l> Seem you that you are not ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Haply I do . </l>
-            </p>
+
+            <l> Haply I do . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> So do counterfeits . </l>
-            </p>
+
+            <l> So do counterfeits . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> So do you . </l>
-            </p>
+
+            <l> So do you . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> What seem I that I am not ? </l>
-            </p>
+
+            <l> What seem I that I am not ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Wise . </l>
-            </p>
+
+            <l> Wise . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> What instance of the contrary ? </l>
-            </p>
+
+            <l> What instance of the contrary ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Your folly . </l>
-            </p>
+
+            <l> Your folly . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> And how quote you my folly ? </l>
-            </p>
+
+            <l> And how quote you my folly ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I quote it in your jerkin . </l>
-            </p>
+
+            <l> I quote it in your jerkin . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> My “ jerkin ” is a doublet . </l>
-            </p>
+
+            <l> My “ jerkin ” is a doublet . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Well , then , I’ll double your folly . </l>
-            </p>
+
+            <l> Well , then , I’ll double your folly . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> How ! </l>
-            </p>
+
+            <l> How ! </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> What , angry , Sir Thurio ? Do you change color ? </l>
-            </p>
+
+            <l> What , angry , Sir Thurio ? Do you change color ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Give him leave , madam . He is a kind of </l>
-              <l> chameleon . </l>
-            </p>
+
+            <l> Give him leave , madam . He is a kind of </l>
+            <l> chameleon . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> That hath more mind to feed on your blood </l>
-              <l> than live in your air . </l>
-            </p>
+
+            <l> That hath more mind to feed on your blood </l>
+            <l> than live in your air . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> You have said , sir . </l>
-            </p>
+
+            <l> You have said , sir . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> Ay , sir , and done too for this time . </l>
-            </p>
+
+            <l> Ay , sir , and done too for this time . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I know it well , sir . You always end ere you </l>
-              <l> begin . </l>
-            </p>
+
+            <l> I know it well , sir . You always end ere you </l>
+            <l> begin . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> A fine volley of words , gentlemen , and quickly </l>
-              <l> shot off . </l>
-            </p>
+
+            <l> A fine volley of words , gentlemen , and quickly </l>
+            <l> shot off . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> ’Tis indeed , madam . We thank the giver . </l>
-            </p>
+
+            <l> ’Tis indeed , madam . We thank the giver . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> Who is that , servant ? </l>
-            </p>
+
+            <l> Who is that , servant ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Yourself , sweet lady , for you gave the fire . </l>
-              <l> Sir Thurio borrows his wit from your Ladyship’s </l>
-              <l> looks and spends what he borrows kindly in your </l>
-              <l> company . </l>
-            </p>
+
+            <l> Yourself , sweet lady , for you gave the fire . </l>
+            <l> Sir Thurio borrows his wit from your Ladyship’s </l>
+            <l> looks and spends what he borrows kindly in your </l>
+            <l> company . </l>
+
           </sp>
           <sp who="#Thurio">
             <speaker> THURIO </speaker>
-            <p>
-              <l> Sir , if you spend word for word with me , I shall </l>
-              <l> make your wit bankrupt . </l>
-            </p>
+
+            <l> Sir , if you spend word for word with me , I shall </l>
+            <l> make your wit bankrupt . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> I know it well , sir . You have an exchequer </l>
-              <l> of words and , I think , no other treasure to give your </l>
-              <l> followers , for it appears by their bare liveries that </l>
-              <l> they live by your bare words . </l>
-            </p>
+
+            <l> I know it well , sir . You have an exchequer </l>
+            <l> of words and , I think , no other treasure to give your </l>
+            <l> followers , for it appears by their bare liveries that </l>
+            <l> they live by your bare words . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
@@ -2721,221 +2768,221 @@
           </stage>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Lance , by mine honesty , welcome to Padua . </l>
-            </p>
+
+            <l> Lance , by mine honesty , welcome to Padua . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Forswear not thyself , sweet youth , for I am not </l>
-              <l> welcome . I reckon this always : that a man is never </l>
-              <l> undone till he be hanged , nor never welcome to a </l>
-              <l> place till some certain shot be paid and the Hostess </l>
-              <l> say welcome . </l>
-            </p>
+
+            <l> Forswear not thyself , sweet youth , for I am not </l>
+            <l> welcome . I reckon this always : that a man is never </l>
+            <l> undone till he be hanged , nor never welcome to a </l>
+            <l> place till some certain shot be paid and the Hostess </l>
+            <l> say welcome . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Come on , you madcap . I’ll to the alehouse with </l>
-              <l> you presently , where , for one shot of five pence , </l>
-              <l> thou shalt have five thousand welcomes . But , sirrah , </l>
-              <l> how did thy master part with Madam Julia ? </l>
-            </p>
+
+            <l> Come on , you madcap . I’ll to the alehouse with </l>
+            <l> you presently , where , for one shot of five pence , </l>
+            <l> thou shalt have five thousand welcomes . But , sirrah , </l>
+            <l> how did thy master part with Madam Julia ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Marry , after they closed in earnest , they parted </l>
-              <l> very fairly in jest . </l>
-            </p>
+
+            <l> Marry , after they closed in earnest , they parted </l>
+            <l> very fairly in jest . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> But shall she marry him ? </l>
-            </p>
+
+            <l> But shall she marry him ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> No . </l>
-            </p>
+
+            <l> No . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> How then ? Shall he marry her ? </l>
-            </p>
+
+            <l> How then ? Shall he marry her ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> No , neither . </l>
-            </p>
+
+            <l> No , neither . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> What , are they broken ? </l>
-            </p>
+
+            <l> What , are they broken ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> No , they are both as whole as a fish . </l>
-            </p>
+
+            <l> No , they are both as whole as a fish . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why then , how stands the matter with them ? </l>
-            </p>
+
+            <l> Why then , how stands the matter with them ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Marry , thus : when it stands well with him , it </l>
-              <l> stands well with her . </l>
-            </p>
+
+            <l> Marry , thus : when it stands well with him , it </l>
+            <l> stands well with her . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> What an ass art thou ! I understand thee not . </l>
-            </p>
+
+            <l> What an ass art thou ! I understand thee not . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> What a block art thou that thou canst not ! My </l>
-              <l> staff understands me . </l>
-            </p>
+
+            <l> What a block art thou that thou canst not ! My </l>
+            <l> staff understands me . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> What thou sayst ? </l>
-            </p>
+
+            <l> What thou sayst ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Ay , and what I do too . Look thee , I’ll but lean , </l>
-              <l> and my staff understands me . </l>
-            </p>
+
+            <l> Ay , and what I do too . Look thee , I’ll but lean , </l>
+            <l> and my staff understands me . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> It stands under thee indeed . </l>
-            </p>
+
+            <l> It stands under thee indeed . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , “ stand under ” and “ understand ” is all </l>
-              <l> one . </l>
-            </p>
+
+            <l> Why , “ stand under ” and “ understand ” is all </l>
+            <l> one . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> But tell me true , will ’t be a match ? </l>
-            </p>
+
+            <l> But tell me true , will ’t be a match ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Ask my dog . If he say “ Ay , ” it will ; if he say </l>
-              <l> “ No , ” it will ; if he shake his tail and say nothing , it </l>
-              <l> will . </l>
-            </p>
+
+            <l> Ask my dog . If he say “ Ay , ” it will ; if he say </l>
+            <l> “ No , ” it will ; if he shake his tail and say nothing , it </l>
+            <l> will . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> The conclusion is , then , that it will . </l>
-            </p>
+
+            <l> The conclusion is , then , that it will . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Thou shalt never get such a secret from me but </l>
-              <l> by a parable . </l>
-            </p>
+
+            <l> Thou shalt never get such a secret from me but </l>
+            <l> by a parable . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> ’Tis well that I get it so . But , Lance , how sayst </l>
-              <l> thou that my master is become a notable lover ? </l>
-            </p>
+
+            <l> ’Tis well that I get it so . But , Lance , how sayst </l>
+            <l> thou that my master is become a notable lover ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> I never knew him otherwise . </l>
-            </p>
+
+            <l> I never knew him otherwise . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Than how ? </l>
-            </p>
+
+            <l> Than how ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> A notable lubber , as thou reportest him to be . </l>
-            </p>
+
+            <l> A notable lubber , as thou reportest him to be . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why , thou whoreson ass , thou mistak’st me . </l>
-            </p>
+
+            <l> Why , thou whoreson ass , thou mistak’st me . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , fool , I meant not thee ; I meant thy master . </l>
-            </p>
+
+            <l> Why , fool , I meant not thee ; I meant thy master . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> I tell thee , my master is become a hot lover . </l>
-            </p>
+
+            <l> I tell thee , my master is become a hot lover . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , I tell thee , I care not though he burn </l>
-              <l> himself in love . If thou wilt , go with me to the </l>
-              <l> alehouse ; if not , thou art an Hebrew , a Jew , and not </l>
-              <l> worth the name of a Christian . </l>
-            </p>
+
+            <l> Why , I tell thee , I care not though he burn </l>
+            <l> himself in love . If thou wilt , go with me to the </l>
+            <l> alehouse ; if not , thou art an Hebrew , a Jew , and not </l>
+            <l> worth the name of a Christian . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why ? </l>
-            </p>
+
+            <l> Why ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Because thou hast not so much charity in thee </l>
-              <l> as to go to the ale with a Christian . Wilt thou go ? </l>
-            </p>
+
+            <l> Because thou hast not so much charity in thee </l>
+            <l> as to go to the ale with a Christian . Wilt thou go ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> At thy service . </l>
-            </p>
+
+            <l> At thy service . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> They exit . </hi>
@@ -3523,94 +3570,94 @@
           </stage>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Run , boy , run , run , and seek him out . </l>
-            </p>
+
+            <l> Run , boy , run , run , and seek him out . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> So-ho , so-ho ! </l>
-            </p>
+
+            <l> So-ho , so-ho ! </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> What seest thou ? </l>
-            </p>
+
+            <l> What seest thou ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Him we go to find . There’s not a hair on ’s head </l>
-              <l> but ’tis a Valentine . </l>
-            </p>
+
+            <l> Him we go to find . There’s not a hair on ’s head </l>
+            <l> but ’tis a Valentine . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Valentine ? </l>
-            </p>
+
+            <l> Valentine ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> No . </l>
-            </p>
+
+            <l> No . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Who then ? His spirit ? </l>
-            </p>
+
+            <l> Who then ? His spirit ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Neither . </l>
-            </p>
+
+            <l> Neither . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> What then ? </l>
-            </p>
+
+            <l> What then ? </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
-            <p>
-              <l> Nothing . </l>
-            </p>
+
+            <l> Nothing . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Can nothing speak ? Master , shall I strike ? </l>
-            </p>
+
+            <l> Can nothing speak ? Master , shall I strike ? </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Who wouldst thou strike ? </l>
-            </p>
+
+            <l> Who wouldst thou strike ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Nothing . </l>
-            </p>
+
+            <l> Nothing . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Villain , forbear . </l>
-            </p>
+
+            <l> Villain , forbear . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , sir , I’ll strike nothing . I pray you — </l>
-            </p>
+
+            <l> Why , sir , I’ll strike nothing . I pray you — </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
@@ -3650,10 +3697,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Sir , there is a proclamation that you are </l>
-              <l> vanished . </l>
-            </p>
+
+            <l> Sir , there is a proclamation that you are </l>
+            <l> vanished . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
@@ -3728,129 +3775,129 @@
           </stage>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> I am but a fool , look you , and yet I have the wit </l>
-              <l> to think my master is a kind of a knave , but that’s all </l>
-              <l> one if he be but one knave . He lives not now that </l>
-              <l> knows me to be in love , yet I am in love , but a team </l>
-              <l> of horse shall not pluck that from me , nor who ’tis I </l>
-              <l> love ; and yet ’tis a woman , but what woman I will </l>
-              <l> not tell myself ; and yet ’tis a milk-maid ; yet ’tis not a </l>
-              <l> maid , for she hath had gossips ; yet ’tis a maid , for </l>
-              <l> she is her master’s maid and serves for wages . She </l>
-              <l> hath more qualities than a water spaniel , which is </l>
-              <l> much in a bare Christian . </l>
-            </p>
+
+            <l> I am but a fool , look you , and yet I have the wit </l>
+            <l> to think my master is a kind of a knave , but that’s all </l>
+            <l> one if he be but one knave . He lives not now that </l>
+            <l> knows me to be in love , yet I am in love , but a team </l>
+            <l> of horse shall not pluck that from me , nor who ’tis I </l>
+            <l> love ; and yet ’tis a woman , but what woman I will </l>
+            <l> not tell myself ; and yet ’tis a milk-maid ; yet ’tis not a </l>
+            <l> maid , for she hath had gossips ; yet ’tis a maid , for </l>
+            <l> she is her master’s maid and serves for wages . She </l>
+            <l> hath more qualities than a water spaniel , which is </l>
+            <l> much in a bare Christian . </l>
+
             <stage who="#Lance">
               <hi rend="italic"> He takes out a piece of paper . </hi>
             </stage>
-            <p>
-              <l> Here is the catalog of her condition . </l>
-              <l>
-                <stage>
-                  <hi rend="italic"> ( Reads . ) </hi>
-                </stage> Imprimis , She can fetch and carry . Why , a </l>
-              <l> horse can do no more ; nay , a horse cannot fetch but </l>
-              <l> only carry ; therefore is she better than a jade . </l>
-              <l>
-                <stage>
-                  <hi rend="italic"> ( Reads . ) </hi>
-                </stage>
-              </l>
-              <l> Item , She can milk . </l> Look you , a sweet <l> virtue in a maid with clean
-                hands . </l>
-            </p>
+
+            <l> Here is the catalog of her condition . </l>
+            <l>
+              <stage>
+                <hi rend="italic"> ( Reads . ) </hi>
+              </stage> Imprimis , She can fetch and carry . Why , a </l>
+            <l> horse can do no more ; nay , a horse cannot fetch but </l>
+            <l> only carry ; therefore is she better than a jade . </l>
+            <l>
+              <stage>
+                <hi rend="italic"> ( Reads . ) </hi>
+              </stage>
+            </l>
+            <l> Item , She can milk . Look you , a sweet </l>
+            <l> virtue in a maid with clean hands . </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Speed . </hi>
           </stage>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> How now , Signior Lance ? What news with your </l>
-              <l> Mastership ? </l>
-            </p>
+
+            <l> How now , Signior Lance ? What news with your </l>
+            <l> Mastership ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> With my master’s ship ? Why , it is at sea . </l>
-            </p>
+
+            <l> With my master’s ship ? Why , it is at sea . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Well , your old vice still : mistake the word . What </l>
-              <l> news , then , in your paper ? </l>
-            </p>
+
+            <l> Well , your old vice still : mistake the word . What </l>
+            <l> news , then , in your paper ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> The black’st news that ever thou heard’st . </l>
-            </p>
+
+            <l> The black’st news that ever thou heard’st . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Why , man ? How black ? </l>
-            </p>
+
+            <l> Why , man ? How black ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , as black as ink . </l>
-            </p>
+
+            <l> Why , as black as ink . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Let me read them . </l>
-            </p>
+
+            <l> Let me read them . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Fie on thee , jolt-head , thou canst not read . </l>
-            </p>
+
+            <l> Fie on thee , jolt-head , thou canst not read . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Thou liest . I can . </l>
-            </p>
+
+            <l> Thou liest . I can . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> I will try thee . Tell me this , who begot thee ? </l>
-            </p>
+
+            <l> I will try thee . Tell me this , who begot thee ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Marry , the son of my grandfather . </l>
-            </p>
+
+            <l> Marry , the son of my grandfather . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> O , illiterate loiterer , it was the son of thy grandmother . </l>
-              <l> This proves that thou canst not read . </l>
-            </p>
+
+            <l> O , illiterate loiterer , it was the son of thy grandmother . </l>
+            <l> This proves that thou canst not read . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Come , fool , come . Try me in thy paper . </l>
-            </p>
+
+            <l> Come , fool , come . Try me in thy paper . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE , giving him the paper </speaker>
-            <p>
-              <l> There , and Saint Nicholas </l>
-              <l> be thy speed . </l>
-            </p>
+
+            <l> There , and Saint Nicholas </l>
+            <l> be thy speed . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED reads </speaker>
@@ -3858,9 +3905,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Ay , that she can . </l>
-            </p>
+
+            <l> Ay , that she can . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3868,10 +3915,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> And thereof comes the proverb : “ Blessing of </l>
-              <l> your heart , you brew good ale . ” </l>
-            </p>
+
+            <l> And thereof comes the proverb : “ Blessing of </l>
+            <l> your heart , you brew good ale . ” </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3879,9 +3926,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> That’s as much as to say “ Can she so ? ” </l>
-            </p>
+
+            <l> That’s as much as to say “ Can she so ? ” </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3889,10 +3936,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> What need a man care for a stock with a wench , </l>
-              <l> when she can knit him a stock ? </l>
-            </p>
+
+            <l> What need a man care for a stock with a wench , </l>
+            <l> when she can knit him a stock ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3900,10 +3947,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> A special virtue , for then she need not be </l>
-              <l> washed and scoured . </l>
-            </p>
+
+            <l> A special virtue , for then she need not be </l>
+            <l> washed and scoured . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3911,10 +3958,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Then may I set the world on wheels , when she </l>
-              <l> can spin for her living . </l>
-            </p>
+
+            <l> Then may I set the world on wheels , when she </l>
+            <l> can spin for her living . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3922,23 +3969,23 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> That’s as much as to say “ bastard virtues , ” that </l>
-              <l> indeed know not their fathers and therefore have no </l>
-              <l> names . </l>
-            </p>
+
+            <l> That’s as much as to say “ bastard virtues , ” that </l>
+            <l> indeed know not their fathers and therefore have no </l>
+            <l> names . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Here follow her vices . </l>
-            </p>
+
+            <l> Here follow her vices . </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Close at the heels of her virtues . </l>
-            </p>
+
+            <l> Close at the heels of her virtues . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3946,10 +3993,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Well , that fault may be mended with a breakfast . </l>
-              <l> Read on . </l>
-            </p>
+
+            <l> Well , that fault may be mended with a breakfast . </l>
+            <l> Read on . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3957,9 +4004,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> That makes amends for her sour breath . </l>
-            </p>
+
+            <l> That makes amends for her sour breath . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3967,10 +4014,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> It’s no matter for that , so she sleep not in her </l>
-              <l> talk . </l>
-            </p>
+
+            <l> It’s no matter for that , so she sleep not in her </l>
+            <l> talk . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3978,11 +4025,11 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> O villain , that set this down among her vices ! To </l>
-              <l> be slow in words is a woman’s only virtue . I pray </l>
-              <l> thee , out with ’t , and place it for her chief virtue . </l>
-            </p>
+
+            <l> O villain , that set this down among her vices ! To </l>
+            <l> be slow in words is a woman’s only virtue . I pray </l>
+            <l> thee , out with ’t , and place it for her chief virtue . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -3990,10 +4037,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Out with that too ; it was Eve’s legacy and </l>
-              <l> cannot be ta’en from her . </l>
-            </p>
+
+            <l> Out with that too ; it was Eve’s legacy and </l>
+            <l> cannot be ta’en from her . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4001,9 +4048,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> I care not for that neither , because I love crusts . </l>
-            </p>
+
+            <l> I care not for that neither , because I love crusts . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4011,9 +4058,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Well , the best is , she hath no teeth to bite . </l>
-            </p>
+
+            <l> Well , the best is , she hath no teeth to bite . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4021,10 +4068,10 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> If her liquor be good , she shall ; if she will not , I </l>
-              <l> will , for good things should be praised . </l>
-            </p>
+
+            <l> If her liquor be good , she shall ; if she will not , I </l>
+            <l> will , for good things should be praised . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4032,12 +4079,12 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Of her tongue she cannot , for that’s writ down </l>
-              <l> she is slow of ; of her purse she shall not , for that I’ll </l>
-              <l> keep shut ; now , of another thing she may , and that </l>
-              <l> cannot I help . Well , proceed . </l>
-            </p>
+
+            <l> Of her tongue she cannot , for that’s writ down </l>
+            <l> she is slow of ; of her purse she shall not , for that I’ll </l>
+            <l> keep shut ; now , of another thing she may , and that </l>
+            <l> cannot I help . Well , proceed . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4046,11 +4093,11 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Stop there . I’ll have her . She was mine and not </l>
-              <l> mine twice or thrice in that last article . Rehearse </l>
-              <l> that once more . </l>
-            </p>
+
+            <l> Stop there . I’ll have her . She was mine and not </l>
+            <l> mine twice or thrice in that last article . Rehearse </l>
+            <l> that once more . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4058,13 +4105,14 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> “ More hair than wit ” </l> ? It may be ; I’ll prove it : <l> the cover of the
-                salt hides the salt , and therefore it is </l>
-              <l> more than the salt ; the hair that covers the wit is </l>
-              <l> more than the wit , for the greater hides the less . </l>
-              <l> What’s next ? </l>
-            </p>
+
+            <l> “ More hair than wit ” </l>
+            <l>? It may be ; I’ll prove it : </l>
+            <l> the cover of the salt hides the salt , and therefore it is </l>
+            <l> more than the salt ; the hair that covers the wit is </l>
+            <l> more than the wit , for the greater hides the less . </l>
+            <l> What’s next ? </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4072,9 +4120,9 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> That’s monstrous ! O , that that were out ! </l>
-            </p>
+
+            <l> That’s monstrous ! O , that that were out ! </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
@@ -4082,68 +4130,68 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , that word makes the faults gracious . Well , </l>
-              <l> I’ll have her , and if it be a match , as nothing is </l>
-              <l> impossible — </l>
-            </p>
+
+            <l> Why , that word makes the faults gracious . Well , </l>
+            <l> I’ll have her , and if it be a match , as nothing is </l>
+            <l> impossible — </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> What then ? </l>
-            </p>
+
+            <l> What then ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Why , then will I tell thee that thy master stays </l>
-              <l> for thee at the North Gate . </l>
-            </p>
+
+            <l> Why , then will I tell thee that thy master stays </l>
+            <l> for thee at the North Gate . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> For me ? </l>
-            </p>
+
+            <l> For me ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> For thee ? Ay , who art thou ? He hath stayed for a </l>
-              <l> better man than thee . </l>
-            </p>
+
+            <l> For thee ? Ay , who art thou ? He hath stayed for a </l>
+            <l> better man than thee . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> And must I go to him ? </l>
-            </p>
+
+            <l> And must I go to him ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Thou must run to him , for thou hast stayed so </l>
-              <l> long that going will scarce serve the turn . </l>
-            </p>
+
+            <l> Thou must run to him , for thou hast stayed so </l>
+            <l> long that going will scarce serve the turn . </l>
+
           </sp>
           <sp who="#Speed">
             <speaker> SPEED , handing him the paper </speaker>
-            <p>
-              <l> Why didst not tell me </l>
-              <l> sooner ? Pox of your love letters ! </l>
-            </p>
+
+            <l> Why didst not tell me </l>
+            <l> sooner ? Pox of your love letters ! </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits . </hi>
           </stage>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Now will he be swinged for reading my letter ; </l>
-              <l> an unmannerly slave , that will thrust himself into </l>
-              <l> secrets . I’ll after , to rejoice in the boy’s correction . </l>
-            </p>
+
+            <l> Now will he be swinged for reading my letter ; </l>
+            <l> an unmannerly slave , that will thrust himself into </l>
+            <l> secrets . I’ll after , to rejoice in the boy’s correction . </l>
+
           </sp>
           <stage type="exit">
             <hi rend="italic"> He exits . </hi>
@@ -4477,10 +4525,10 @@
           </stage>
           <sp who="#Speed">
             <speaker> SPEED </speaker>
-            <p>
-              <l> Master , be one of them . It’s an honorable kind </l>
-              <l> of thievery . </l>
-            </p>
+
+            <l> Master , be one of them . It’s an honorable kind </l>
+            <l> of thievery . </l>
+
           </sp>
           <sp who="#Valentine">
             <speaker> VALENTINE </speaker>
@@ -4622,49 +4670,49 @@
           </stage>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Now , my young guest , methinks you’re allycholly . </l>
-              <l> I pray you , why is it ? </l>
-            </p>
+
+            <l> Now , my young guest , methinks you’re allycholly . </l>
+            <l> I pray you , why is it ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Marry , mine host , because I </l>
-              <l> cannot be merry . </l>
-            </p>
+
+            <l> Marry , mine host , because I </l>
+            <l> cannot be merry . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Come , we’ll have you merry . I’ll bring you where </l>
-              <l> you shall hear music and see the gentleman that you </l>
-              <l> asked for . </l>
-            </p>
+
+            <l> Come , we’ll have you merry . I’ll bring you where </l>
+            <l> you shall hear music and see the gentleman that you </l>
+            <l> asked for . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> But shall I hear him speak ? </l>
-            </p>
+
+            <l> But shall I hear him speak ? </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Ay , that you shall . </l>
-            </p>
+
+            <l> Ay , that you shall . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> That will be music . </l>
-            </p>
+
+            <l> That will be music . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Hark , hark . </l>
-            </p>
+
+            <l> Hark , hark . </l>
+
           </sp>
           <stage>
             <stage>
@@ -4673,15 +4721,15 @@
           </stage>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Is he among these ? </l>
-            </p>
+
+            <l> Is he among these ? </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Ay . But peace ; let’s hear ’em . </l>
-            </p>
+
+            <l> Ay . But peace ; let’s hear ’em . </l>
+
           </sp>
           <label> Song . </label>
           <sp who="#Proteus">
@@ -4710,86 +4758,86 @@
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> How now ? Are you sadder than you were before ? </l>
-              <l> How do you , man ? The music likes you not . </l>
-            </p>
+
+            <l> How now ? Are you sadder than you were before ? </l>
+            <l> How do you , man ? The music likes you not . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> You mistake . The musician likes me </l>
-              <l> not . </l>
-            </p>
+
+            <l> You mistake . The musician likes me </l>
+            <l> not . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Why , my pretty youth ? </l>
-            </p>
+
+            <l> Why , my pretty youth ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> He plays false , father . </l>
-            </p>
+
+            <l> He plays false , father . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> How , out of tune on the strings ? </l>
-            </p>
+
+            <l> How , out of tune on the strings ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Not so ; but yet so false that he </l>
-              <l> grieves my very heart-strings . </l>
-            </p>
+
+            <l> Not so ; but yet so false that he </l>
+            <l> grieves my very heart-strings . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> You have a quick ear . </l>
-            </p>
+
+            <l> You have a quick ear . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Ay , I would I were deaf ; it makes </l>
-              <l> me have a slow heart . </l>
-            </p>
+
+            <l> Ay , I would I were deaf ; it makes </l>
+            <l> me have a slow heart . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> I perceive you delight not in music . </l>
-            </p>
+
+            <l> I perceive you delight not in music . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Not a whit when it jars so . </l>
-            </p>
+
+            <l> Not a whit when it jars so . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Hark , what fine change is in the music ! </l>
-            </p>
+
+            <l> Hark , what fine change is in the music ! </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Ay ; that change is the spite . </l>
-            </p>
+
+            <l> Ay ; that change is the spite . </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> You would have them always play but one </l>
-              <l> thing ? </l>
-            </p>
+
+            <l> You would have them always play but one </l>
+            <l> thing ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
@@ -4799,34 +4847,34 @@
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> I tell you what Lance his man told me : he loved </l>
-              <l> her out of all nick . </l>
-            </p>
+
+            <l> I tell you what Lance his man told me : he loved </l>
+            <l> her out of all nick . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Where is Lance ? </l>
-            </p>
+
+            <l> Where is Lance ? </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Gone to seek his dog , which tomorrow , by his </l>
-              <l> master’s command , he must carry for a present to </l>
-              <l> his lady . </l>
-            </p>
+
+            <l> Gone to seek his dog , which tomorrow , by his </l>
+            <l> master’s command , he must carry for a present to </l>
+            <l> his lady . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> Music ends . </hi>
           </stage>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Peace . Stand aside . The company </l>
-              <l> parts . </l>
-            </p>
+
+            <l> Peace . Stand aside . The company </l>
+            <l> parts . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> Host and Julia move away . </hi>
@@ -4974,28 +5022,28 @@
           </stage>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Host , will you go ? </l>
-            </p>
+
+            <l> Host , will you go ? </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> By my halidom , I was fast asleep . </l>
-            </p>
+
+            <l> By my halidom , I was fast asleep . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Pray you , where lies Sir Proteus ? </l>
-            </p>
+
+            <l> Pray you , where lies Sir Proteus ? </l>
+
           </sp>
           <sp who="#Host">
             <speaker> HOST </speaker>
-            <p>
-              <l> Marry , at my house . Trust me , I think ’tis almost </l>
-              <l> day . </l>
-            </p>
+
+            <l> Marry , at my house . Trust me , I think ’tis almost </l>
+            <l> day . </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
@@ -5111,50 +5159,50 @@
           </stage>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> When a man’s servant shall play the cur with </l>
-              <l> him , look you , it goes hard — one that I brought up </l>
-              <l> of a puppy , one that I saved from drowning when </l>
-              <l> three or four of his blind brothers and sisters went </l>
-              <l> to it . I have taught him even as one would say </l>
-              <l> precisely “ Thus I would teach a dog . ” I was sent to </l>
-              <l> deliver him as a present to Mistress Sylvia from my </l>
-              <l> master ; and I came no sooner into the dining </l>
-              <l> chamber but he steps me to her trencher and steals </l>
-              <l> her capon’s leg . O , ’tis a foul thing when a cur </l>
-              <l> cannot keep himself in all companies ! I would have , </l>
-              <l> as one should say , one that takes upon him to be a </l>
-              <l> dog indeed ; to be , as it were , a dog at all things . If I </l>
-              <l> had not had more wit than he , to take a fault upon </l>
-              <l> me that he did , I think verily he had been hanged </l>
-              <l> for ’t . Sure as I live , he had suffered for ’t . You shall </l>
-              <l> judge . He thrusts me himself into the company of </l>
-              <l> three or four gentlemanlike dogs under the Duke’s </l>
-              <l> table ; he had not been there — bless the mark ! — a </l>
-              <l> pissing while but all the chamber smelt him . “ Out </l>
-              <l> with the dog ! ” says one . “ What cur is that ? ” says </l>
-              <l> another . “ Whip him out ! ” says the third . “ Hang him </l>
-              <l> up ! ” says the Duke . I , having been acquainted with </l>
-              <l> the smell before , knew it was Crab , and goes me to </l>
-              <l> the fellow that whips the dogs . “ Friend , ” quoth I , </l>
-              <l> “ You mean to whip the dog ? ” “ Ay , marry , do I , ” </l>
-              <l> quoth he . “ You do him the more wrong , ” quoth I . </l>
-              <l> “ ’Twas I did the thing you wot of . ” He makes me no </l>
-              <l> more ado but whips me out of the chamber . How </l>
-              <l> many masters would do this for his servant ? Nay , </l>
-              <l> I’ll be sworn I have sat in the stocks for puddings he </l>
-              <l> hath stolen ; otherwise he had been executed . I have </l>
-              <l> stood on the pillory for geese he hath killed ; otherwise </l>
-              <l> he had suffered for ’t . <stage>
-                  <hi rend="italic"> To Crab . </hi>
-                </stage> Thou think’st </l>
-              <l> not of this now . Nay , I remember the trick you </l>
-              <l> served me when I took my leave of Madam Sylvia . </l>
-              <l> Did not I bid thee still mark me , and do as I do ? </l>
-              <l> When didst thou see me heave up my leg and make </l>
-              <l> water against a gentlewoman’s farthingale ? Didst </l>
-              <l> thou ever see me do such a trick ? </l>
-            </p>
+
+            <l> When a man’s servant shall play the cur with </l>
+            <l> him , look you , it goes hard — one that I brought up </l>
+            <l> of a puppy , one that I saved from drowning when </l>
+            <l> three or four of his blind brothers and sisters went </l>
+            <l> to it . I have taught him even as one would say </l>
+            <l> precisely “ Thus I would teach a dog . ” I was sent to </l>
+            <l> deliver him as a present to Mistress Sylvia from my </l>
+            <l> master ; and I came no sooner into the dining </l>
+            <l> chamber but he steps me to her trencher and steals </l>
+            <l> her capon’s leg . O , ’tis a foul thing when a cur </l>
+            <l> cannot keep himself in all companies ! I would have , </l>
+            <l> as one should say , one that takes upon him to be a </l>
+            <l> dog indeed ; to be , as it were , a dog at all things . If I </l>
+            <l> had not had more wit than he , to take a fault upon </l>
+            <l> me that he did , I think verily he had been hanged </l>
+            <l> for ’t . Sure as I live , he had suffered for ’t . You shall </l>
+            <l> judge . He thrusts me himself into the company of </l>
+            <l> three or four gentlemanlike dogs under the Duke’s </l>
+            <l> table ; he had not been there — bless the mark ! — a </l>
+            <l> pissing while but all the chamber smelt him . “ Out </l>
+            <l> with the dog ! ” says one . “ What cur is that ? ” says </l>
+            <l> another . “ Whip him out ! ” says the third . “ Hang him </l>
+            <l> up ! ” says the Duke . I , having been acquainted with </l>
+            <l> the smell before , knew it was Crab , and goes me to </l>
+            <l> the fellow that whips the dogs . “ Friend , ” quoth I , </l>
+            <l> “ You mean to whip the dog ? ” “ Ay , marry , do I , ” </l>
+            <l> quoth he . “ You do him the more wrong , ” quoth I . </l>
+            <l> “ ’Twas I did the thing you wot of . ” He makes me no </l>
+            <l> more ado but whips me out of the chamber . How </l>
+            <l> many masters would do this for his servant ? Nay , </l>
+            <l> I’ll be sworn I have sat in the stocks for puddings he </l>
+            <l> hath stolen ; otherwise he had been executed . I have </l>
+            <l> stood on the pillory for geese he hath killed ; otherwise </l>
+            <l> he had suffered for ’t . <stage>
+                <hi rend="italic"> To Crab . </hi>
+              </stage> Thou think’st </l>
+            <l> not of this now . Nay , I remember the trick you </l>
+            <l> served me when I took my leave of Madam Sylvia . </l>
+            <l> Did not I bid thee still mark me , and do as I do ? </l>
+            <l> When didst thou see me heave up my leg and make </l>
+            <l> water against a gentlewoman’s farthingale ? Didst </l>
+            <l> thou ever see me do such a trick ? </l>
+
           </sp>
           <stage type="entrance">
             <hi rend="italic"> Enter Proteus and Julia disguised as Sebastian . </hi>
@@ -5177,52 +5225,52 @@
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Marry , sir , I carried Mistress Sylvia the dog you </l>
-              <l> bade me . </l>
-            </p>
+
+            <l> Marry , sir , I carried Mistress Sylvia the dog you </l>
+            <l> bade me . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> And what says she to my little jewel ? </l>
-            </p>
+
+            <l> And what says she to my little jewel ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Marry , she says your dog was a cur , and tells </l>
-              <l> you currish thanks is good enough for such a </l>
-              <l> present . </l>
-            </p>
+
+            <l> Marry , she says your dog was a cur , and tells </l>
+            <l> you currish thanks is good enough for such a </l>
+            <l> present . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> But she received my dog ? </l>
-            </p>
+
+            <l> But she received my dog ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> No , indeed , did she not . Here have I brought </l>
-              <l> him back again . </l>
-            </p>
+
+            <l> No , indeed , did she not . Here have I brought </l>
+            <l> him back again . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> What , didst thou offer her this from me ? </l>
-            </p>
+
+            <l> What , didst thou offer her this from me ? </l>
+
           </sp>
           <sp who="#Lance">
             <speaker> LANCE </speaker>
-            <p>
-              <l> Ay , sir . The other squirrel was stolen from me </l>
-              <l> by the hangman’s boys in the market-place , and </l>
-              <l> then I offered her mine own , who is a dog as big as </l>
-              <l> ten of yours , and therefore the gift the greater . </l>
-            </p>
+
+            <l> Ay , sir . The other squirrel was stolen from me </l>
+            <l> by the hangman’s boys in the market-place , and </l>
+            <l> then I offered her mine own , who is a dog as big as </l>
+            <l> ten of yours , and therefore the gift the greater . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
@@ -5335,28 +5383,28 @@
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> From whom ? </l>
-            </p>
+
+            <l> From whom ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> From my master , Sir Proteus , </l>
-              <l> madam . </l>
-            </p>
+
+            <l> From my master , Sir Proteus , </l>
+            <l> madam . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA </speaker>
-            <p>
-              <l> O , he sends you for a picture ? </l>
-            </p>
+
+            <l> O , he sends you for a picture ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Ay , madam . </l>
-            </p>
+
+            <l> Ay , madam . </l>
+
           </sp>
           <sp who="#Sylvia">
             <speaker> SYLVIA , calling </speaker>
@@ -5986,23 +6034,23 @@
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> O , good sir , my master charged </l>
-              <l> me to deliver a ring to Madam Sylvia , which out of </l>
-              <l> my neglect was never done . </l>
-            </p>
+
+            <l> O , good sir , my master charged </l>
+            <l> me to deliver a ring to Madam Sylvia , which out of </l>
+            <l> my neglect was never done . </l>
+
           </sp>
           <sp who="#Proteus">
             <speaker> PROTEUS </speaker>
-            <p>
-              <l> Where is that ring , boy ? </l>
-            </p>
+
+            <l> Where is that ring , boy ? </l>
+
           </sp>
           <sp who="#Julia">
             <speaker> JULIA , as Sebastian </speaker>
-            <p>
-              <l> Here ’tis ; this is it . </l>
-            </p>
+
+            <l> Here ’tis ; this is it . </l>
+
           </sp>
           <stage>
             <hi rend="italic"> She rises , and hands him a ring . </hi>
